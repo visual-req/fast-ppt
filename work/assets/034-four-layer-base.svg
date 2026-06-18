@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.10"/></filter>
+  </defs>
+
+  <rect width="960" height="540" rx="12" fill="url(#bg)"/>
+
+  <!-- Title bar -->
+  <rect x="0" y="0" width="960" height="48" fill="url(#hdr)" rx="12"/>
+  <rect x="0" y="24" width="960" height="24" fill="url(#hdr)"/>
+  <text x="480" y="31" text-anchor="middle" fill="#fff" font-size="18" font-weight="700" font-family="sans-serif">四层统一底座架构</text>
+
+  <!-- Layer 1: Edge & Security (top) -->
+  <rect x="40" y="70" width="880" height="85" rx="10" fill="#fff" stroke="#ef4444" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="40" y="70" width="180" height="85" rx="10" fill="#fef2f2"/>
+  <rect x="220" y="70" width="0" height="0"/>
+  <text x="130" y="118" text-anchor="middle" fill="#dc2626" font-size="16" font-weight="700" font-family="sans-serif">边缘与安全</text>
+  <text x="240" y="98" fill="#475569" font-size="12" font-family="sans-serif">IT/OT 隔离</text>
+  <text x="240" y="118" fill="#475569" font-size="12" font-family="sans-serif">边缘容器化部署</text>
+  <text x="240" y="138" fill="#475569" font-size="12" font-family="sans-serif">加密 · 审计 · 密钥管理</text>
+  <text x="480" y="118" fill="#334155" font-size="12" font-family="sans-serif">零信任架构</text>
+  <text x="480" y="138" fill="#334155" font-size="12" font-family="sans-serif">数据分级与权限管控</text>
+  <text x="700" y="118" fill="#334155" font-size="12" font-family="sans-serif">协议转换（Modbus/OPC UA/MQTT）</text>
+  <text x="700" y="138" fill="#334155" font-size="12" font-family="sans-serif">安全网关与态势感知</text>
+
+  <!-- Arrow down -->
+  <line x1="480" y1="155" x2="480" y2="177" stroke="rgba(15,23,42,0.12)" stroke-width="2"/>
+  <polygon points="475,177 480,185 485,177" fill="rgba(15,23,42,0.15)"/>
+
+  <!-- Layer 2: AI Platform -->
+  <rect x="40" y="185" width="880" height="85" rx="10" fill="#fff" stroke="#8b5cf6" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="40" y="185" width="180" height="85" rx="10" fill="#f5f3ff"/>
+  <text x="130" y="233" text-anchor="middle" fill="#6d28d9" font-size="16" font-weight="700" font-family="sans-serif">AI 平台</text>
+  <text x="240" y="213" fill="#475569" font-size="12" font-family="sans-serif">训练 / 评估 / 注册 / 发布</text>
+  <text x="240" y="233" fill="#475569" font-size="12" font-family="sans-serif">在线推理 + 批处理</text>
+  <text x="240" y="253" fill="#475569" font-size="12" font-family="sans-serif">漂移检测 / 灰度发布 / 回滚</text>
+  <text x="550" y="223" fill="#334155" font-size="12" font-family="sans-serif">MLOps 全生命周期管理</text>
+  <text x="550" y="243" fill="#334155" font-size="12" font-family="sans-serif">模型版本管理与上线审批</text>
+  <text x="550" y="263" fill="#334155" font-size="12" font-family="sans-serif">A/B 实验框架与效果评估</text>
+
+  <!-- Arrow down -->
+  <line x1="480" y1="270" x2="480" y2="292" stroke="rgba(15,23,42,0.12)" stroke-width="2"/>
+  <polygon points="475,292 480,300 485,292" fill="rgba(15,23,42,0.15)"/>
+
+  <!-- Layer 3: Integration Platform -->
+  <rect x="40" y="300" width="880" height="85" rx="10" fill="#fff" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="40" y="300" width="180" height="85" rx="10" fill="#eff6ff"/>
+  <text x="130" y="348" text-anchor="middle" fill="#1d4ed8" font-size="16" font-weight="700" font-family="sans-serif">集成平台</text>
+  <text x="240" y="328" fill="#475569" font-size="12" font-family="sans-serif">API 网关 · 服务编排</text>
+  <text x="240" y="348" fill="#475569" font-size="12" font-family="sans-serif">消息总线（Kafka/RabbitMQ）</text>
+  <text x="240" y="368" fill="#475569" font-size="12" font-family="sans-serif">ESB 企业服务总线集成</text>
+  <text x="550" y="358" fill="#334155" font-size="12" font-family="sans-serif">连接 ERP / MES / WMS / QMS / PLM / SCADA</text>
+
+  <!-- Arrow down -->
+  <line x1="480" y1="385" x2="480" y2="407" stroke="rgba(15,23,42,0.12)" stroke-width="2"/>
+  <polygon points="475,407 480,415 485,407" fill="rgba(15,23,42,0.15)"/>
+
+  <!-- Layer 4: Data Platform (bottom foundation) -->
+  <rect x="40" y="415" width="880" height="105" rx="12" fill="#1e3a8a" filter="url(#shadow)"/>
+  <text x="480" y="445" text-anchor="middle" fill="#fff" font-size="16" font-weight="700" font-family="sans-serif">数据平台（底座基石）</text>
+  <text x="130" y="475" text-anchor="middle" fill="rgba(255,255,255,0.75)" font-size="12" font-family="sans-serif">数据湖/仓/时序/对象</text>
+  <text x="350" y="475" text-anchor="middle" fill="rgba(255,255,255,0.75)" font-size="12" font-family="sans-serif">元数据血缘追踪</text>
+  <text x="550" y="475" text-anchor="middle" fill="rgba(255,255,255,0.75)" font-size="12" font-family="sans-serif">质量监控与告警</text>
+  <text x="750" y="475" text-anchor="middle" fill="rgba(255,255,255,0.75)" font-size="12" font-family="sans-serif">统一数据字典</text>
+  <text x="480" y="505" text-anchor="middle" fill="rgba(255,255,255,0.55)" font-size="11" font-family="sans-serif">为上层 AI 与集成提供统一、可信、实时的数据能力</text>
+</svg>

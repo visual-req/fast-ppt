@@ -1,0 +1,59 @@
+{
+  "layout_type": "phases",
+  "title": "研发全流程AI机会点",
+  "phases": [
+    {
+      "icon": "requirement",
+      "title": "需求",
+      "bullets": [
+        "/vspec:new生成背景/角色/流程/场景",
+        "/vspec:refine精化需求",
+        "/vspec:detail生成设计规格",
+        "/vspec:verify生成原型"
+      ],
+      "gate": "需求可追溯"
+    },
+    {
+      "icon": "design",
+      "title": "设计",
+      "bullets": [
+        "架构对比与推荐",
+        "接口定义草案",
+        "威胁建模与安全"
+      ],
+      "gate": "设计评审通过"
+    },
+    {
+      "icon": "development",
+      "title": "开发",
+      "bullets": [
+        "智能补全与重构",
+        "单元测试生成",
+        "代码评审与门禁"
+      ],
+      "gate": "覆盖率>=80%"
+    },
+    {
+      "icon": "testing",
+      "title": "测试",
+      "bullets": [
+        "/vspec:accept验收用例",
+        "/vspec:append-test自动化",
+        "缺陷归因",
+        "回归优化"
+      ],
+      "gate": "缺陷密度降30%"
+    },
+    {
+      "icon": "operation",
+      "title": "运维",
+      "bullets": [
+        "告警降噪分级",
+        "根因分析",
+        "变更影响分析",
+        "知识问答"
+      ],
+      "gate": "MTTR-50%"
+    }
+  ]
+}

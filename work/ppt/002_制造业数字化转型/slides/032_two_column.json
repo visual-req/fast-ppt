@@ -1,0 +1,51 @@
+{
+  "layout_type": "nine_grid",
+  "title": "办公 AI 场景与能力",
+  "grid": [
+    {
+      "icon": "document",
+      "title": "文档生成",
+      "text": "自动生成汇报、方案、纪要和制度草稿"
+    },
+    {
+      "icon": "meeting",
+      "title": "会议纪要",
+      "text": "自动提取结论、待办、责任人与时间节点"
+    },
+    {
+      "icon": "search",
+      "title": "企业搜索",
+      "text": "统一问答入口连接制度、知识库与历史材料"
+    },
+    {
+      "icon": "assistant",
+      "title": "智能助理",
+      "text": "围绕流程规则提供下一步建议与提醒"
+    },
+    {
+      "icon": "knowledge",
+      "title": "知识沉淀",
+      "text": "把高频问题、优秀模板和案例持续沉淀复用"
+    },
+    {
+      "icon": "lock",
+      "title": "权限隔离",
+      "text": "按组织、角色、数据域做访问控制"
+    },
+    {
+      "icon": "audit",
+      "title": "溯源审计",
+      "text": "保留引用来源、回答记录与操作日志"
+    },
+    {
+      "icon": "portal",
+      "title": "统一入口",
+      "text": "网页、IM、门户与移动端统一接入"
+    },
+    {
+      "icon": "safety",
+      "title": "可控自动化",
+      "text": "高风险环节保留人工确认与审批闭环"
+    }
+  ]
+}

@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { computed } from "vue";
-import Card from "./Card.vue";
 
 const props = defineProps<{ slide: any }>();
 
@@ -25,7 +24,7 @@ const tasks = computed<Task[]>(() => {
       start: parseTime(x?.start),
       end: parseTime(x?.end)
     }))
-    .filter((t) => t.name);
+    .filter((t: Task) => t.name);
 });
 
 const minMax = computed(() => {
@@ -34,12 +33,57 @@ const minMax = computed(() => {
   const max = Math.max(...tasks.value.map((t) => (t.end || t.start)));
   return { min, max: max === min ? min + 1 : max };
 });
+
+function formatMonth(ts: number) {
+  const d = new Date(ts);
+  if (Number.isNaN(d.getTime())) return "";
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, "0");
+  return `${y}-${m}`;
+}
+
+const axisTicks = computed(() => {
+  if (!tasks.value.length) return [];
+  const min = minMax.value.min;
+  const max = minMax.value.max;
+  if (!Number.isFinite(min) || !Number.isFinite(max) || max <= min) return [];
+  const start = new Date(min);
+  const end = new Date(max);
+  if (Number.isNaN(start.getTime()) || Number.isNaN(end.getTime())) return [];
+
+  const ticks: Array<{ label: string; left: string }> = [];
+  const cursor = new Date(start.getFullYear(), start.getMonth(), 1);
+  const last = new Date(end.getFullYear(), end.getMonth(), 1);
+
+  while (cursor <= last) {
+    const current = cursor.getTime();
+    const left = ((current - min) / (max - min)) * 100;
+    ticks.push({
+      label: formatMonth(current),
+      left: `${Math.max(0, Math.min(100, left)).toFixed(2)}%`
+    });
+    cursor.setMonth(cursor.getMonth() + 1);
+  }
+  return ticks;
+});
 </script>
 
 <template>
-  <Card v-if="!tasks.length" title="无数据" />
-  <Card v-else title="甘特图">
-    <div style="display: grid; gap: 10px">
+  <div v-if="!tasks.length" style="padding: 24px; color: #94a3b8; font-size: 14px;">无数据</div>
+  <div v-else class="ganttChartInner">
+    <div class="ganttChartGrid">
+      <div v-if="axisTicks.length" style="display: grid; grid-template-columns: 180px 1fr; gap: 12px; align-items: end; margin-bottom: 8px">
+        <div></div>
+        <div style="position: relative; height: 28px; border-bottom: 1px solid rgba(15, 23, 42, 0.08)">
+          <div
+            v-for="(tick, i) in axisTicks"
+            :key="i"
+            :style="{ position: 'absolute', left: tick.left, top: '0', transform: 'translateX(-50%)', fontSize: '11px', color: 'rgba(15, 23, 42, 0.55)', whiteSpace: 'nowrap' }"
+          >
+            {{ tick.label }}
+          </div>
+        </div>
+      </div>
       <div v-for="(t, i) in tasks" :key="i" style="display: grid; grid-template-columns: 180px 1fr; gap: 12px; align-items: center">
         <div style="font-size: 13px; font-weight: 800; color: rgba(15, 23, 42, 0.85)">
           {{ t.owner ? `${t.name}（${t.owner}）` : t.name }}
@@ -59,6 +103,5 @@ const minMax = computed(() => {
         </div>
       </div>
     </div>
-  </Card>
+  </div>
 </template>
-

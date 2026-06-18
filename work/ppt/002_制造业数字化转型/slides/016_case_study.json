@@ -1,0 +1,19 @@
+{
+  "layout_type": "case_study",
+  "mode": "left_right",
+  "title": "示例C：预测性维护",
+  "blocks": [
+    {
+      "title": "业务痛点",
+      "text": "非计划停机影响交付，备件库存不合理。"
+    },
+    {
+      "title": "方案",
+      "text": "多源传感器+健康度模型→CMMS工单+备件优化。"
+    },
+    {
+      "title": "验收指标",
+      "text": "停机降40%，MTTR-30%，OEE+5-8pp"
+    }
+  ]
+}

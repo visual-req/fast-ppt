@@ -47,7 +47,7 @@
 - `pyramid`: `title` `levels` 或 `bullets` 或 `blocks`
 - `logic_tree`: `title` `root`（text/children）
 - `icicle_tree`: `title` `root`（text/children）
-- `architecture_layered`: `title` `layers`（{ title, bullets? }[]）
+- `architecture_layered`: `title` `layers`（{ title, icon?, bullets? }[]）
 - `dependency_graph`: `title` `nodes` `links`
 - `fishbone`: `title` `effect` `bones`（{ category, causes }[]，适合根因分析）
 - `process_flow`: `title` `bullets` 或 `table`
@@ -90,10 +90,10 @@
 结构化布局：
 
 - `top_bottom`: `title` `top` `bottom`
-- `steps`: `title` `steps`（{ title, bullets? }[]）
-- `phases`: `title` `phases`（{ title, bullets? }[]）
-- `four_grid`: `title` `items`（4 个：{ title, bullets? }）
-- `nine_grid`: `title` `items`（9 个：{ title, bullets? }）
+- `steps`: `title` `steps`（{ title, icon?, bullets? }[]）
+- `phases`: `title` `phases`（{ title, icon?, bullets? }[]）
+- `four_grid`: `title` `items`（4 个：{ title, icon?, bullets? }）
+- `nine_grid`: `title` `items`（9 个：{ title, icon?, bullets? }）
 - `journey_map`: `title` `stages`（{ name, touchpoints?, painpoints?, opportunities? }[]）
 - `swimlane_process`: `title` `lanes`（{ name, steps }[]）
 

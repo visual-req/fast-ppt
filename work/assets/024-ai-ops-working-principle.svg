@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1700 720">
+  <defs>
+    <style>
+      .bg { fill:#f8fafc; }
+      .card { fill:#fff; stroke:#cbd5e1; stroke-width:1.5; rx:12; }
+      .accent1 { fill:#eff6ff; stroke:#93c5fd; stroke-width:1.5; }
+      .accent2 { fill:#eefbf5; stroke:#86efac; stroke-width:1.5; }
+      .accent3 { fill:#fef9e7; stroke:#fcd34d; stroke-width:1.5; }
+      .accent4 { fill:#fef2f2; stroke:#fca5a5; stroke-width:1.5; }
+      .accent5 { fill:#f5f3ff; stroke:#c4b5fd; stroke-width:1.5; }
+      .tl { font:700 20px -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; fill:#0f172a; }
+      .sub { font:700 14px -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; fill:#334155; }
+      .sm { font:600 12px -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; fill:#475569; }
+      .xs { font:500 11px -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; fill:#64748b; }
+      .num { font:700 24px -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; fill:#1d4ed8; }
+      .arrow-b { stroke:#3b82f6; stroke-width:2.5; fill:none; stroke-linecap:round; marker-end:url(#ab); }
+      .dash { stroke:#cbd5e1; stroke-width:1.5; fill:none; stroke-dasharray:5 5; }
+      .kpi-lbl { font:700 12px -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; fill:#334155; }
+      .kpi-v { font:700 22px -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; fill:#1d4ed8; }
+      .kpi-u { font:600 11px -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; fill:#64748b; }
+    </style>
+    <marker id="ab" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#3b82f6"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="1700" height="720"/>
+
+  <!-- 标题 -->
+  <text class="tl" x="850" y="34" text-anchor="middle">AI 模型运维可观测系统工作原理</text>
+
+  <!-- ====== 步骤1 ====== -->
+  <rect class="accent1" x="50" y="54" width="280" height="108" rx="12"/>
+  <!-- deploy icon -->
+  <rect x="165" y="66" width="50" height="20" rx="4" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.2"/>
+  <path d="M178 86v12M190 70l6 6 10-10" fill="none" stroke="#3b82f6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="sub" x="190" y="118" text-anchor="middle">① 模型部署上线</text>
+  <text class="xs" x="190" y="138" text-anchor="middle">灰度发布 · 分批切流 · A/B对照</text>
+  <text class="xs" x="190" y="153" text-anchor="middle">影子流量验证 · 配置中心管理</text>
+
+  <line class="arrow-b" x1="330" y1="108" x2="390" y2="108"/>
+
+  <!-- ====== 步骤2 ====== -->
+  <rect class="accent2" x="400" y="54" width="280" height="108" rx="12"/>
+  <!-- signal/collect icon -->
+  <rect x="530" y="66" width="20" height="28" rx="3" fill="#d1fae5" stroke="#10b981" stroke-width="1.2"/>
+  <path d="M520 82l10 8 10-8" fill="none" stroke="#10b981" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M520 90l10 8 10-8" fill="none" stroke="#10b981" stroke-width="1.5" stroke-linecap="round"/>
+  <text class="sub" x="540" y="118" text-anchor="middle">② 全维度数据采集</text>
+  <text class="xs" x="540" y="138" text-anchor="middle">模型输出分布 · 特征分布 · 输入快照</text>
+  <text class="xs" x="540" y="153" text-anchor="middle">业务指标 · 资源 · 延迟 · 日志 · 链路</text>
+
+  <line class="arrow-b" x1="680" y1="108" x2="740" y2="108"/>
+
+  <!-- ====== 步骤3 ====== -->
+  <rect class="accent3" x="750" y="54" width="280" height="108" rx="12"/>
+  <!-- magnifier/detect icon -->
+  <circle cx="880" cy="76" r="12" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+  <line x1="888" y1="84" x2="898" y2="94" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/>
+  <path d="M872 76h16" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.4"/>
+  <text class="sub" x="890" y="118" text-anchor="middle">③ 智能异常检测</text>
+  <text class="xs" x="890" y="138" text-anchor="middle">数据漂移 · 质量校验 · 基线偏离</text>
+  <text class="xs" x="890" y="153" text-anchor="middle">时序异常 · 趋势预测 · 多指标关联</text>
+
+  <line class="arrow-b" x1="1030" y1="108" x2="1090" y2="108"/>
+
+  <!-- ====== 步骤4 ====== -->
+  <rect class="accent4" x="1100" y="54" width="280" height="108" rx="12"/>
+  <!-- bell/alert icon -->
+  <path d="M1230 68l-14 10h-6l-10-8" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5" stroke-linejoin="round"/>
+  <circle cx="1240" cy="72" r="4" fill="#ef4444"/>
+  <path d="M1230 80h20M1233 85l3 6h18l3-6" fill="none" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="sub" x="1240" y="118" text-anchor="middle">④ 告警与根因诊断</text>
+  <text class="xs" x="1240" y="138" text-anchor="middle">分级告警 · 自动通知 · 工单联动</text>
+  <text class="xs" x="1240" y="153" text-anchor="middle">根因定位 · 影响面评估 · 诊断报告</text>
+
+  <line class="arrow-b" x1="1380" y1="108" x2="1440" y2="108"/>
+
+  <!-- ====== 步骤5 ====== -->
+  <rect class="accent5" x="1450" y="54" width="210" height="108" rx="12"/>
+  <!-- loop/rollback icon -->
+  <path d="M1533 66c-8-6-18-10-28-10-14 0-26 8-32 18" fill="none" stroke="#8b5cf6" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M1575 68l-4-8-4 8" fill="none" stroke="#8b5cf6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M1545 84l4 2 6-10" fill="none" stroke="#8b5cf6" stroke-width="1.5" stroke-linecap="round"/>
+  <text class="sub" x="1555" y="118" text-anchor="middle">⑤ 自动处置闭环</text>
+  <text class="xs" x="1555" y="138" text-anchor="middle">自动回滚 · 降级切流</text>
+  <text class="xs" x="1555" y="153" text-anchor="middle">复盘沉淀 · 规则优化</text>
+
+  <!-- 闭环回线 -->
+  <path class="dash" d="M1555 162 L1555 195 L190 195 L190 162"/>
+
+  <!-- ====== 下半部分：指标看板 ====== -->
+  <rect class="accent1" x="50" y="210" width="780" height="26" rx="8"/>
+  <text class="sm" x="440" y="228" text-anchor="middle">系统关键可观测指标</text>
+
+  <!-- KPI 卡片行 -->
+  <rect class="card" x="50" y="246" width="245" height="90"/>
+  <!-- clock icon -->
+  <circle cx="98" cy="280" r="14" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.2"/>
+  <path d="M98 274v6l4 3" stroke="#3b82f6" stroke-width="1.2" stroke-linecap="round"/>
+  <text class="kpi-lbl" x="172" y="272">漂移检测响应</text>
+  <text class="kpi-v" x="172" y="306">&lt;1h</text>
+  <text class="kpi-u" x="172" y="325">自动告警触发</text>
+
+  <rect class="card" x="310" y="246" width="245" height="90"/>
+  <!-- layers icon -->
+  <rect x="352" y="268" width="28" height="6" rx="2" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+  <rect x="356" y="276" width="20" height="6" rx="2" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+  <rect x="360" y="284" width="12" height="6" rx="2" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+  <text class="kpi-lbl" x="432" y="272">灰度覆盖率</text>
+  <text class="kpi-v" x="432" y="306">100%</text>
+  <text class="kpi-u" x="432" y="325">全模型灰度发布</text>
+
+  <rect class="card" x="570" y="246" width="260" height="90"/>
+  <!-- cpu/chip icon -->
+  <rect x="615" y="268" width="22" height="22" rx="3" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+  <rect x="620" y="273" width="12" height="12" rx="1" fill="#93c5fd"/>
+  <text class="kpi-lbl" x="700" y="272">算力利用率</text>
+  <text class="kpi-v" x="700" y="306">75%</text>
+  <text class="kpi-u" x="700" y="325">目标 ≥70%</text>
+
+  <!-- KPI 卡片行2 -->
+  <rect class="card" x="50" y="346" width="245" height="90"/>
+  <!-- thumbs up icon -->
+  <path d="M84 370l-6 12h10v10h-6l-4 10h12" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="98" cy="374" r="10" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+  <text class="kpi-lbl" x="172" y="372">模型采纳率</text>
+  <text class="kpi-v" x="172" y="406">85%</text>
+  <text class="kpi-u" x="172" y="425">季度 +5pp 增长</text>
+
+  <rect class="card" x="310" y="346" width="245" height="90"/>
+  <!-- check circle icon -->
+  <circle cx="364" cy="384" r="14" fill="#dcfce7" stroke="#22c55e" stroke-width="1.2"/>
+  <path d="M357 384l4 4 7-7" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="kpi-lbl" x="432" y="372">告警闭环率</text>
+  <text class="kpi-v" x="432" y="406">98%</text>
+  <text class="kpi-u" x="432" y="425">24h 内闭环</text>
+
+  <rect class="card" x="570" y="346" width="260" height="90"/>
+  <!-- rewind icon -->
+  <path d="M688 372l-10 6v-12z" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.2" stroke-linejoin="round"/>
+  <path d="M700 372c-6-6-14-10-22-10-10 0-18 6-22 14" fill="none" stroke="#3b82f6" stroke-width="1.5" stroke-linecap="round"/>
+  <text class="kpi-lbl" x="700" y="372">自动回滚时间</text>
+  <text class="kpi-v" x="700" y="406">&lt;5min</text>
+  <text class="kpi-u" x="700" y="425">异常自动触发</text>
+
+  <!-- ====== 技术架构 ====== -->
+  <rect class="accent5" x="860" y="210" width="800" height="26" rx="8"/>
+  <text class="sm" x="1260" y="228" text-anchor="middle">技术实现架构</text>
+
+  <rect class="accent1" x="880" y="246" width="760" height="48" rx="10"/>
+  <text class="sm" x="1260" y="272" text-anchor="middle">监控层：日志采集 · 指标采集 · 链路追踪 · 事件总线 · 用户反馈接入</text>
+  <text class="xs" x="1260" y="287" text-anchor="middle">Prometheus · OpenTelemetry · ELK · Kafka</text>
+
+  <rect class="accent2" x="880" y="302" width="760" height="48" rx="10"/>
+  <text class="sm" x="1260" y="328" text-anchor="middle">检测层：数据漂移检测 · 概念漂移 · 质量校验 · 性能退化 · 公平性检测 · 安全检测</text>
+  <text class="xs" x="1260" y="343" text-anchor="middle">Evidently · Great Expectations · TFX · MLflow Evaluate</text>
+
+  <rect class="accent3" x="880" y="358" width="760" height="48" rx="10"/>
+  <text class="sm" x="1260" y="384" text-anchor="middle">分析层：异常定位 · 根因归因 · 影响面评估 · 趋势预测 · 智能降噪 · 多指标关联</text>
+  <text class="xs" x="1260" y="399" text-anchor="middle">SHAP · LIME · 关联规则 · 因果推断 · 时序预测</text>
+
+  <rect class="accent4" x="880" y="414" width="760" height="48" rx="10"/>
+  <text class="sm" x="1260" y="440" text-anchor="middle">处置层：自动回滚 · 灰度降级 · 流量切换 · 告警通知 · 工单创建 · 复盘报告生成</text>
+  <text class="xs" x="1260" y="455" text-anchor="middle">Argo Rollouts · Istio · Alertmanager · PagerDuty · Jira</text>
+
+  <!-- 底部说明 -->
+  <rect class="card" x="860" y="474" width="800" height="48" rx="10"/>
+  <text class="sm" x="1260" y="494" text-anchor="middle">数据流向：模型上线 → 实时采集 → 异常检测 → 告警诊断 → 自动处置 → 规则沉淀 → 反哺模型迭代</text>
+  <text class="xs" x="1260" y="512" text-anchor="middle">核心能力：主动发现、快速定位、自动恢复、持续优化，将模型运维从被动救火转为主动防御</text>
+</svg>

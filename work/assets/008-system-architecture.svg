@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/></filter>
+  </defs>
+  
+  <rect width="960" height="540" rx="12" fill="url(#bg)"/>
+  
+  <!-- Title bar -->
+  <rect x="0" y="0" width="960" height="48" fill="url(#hdr)" rx="12"/>
+  <rect x="0" y="24" width="960" height="24" fill="url(#hdr)"/>
+  <text x="480" y="31" text-anchor="middle" fill="#fff" font-size="18" font-weight="700" font-family="sans-serif">流程系统建设：系统边界与协同</text>
+
+  <!-- System boxes -->
+  <!-- ERP - top center -->
+  <rect x="340" y="70" width="280" height="80" rx="8" fill="#fff" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+  <text x="480" y="100" text-anchor="middle" fill="#1e3a8a" font-size="16" font-weight="700" font-family="sans-serif">ERP 企业资源计划</text>
+  <text x="480" y="126" text-anchor="middle" fill="#64748b" font-size="12" font-family="sans-serif">财务 · 采购 · 销售 · 库存</text>
+
+  <!-- PLM - left -->
+  <rect x="30" y="180" width="210" height="80" rx="8" fill="#fff" stroke="#8b5cf6" stroke-width="2" filter="url(#shadow)"/>
+  <text x="135" y="210" text-anchor="middle" fill="#6d28d9" font-size="16" font-weight="700" font-family="sans-serif">PLM 产品生命周期</text>
+  <text x="135" y="236" text-anchor="middle" fill="#64748b" font-size="12" font-family="sans-serif">BOM · 工艺 · 变更管理</text>
+
+  <!-- MES - center -->
+  <rect x="280" y="180" width="210" height="80" rx="8" fill="#fff" stroke="#06b6d4" stroke-width="2" filter="url(#shadow)"/>
+  <text x="385" y="210" text-anchor="middle" fill="#0891b2" font-size="16" font-weight="700" font-family="sans-serif">MES 制造执行</text>
+  <text x="385" y="236" text-anchor="middle" fill="#64748b" font-size="12" font-family="sans-serif">排产 · 报工 · 追溯</text>
+
+  <!-- WMS - right -->
+  <rect x="530" y="180" width="190" height="80" rx="8" fill="#fff" stroke="#10b981" stroke-width="2" filter="url(#shadow)"/>
+  <text x="625" y="210" text-anchor="middle" fill="#059669" font-size="16" font-weight="700" font-family="sans-serif">WMS 仓储管理</text>
+  <text x="625" y="236" text-anchor="middle" fill="#64748b" font-size="12" font-family="sans-serif">入库 · 出库 · 盘点</text>
+
+  <!-- QMS - left -->
+  <rect x="30" y="290" width="210" height="80" rx="8" fill="#fff" stroke="#f59e0b" stroke-width="2" filter="url(#shadow)"/>
+  <text x="135" y="320" text-anchor="middle" fill="#d97706" font-size="16" font-weight="700" font-family="sans-serif">QMS 质量管理</text>
+  <text x="135" y="346" text-anchor="middle" fill="#64748b" font-size="12" font-family="sans-serif">检验 · SPC · 不合格品</text>
+
+  <!-- CMMS - center -->
+  <rect x="280" y="290" width="190" height="80" rx="8" fill="#fff" stroke="#ef4444" stroke-width="2" filter="url(#shadow)"/>
+  <text x="375" y="320" text-anchor="middle" fill="#dc2626" font-size="16" font-weight="700" font-family="sans-serif">CMMS 设备维护</text>
+  <text x="375" y="346" text-anchor="middle" fill="#64748b" font-size="12" font-family="sans-serif">点检 · 保养 · 维修</text>
+
+  <!-- SCADA/EMS - right bottom -->
+  <rect x="530" y="290" width="190" height="80" rx="8" fill="#fff" stroke="#6366f1" stroke-width="2" filter="url(#shadow)"/>
+  <text x="625" y="320" text-anchor="middle" fill="#4f46e5" font-size="15" font-weight="700" font-family="sans-serif">SCADA / EMS</text>
+  <text x="625" y="346" text-anchor="middle" fill="#64748b" font-size="12" font-family="sans-serif">实时监控 · 数采 · 能效</text>
+
+  <!-- Bottom: key propositions -->
+  <rect x="90" y="410" width="780" height="100" rx="10" fill="#1e3a8a" opacity="0.06"/>
+  <rect x="90" y="410" width="780" height="36" rx="10" fill="#1e3a8a" opacity="0.10"/>
+  <rect x="90" y="430" width="780" height="80" rx="0" fill="none"/>
+  <text x="480" y="434" text-anchor="middle" fill="#1e3a8a" font-size="14" font-weight="700" font-family="sans-serif">关键命题</text>
+  
+  <text x="230" y="472" text-anchor="middle" fill="#334155" font-size="13" font-family="sans-serif">边界划分</text>
+  <line x1="280" y1="468" x2="340" y2="468" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="390" y="472" text-anchor="middle" fill="#334155" font-size="13" font-family="sans-serif">主数据归属</text>
+  <line x1="440" y1="468" x2="520" y2="468" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="570" y="472" text-anchor="middle" fill="#334155" font-size="13" font-family="sans-serif">接口标准</text>
+  <line x1="620" y1="468" x2="680" y2="468" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="730" y="472" text-anchor="middle" fill="#334155" font-size="13" font-family="sans-serif">时序一致性</text>
+</svg>

@@ -20,30 +20,30 @@
 
   <g stroke="#1d4ed8" stroke-width="6" fill="none" opacity="0.55">
     <path d="M800 340 V410"/>
-    <path d="M800 410 C650 430 540 470 420 520"/>
-    <path d="M800 410 C750 450 700 490 660 520"/>
-    <path d="M800 410 C850 450 900 490 940 520"/>
-    <path d="M800 410 C950 430 1060 470 1180 520"/>
+    <path d="M800 410 C620 430 500 470 300 520"/>
+    <path d="M800 410 C730 450 680 490 610 520"/>
+    <path d="M800 410 C870 450 920 490 990 520"/>
+    <path d="M800 410 C980 430 1100 470 1300 520"/>
   </g>
 
   <g filter="url(#shadow)">
-    <rect x="220" y="520" width="320" height="190" rx="22" fill="#ffffff" stroke="#cbd5e1"/>
-    <text x="380" y="580" text-anchor="middle" font-size="24" font-weight="800" fill="#0f172a">课件类</text>
-    <text x="380" y="620" text-anchor="middle" font-size="16" fill="#475569">教学链路 / 练习 / 小结</text>
+    <rect x="160" y="520" width="280" height="190" rx="22" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="300" y="580" text-anchor="middle" font-size="24" font-weight="800" fill="#0f172a">课件类</text>
+    <text x="300" y="620" text-anchor="middle" font-size="16" fill="#475569">教学链路 / 练习 / 小结</text>
   </g>
   <g filter="url(#shadow)">
-    <rect x="540" y="520" width="320" height="190" rx="22" fill="#ffffff" stroke="#cbd5e1"/>
-    <text x="700" y="580" text-anchor="middle" font-size="24" font-weight="800" fill="#0f172a">方案类</text>
-    <text x="700" y="620" text-anchor="middle" font-size="16" fill="#475569">架构方案 / 路线图 / 风险</text>
+    <rect x="470" y="520" width="280" height="190" rx="22" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="610" y="580" text-anchor="middle" font-size="24" font-weight="800" fill="#0f172a">方案类</text>
+    <text x="610" y="620" text-anchor="middle" font-size="16" fill="#475569">架构方案 / 路线图 / 风险</text>
   </g>
   <g filter="url(#shadow)">
-    <rect x="860" y="520" width="320" height="190" rx="22" fill="#ffffff" stroke="#cbd5e1"/>
-    <text x="1020" y="580" text-anchor="middle" font-size="24" font-weight="800" fill="#0f172a">汇报类</text>
-    <text x="1020" y="620" text-anchor="middle" font-size="16" fill="#475569">结论优先 / 数据支撑</text>
+    <rect x="780" y="520" width="280" height="190" rx="22" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="920" y="580" text-anchor="middle" font-size="24" font-weight="800" fill="#0f172a">汇报类</text>
+    <text x="920" y="620" text-anchor="middle" font-size="16" fill="#475569">结论优先 / 数据支撑</text>
   </g>
   <g filter="url(#shadow)">
-    <rect x="1180" y="520" width="320" height="190" rx="22" fill="#ffffff" stroke="#cbd5e1"/>
-    <text x="1340" y="580" text-anchor="middle" font-size="24" font-weight="800" fill="#0f172a">演示类</text>
-    <text x="1340" y="620" text-anchor="middle" font-size="16" fill="#475569">场景体验 / 亮点转化</text>
+    <rect x="1090" y="520" width="280" height="190" rx="22" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="1230" y="580" text-anchor="middle" font-size="24" font-weight="800" fill="#0f172a">演示类</text>
+    <text x="1230" y="620" text-anchor="middle" font-size="16" fill="#475569">场景体验 / 亮点转化</text>
   </g>
 </svg>

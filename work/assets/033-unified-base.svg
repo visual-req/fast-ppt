@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540">
+  <defs>
+    <style>
+      .bg { fill:#f8fafc; }
+      .card { fill:#fff; stroke:#cbd5e1; stroke-width:1.5; rx:12; }
+      .head { font:700 20px -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; fill:#fff; }
+      .head-sub { font:600 12px -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; fill:#dbeafe; }
+      .lbl { font:700 15px -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; }
+      .minor { font:500 11px -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; fill:#475569; }
+      .minor2 { font:500 10px -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; fill:#64748b; }
+      .conn { stroke:#cbd5e1; stroke-width:2; fill:none; }
+    </style>
+  </defs>
+  <rect class="bg" width="960" height="540"/>
+
+  <!-- 顶部标题栏 -->
+  <rect x="270" y="14" width="420" height="58" rx="14" fill="#1e3a8a"/>
+  <text class="head" x="480" y="38" text-anchor="middle">统一底座平台群</text>
+  <text class="head-sub" x="480" y="58" text-anchor="middle">支撑业务 AI、办公 AI、研发 AI 的统一基础设施</text>
+
+  <!-- 连接线 -->
+  <g class="conn">
+    <line x1="480" y1="72" x2="480" y2="108"/>
+    <line x1="100" y1="108" x2="860" y2="108"/>
+    <line x1="100" y1="108" x2="100" y2="136"/>
+    <line x1="280" y1="108" x2="280" y2="136"/>
+    <line x1="460" y1="108" x2="460" y2="136"/>
+    <line x1="640" y1="108" x2="640" y2="136"/>
+    <line x1="820" y1="108" x2="820" y2="136"/>
+    <line x1="190" y1="304" x2="730" y2="304"/>
+    <line x1="190" y1="304" x2="190" y2="330"/>
+    <line x1="460" y1="304" x2="460" y2="330"/>
+    <line x1="730" y1="304" x2="730" y2="330"/>
+  </g>
+
+  <!-- ====== 数据平台 ====== -->
+  <rect class="card" x="10" y="136" width="180" height="160" stroke="#3b82f6"/>
+  <!-- database icon -->
+  <ellipse cx="100" cy="160" rx="20" ry="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <path d="M80 160v16c0 4.4 9 8 20 8s20-3.6 20-8v-16" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <path d="M80 168v15c0 4.4 9 8 20 8s20-3.6 20-8v-15" fill="none" stroke="#3b82f6" stroke-width="1" stroke-dasharray="3 2"/>
+  <text class="lbl" fill="#1d4ed8" x="100" y="200" text-anchor="middle">数据平台</text>
+  <text class="minor" x="100" y="224" text-anchor="middle">湖 / 仓 / 时序 / 对象</text>
+  <text class="minor2" x="100" y="244" text-anchor="middle">元数据 / 质量 / 血缘</text>
+  <text class="minor2" x="100" y="264" text-anchor="middle">实时 + 批量同步</text>
+  <text class="minor2" x="100" y="282" text-anchor="middle">主数据标准化</text>
+
+  <!-- ====== 集成平台 ====== -->
+  <rect class="card" x="190" y="136" width="180" height="160" stroke="#8b5cf6"/>
+  <!-- link/network icon -->
+  <circle cx="260" cy="158" r="6" fill="#ede9fe" stroke="#8b5cf6" stroke-width="1.5"/>
+  <circle cx="282" cy="152" r="6" fill="#ede9fe" stroke="#8b5cf6" stroke-width="1.5"/>
+  <circle cx="296" cy="166" r="6" fill="#ede9fe" stroke="#8b5cf6" stroke-width="1.5"/>
+  <line x1="266" y1="158" x2="276" y2="154" stroke="#8b5cf6" stroke-width="1.5"/>
+  <line x1="286" y1="156" x2="290" y2="162" stroke="#8b5cf6" stroke-width="1.5"/>
+  <line x1="266" y1="160" x2="290" y2="164" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text class="lbl" fill="#6d28d9" x="280" y="200" text-anchor="middle">集成平台</text>
+  <text class="minor" x="280" y="224" text-anchor="middle">API 网关 / 消息总线</text>
+  <text class="minor2" x="280" y="244" text-anchor="middle">跨系统流程编排</text>
+  <text class="minor2" x="280" y="264" text-anchor="middle">ETL / 数据管道</text>
+  <text class="minor2" x="280" y="282" text-anchor="middle">事件驱动 / 异步解耦</text>
+
+  <!-- ====== AI 平台 ====== -->
+  <rect class="card" x="370" y="136" width="180" height="160" stroke="#06b6d4"/>
+  <!-- brain/cpu icon -->
+  <rect x="440" y="149" width="22" height="16" rx="3" fill="#cffafe" stroke="#06b6d4" stroke-width="1.5"/>
+  <path d="M446 149v-5M456 149v-5M446 165v5M456 165v5" stroke="#06b6d4" stroke-width="1.5" stroke-linecap="round"/>
+  <text class="lbl" fill="#0891b2" x="460" y="200" text-anchor="middle">AI 平台</text>
+  <text class="minor" x="460" y="224" text-anchor="middle">训练 / 推理 / MLOps</text>
+  <text class="minor2" x="460" y="244" text-anchor="middle">评测 / 发布 / 回滚</text>
+  <text class="minor2" x="460" y="264" text-anchor="middle">模型注册中心</text>
+  <text class="minor2" x="460" y="282" text-anchor="middle">特征存储 / 实验管理</text>
+
+  <!-- ====== 安全平台 ====== -->
+  <rect class="card" x="550" y="136" width="180" height="160" stroke="#10b981"/>
+  <!-- shield icon -->
+  <path d="M640 148l-18 8v12c0 8 4 14 18 20 14-6 18-12 18-20v-12z" fill="#d1fae5" stroke="#10b981" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M635 162l4 4 7-7" fill="none" stroke="#10b981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="lbl" fill="#059669" x="640" y="200" text-anchor="middle">安全平台</text>
+  <text class="minor" x="640" y="224" text-anchor="middle">IAM / 审计 / 脱敏</text>
+  <text class="minor2" x="640" y="244" text-anchor="middle">分级分类 / 可追溯</text>
+  <text class="minor2" x="640" y="264" text-anchor="middle">零信任架构</text>
+  <text class="minor2" x="640" y="282" text-anchor="middle">密钥 / 证书管理</text>
+
+  <!-- ====== 开发平台 ====== -->
+  <rect class="card" x="730" y="136" width="180" height="160" stroke="#f59e0b"/>
+  <!-- code/terminal icon -->
+  <rect x="800" y="148" width="24" height="18" rx="3" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+  <text font-size="10" x="806" y="160" fill="#f59e0b">&gt;_</text>
+  <path d="M803 170h18" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round"/>
+  <text class="lbl" fill="#d97706" x="820" y="200" text-anchor="middle">开发平台</text>
+  <text class="minor" x="820" y="224" text-anchor="middle">低代码 / DevOps / CI/CD</text>
+  <text class="minor2" x="820" y="244" text-anchor="middle">工程化交付</text>
+  <text class="minor2" x="820" y="264" text-anchor="middle">制品管理</text>
+  <text class="minor2" x="820" y="282" text-anchor="middle">环境 / 配置即代码</text>
+
+  <!-- ====== 监控平台 ====== -->
+  <rect class="card" x="100" y="332" width="180" height="160" stroke="#ef4444"/>
+  <!-- chart/line icon -->
+  <polyline points="130,392 150,376 170,386 190,364 210,378 230,358 250,372" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="230" cy="358" r="3" fill="#fca5a5" stroke="#ef4444" stroke-width="1"/>
+  <text class="lbl" fill="#dc2626" x="190" y="414" text-anchor="middle">监控平台</text>
+  <text class="minor" x="190" y="438" text-anchor="middle">日志 / 指标 / 告警</text>
+  <text class="minor2" x="190" y="458" text-anchor="middle">运行可观测</text>
+  <text class="minor2" x="190" y="478" text-anchor="middle">APM / 链路追踪</text>
+
+  <!-- ====== 物联网平台 ====== -->
+  <rect class="card" x="280" y="332" width="180" height="160" stroke="#0ea5e9"/>
+  <!-- IoT/sensor icon -->
+  <rect x="350" y="356" width="10" height="16" rx="3" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="1.5"/>
+  <path d="M365 364h6M365 368h4" stroke="#0ea5e9" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="385" cy="376" r="8" fill="none" stroke="#0ea5e9" stroke-width="1.5"/>
+  <path d="M385 370v4M381 380h8" stroke="#0ea5e9" stroke-width="1.5" stroke-linecap="round"/>
+  <text class="lbl" fill="#0284c7" x="370" y="414" text-anchor="middle">物联网平台</text>
+  <text class="minor" x="370" y="438" text-anchor="middle">设备接入 / 协议 / 数采</text>
+  <text class="minor2" x="370" y="458" text-anchor="middle">OT 数据入云入湖</text>
+  <text class="minor2" x="370" y="478" text-anchor="middle">边缘计算 / 规则引擎</text>
+
+  <!-- ====== 知识平台 ====== -->
+  <rect class="card" x="460" y="332" width="180" height="160" stroke="#a855f7"/>
+  <!-- book/doc icon -->
+  <path d="M526 355h18v30h-18z" fill="#f3e8ff" stroke="#a855f7" stroke-width="1.5"/>
+  <line x1="530" y1="362" x2="540" y2="362" stroke="#a855f7" stroke-width="1"/>
+  <line x1="530" y1="368" x2="540" y2="368" stroke="#a855f7" stroke-width="1"/>
+  <line x1="530" y1="374" x2="538" y2="374" stroke="#a855f7" stroke-width="1"/>
+  <text class="lbl" fill="#9333ea" x="550" y="414" text-anchor="middle">知识平台</text>
+  <text class="minor" x="550" y="438" text-anchor="middle">知识库 / 图谱 / RAG</text>
+  <text class="minor2" x="550" y="458" text-anchor="middle">知识复用与增强检索</text>
+  <text class="minor2" x="550" y="478" text-anchor="middle">文档向量化</text>
+
+  <!-- 底部说明 -->
+  <text x="480" y="516" text-anchor="middle" fill="#475569" font-size="12" font-family="sans-serif">统一底座通过数据、集成、AI、安全与工程能力协同，为后续场景复制提供平台化支撑</text>
+</svg>

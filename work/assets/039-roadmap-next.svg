@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.10"/></filter>
+  </defs>
+
+  <rect width="960" height="540" rx="12" fill="url(#bg)"/>
+
+  <!-- Title bar -->
+  <rect x="0" y="0" width="960" height="48" fill="url(#hdr)" rx="12"/>
+  <rect x="0" y="24" width="960" height="24" fill="url(#hdr)"/>
+  <text x="480" y="31" text-anchor="middle" fill="#fff" font-size="18" font-weight="700" font-family="sans-serif">12 个月路线图总览</text>
+
+  <!-- Timeline bar -->
+  <line x1="60" y1="150" x2="900" y2="150" stroke="#1e3a8a" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Month markers -->
+  <g font-size="10" fill="#64748b" font-family="sans-serif" text-anchor="middle">
+    <line x1="60" y1="142" x2="60" y2="158" stroke="#1e3a8a" stroke-width="2"/>
+    <text x="60" y="170">M01</text>
+    <line x1="180" y1="142" x2="180" y2="158" stroke="#1e3a8a" stroke-width="2"/>
+    <text x="180" y="170">M03</text>
+    <line x1="320" y1="142" x2="320" y2="158" stroke="#1e3a8a" stroke-width="2"/>
+    <text x="320" y="170">M06</text>
+    <line x1="500" y1="142" x2="500" y2="158" stroke="#1e3a8a" stroke-width="2"/>
+    <text x="500" y="170">M09</text>
+    <line x1="720" y1="142" x2="720" y2="158" stroke="#1e3a8a" stroke-width="2"/>
+    <text x="720" y="170">M12</text>
+    <line x1="900" y1="142" x2="900" y2="158" stroke="#1e3a8a" stroke-width="2"/>
+    <text x="900" y="170">M13+</text>
+  </g>
+
+  <!-- Phase 1: 评估与样板 M01-M03 -->
+  <rect x="60" y="200" width="130" height="36" rx="8" fill="#2563eb" filter="url(#shadow)"/>
+  <text x="125" y="223" text-anchor="middle" fill="#fff" font-size="13" font-weight="700" font-family="sans-serif">评估与样板</text>
+  <text x="125" y="256" text-anchor="middle" fill="#475569" font-size="11" font-family="sans-serif">M01-M03</text>
+
+  <!-- Arrow -->
+  <polygon points="195,218 210,218 210,212 225,222 210,232 210,226 195,226" fill="rgba(37,99,235,0.30)"/>
+
+  <!-- Phase 2: 复制推广 M04-M06 -->
+  <rect x="230" y="200" width="130" height="36" rx="8" fill="#3b82f6" filter="url(#shadow)"/>
+  <text x="295" y="223" text-anchor="middle" fill="#fff" font-size="13" font-weight="700" font-family="sans-serif">复制推广</text>
+  <text x="295" y="256" text-anchor="middle" fill="#475569" font-size="11" font-family="sans-serif">M04-M06</text>
+
+  <!-- Arrow -->
+  <polygon points="365,218 380,218 380,212 395,222 380,232 380,226 365,226" fill="rgba(37,99,235,0.30)"/>
+
+  <!-- Phase 3: 平台建设 M07-M09 -->
+  <rect x="400" y="200" width="130" height="36" rx="8" fill="#6366f1" filter="url(#shadow)"/>
+  <text x="465" y="223" text-anchor="middle" fill="#fff" font-size="13" font-weight="700" font-family="sans-serif">平台建设</text>
+  <text x="465" y="256" text-anchor="middle" fill="#475569" font-size="11" font-family="sans-serif">M07-M09</text>
+
+  <!-- Arrow -->
+  <polygon points="535,218 550,218 550,212 565,222 550,232 550,226 535,226" fill="rgba(37,99,235,0.30)"/>
+
+  <!-- Phase 4: 规模运营 M10-M12 -->
+  <rect x="570" y="200" width="130" height="36" rx="8" fill="#8b5cf6" filter="url(#shadow)"/>
+  <text x="635" y="223" text-anchor="middle" fill="#fff" font-size="13" font-weight="700" font-family="sans-serif">规模运营</text>
+  <text x="635" y="256" text-anchor="middle" fill="#475569" font-size="11" font-family="sans-serif">M10-M12</text>
+
+  <!-- Arrow -->
+  <polygon points="705,218 720,218 720,212 735,222 720,232 720,226 705,226" fill="rgba(37,99,235,0.30)"/>
+
+  <!-- Phase 5: 持续优化 -->
+  <rect x="740" y="200" width="140" height="36" rx="8" fill="#a855f7" filter="url(#shadow)"/>
+  <text x="810" y="223" text-anchor="middle" fill="#fff" font-size="13" font-weight="700" font-family="sans-serif">持续优化</text>
+  <text x="810" y="256" text-anchor="middle" fill="#475569" font-size="11" font-family="sans-serif">M13+</text>
+
+  <!-- Bottom: Key actions -->
+  <rect x="40" y="300" width="880" height="210" rx="12" fill="#fff" stroke="rgba(15,23,42,0.06)" stroke-width="1" filter="url(#shadow)"/>
+  
+  <text x="480" y="332" text-anchor="middle" fill="#0f172a" font-size="15" font-weight="700" font-family="sans-serif">下一步启动建议</text>
+
+  <rect x="60" y="350" width="260" height="70" rx="8" fill="#eff6ff"/>
+  <text x="70" y="375" fill="#1d4ed8" font-size="13" font-weight="700" font-family="sans-serif">1. 成熟度评估（M01）</text>
+  <text x="70" y="395" fill="#475569" font-size="12" font-family="sans-serif">数字化+AI成熟度评估，明确基线</text>
+  <text x="70" y="412" fill="#94a3b8" font-size="11" font-family="sans-serif">产出：评估报告 + 差距热力图</text>
+
+  <rect x="340" y="350" width="260" height="70" rx="8" fill="#f5f3ff"/>
+  <text x="350" y="375" fill="#6d28d9" font-size="13" font-weight="700" font-family="sans-serif">2. 样板选定（M01）</text>
+  <text x="350" y="395" fill="#475569" font-size="12" font-family="sans-serif">选1-2个高价值场景作为标杆</text>
+  <text x="350" y="412" fill="#94a3b8" font-size="11" font-family="sans-serif">产出：样板场景立项书 + KPI</text>
+
+  <rect x="620" y="350" width="280" height="70" rx="8" fill="#ecfdf5"/>
+  <text x="630" y="375" fill="#059669" font-size="13" font-weight="700" font-family="sans-serif">3. 组织启动（M01-M02）</text>
+  <text x="630" y="395" fill="#475569" font-size="12" font-family="sans-serif">PMO成立 + 数据组 + AI工作组</text>
+  <text x="630" y="412" fill="#94a3b8" font-size="11" font-family="sans-serif">产出：治理章程 + 角色定义</text>
+
+  <text x="480" y="498" text-anchor="middle" fill="#64748b" font-size="12" font-family="sans-serif">目标：M03 前完成首个样板交付，建立信心与可复制模板</text>
+</svg>

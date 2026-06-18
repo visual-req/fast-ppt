@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.10"/></filter>
+    <filter id="shadowLg"><feDropShadow dx="0" dy="3" stdDeviation="6" flood-opacity="0.12"/></filter>
+  </defs>
+
+  <rect width="960" height="540" rx="12" fill="url(#bg)"/>
+
+  <!-- Title bar -->
+  <rect x="0" y="0" width="960" height="48" fill="url(#hdr)" rx="12"/>
+  <rect x="0" y="24" width="960" height="24" fill="url(#hdr)"/>
+  <text x="480" y="31" text-anchor="middle" fill="#fff" font-size="18" font-weight="700" font-family="sans-serif">执行摘要：一个底座 + 三类 AI + 两套保障</text>
+
+  <!-- Bottom foundation: 一个底座 -->
+  <rect x="140" y="400" width="680" height="56" rx="12" fill="#1e3a8a" filter="url(#shadowLg)"/>
+  <text x="480" y="424" text-anchor="middle" fill="#fff" font-size="18" font-weight="700" font-family="sans-serif">一个底座：数据平台 + 集成平台 + 基础设施</text>
+  <text x="480" y="444" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="12" font-family="sans-serif">统一数据 · 全域集成 · 安全合规</text>
+
+  <!-- Middle: 三类 AI -->
+  <rect x="40" y="270" width="270" height="105" rx="12" fill="#fff" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+  <circle cx="85" cy="300" r="18" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="85" y="305" text-anchor="middle" fill="#1d4ed8" font-size="13" font-weight="800" font-family="sans-serif">A</text>
+  <text x="112" y="302" fill="#1e3a8a" font-size="16" font-weight="700" font-family="sans-serif">研发 AI</text>
+  <text x="60" y="332" fill="#475569" font-size="12" font-family="sans-serif">代码补全 · 需求分析</text>
+  <text x="60" y="350" fill="#475569" font-size="12" font-family="sans-serif">用例生成 · 架构审查</text>
+  <text x="60" y="368" fill="#94a3b8" font-size="11" font-family="sans-serif">→ 研发效率提升 30%+</text>
+
+  <rect x="345" y="270" width="270" height="105" rx="12" fill="#fff" stroke="#8b5cf6" stroke-width="2" filter="url(#shadow)"/>
+  <circle cx="390" cy="300" r="18" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="390" y="305" text-anchor="middle" fill="#6d28d9" font-size="13" font-weight="800" font-family="sans-serif">B</text>
+  <text x="417" y="302" fill="#1e3a8a" font-size="16" font-weight="700" font-family="sans-serif">业务 AI</text>
+  <text x="365" y="332" fill="#475569" font-size="12" font-family="sans-serif">智能排产 · 质量预测</text>
+  <text x="365" y="350" fill="#475569" font-size="12" font-family="sans-serif">工艺优化 · 设备预警</text>
+  <text x="365" y="368" fill="#94a3b8" font-size="11" font-family="sans-serif">→ 良品率 + 停机减少</text>
+
+  <rect x="650" y="270" width="270" height="105" rx="12" fill="#fff" stroke="#06b6d4" stroke-width="2" filter="url(#shadow)"/>
+  <circle cx="695" cy="300" r="18" fill="#ecfeff" stroke="#06b6d4" stroke-width="1.5"/>
+  <text x="695" y="305" text-anchor="middle" fill="#0891b2" font-size="13" font-weight="800" font-family="sans-serif">C</text>
+  <text x="722" y="302" fill="#1e3a8a" font-size="16" font-weight="700" font-family="sans-serif">办公 AI</text>
+  <text x="670" y="332" fill="#475569" font-size="12" font-family="sans-serif">文档生成 · 会议纪要</text>
+  <text x="670" y="350" fill="#475569" font-size="12" font-family="sans-serif">企业搜索 · 智能助理</text>
+  <text x="670" y="368" fill="#94a3b8" font-size="11" font-family="sans-serif">→ 协同效率飞跃</text>
+
+  <!-- Top: 两套保障 -->
+  <rect x="200" y="80" width="260" height="80" rx="10" fill="#fff" stroke="#f59e0b" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="200" y="80" width="260" height="32" rx="10" fill="#fffbeb"/>
+  <rect x="200" y="98" width="260" height="14" fill="#fffbeb"/>
+  <text x="330" y="102" text-anchor="middle" fill="#d97706" font-size="15" font-weight="700" font-family="sans-serif">组织制度保障</text>
+  <text x="330" y="132" text-anchor="middle" fill="#475569" font-size="12" font-family="sans-serif">PMO + AI工作组 + 数据组</text>
+  <text x="330" y="150" text-anchor="middle" fill="#94a3b8" font-size="11" font-family="sans-serif">治理 · 培训 · 考核</text>
+
+  <rect x="500" y="80" width="260" height="80" rx="10" fill="#fff" stroke="#10b981" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="500" y="80" width="260" height="32" rx="10" fill="#ecfdf5"/>
+  <rect x="500" y="98" width="260" height="14" fill="#ecfdf5"/>
+  <text x="630" y="102" text-anchor="middle" fill="#059669" font-size="15" font-weight="700" font-family="sans-serif">安全合规保障</text>
+  <text x="630" y="132" text-anchor="middle" fill="#475569" font-size="12" font-family="sans-serif">数据分级 · 模型审计 · 权限管控</text>
+  <text x="630" y="150" text-anchor="middle" fill="#94a3b8" font-size="11" font-family="sans-serif">合规 · 安全 · 可控</text>
+
+  <!-- Arrows: 两套保障 → 三类 AI -->
+  <line x1="330" y1="160" x2="175" y2="268" stroke="rgba(15,23,42,0.15)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="630" y1="160" x2="785" y2="268" stroke="rgba(15,23,42,0.15)" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+  <!-- Arrows: 三类 AI → 底座 -->
+  <line x1="175" y1="375" x2="350" y2="398" stroke="rgba(15,23,42,0.15)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="480" y1="375" x2="480" y2="398" stroke="rgba(15,23,42,0.15)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="785" y1="375" x2="610" y2="398" stroke="rgba(15,23,42,0.15)" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+  <!-- Core judgment text -->
+  <text x="480" y="200" text-anchor="middle" fill="#64748b" font-size="13" font-family="sans-serif" font-weight="600">核心判断：数字化决定数据可用性，AI 决定决策与自动化效率</text>
+
+  <!-- Milestone timeline -->
+  <text x="480" y="500" text-anchor="middle" fill="#475569" font-size="13" font-family="sans-serif" font-weight="700">里程碑路径</text>
+  <g font-size="11" fill="#64748b" font-family="sans-serif" text-anchor="middle">
+    <text x="300" y="525">1. 样板闭环</text>
+    <text x="300" y="540" fill="#94a3b8">M01-M03</text>
+    <text x="480" y="525">2. 跨厂复制</text>
+    <text x="480" y="540" fill="#94a3b8">M04-M06</text>
+    <text x="660" y="525">3. 平台化规模化</text>
+    <text x="660" y="540" fill="#94a3b8">M07-M12+</text>
+  </g>
+  <line x1="350" y1="517" x2="430" y2="517" stroke="rgba(37,99,235,0.30)" stroke-width="2"/>
+  <polygon points="430,513 437,517 430,521" fill="rgba(37,99,235,0.40)"/>
+  <line x1="530" y1="517" x2="610" y2="517" stroke="rgba(37,99,235,0.30)" stroke-width="2"/>
+  <polygon points="610,513 617,517 610,521" fill="rgba(37,99,235,0.40)"/>
+</svg>

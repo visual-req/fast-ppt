@@ -1,0 +1,9 @@
+{
+  "layout_type": "svg_full",
+  "title": "数据底座搭建",
+  "svg": {
+    "src": "work/assets/009-data-foundation.svg",
+    "alt": "数据底座架构图",
+    "caption": "三大数据类型 + 四项治理关键要素"
+  }
+}

@@ -1,0 +1,420 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#eef4ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-opacity="0.10"/>
+    </filter>
+    <style>
+      .phaseTitle { font: 700 12px sans-serif; fill: #0b63d8; }
+      .phaseText { font: 700 13px sans-serif; fill: #0f172a; }
+      .small { font: 11px sans-serif; fill: #334155; }
+      .tiny { font: 10px sans-serif; fill: #64748b; }
+      .icon { font: 15px sans-serif; fill: #475569; }
+    </style>
+  </defs>
+
+  <rect width="960" height="540" fill="url(#bg)"/>
+
+  <!-- Top phases -->
+  <g stroke="#0b63d8" stroke-width="4" stroke-linecap="round">
+    <line x1="120" y1="64" x2="222" y2="64"/>
+    <line x1="322" y1="64" x2="424" y2="64"/>
+    <line x1="524" y1="64" x2="626" y2="64"/>
+    <line x1="726" y1="64" x2="828" y2="64"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <circle cx="78" cy="64" r="26" fill="#f3f4f6" stroke="#0b63d8" stroke-width="5"/>
+    <circle cx="280" cy="64" r="26" fill="#f3f4f6" stroke="#0b63d8" stroke-width="5"/>
+    <circle cx="482" cy="64" r="26" fill="#f3f4f6" stroke="#0b63d8" stroke-width="5"/>
+    <circle cx="684" cy="64" r="26" fill="#f3f4f6" stroke="#0b63d8" stroke-width="5"/>
+    <circle cx="886" cy="64" r="26" fill="#f3f4f6" stroke="#0b63d8" stroke-width="5"/>
+  </g>
+
+  <g font-family="sans-serif" font-weight="800" font-size="22" fill="#2f6fd8" text-anchor="middle">
+    <text x="78" y="72">1</text>
+    <text x="280" y="72">2</text>
+    <text x="482" y="72">3</text>
+    <text x="684" y="72">4</text>
+    <text x="886" y="72">5</text>
+  </g>
+
+  <g class="phaseTitle" text-anchor="middle">
+    <text x="78" y="120">业务战略规划</text>
+    <text x="280" y="120">当前业务分析</text>
+    <text x="482" y="120">未来蓝图设计</text>
+    <text x="684" y="120">解决方案设计</text>
+    <text x="886" y="112">系统建设规划</text>
+    <text x="886" y="128">与治理机制设计</text>
+  </g>
+
+  <g stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="6,8" opacity="0.55">
+    <line x1="179" y1="138" x2="179" y2="428"/>
+    <line x1="381" y1="138" x2="381" y2="428"/>
+    <line x1="583" y1="138" x2="583" y2="428"/>
+    <line x1="785" y1="138" x2="785" y2="428"/>
+  </g>
+
+  <!-- Stage 1 -->
+  <g stroke="#93c5fd" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M116 198 C104 214 94 234 84 344"/>
+    <path d="M116 266 C102 282 92 300 84 344"/>
+  </g>
+  <g fill="#93c5fd">
+    <polygon points="84,344 80,336 88,336"/>
+  </g>
+  <g stroke="#0b63d8" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- business strategy planning -->
+    <rect x="30" y="186" width="24" height="18" rx="3"/>
+    <path d="M36 204 V210"/>
+    <path d="M42 186 V178"/>
+    <path d="M42 178 H55 L51 184"/>
+    <path d="M34 195 H50"/>
+    <path d="M34 200 H46"/>
+
+    <!-- best practice -->
+    <circle cx="42" cy="266" r="10"/>
+    <path d="M36 275 L33 283"/>
+    <path d="M48 275 L51 283"/>
+    <path d="M37 266 L41 270 L48 262"/>
+
+    <!-- strategic alignment -->
+    <circle cx="42" cy="357" r="11"/>
+    <circle cx="42" cy="357" r="4"/>
+    <path d="M53 346 L64 335"/>
+    <path d="M59 335 H64 V340"/>
+    <path d="M61 338 L71 338"/>
+  </g>
+  <g class="small">
+    <text x="62" y="200">业务战略规划</text>
+    <text x="58" y="269">行业最佳实践</text>
+    <text x="58" y="360">战略目标对齐</text>
+  </g>
+  <g stroke="#0b63d8" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M116 357 H182"/>
+  </g>
+  <g fill="#0b63d8">
+    <polygon points="182,357 172,352 172,362"/>
+  </g>
+
+  <!-- Stage 2 -->
+  <g class="tiny" text-anchor="middle">
+    <text x="230" y="144">业务现状</text>
+    <text x="326" y="144">差距分析</text>
+  </g>
+  <g stroke="#0b63d8" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="208" y="150" width="12" height="12" rx="2"/>
+    <rect x="223" y="150" width="12" height="12" rx="2"/>
+    <rect x="215.5" y="165" width="12" height="12" rx="2"/>
+    <path d="M220 156 H223"/>
+    <path d="M221.5 162 V165"/>
+    <circle cx="306" cy="157" r="8"/>
+    <path d="M312 163 L320 171"/>
+    <path d="M302 157 H310"/>
+    <path d="M306 153 V161"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="194" y="184" width="72" height="240" rx="10" fill="#ffffff" stroke="#8cbcff" stroke-width="2" stroke-dasharray="4,4"/>
+    <rect x="290" y="184" width="72" height="240" rx="10" fill="#ffffff" stroke="#8cbcff" stroke-width="2" stroke-dasharray="4,4"/>
+  </g>
+  <g stroke="#d7e8ff" stroke-width="1.2">
+    <line x1="202" y1="247" x2="258" y2="247"/>
+    <line x1="202" y1="307" x2="258" y2="307"/>
+    <line x1="202" y1="367" x2="258" y2="367"/>
+    <line x1="298" y1="247" x2="354" y2="247"/>
+    <line x1="298" y1="307" x2="354" y2="307"/>
+    <line x1="298" y1="367" x2="354" y2="367"/>
+  </g>
+  <g stroke="#0b63d8" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- current business -->
+    <rect x="219" y="205" width="10" height="10" rx="2"/>
+    <rect x="233" y="205" width="10" height="10" rx="2"/>
+    <rect x="226" y="220" width="10" height="10" rx="2"/>
+    <path d="M224 215 L231 220"/>
+    <path d="M238 215 L231 220"/>
+    <!-- value stream -->
+    <circle cx="326" cy="214" r="8"/>
+    <path d="M332 220 L340 228"/>
+    <path d="M322 214 H330"/>
+    <path d="M326 210 V218"/>
+
+    <!-- current data -->
+    <ellipse cx="230" cy="270" rx="11" ry="4"/>
+    <path d="M219 270 V282 C219 285 224 287 230 287 C236 287 241 285 241 282 V270"/>
+    <path d="M219 276 C219 279 224 281 230 281 C236 281 241 279 241 276"/>
+    <!-- data silo -->
+    <ellipse cx="320" cy="268" rx="8" ry="3.5"/>
+    <path d="M312 268 V278 C312 280 315 282 320 282 C325 282 328 280 328 278 V268"/>
+    <ellipse cx="336" cy="282" rx="8" ry="3.5"/>
+    <path d="M328 282 V292 C328 294 331 296 336 296 C341 296 344 294 344 292 V282"/>
+    <path d="M323 275 L332 279" stroke-dasharray="3,3"/>
+
+    <!-- current system -->
+    <rect x="219" y="327" width="22" height="16" rx="3"/>
+    <path d="M225 347 H235"/>
+    <path d="M230 343 V347"/>
+    <path d="M222 332 H238"/>
+    <!-- capability gap -->
+    <path d="M314 347 H340"/>
+    <rect x="316" y="337" width="4" height="10" rx="1"/>
+    <rect x="324" y="331" width="4" height="16" rx="1"/>
+    <rect x="332" y="325" width="4" height="22" rx="1"/>
+    <path d="M314 323 H340" stroke-dasharray="3,3"/>
+
+    <!-- current technology -->
+    <rect x="220" y="386" width="20" height="20" rx="4"/>
+    <rect x="225" y="391" width="10" height="10" rx="2"/>
+    <path d="M225 383 V386"/>
+    <path d="M230 383 V386"/>
+    <path d="M235 383 V386"/>
+    <path d="M225 409 V406"/>
+    <path d="M230 409 V406"/>
+    <path d="M235 409 V406"/>
+    <!-- technology gap -->
+    <circle cx="326" cy="396" r="9"/>
+    <path d="M326 387 V405"/>
+    <path d="M317 396 H335"/>
+    <path d="M332 390 L338 384"/>
+  </g>
+  <g class="small" text-anchor="middle">
+    <text x="230" y="238">当前业务现状</text>
+    <text x="230" y="302">当前数据现状</text>
+    <text x="230" y="362">当前系统现状</text>
+    <text x="230" y="420">当前技术现状</text>
+    <text x="326" y="238">业务价值流图分析</text>
+    <text x="326" y="302">数据孤岛分析</text>
+    <text x="326" y="362">系统能力和缺失分析</text>
+    <text x="326" y="420">技术差距分析</text>
+  </g>
+
+  <!-- Arrow to stage 3 -->
+  <g stroke="#0b63d8" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M362 276 H388"/>
+    <path d="M420 276 H438"/>
+    <path d="M395 264 H410"/>
+    <path d="M395 271 H407"/>
+    <path d="M395 278 H404"/>
+    <path d="M404 282 V290"/>
+    <path d="M404 290 L399 285"/>
+    <path d="M404 290 L409 285"/>
+  </g>
+  <g fill="#0b63d8">
+    <polygon points="388,276 380,272 380,280"/>
+    <polygon points="438,276 430,272 430,280"/>
+  </g>
+  <g class="tiny" text-anchor="middle">
+    <text x="404" y="318">任务列表</text>
+  </g>
+
+  <!-- Stage 3 -->
+  <g filter="url(#shadow)">
+    <rect x="436" y="184" width="100" height="240" rx="10" fill="#ffffff" stroke="#8cbcff" stroke-width="2" stroke-dasharray="4,4"/>
+  </g>
+  <g stroke="#d7e8ff" stroke-width="1.2">
+    <line x1="446" y1="247" x2="526" y2="247"/>
+    <line x1="446" y1="307" x2="526" y2="307"/>
+    <line x1="446" y1="367" x2="526" y2="367"/>
+  </g>
+  <g stroke="#0b63d8" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- business blueprint -->
+    <rect x="474" y="202" width="24" height="18" rx="3"/>
+    <path d="M482 202 V220"/>
+    <path d="M490 202 V220"/>
+    <path d="M474 211 H498"/>
+    <path d="M500 197 L505 202"/>
+    <path d="M505 202 L500 207"/>
+
+    <!-- data blueprint -->
+    <ellipse cx="486" cy="270" rx="12" ry="4"/>
+    <path d="M474 270 V282 C474 285 479 287 486 287 C493 287 498 285 498 282 V270"/>
+    <path d="M474 276 C474 279 479 281 486 281 C493 281 498 279 498 276"/>
+    <path d="M500 264 H506"/>
+    <path d="M503 261 V267"/>
+
+    <!-- system blueprint -->
+    <rect x="472" y="329" width="10" height="10" rx="2"/>
+    <rect x="490" y="329" width="10" height="10" rx="2"/>
+    <rect x="481" y="345" width="10" height="10" rx="2"/>
+    <path d="M482 334 H490"/>
+    <path d="M486 339 V345"/>
+    <path d="M491 334 L498 345"/>
+
+    <!-- technology blueprint -->
+    <rect x="476" y="386" width="20" height="20" rx="4"/>
+    <rect x="481" y="391" width="10" height="10" rx="2"/>
+    <path d="M481 383 V386"/>
+    <path d="M486 383 V386"/>
+    <path d="M491 383 V386"/>
+    <path d="M481 409 V406"/>
+    <path d="M486 409 V406"/>
+    <path d="M491 409 V406"/>
+  </g>
+  <g class="small" text-anchor="middle">
+    <text x="486" y="238">业务蓝图设计</text>
+    <text x="486" y="302">数据蓝图设计</text>
+    <text x="486" y="362">系统蓝图设计</text>
+    <text x="486" y="420">技术蓝图设计</text>
+  </g>
+
+  <!-- Arrow to stage 4 -->
+  <g stroke="#0b63d8" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M534 276 H560"/>
+    <path d="M592 276 H610"/>
+    <rect x="566" y="263" width="9" height="9" rx="2"/>
+    <rect x="580" y="263" width="9" height="9" rx="2"/>
+    <rect x="573" y="279" width="9" height="9" rx="2"/>
+    <path d="M574 267 H579"/>
+    <path d="M576.5 271 V279"/>
+    <path d="M580 267 L576.5 279"/>
+  </g>
+  <g fill="#0b63d8">
+    <polygon points="560,276 552,272 552,280"/>
+    <polygon points="610,276 602,272 602,280"/>
+  </g>
+  <g class="tiny" text-anchor="middle">
+    <text x="576" y="318">汇总整理</text>
+  </g>
+
+  <!-- Stage 4 -->
+  <g stroke="#0b63d8" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M614 276 H630"/>
+    <path d="M630 276 L654 214"/>
+    <path d="M630 276 H654"/>
+    <path d="M630 276 L654 346"/>
+    <path d="M714 214 L738 276"/>
+    <path d="M714 276 H738"/>
+    <path d="M714 346 L738 276"/>
+    <path d="M738 276 H756"/>
+  </g>
+  <g fill="#0b63d8">
+    <circle cx="630" cy="276" r="4"/>
+    <circle cx="738" cy="276" r="4"/>
+    <polygon points="654,214 646,210 646,218"/>
+    <polygon points="654,276 646,272 646,280"/>
+    <polygon points="654,346 646,342 646,350"/>
+    <polygon points="756,276 748,272 748,280"/>
+  </g>
+  <g stroke="#0b63d8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- document design -->
+    <path d="M674 192 H690 L698 200 V218 H674 Z"/>
+    <path d="M690 192 V200 H698"/>
+    <path d="M679 206 H691"/>
+    <path d="M679 212 H688"/>
+    <path d="M669 218 L673 222"/>
+    <path d="M673 222 L681 214"/>
+
+    <!-- structure design -->
+    <rect x="672" y="272" width="9" height="9" rx="2"/>
+    <rect x="687" y="272" width="9" height="9" rx="2"/>
+    <rect x="679.5" y="287" width="9" height="9" rx="2"/>
+    <path d="M681 276 H687"/>
+    <path d="M684 281 V287"/>
+    <path d="M688 281 L684 287"/>
+
+    <!-- scheme validation -->
+    <rect x="672" y="342" width="24" height="16" rx="3"/>
+    <path d="M678 350 L683 355 L691 345"/>
+    <path d="M680 338 V342"/>
+    <path d="M688 338 V342"/>
+  </g>
+  <g class="small" text-anchor="middle">
+    <text x="684" y="232">文档设计</text>
+    <text x="684" y="313">结构设计</text>
+    <text x="684" y="372">方案校验</text>
+  </g>
+
+  <!-- Stage 5 -->
+  <g filter="url(#shadow)">
+    <rect x="798" y="184" width="138" height="266" rx="10" fill="#f3f6fb" stroke="#8cbcff" stroke-width="2"/>
+  </g>
+  <g stroke="#d7e8ff" stroke-width="1.2">
+    <line x1="806" y1="252" x2="928" y2="252"/>
+    <line x1="806" y1="318" x2="928" y2="318"/>
+    <line x1="806" y1="384" x2="928" y2="384"/>
+    <line x1="867" y1="252" x2="867" y2="450"/>
+  </g>
+  <g stroke="#0b63d8" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- milestone planning -->
+    <rect x="857" y="208" width="20" height="18" rx="3"/>
+    <path d="M862 204 V208"/>
+    <path d="M872 204 V208"/>
+    <path d="M861 216 H873"/>
+    <path d="M880 205 L887 212"/>
+    <path d="M887 212 L881 218"/>
+
+    <!-- assumptions -->
+    <path d="M812 281 H829 L834 286 V300 H812 Z"/>
+    <path d="M829 281 V286 H834"/>
+    <path d="M820 289 C820 287 821.5 286 823.5 286 C825.5 286 827 287 827 289 C827 291 825.8 292 824.3 293 C822.6 294 822 295 822 297"/>
+    <path d="M823.5 300 H824"/>
+
+    <!-- benefits -->
+    <path d="M892 300 V291"/>
+    <path d="M901 300 V284"/>
+    <path d="M910 300 V277"/>
+    <path d="M891 293 L900 286 L910 279"/>
+    <path d="M910 279 L905 280"/>
+    <path d="M910 279 L908 284"/>
+
+    <!-- risk mitigation -->
+    <path d="M812 346 L821 339 L830 346 V357 C830 364 825 369 821 371 C817 369 812 364 812 357 Z"/>
+    <path d="M817 356 L821 360 L827 352"/>
+
+    <!-- cost reduction -->
+    <circle cx="901" cy="355" r="11"/>
+    <path d="M896 350 H904"/>
+    <path d="M900 346 H902"/>
+    <path d="M901 350 V362"/>
+    <path d="M901 362 L897 358"/>
+    <path d="M901 362 L905 358"/>
+
+    <!-- governance -->
+    <rect x="812" y="414" width="18" height="16" rx="2"/>
+    <path d="M821 430 V439"/>
+    <path d="M812 439 H830"/>
+    <path d="M821 430 L813 436"/>
+    <path d="M821 430 L829 436"/>
+    <circle cx="821" cy="422" r="2.5"/>
+
+    <!-- new business -->
+    <path d="M901 394 C906 394 910 398 910 403 C910 407 908 410 905 412 L905 417 H897 L897 412 C894 410 892 407 892 403 C892 398 896 394 901 394 Z"/>
+    <path d="M898 421 H904"/>
+    <path d="M899 425 H903"/>
+    <path d="M901 389 V385"/>
+    <path d="M894 391 L891 388"/>
+    <path d="M908 391 L911 388"/>
+  </g>
+  <g class="small" text-anchor="middle">
+    <text x="867" y="244">里程碑式规划</text>
+    <text x="821" y="313">前提假设</text>
+    <text x="901" y="313">收益提升</text>
+    <text x="821" y="378">风险规避</text>
+    <text x="901" y="378">成本降低</text>
+    <text x="821" y="444">治理体系</text>
+    <text x="903" y="444">新盈利模式</text>
+  </g>
+
+  <!-- Transition to stage 5 -->
+  <g stroke="#0b63d8" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M756 276 H766"/>
+    <path d="M798 276 H804"/>
+    <path d="M774 264 H789"/>
+    <path d="M774 270 H786"/>
+    <path d="M774 276 H783"/>
+    <path d="M789 284 L794 289"/>
+    <path d="M794 289 L789 294"/>
+    <circle cx="775" cy="286" r="3"/>
+    <circle cx="783" cy="286" r="3"/>
+  </g>
+  <g fill="#0b63d8">
+    <polygon points="766,276 758,272 758,280"/>
+    <polygon points="804,276 796,272 796,280"/>
+  </g>
+  <g class="tiny" text-anchor="middle">
+    <text x="782" y="318">排期计划</text>
+  </g>
+</svg>

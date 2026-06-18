@@ -1,0 +1,9 @@
+{
+  "layout_type": "svg_full",
+  "title": "AI 项目管理指标体系",
+  "svg": {
+    "src": "work/ppt/002_制造业数字化转型/slides/026-ai-pm-platform-metrics.svg",
+    "alt": "AI 项目管理平台指标体系与闭环图",
+    "caption": "整合项目、代码、沟通、知识和测试数据，形成交付效率、质量、风险、协作健康和改进闭环的一体化指标体系。"
+  }
+}

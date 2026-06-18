@@ -33,7 +33,11 @@ function send(res, statusCode, contentType, body) {
 }
 
 function safeJoin(baseDir, requestPath) {
-  const normalized = path.posix.normalize(requestPath).replace(/^(\.\.(\/|\\|$))+/, "");
+  let decoded = requestPath;
+  try {
+    decoded = decodeURIComponent(requestPath);
+  } catch {}
+  const normalized = path.posix.normalize(decoded).replace(/^(\.\.(\/|\\|$))+/, "");
   return path.join(baseDir, normalized);
 }
 
@@ -46,7 +50,39 @@ async function fileExists(p) {
   }
 }
 
-async function resolveProjectDir() {
+function normalizeProjectName(raw) {
+  if (typeof raw !== "string") return "";
+  const value = raw.trim();
+  if (!value) return "";
+  return value.replace(/^(\.\.(\/|\\|$))+/, "").replace(/[\/\\]+/g, "");
+}
+
+async function findProjectDirByToken(token) {
+  const normalized = normalizeProjectName(token);
+  if (!normalized) return "";
+
+  const entries = await fs.readdir(workPptDir, { withFileTypes: true });
+  const dirNames = entries.filter((e) => e.isDirectory()).map((e) => e.name);
+
+  if (dirNames.includes(normalized)) return path.resolve(workPptDir, normalized);
+
+  const padded = /^\d+$/.test(normalized) ? normalized.padStart(3, "0") : normalized;
+  const prefixMatches = dirNames
+    .filter((name) => name === padded || name.startsWith(`${padded}_`))
+    .sort((a, b) => a.localeCompare(b));
+
+  if (prefixMatches.length) return path.resolve(workPptDir, prefixMatches[0]);
+  return "";
+}
+
+async function resolveProjectDir(searchParams) {
+  const requestedProject = normalizeProjectName(searchParams?.get("project"));
+  if (requestedProject) {
+    const matchedDir = await findProjectDirByToken(requestedProject);
+    if (matchedDir) return matchedDir;
+    return path.resolve(workPptDir, requestedProject);
+  }
+
   const deckPathEnv = process.env.DECK_PATH ?? process.env.OUTLINE_PATH;
   if (deckPathEnv) return path.dirname(path.resolve(deckPathEnv));
 
@@ -372,7 +408,7 @@ const server = http.createServer(async (req, res) => {
 
     if (url.pathname === "/api/deck" || url.pathname === "/api/outline") {
       try {
-        const projectDir = await resolveProjectDir();
+        const projectDir = await resolveProjectDir(url.searchParams);
         const content = await loadDeck(projectDir);
         send(res, 200, "application/json; charset=utf-8", content);
       } catch (e) {
@@ -383,7 +419,7 @@ const server = http.createServer(async (req, res) => {
 
     if (url.pathname === "/api/export/pptx") {
       try {
-        const projectDir = await resolveProjectDir();
+        const projectDir = await resolveProjectDir(url.searchParams);
         const buf = await exportDeckToPptx(projectDir);
         res.statusCode = 200;
         res.setHeader("content-type", "application/vnd.openxmlformats-officedocument.presentationml.presentation");

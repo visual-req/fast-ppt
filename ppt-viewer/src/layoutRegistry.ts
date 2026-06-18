@@ -1,3 +1,4 @@
+import Agenda from "./components/layouts/Agenda.vue";
 import Cover from "./components/layouts/Cover.vue";
 import TitleBullets from "./components/layouts/TitleBullets.vue";
 import Centered from "./components/layouts/Centered.vue";
@@ -33,17 +34,19 @@ import CoordinateAxis from "./components/layouts/CoordinateAxis.vue";
 import Fishbone from "./components/layouts/Fishbone.vue";
 import KpiCards from "./components/layouts/KpiCards.vue";
 import CaseStudy from "./components/layouts/CaseStudy.vue";
+import SectionDivider from "./components/layouts/SectionDivider.vue";
+import ThankYou from "./components/layouts/ThankYou.vue";
 import SvgCanvas from "./components/layouts/SvgCanvas.vue";
 
 export const layoutComponentMap: Record<string, any> = {
   cover: Cover,
-  agenda: TitleBullets,
+  agenda: Agenda,
   title_bullets: TitleBullets,
   summary: TitleBullets,
   roadmap: TitleBullets,
   timeline: TitleBullets,
-  section_divider: Centered,
-  thank_you: Centered,
+  section_divider: SectionDivider,
+  thank_you: ThankYou,
   appendix: Centered,
   problem_statement: ProblemStatement,
   matrix_2x2: Matrix2x2,

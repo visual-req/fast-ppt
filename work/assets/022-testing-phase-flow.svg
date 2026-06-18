@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1700 720">
+  <defs>
+    <style>
+      .bg { fill:#f8fafc; }
+      .card { fill:#fff; stroke:#cbd5e1; stroke-width:1.5; rx:14; }
+      .accent1 { fill:#eff6ff; stroke:#93c5fd; stroke-width:1.5; }
+      .accent2 { fill:#eefbf5; stroke:#86efac; stroke-width:1.5; }
+      .accent3 { fill:#fef9e7; stroke:#fcd34d; stroke-width:1.5; }
+      .accent4 { fill:#fef2f2; stroke:#fca5a5; stroke-width:1.5; }
+      .tl { font:700 20px -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; fill:#0f172a; }
+      .sub { font:700 15px -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; fill:#334155; }
+      .sm { font:600 12px -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; fill:#475569; }
+      .xs { font:500 11px -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; fill:#64748b; }
+      .arrow { stroke:#3b82f6; stroke-width:2.5; fill:none; stroke-linecap:round; marker-end:url(#ab); }
+      .dash { stroke:#cbd5e1; stroke-width:1.5; fill:none; stroke-dasharray:5 5; }
+    </style>
+    <marker id="ab" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#3b82f6"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="1700" height="720"/>
+
+  <text class="tl" x="850" y="34" text-anchor="middle">测试阶段：验收、自动化与归因</text>
+
+  <!-- ====== 验收测试 ====== -->
+  <rect class="accent1" x="50" y="60" width="500" height="280" rx="16"/>
+  <!-- check icon -->
+  <circle cx="300" cy="96" r="18" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <path d="M292 96l5 5 11-11" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="sub" fill="#1d4ed8" x="300" y="136" text-anchor="middle">验收测试</text>
+  <text class="sm" x="300" y="166" text-anchor="middle">基于需求自动生成端到端验收用例</text>
+
+  <rect class="card" x="80" y="186" width="440" height="48" rx="10"/>
+  <text class="sm" x="300" y="214" text-anchor="middle">需求解析：提取验收条件、场景路径、角色权限</text>
+
+  <rect class="card" x="80" y="242" width="440" height="48" rx="10"/>
+  <text class="sm" x="300" y="270" text-anchor="middle">场景生成：Given-When-Then + 签收标准</text>
+
+  <rect class="card" x="80" y="298" width="440" height="30" rx="8" fill="#dbeafe" stroke="none"/>
+  <text class="xs" x="300" y="317" text-anchor="middle">输出：UAT 案例、验收脚本、签收依据</text>
+
+  <!-- arrow 验收→自动化 -->
+  <line class="arrow" x1="550" y1="200" x2="620" y2="200"/>
+
+  <!-- ====== 自动化回归 ====== -->
+  <rect class="accent2" x="600" y="60" width="500" height="280" rx="16"/>
+  <!-- refresh loop icon -->
+  <path d="M820 86c-10-10-24-16-38-16-20 0-36 14-42 32" fill="none" stroke="#10b981" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M852 88l-4-8-4 8" fill="none" stroke="#10b981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M810 100l4 2 8-10" fill="none" stroke="#10b981" stroke-width="1.5" stroke-linecap="round"/>
+  <text class="sub" fill="#059669" x="850" y="136" text-anchor="middle">自动化测试</text>
+  <text class="sm" x="850" y="166" text-anchor="middle">AI 智能选择回归范围，自动生成测试代码</text>
+
+  <rect class="card" x="630" y="186" width="440" height="48" rx="10"/>
+  <text class="sm" x="850" y="214" text-anchor="middle">变更分析：识别受影响的模块、接口、数据流</text>
+
+  <rect class="card" x="630" y="242" width="440" height="48" rx="10"/>
+  <text class="sm" x="850" y="270" text-anchor="middle">代码生成：Mock、断言、边界值、异常用例自动填充</text>
+
+  <rect class="card" x="630" y="298" width="440" height="30" rx="8" fill="#d1fae5" stroke="none"/>
+  <text class="xs" x="850" y="317" text-anchor="middle">效率：回归范围减少 40%，覆盖率 ≥ 80%</text>
+
+  <!-- arrow 自动化→归因 -->
+  <line class="arrow" x1="1100" y1="200" x2="1170" y2="200"/>
+
+  <!-- ====== 缺陷归因 ====== -->
+  <rect class="accent4" x="1150" y="60" width="500" height="280" rx="16"/>
+  <!-- magnifier icon -->
+  <circle cx="1400" cy="94" r="14" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5"/>
+  <line x1="1410" y1="104" x2="1420" y2="114" stroke="#ef4444" stroke-width="2" stroke-linecap="round"/>
+  <text class="sub" fill="#dc2626" x="1400" y="136" text-anchor="middle">缺陷归因</text>
+  <text class="sm" x="1400" y="166" text-anchor="middle">失败用例自动关联变更、环境与历史模式</text>
+
+  <rect class="card" x="1180" y="186" width="440" height="48" rx="10"/>
+  <text class="sm" x="1400" y="214" text-anchor="middle">多维关联：代码变更 + 环境差异 + 历史缺陷指纹</text>
+
+  <rect class="card" x="1180" y="242" width="440" height="48" rx="10"/>
+  <text class="sm" x="1400" y="270" text-anchor="middle">测试数据构造：边界值、异常输入、安全攻击场景</text>
+
+  <rect class="card" x="1180" y="298" width="440" height="30" rx="8" fill="#fee2e2" stroke="none"/>
+  <text class="xs" x="1400" y="317" text-anchor="middle">目标：MTTR 缩短 50%，缺陷定位准确率 ≥ 85%</text>
+
+  <!-- ====== 底部闭环 ====== -->
+  <rect class="accent3" x="50" y="370" width="1600" height="36" rx="12"/>
+  <text class="sm" x="850" y="393" text-anchor="middle">质量门禁：测试通过率、覆盖率与缺陷密度自动判定是否准出，形成"验收 → 自动化 → 归因 → 优化需求 → 再验收"的持续改进闭环</text>
+
+  <!-- ====== 下半部分：技术实现 ====== -->
+  <text class="sub" x="850" y="448" text-anchor="middle" fill="#0f172a">关键技术支撑</text>
+
+  <rect class="accent1" x="50" y="462" width="380" height="60" rx="12"/>
+  <text class="sm" x="240" y="486" text-anchor="middle">验收层</text>
+  <text class="xs" x="240" y="506" text-anchor="middle">Cucumber / Gherkin / Selenium · 自然语言 → 可执行用例</text>
+
+  <rect class="accent2" x="440" y="462" width="380" height="60" rx="12"/>
+  <text class="sm" x="630" y="486" text-anchor="middle">自动化层</text>
+  <text class="xs" x="630" y="506" text-anchor="middle">JUnit · pytest · TestNG · 变更影响分析 → 精准回归</text>
+
+  <rect class="accent4" x="830" y="462" width="380" height="60" rx="12"/>
+  <text class="sm" x="1020" y="486" text-anchor="middle">归因层</text>
+  <text class="xs" x="1020" y="506" text-anchor="middle">SHAP · 日志聚类 · 代码diff比对 · 缺陷指纹库</text>
+
+  <rect class="accent3" x="1220" y="462" width="430" height="60" rx="12"/>
+  <text class="sm" x="1435" y="486" text-anchor="middle">门禁层</text>
+  <text class="xs" x="1435" y="506" text-anchor="middle">SonarQube · JaCoCo · 自定义质量策略 · 自动准出判定</text>
+
+  <!-- 底部说明 -->
+  <text class="xs" x="850" y="558" text-anchor="middle" fill="#64748b">核心思路：把测试从"被动执行"升级为"验收自动生成 → 回归智能筛选 → 缺陷自动归因 → 门禁自动判定"的完整智能闭环</text>
+</svg>

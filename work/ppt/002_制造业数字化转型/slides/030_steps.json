@@ -1,0 +1,51 @@
+{
+  "layout_type": "nine_grid",
+  "title": "业务 AI 落地能力全景",
+  "grid": [
+    {
+      "icon": "qa",
+      "title": "智能问答",
+      "text": "把制度、流程、知识库接入统一问答入口"
+    },
+    {
+      "icon": "document",
+      "title": "文档生成",
+      "text": "自动生成报告、分析说明和业务草稿"
+    },
+    {
+      "icon": "spark",
+      "title": "预测分析",
+      "text": "做需求、库存、质量和交期预测"
+    },
+    {
+      "icon": "flow",
+      "title": "流程建议",
+      "text": "对审批、下单、补货给出下一步建议"
+    },
+    {
+      "icon": "shield",
+      "title": "风险预警",
+      "text": "识别延期、缺料、异常波动等风险"
+    },
+    {
+      "icon": "refactor",
+      "title": "闭环执行",
+      "text": "把 AI 输出嵌入工单、审批和对账流程"
+    },
+    {
+      "icon": "check",
+      "title": "人工确认",
+      "text": "关键环节保留人工复核与责任归属"
+    },
+    {
+      "icon": "chart",
+      "title": "效果追踪",
+      "text": "持续跟踪采纳率、命中率和节省时间"
+    },
+    {
+      "icon": "scale",
+      "title": "复制推广",
+      "text": "把有效场景沉淀成模板后跨部门复制"
+    }
+  ]
+}

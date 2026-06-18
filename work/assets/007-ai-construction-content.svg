@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fbff"/>
+      <stop offset="100%" stop-color="#eef4ff"/>
+    </linearGradient>
+    <linearGradient id="baseGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="infraGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0f766e"/>
+      <stop offset="100%" stop-color="#14b8a6"/>
+    </linearGradient>
+    <linearGradient id="appGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="960" height="540" rx="20" fill="url(#bg)"/>
+
+  <text x="480" y="40" text-anchor="middle" fill="#0f172a" font-size="24" font-weight="700" font-family="sans-serif">AI建设内容分层</text>
+  <text x="480" y="64" text-anchor="middle" fill="#475569" font-size="13" font-family="sans-serif">自下而上：先完成数字化汇总，再建设 AI 基础设施，最后支撑业务 / 研发 / 办公三类分析系统</text>
+
+  <rect x="80" y="332" width="800" height="148" rx="22" fill="url(#baseGrad)" filter="url(#shadow)"/>
+  <text x="480" y="366" text-anchor="middle" fill="#ffffff" font-size="24" font-weight="700" font-family="sans-serif">数字化底座的数据汇总</text>
+  <text x="480" y="390" text-anchor="middle" fill="#dbeafe" font-size="13" font-family="sans-serif">把系统数据、业务事件、设备时序和文档知识统一汇聚，形成 AI 可用的数据基础</text>
+
+  <g>
+    <rect x="115" y="412" width="160" height="42" rx="12" fill="rgba(255,255,255,0.18)" stroke="rgba(255,255,255,0.36)"/>
+    <text x="195" y="438" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="700" font-family="sans-serif">主数据</text>
+    <text x="195" y="453" text-anchor="middle" fill="#dbeafe" font-size="11" font-family="sans-serif">物料 / BOM / 工艺 / 设备</text>
+  </g>
+  <g>
+    <rect x="305" y="412" width="160" height="42" rx="12" fill="rgba(255,255,255,0.18)" stroke="rgba(255,255,255,0.36)"/>
+    <text x="385" y="438" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="700" font-family="sans-serif">业务事件</text>
+    <text x="385" y="453" text-anchor="middle" fill="#dbeafe" font-size="11" font-family="sans-serif">生产 / 质量 / 仓储 / 采购</text>
+  </g>
+  <g>
+    <rect x="495" y="412" width="160" height="42" rx="12" fill="rgba(255,255,255,0.18)" stroke="rgba(255,255,255,0.36)"/>
+    <text x="575" y="438" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="700" font-family="sans-serif">设备时序</text>
+    <text x="575" y="453" text-anchor="middle" fill="#dbeafe" font-size="11" font-family="sans-serif">SCADA / PLC / 传感器 / EMS</text>
+  </g>
+  <g>
+    <rect x="685" y="412" width="160" height="42" rx="12" fill="rgba(255,255,255,0.18)" stroke="rgba(255,255,255,0.36)"/>
+    <text x="765" y="438" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="700" font-family="sans-serif">知识文档</text>
+    <text x="765" y="453" text-anchor="middle" fill="#dbeafe" font-size="11" font-family="sans-serif">制度 / 图纸 / 规范 / 经验库</text>
+  </g>
+
+  <line x1="480" y1="332" x2="480" y2="286" stroke="#94a3b8" stroke-width="3" stroke-dasharray="8 6"/>
+  <polygon points="480,276 472,290 488,290" fill="#94a3b8"/>
+
+  <rect x="170" y="182" width="620" height="84" rx="20" fill="url(#infraGrad)" filter="url(#shadow)"/>
+  <text x="480" y="214" text-anchor="middle" fill="#ffffff" font-size="24" font-weight="700" font-family="sans-serif">AI基础设施</text>
+  <text x="480" y="238" text-anchor="middle" fill="#ccfbf1" font-size="13" font-family="sans-serif">提供模型、算力、知识、治理与集成能力，支撑上层分析系统快速落地</text>
+
+  <g fill="#ecfeff" font-size="13" font-family="sans-serif" font-weight="700" text-anchor="middle">
+    <text x="250" y="252">模型服务与编排</text>
+    <text x="390" y="252">向量库 / 知识库</text>
+    <text x="530" y="252">算力与推理网关</text>
+    <text x="670" y="252">权限 / 审计 / 安全</text>
+  </g>
+
+  <line x1="480" y1="182" x2="480" y2="144" stroke="#94a3b8" stroke-width="3" stroke-dasharray="8 6"/>
+  <polygon points="480,134 472,148 488,148" fill="#94a3b8"/>
+
+  <g filter="url(#shadow)">
+    <rect x="90" y="70" width="240" height="74" rx="18" fill="url(#appGrad)"/>
+    <rect x="360" y="70" width="240" height="74" rx="18" fill="url(#appGrad)"/>
+    <rect x="630" y="70" width="240" height="74" rx="18" fill="url(#appGrad)"/>
+  </g>
+
+  <text x="210" y="101" text-anchor="middle" fill="#ffffff" font-size="22" font-weight="700" font-family="sans-serif">业务 AI 分析系统</text>
+  <text x="210" y="123" text-anchor="middle" fill="#ede9fe" font-size="12" font-family="sans-serif">库存预测 / 需求预测 / 经营分析 / 风险预警</text>
+
+  <text x="480" y="101" text-anchor="middle" fill="#ffffff" font-size="22" font-weight="700" font-family="sans-serif">研发 AI 分析系统</text>
+  <text x="480" y="123" text-anchor="middle" fill="#ede9fe" font-size="12" font-family="sans-serif">需求分析 / 编码辅助 / 测试生成 / 质量驾驶舱</text>
+
+  <text x="750" y="101" text-anchor="middle" fill="#ffffff" font-size="22" font-weight="700" font-family="sans-serif">办公 AI 分析系统</text>
+  <text x="750" y="123" text-anchor="middle" fill="#ede9fe" font-size="12" font-family="sans-serif">文档生成 / 会议纪要 / 企业搜索 / 智能助手</text>
+
+  <line x1="210" y1="144" x2="250" y2="182" stroke="#a78bfa" stroke-width="3"/>
+  <line x1="480" y1="144" x2="480" y2="182" stroke="#a78bfa" stroke-width="3"/>
+  <line x1="750" y1="144" x2="710" y2="182" stroke="#a78bfa" stroke-width="3"/>
+</svg>

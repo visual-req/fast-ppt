@@ -1,0 +1,9 @@
+{
+  "layout_type": "svg_full",
+  "title": "四层统一底座",
+  "svg": {
+    "src": "work/assets/034-four-layer-base.svg",
+    "alt": "边缘安全 → AI 平台 → 集成平台 → 数据平台四层架构",
+    "caption": "自下而上：数据平台为基，集成贯通全域，AI 赋能智能，安全贯穿全栈"
+  }
+}

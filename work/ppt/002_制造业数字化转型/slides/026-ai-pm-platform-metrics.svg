@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="720" viewBox="0 0 1700 720">
+  <defs>
+    <style>
+      .bg { fill:#fff; }
+      .card { fill:#fff; stroke:#d8e3f5; stroke-width:1.4; }
+      .soft { fill:#f7faff; stroke:#d8e3f5; stroke-width:1.2; }
+      .accent { fill:#edf4ff; stroke:#b9d0ff; stroke-width:1.2; }
+      .accent2 { fill:#eefbf5; stroke:#bde7cf; stroke-width:1.2; }
+      .accent3 { fill:#fff8ea; stroke:#f2d4a0; stroke-width:1.2; }
+      .accent4 { fill:#f5f0ff; stroke:#d5c4f0; stroke-width:1.2; }
+      .accent5 { fill:#fff0f0; stroke:#f5c4c4; stroke-width:1.2; }
+      .text { font:700 14px -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; fill:#172033; }
+      .minor { font:600 11px -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; fill:#667085; }
+      .tag { font:700 11px -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; fill:#2b6fff; }
+      .line { stroke:#99b8ff; stroke-width:1.6; fill:none; stroke-linecap:round; }
+      .dash { stroke:#b7c7e6; stroke-width:1.4; fill:none; stroke-dasharray:5 5; stroke-linecap:round; }
+      .solid { stroke:#8fb2ff; stroke-width:1.8; fill:none; stroke-linecap:round; }
+    </style>
+  </defs>
+  <rect class="bg" width="1700" height="720"/>
+
+  <!-- 标题区 -->
+  <rect class="card" x="50" y="18" width="1600" height="32" rx="12"/>
+  <text class="tag" x="850" y="39" text-anchor="middle">AI项目管理平台 — 各系统提供数据 → 平台汇聚分析 → 门禁规则驱动 → 改进建议输出</text>
+
+  <!-- ======================== 左：各系统数据源 ======================== -->
+  <rect class="soft" x="50" y="66" width="430" height="530" rx="18"/>
+  <text class="text" x="80" y="94">各系统提供数据</text>
+
+  <!-- 项目管理系统 -->
+  <rect class="accent" x="80" y="114" width="370" height="72" rx="14"/>
+  <text class="text" x="265" y="142" text-anchor="middle">项目管理系统</text>
+  <text class="minor" x="265" y="164" text-anchor="middle">需求 / 任务 / 状态流转 / 排期</text>
+  <text class="minor" x="265" y="178" text-anchor="middle">TAPD · Jira · 看板</text>
+
+  <!-- 代码研发系统 -->
+  <rect class="accent" x="80" y="200" width="370" height="62" rx="14"/>
+  <text class="text" x="265" y="226" text-anchor="middle">代码研发系统</text>
+  <text class="minor" x="265" y="248" text-anchor="middle">提交 / PR / 构建 / CI/CD / 发布</text>
+
+  <!-- 沟通系统 -->
+  <rect class="accent4" x="80" y="276" width="370" height="62" rx="14"/>
+  <text class="text" x="265" y="302" text-anchor="middle">沟通系统</text>
+  <text class="minor" x="265" y="324" text-anchor="middle">会议 / 纪要 / 飞书 · 企微 · 邮件</text>
+
+  <!-- 文档知识系统 -->
+  <rect class="accent4" x="80" y="352" width="370" height="62" rx="14"/>
+  <text class="text" x="265" y="378" text-anchor="middle">文档知识系统</text>
+  <text class="minor" x="265" y="400" text-anchor="middle">Wiki · 飞书文档 · 评审记录</text>
+
+  <!-- 测试质量系统 -->
+  <rect class="accent5" x="80" y="428" width="370" height="62" rx="14"/>
+  <text class="text" x="265" y="454" text-anchor="middle">测试质量系统</text>
+  <text class="minor" x="265" y="476" text-anchor="middle">用例 / 缺陷 / 回归 / 通过率</text>
+
+  <!-- 数据采集方式 -->
+  <rect class="accent3" x="80" y="504" width="370" height="74" rx="14"/>
+  <text class="text" x="265" y="528" text-anchor="middle">数据采集方式</text>
+  <text class="minor" x="265" y="550" text-anchor="middle">API 优先 → Webhook → 定时同步</text>
+  <text class="minor" x="265" y="566" text-anchor="middle">无法直连：轻量RPA / 人工导入兜底</text>
+
+  <!-- 横向箭头：各系统 → 平台 -->
+  <line class="solid" x1="450" y1="150" x2="530" y2="150"/>
+  <line class="solid" x1="450" y1="231" x2="530" y2="231"/>
+  <line class="solid" x1="450" y1="307" x2="530" y2="307"/>
+  <line class="solid" x1="450" y1="383" x2="530" y2="383"/>
+  <line class="solid" x1="450" y1="459" x2="530" y2="459"/>
+
+  <!-- ======================== 中：AI项目管理平台 ======================== -->
+  <rect class="card" x="535" y="66" width="640" height="530" rx="18"/>
+  <text class="text" x="565" y="94">AI项目管理平台</text>
+
+  <!-- 平台内部：数据接入 -->
+  <rect class="accent" x="565" y="114" width="580" height="62" rx="14"/>
+  <text class="text" x="855" y="140" text-anchor="middle">数据接入与统一</text>
+  <text class="minor" x="855" y="162" text-anchor="middle">统一模型 · 统一口径 · 主数据映射 · 关联追溯</text>
+
+  <!-- 纵向箭头 -->
+  <line class="dash" x1="855" y1="176" x2="855" y2="202"/>
+
+  <!-- 平台内部：门禁与规则引擎 -->
+  <rect class="accent3" x="565" y="202" width="580" height="70" rx="14"/>
+  <text class="text" x="855" y="228" text-anchor="middle">门禁与规则引擎</text>
+  <text class="minor" x="855" y="252" text-anchor="middle">阈值预警 · 状态门禁 · 流程规则 · 合规检查</text>
+
+  <!-- 纵向箭头 -->
+  <line class="dash" x1="855" y1="272" x2="855" y2="298"/>
+
+  <!-- 平台内部：数据分析与度量 -->
+  <rect class="accent2" x="565" y="298" width="580" height="90" rx="14"/>
+  <text class="text" x="855" y="324" text-anchor="middle">数据分析与度量</text>
+  <text class="minor" x="855" y="350" text-anchor="middle">交付效率 · 交付质量 · 响应体验 · 变更频率 · 协作健康</text>
+  <text class="minor" x="855" y="370" text-anchor="middle">延期风险识别 · 范围蔓延预警 · 资源冲突检测</text>
+
+  <!-- 纵向箭头 -->
+  <line class="dash" x1="855" y1="388" x2="855" y2="414"/>
+
+  <!-- 平台内部：AI Skill 编排 -->
+  <rect class="accent4" x="565" y="414" width="580" height="70" rx="14"/>
+  <text class="text" x="855" y="440" text-anchor="middle">AI Skill 编排（第11期体系）</text>
+  <text class="minor" x="855" y="464" text-anchor="middle">纪要Skill · 周报Skill · 风险Skill · 汇报Skill · 复盘Skill</text>
+
+  <!-- 纵向箭头 -->
+  <line class="dash" x1="855" y1="484" x2="855" y2="510"/>
+
+  <!-- 平台内部：改进建议生成 -->
+  <rect class="accent5" x="565" y="510" width="580" height="68" rx="14"/>
+  <text class="text" x="855" y="536" text-anchor="middle">改进建议生成</text>
+  <text class="minor" x="855" y="558" text-anchor="middle">异常定位 → 原因分析 → 改进动作建议 → 责任人 · 截止日 · 验收标准</text>
+
+  <!-- ======================== 右：输出与闭环 ======================== -->
+  <rect class="accent2" x="1230" y="66" width="420" height="530" rx="18"/>
+  <text class="text" x="1260" y="94">输出与改进闭环</text>
+
+  <rect class="card" x="1260" y="114" width="360" height="52" rx="12"/>
+  <text class="text" x="1440" y="136" text-anchor="middle">指标看板与驾驶舱</text>
+  <text class="minor" x="1440" y="154" text-anchor="middle">趋势 · 异常 · 对比 · 预警</text>
+
+  <rect class="card" x="1260" y="182" width="360" height="52" rx="12"/>
+  <text class="text" x="1440" y="204" text-anchor="middle">自动化报告</text>
+  <text class="minor" x="1440" y="222" text-anchor="middle">周报 · 月报 · 复盘报告</text>
+
+  <rect class="accent3" x="1260" y="250" width="360" height="52" rx="12"/>
+  <text class="text" x="1440" y="272" text-anchor="middle">风险预警通知</text>
+  <text class="minor" x="1440" y="290" text-anchor="middle">延期 · 范围蔓延 · 资源冲突</text>
+
+  <rect class="accent5" x="1260" y="318" width="360" height="52" rx="12"/>
+  <text class="text" x="1440" y="340" text-anchor="middle">改进建议</text>
+  <text class="minor" x="1440" y="358" text-anchor="middle">动作项 · 改进台账 · 跟踪闭环</text>
+
+  <rect class="accent4" x="1260" y="386" width="360" height="52" rx="12"/>
+  <text class="text" x="1440" y="408" text-anchor="middle">知识沉淀与回流</text>
+  <text class="minor" x="1440" y="426" text-anchor="middle">流程优化 · 模板沉淀 · Skill复用</text>
+
+  <rect class="accent" x="1260" y="454" width="360" height="124" rx="14"/>
+  <text class="text" x="1440" y="480" text-anchor="middle">持续改进闭环</text>
+  <text class="minor" x="1440" y="506" text-anchor="middle">指标异常 → 改进动作 → 负责人 → 截止日 →</text>
+  <text class="minor" x="1440" y="524" text-anchor="middle">验收标准 → 效果复盘 → 规则优化</text>
+  <text class="minor" x="1440" y="548" text-anchor="middle" fill="#2b6fff">数据 → 分析 → 行动 → 验证 → 沉淀</text>
+
+  <!-- 横向箭头：平台 → 输出 -->
+  <line class="solid" x1="1185" y1="150" x2="1230" y2="150"/>
+  <line class="solid" x1="1185" y1="231" x2="1230" y2="231"/>
+  <line class="solid" x1="1185" y1="307" x2="1230" y2="307"/>
+  <line class="solid" x1="1185" y1="383" x2="1230" y2="383"/>
+  <line class="solid" x1="1185" y1="459" x2="1230" y2="459"/>
+
+  <!-- ====== 底部核心表达 ====== -->
+  <rect class="soft" x="50" y="614" width="1600" height="36" rx="12"/>
+  <text class="minor" x="850" y="637" text-anchor="middle">核心表达：各系统提供数据 → AI项目管理平台一站式汇聚 → 基于门禁规则分析度量 → 自动生成改进建议 → 闭环验证 → 持续沉淀优化</text>
+
+  <!-- 底部 loop 回流 -->
+  <rect class="accent4" x="50" y="664" width="1600" height="32" rx="12"/>
+  <text class="minor" x="850" y="685" text-anchor="middle">改进动作效果验证后反馈回门禁规则与度量模型，持续提升平台分析准确度与建议精准度</text>
+</svg>

@@ -1,0 +1,9 @@
+{
+  "layout_type": "svg_full",
+  "title": "AI 模型运维可观测系统",
+  "svg": {
+    "src": "work/assets/024-ai-ops-working-principle.svg",
+    "alt": "AI模型运维可观测系统工作原理与指标体系",
+    "caption": "五步闭环：模型部署 → 数据采集 → 异常检测 → 告警诊断 → 自动处置，六项核心指标量化运维成效"
+  }
+}

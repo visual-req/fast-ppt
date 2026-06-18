@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fbff"/>
+      <stop offset="100%" stop-color="#eef4ff"/>
+    </linearGradient>
+    <linearGradient id="stepGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="540" rx="18" fill="url(#bg)"/>
+
+  <text x="480" y="34" text-anchor="middle" fill="#0f172a" font-size="22" font-weight="700" font-family="sans-serif">从样板验证到可复制产品</text>
+  <text x="480" y="56" text-anchor="middle" fill="#475569" font-size="13" font-family="sans-serif">保留三步推进结构，把每一步的交付内容、复制要素和运营动作放到同一张落地图里</text>
+
+  <g filter="url(#shadow)">
+    <rect x="56" y="90" width="248" height="74" rx="18" fill="url(#stepGrad)"/>
+    <rect x="356" y="90" width="248" height="74" rx="18" fill="url(#stepGrad)"/>
+    <rect x="656" y="90" width="248" height="74" rx="18" fill="url(#stepGrad)"/>
+  </g>
+
+  <circle cx="92" cy="127" r="20" fill="rgba(255,255,255,0.18)"/>
+  <text x="92" y="133" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="700" font-family="sans-serif">1</text>
+  <text x="188" y="121" text-anchor="middle" fill="#ffffff" font-size="20" font-weight="700" font-family="sans-serif">定义标准交付包</text>
+  <text x="188" y="144" text-anchor="middle" fill="#dbeafe" font-size="12" font-family="sans-serif">把样板项目沉淀成可交付、可验收的最小标准包</text>
+
+  <circle cx="392" cy="127" r="20" fill="rgba(255,255,255,0.18)"/>
+  <text x="392" y="133" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="700" font-family="sans-serif">2</text>
+  <text x="488" y="121" text-anchor="middle" fill="#ffffff" font-size="20" font-weight="700" font-family="sans-serif">固化可复制要素</text>
+  <text x="488" y="144" text-anchor="middle" fill="#dbeafe" font-size="12" font-family="sans-serif">把部署、接口、阈值和改造方式做成标准模板</text>
+
+  <circle cx="692" cy="127" r="20" fill="rgba(255,255,255,0.18)"/>
+  <text x="692" y="133" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="700" font-family="sans-serif">3</text>
+  <text x="788" y="121" text-anchor="middle" fill="#ffffff" font-size="20" font-weight="700" font-family="sans-serif">推广与持续优化</text>
+  <text x="788" y="144" text-anchor="middle" fill="#dbeafe" font-size="12" font-family="sans-serif">进入多产线复制、版本治理和场景迭代的运营阶段</text>
+
+  <line x1="304" y1="127" x2="356" y2="127" stroke="#94a3b8" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="604" y1="127" x2="656" y2="127" stroke="#94a3b8" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="56" y="204" width="248" height="248" rx="18" fill="url(#cardGrad)" stroke="#bfdbfe"/>
+    <rect x="356" y="204" width="248" height="248" rx="18" fill="url(#cardGrad)" stroke="#bfdbfe"/>
+    <rect x="656" y="204" width="248" height="248" rx="18" fill="url(#cardGrad)" stroke="#bfdbfe"/>
+  </g>
+
+  <rect x="76" y="224" width="208" height="30" rx="10" fill="#dbeafe"/>
+  <text x="180" y="244" text-anchor="middle" fill="#1d4ed8" font-size="14" font-weight="700" font-family="sans-serif">标准交付包内容</text>
+  <text x="82" y="284" fill="#334155" font-size="13" font-family="sans-serif">• 数据字典与采集规范</text>
+  <text x="82" y="312" fill="#334155" font-size="13" font-family="sans-serif">• 缺陷字典与标注标准</text>
+  <text x="82" y="340" fill="#334155" font-size="13" font-family="sans-serif">• 模型评估基线</text>
+  <text x="82" y="368" fill="#334155" font-size="13" font-family="sans-serif">• 上线验收 Checklist</text>
+  <rect x="76" y="394" width="208" height="38" rx="12" fill="#eff6ff" stroke="#bfdbfe"/>
+  <text x="180" y="417" text-anchor="middle" fill="#1e40af" font-size="12" font-weight="700" font-family="sans-serif">输出物</text>
+  <text x="180" y="432" text-anchor="middle" fill="#475569" font-size="11" font-family="sans-serif">形成首个可交付、可验收、可培训的标准包</text>
+
+  <rect x="376" y="224" width="208" height="30" rx="10" fill="#dbeafe"/>
+  <text x="480" y="244" text-anchor="middle" fill="#1d4ed8" font-size="14" font-weight="700" font-family="sans-serif">可复制要素模板</text>
+  <text x="382" y="284" fill="#334155" font-size="13" font-family="sans-serif">• 工位改造标准</text>
+  <text x="382" y="312" fill="#334155" font-size="13" font-family="sans-serif">• 边缘部署规范</text>
+  <text x="382" y="340" fill="#334155" font-size="13" font-family="sans-serif">• 接口规范</text>
+  <text x="382" y="368" fill="#334155" font-size="13" font-family="sans-serif">• 阈值模板</text>
+  <rect x="376" y="394" width="208" height="38" rx="12" fill="#eff6ff" stroke="#bfdbfe"/>
+  <text x="480" y="417" text-anchor="middle" fill="#1e40af" font-size="12" font-weight="700" font-family="sans-serif">关键结果</text>
+  <text x="480" y="432" text-anchor="middle" fill="#475569" font-size="11" font-family="sans-serif">减少新工位导入成本，缩短复制部署周期</text>
+
+  <rect x="676" y="224" width="208" height="30" rx="10" fill="#dbeafe"/>
+  <text x="780" y="244" text-anchor="middle" fill="#1d4ed8" font-size="14" font-weight="700" font-family="sans-serif">运营与优化动作</text>
+  <text x="682" y="284" fill="#334155" font-size="13" font-family="sans-serif">• 多产线复制</text>
+  <text x="682" y="312" fill="#334155" font-size="13" font-family="sans-serif">• 模型版本管理</text>
+  <text x="682" y="340" fill="#334155" font-size="13" font-family="sans-serif">• 场景库迭代</text>
+  <text x="682" y="368" fill="#334155" font-size="13" font-family="sans-serif">• 效果回收与阈值调优</text>
+  <rect x="676" y="394" width="208" height="38" rx="12" fill="#eff6ff" stroke="#bfdbfe"/>
+  <text x="780" y="417" text-anchor="middle" fill="#1e40af" font-size="12" font-weight="700" font-family="sans-serif">经营目标</text>
+  <text x="780" y="432" text-anchor="middle" fill="#475569" font-size="11" font-family="sans-serif">让单点样板进化为可规模推广的产品能力</text>
+
+  <rect x="158" y="472" width="644" height="38" rx="14" fill="#0f172a" opacity="0.06"/>
+  <text x="480" y="496" text-anchor="middle" fill="#334155" font-size="13" font-family="sans-serif">主线逻辑：先把项目做成标准包，再把部署做成模板，最后把复制与优化做成持续运营机制</text>
+</svg>

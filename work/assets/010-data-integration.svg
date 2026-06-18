@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/></filter>
+  </defs>
+  
+  <rect width="960" height="540" rx="12" fill="url(#bg)"/>
+  
+  <!-- Title bar -->
+  <rect x="0" y="0" width="960" height="48" fill="url(#hdr)" rx="12"/>
+  <rect x="0" y="24" width="960" height="24" fill="url(#hdr)"/>
+  <text x="480" y="31" text-anchor="middle" fill="#fff" font-size="18" font-weight="700" font-family="sans-serif">数据贯通：全链路集成与追溯</text>
+
+  <!-- Center: Integration bus -->
+  <rect x="280" y="200" width="400" height="90" rx="12" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+  <text x="480" y="234" text-anchor="middle" fill="#fff" font-size="18" font-weight="700" font-family="sans-serif">集成总线</text>
+  <text x="480" y="264" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="13" font-family="sans-serif">API 网关  ·  消息队列  ·  服务编排</text>
+
+  <!-- Top left: Unified Coding -->
+  <rect x="30" y="80" width="230" height="95" rx="10" fill="#fff" stroke="#3b82f6" stroke-width="1.5" filter="url(#shadow)"/>
+  <circle cx="60" cy="110" r="14" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="60" y="115" text-anchor="middle" fill="#1d4ed8" font-size="14" font-weight="700" font-family="sans-serif">1</text>
+  <text x="85" y="112" fill="#0f172a" font-size="16" font-weight="700" font-family="sans-serif">统一编码体系</text>
+  <text x="50" y="140" fill="#64748b" font-size="12" font-family="sans-serif">物料/设备/工位/组织编码统一</text>
+  <text x="50" y="158" fill="#64748b" font-size="12" font-family="sans-serif">贯穿 ERP → MES → WMS 全链条</text>
+
+  <!-- Top right: NTP -->
+  <rect x="700" y="80" width="230" height="95" rx="10" fill="#fff" stroke="#8b5cf6" stroke-width="1.5" filter="url(#shadow)"/>
+  <circle cx="730" cy="110" r="14" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="730" y="115" text-anchor="middle" fill="#6d28d9" font-size="14" font-weight="700" font-family="sans-serif">2</text>
+  <text x="755" y="112" fill="#0f172a" font-size="16" font-weight="700" font-family="sans-serif">NTP 时间同步</text>
+  <text x="720" y="140" fill="#64748b" font-size="12" font-family="sans-serif">全系统毫秒级时钟对齐</text>
+  <text x="720" y="158" fill="#64748b" font-size="12" font-family="sans-serif">事件顺序可严格还原</text>
+
+  <!-- Bottom left: traceability -->
+  <rect x="30" y="350" width="230" height="105" rx="10" fill="#fff" stroke="#06b6d4" stroke-width="1.5" filter="url(#shadow)"/>
+  <circle cx="60" cy="380" r="14" fill="#ecfeff" stroke="#06b6d4" stroke-width="1.5"/>
+  <text x="60" y="385" text-anchor="middle" fill="#0891b2" font-size="14" font-weight="700" font-family="sans-serif">3</text>
+  <text x="85" y="382" fill="#0f172a" font-size="16" font-weight="700" font-family="sans-serif">全链路追溯</text>
+  <text x="50" y="410" fill="#64748b" font-size="12" font-family="sans-serif">正向：原料 → 半成品 → 成品</text>
+  <text x="50" y="430" fill="#64748b" font-size="12" font-family="sans-serif">反向：成品 → 原料批次</text>
+  <text x="50" y="450" fill="#94a3b8" font-size="11" font-family="sans-serif">覆盖全工艺路线</text>
+
+  <!-- Bottom right: query SLA -->
+  <rect x="700" y="350" width="230" height="105" rx="10" fill="#fff" stroke="#10b981" stroke-width="1.5" filter="url(#shadow)"/>
+  <circle cx="730" cy="380" r="14" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5"/>
+  <text x="730" y="385" text-anchor="middle" fill="#059669" font-size="14" font-weight="700" font-family="sans-serif">4</text>
+  <text x="755" y="382" fill="#0f172a" font-size="16" font-weight="700" font-family="sans-serif">查询 SLA</text>
+  <text x="720" y="410" fill="#64748b" font-size="12" font-family="sans-serif">30 秒内全链路数据检索</text>
+  <text x="720" y="430" fill="#64748b" font-size="12" font-family="sans-serif">实时仪表板可视化呈现</text>
+  <text x="720" y="450" fill="#94a3b8" font-size="11" font-family="sans-serif">异常自动告警</text>
+
+  <!-- Connection lines -->
+  <line x1="260" y1="150" x2="340" y2="245" stroke="#64748b" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.4"/>
+  <line x1="700" y1="150" x2="620" y2="245" stroke="#64748b" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.4"/>
+  <line x1="260" y1="390" x2="340" y2="290" stroke="#64748b" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.4"/>
+  <line x1="700" y1="390" x2="620" y2="290" stroke="#64748b" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.4"/>
+</svg>

@@ -28,6 +28,7 @@ const slideIndex = ref(0);
 const jumpValue = ref(1);
 const isOutlineOpen = ref(false);
 const isExporting = ref(false);
+const currentProject = ref("");
 
 const total = computed(() => deck.value.slides.length);
 const currentSlide = computed(() => deck.value.slides[slideIndex.value] ?? null);
@@ -142,7 +143,10 @@ function renderStatus() {
 async function reload() {
   status.value = "加载中...";
   try {
-    const res = await fetch("/api/deck", { cache: "no-store" });
+    const params = new URLSearchParams(window.location.search);
+    currentProject.value = params.get("project")?.trim() ?? "";
+    const query = currentProject.value ? `?project=${encodeURIComponent(currentProject.value)}` : "";
+    const res = await fetch(`/api/deck${query}`, { cache: "no-store" });
     if (!res.ok) throw new Error(`Failed to load deck: ${res.status} ${res.statusText}`);
     const text = await res.text();
     const parsed = JSON.parse(text) as Deck;
@@ -174,7 +178,8 @@ async function exportPptx() {
   if (isExporting.value) return;
   isExporting.value = true;
   try {
-    const res = await fetch("/api/export/pptx", { cache: "no-store" });
+    const query = currentProject.value ? `?project=${encodeURIComponent(currentProject.value)}` : "";
+    const res = await fetch(`/api/export/pptx${query}`, { cache: "no-store" });
     if (!res.ok) throw new Error(`Failed to export pptx: ${res.status} ${res.statusText}`);
     const blob = await res.blob();
     const url = URL.createObjectURL(blob);
@@ -246,6 +251,7 @@ onUnmounted(() => {
       <div class="spacer"></div>
       <div class="group">
         <div class="status">{{ status }}</div>
+        <div v-if="currentProject" class="status">项目：{{ currentProject }}</div>
       </div>
     </div>
 
@@ -294,7 +300,7 @@ onUnmounted(() => {
           <div class="slideInner">
             <div
               v-if="
-                !['cover', 'section_divider', 'thank_you'].includes(layoutType) &&
+                !['cover', 'section_divider', 'thank_you', 'agenda'].includes(layoutType) &&
                 (layoutType !== 'svg_full' || (currentSlide as any)?.show_title !== false)
               "
             >

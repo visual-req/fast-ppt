@@ -1,0 +1,272 @@
+{
+  "project": "002_制造业数字化转型",
+  "project_title": "制造业数字化转型与 AI 导入方案",
+  "ppt_type": "方案类",
+  "chapters": [
+    {
+      "chapter_no": 0,
+      "chapter_title": "开场",
+      "slides": [
+        {
+          "slide_no": "001",
+          "title": "制造业数字化转型与 AI 导入方案",
+          "layout_type": "cover",
+          "page_purpose": "开场",
+          "core_message": "一套统一框架串起数字化与 AI，明确优先级、落地路径与治理机制"
+        },
+        {
+          "slide_no": "002",
+          "title": "目录",
+          "layout_type": "agenda",
+          "page_purpose": "说明决策路径",
+          "core_message": "从数字化底座到三类 AI 导入，再到基础设施、人才、制度与路线图"
+        }
+      ]
+    },
+    {
+      "chapter_no": 1,
+      "chapter_title": "总体思路与数字化底座",
+      "slides": [
+        {
+          "slide_no": "003",
+          "title": "总体思路与数字化底座",
+          "layout_type": "section_divider",
+          "page_purpose": "章节转场",
+          "core_message": "本章回答：数字化为 AI 准备了什么，当前差距在哪里"
+        },
+        {
+          "slide_no": "004",
+          "title": "执行摘要：数字化的核心判断",
+          "layout_type": "title_bullets",
+          "page_purpose": "说明总体打法和里程碑",
+          "core_message": "数字化决定数据可用性，AI 决定决策与自动化效率；用「一个底座 + 三类 AI + 两套保障」推进"
+        },
+        {
+          "slide_no": "005",
+          "title": "数字化转型框架：从看得见到做得好",
+          "layout_type": "architecture_layered",
+          "page_purpose": "展示能力分层与价值落点",
+          "core_message": "可视化→可分析→可预测→可优化/自治，KPI 落到流程/角色/系统/数据/机制五要素闭环"
+        },
+        {
+          "slide_no": "006",
+          "title": "数字化底座建设路径",
+          "layout_type": "phases",
+          "page_purpose": "说明系统与数据的端到端打通路径",
+          "core_message": "从流程系统到数据底座，再到数据贯通（统一编码/统一时间轴/统一追溯）"
+        },
+        {
+          "slide_no": "007",
+          "title": "数字化成熟度评估与差距分析",
+          "layout_type": "radar_chart",
+          "page_purpose": "说明现状到目标的差距",
+          "core_message": "从流程标准化、系统覆盖、数据质量、网络与设备、运营机制五个维度评估成熟度"
+        }
+      ]
+    },
+    {
+      "chapter_no": 2,
+      "chapter_title": "生产环节导入 AI",
+      "slides": [
+        {
+          "slide_no": "008",
+          "title": "生产环节导入 AI：样板与复制模板",
+          "layout_type": "section_divider",
+          "page_purpose": "章节转场",
+          "core_message": "本章回答：生产 AI 做什么场景、怎么做样板、如何标准化复制"
+        },
+        {
+          "slide_no": "009",
+          "title": "生产 AI 场景地图：三个核心闭环",
+          "layout_type": "phases",
+          "page_purpose": "展示端到端机会点",
+          "core_message": "质量闭环（检测→判定→追溯→根因→纠正预防）、设备闭环（健康→预警→工单→维修→策略优化）、生产闭环（异常识别→调度→执行→反馈→优化）"
+        },
+        {
+          "slide_no": "010",
+          "title": "示例 A：视觉质检",
+          "layout_type": "case_study",
+          "page_purpose": "展示质检 AI 的交付形态与验收标准",
+          "core_message": "工位边缘推理 + 复核工作台 + 质量报表与追溯，验收指标含检出率/误判率/节拍影响"
+        },
+        {
+          "slide_no": "011",
+          "title": "示例 B：过程参数异常预警",
+          "layout_type": "case_study",
+          "page_purpose": "展示工艺 AI 的预警与处置闭环",
+          "core_message": "SPC 规则 + 异常检测模型 → 预警停线/调整 → 责任分派 → 复盘沉淀为工艺卡"
+        },
+        {
+          "slide_no": "012",
+          "title": "示例 C：预测性维护",
+          "layout_type": "case_study",
+          "page_purpose": "展示设备 AI 的健康管理与联动体系",
+          "core_message": "振动/温度/电流多源数据 + 健康度模型 → CMMS 工单联动 → 备件策略与点检优化"
+        },
+        {
+          "slide_no": "013",
+          "title": "生产 AI 的落地套路：从样板到可复制产品",
+          "layout_type": "steps",
+          "page_purpose": "说明标准化交付与复制要素",
+          "core_message": "标准交付包：数据字典/缺陷字典/标注规范/模型评估/上线验收/运维监控，工位改造与边缘部署标准"
+        }
+      ]
+    },
+    {
+      "chapter_no": 3,
+      "chapter_title": "软件研发导入 AI",
+      "slides": [
+        {
+          "slide_no": "014",
+          "title": "软件研发导入 AI：提效与质量提升",
+          "layout_type": "section_divider",
+          "page_purpose": "章节转场",
+          "core_message": "本章回答：研发全流程的 AI 机会在哪里，如何分阶段导入"
+        },
+        {
+          "slide_no": "015",
+          "title": "研发全流程的 AI 机会点：端到端视图",
+          "layout_type": "phases",
+          "page_purpose": "展示从需求到运维的 AI 嵌入机会",
+          "core_message": "需求（PRD/用户故事）→ 设计（架构对比/威胁建模）→ 开发（补全/测试/评审）→ 测试（用例/归因/回归）→ 运维（告警降噪/根因分析）"
+        },
+        {
+          "slide_no": "016",
+          "title": "研发导入路径：从工具化到平台化",
+          "layout_type": "phases",
+          "page_purpose": "说明三阶段推进节奏",
+          "core_message": "阶段1：标准工具接入 → 阶段2：工程体系融合（CI/CD/质量门禁）→ 阶段3：企业工程资产沉淀"
+        }
+      ]
+    },
+    {
+      "chapter_no": 4,
+      "chapter_title": "业务与办公场景 AI",
+      "slides": [
+        {
+          "slide_no": "017",
+          "title": "业务与办公场景 AI：决策与执行提效",
+          "layout_type": "section_divider",
+          "page_purpose": "章节转场",
+          "core_message": "本章回答：业务和办公场景 AI 在哪些环节切入，如何从辅助走向闭环"
+        },
+        {
+          "slide_no": "018",
+          "title": "业务场景地图：四大领域 AI 机会",
+          "layout_type": "four_grid",
+          "page_purpose": "展示供应链/销售/财务/合规四大业务域 AI 场景",
+          "core_message": "供应链（需求预测/库存优化/供应商预警）、销售（线索评分/交付承诺）、财务（费用稽核/经营分析）、合规（合同审查/异常识别）"
+        },
+        {
+          "slide_no": "019",
+          "title": "业务 AI 的落地方法：辅助→闭环→优化",
+          "layout_type": "steps",
+          "page_purpose": "说明三阶段落地策略",
+          "core_message": "先辅助（建议/草稿/解释，保留人工确认）→ 再闭环（嵌入审批/下单/补货流程节点）→ 再优化（用业务反馈数据持续改进）"
+        },
+        {
+          "slide_no": "020",
+          "title": "办公 AI：协同效率与知识复用",
+          "layout_type": "two_column",
+          "page_purpose": "展示办公场景导入点与安全边界",
+          "core_message": "文档/会议/搜索/助理四类高频场景，按组织/项目/密级隔离并追溯引用来源"
+        }
+      ]
+    },
+    {
+      "chapter_no": 5,
+      "chapter_title": "基础设施与运维",
+      "slides": [
+        {
+          "slide_no": "021",
+          "title": "基础设施：支撑三类 AI 的统一底座",
+          "layout_type": "section_divider",
+          "page_purpose": "章节转场",
+          "core_message": "本章回答：需要什么样的数据平台、AI 平台、集成平台和安全体系"
+        },
+        {
+          "slide_no": "022",
+          "title": "总体技术架构",
+          "layout_type": "architecture_layered",
+          "page_purpose": "展示数据/AI/集成/安全四层架构",
+          "core_message": "数据平台（湖/仓/时序/对象）+ 集成平台（API/消息/ESB）+ AI 平台（训练/推理/监控）+ 边缘与安全"
+        },
+        {
+          "slide_no": "023",
+          "title": "运维与可观测：让 AI 可用可控可运营",
+          "layout_type": "kpi_cards",
+          "page_purpose": "展示运维关键指标",
+          "core_message": "模型运营（漂移/灰度/回滚）、成本容量（算力/存储配额）、业务监控（采纳率/命中率/异常闭环）"
+        }
+      ]
+    },
+    {
+      "chapter_no": 6,
+      "chapter_title": "人才与制度保障",
+      "slides": [
+        {
+          "slide_no": "024",
+          "title": "人才与制度保障：从用起来到建起来",
+          "layout_type": "section_divider",
+          "page_purpose": "章节转场",
+          "core_message": "本章回答：组织如何搭建、人才如何培养、制度如何先行"
+        },
+        {
+          "slide_no": "025",
+          "title": "组织角色与能力模型",
+          "layout_type": "org_roles",
+          "page_purpose": "明确三类角色的职责和能力要求",
+          "core_message": "业务侧（场景Owner/流程负责人/一线试用者）、数智侧（数据/ML/平台/MLOps）、IT/OT（网络/边缘/集成/安全）"
+        },
+        {
+          "slide_no": "026",
+          "title": "培训与认证路径：分层分岗推进",
+          "layout_type": "phases",
+          "page_purpose": "说明三层培训体系",
+          "core_message": "全员（AI 基础认知/数据安全意识）→ 关键岗位（场景方法论/数据治理/验收运营）→ 专业岗（建模评测/平台工程/边缘可靠性）"
+        },
+        {
+          "slide_no": "027",
+          "title": "AI 治理体系：制度先行，规模可控",
+          "layout_type": "title_bullets",
+          "page_purpose": "展示五大治理制度",
+          "core_message": "决策机制（场景立项评审/投委会）、数据制度（分级分类/授权审计）、模型制度（评测准入/变更回滚）、内容制度、供应商管理"
+        }
+      ]
+    },
+    {
+      "chapter_no": 7,
+      "chapter_title": "收口：路线图与下一步",
+      "slides": [
+        {
+          "slide_no": "028",
+          "title": "收口：路线图与下一步行动",
+          "layout_type": "section_divider",
+          "page_purpose": "章节转场",
+          "core_message": "本章回答：接下来怎么走，第一步做什么"
+        },
+        {
+          "slide_no": "029",
+          "title": "12 个月路线图：样板→复制→平台化",
+          "layout_type": "roadmap",
+          "page_purpose": "展示四阶段推进节奏",
+          "core_message": "0-1月成熟度评估与样板场景锁定 → 2-3月生产AI样板落地 → 4-6月复制扩展+研发/办公AI推广 → 7-12月平台化与跨工厂复制"
+        },
+        {
+          "slide_no": "030",
+          "title": "下一步需要的输入与交付输出",
+          "layout_type": "plan_table",
+          "page_purpose": "对齐开工条件与交付物",
+          "core_message": "客户需提供系统清单/数据样例/工艺卡/缺陷字典，项目输出含场景优先级/样板方案/基础设施方案/预算与ROI测算"
+        },
+        {
+          "slide_no": "031",
+          "title": "核心结论与建议",
+          "layout_type": "summary",
+          "page_purpose": "推动决策",
+          "core_message": "先做评估定差距 → 选样板做出效果 → 形成标准化复制模板 → 平台化规模化推广；数字化底座是前提，AI 效果靠场景闭环验证"
+        }
+      ]
+    }
+  ]
+}

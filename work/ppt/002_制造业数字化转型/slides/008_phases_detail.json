@@ -1,0 +1,9 @@
+{
+  "layout_type": "svg_full",
+  "title": "流程系统建设：系统边界与协同",
+  "svg": {
+    "src": "work/assets/008-system-architecture-expanded.svg",
+    "alt": "制造业系统架构总览",
+    "caption": "ERP / PLM / MES / WMS / SCM / QMS / CMMS / SCADA / TMS 多系统协同"
+  }
+}

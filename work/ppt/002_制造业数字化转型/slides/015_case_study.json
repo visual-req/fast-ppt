@@ -1,0 +1,19 @@
+{
+  "layout_type": "case_study",
+  "mode": "left_right",
+  "title": "示例B：过程参数异常预警",
+  "blocks": [
+    {
+      "title": "业务痛点",
+      "text": "参数漂移导致批量不良，依赖老师傅经验。"
+    },
+    {
+      "title": "方案",
+      "text": "SPC+异常检测→停线调整→工单→工艺卡。"
+    },
+    {
+      "title": "验收指标",
+      "text": "不良次数降70%，预警提前30min，良率+2-5pp"
+    }
+  ]
+}

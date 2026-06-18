@@ -519,6 +519,40 @@
 }
 ```
 
+### `quadrant_axes`
+
+![quadrant_axes](assets/layout-quadrant-axes.svg)
+
+适用场景：
+
+- 四象限分类，同时需要明确横纵轴含义
+- 影响/投入、收益/风险等二维坐标解释
+- 需要让观众“一眼看懂坐标轴”的四象限页
+
+关键字段：
+
+- `title`
+- `x_label`
+- `y_label`
+- `quadrants`
+
+示例：
+
+```json
+{
+  "layout_type": "quadrant_axes",
+  "title": "价值-投入象限",
+  "x_label": "投入",
+  "y_label": "价值",
+  "quadrants": [
+    { "title": "低投入 / 高价值", "bullets": ["优先推进"] },
+    { "title": "高投入 / 高价值", "bullets": ["纳入计划"] },
+    { "title": "低投入 / 低价值", "bullets": ["按需处理"] },
+    { "title": "高投入 / 低价值", "bullets": ["避免投入"] }
+  ]
+}
+```
+
 ### `architecture_layered`
 
 ![architecture_layered](assets/layout-architecture-layered.svg)
@@ -580,6 +614,38 @@
     { "source": "input", "target": "outline" },
     { "source": "outline", "target": "slides" },
     { "source": "slides", "target": "viewer" }
+  ]
+}
+```
+
+### `fishbone`
+
+![fishbone](assets/layout-fishbone.svg)
+
+适用场景：
+
+- 根因分析
+- 复盘页：为什么没做好 / 为什么丢图 / 为什么超屏
+- 需要从多个维度同时拆解原因时
+
+关键字段：
+
+- `title`
+- `effect`
+- `bones`
+
+示例：
+
+```json
+{
+  "layout_type": "fishbone",
+  "title": "为什么“左右箭头丢失”",
+  "effect": "流程图箭头在页面里没显示",
+  "bones": [
+    { "category": "素材", "causes": ["箭头使用 marker 未定义", "fill/opacity 被覆盖"] },
+    { "category": "渲染", "causes": ["SVG 缩放后线太细", "样式被全局覆盖"] },
+    { "category": "规范", "causes": ["缺少 SVG 自检", "缺少回归样例"] },
+    { "category": "流程", "causes": ["只改了图没预览", "没走整套门禁"] }
   ]
 }
 ```
@@ -1136,6 +1202,39 @@
     { "label": "周一", "value": 60 },
     { "label": "周二", "value": 71 },
     { "label": "周三", "value": 84 }
+  ]
+}
+```
+
+### `coordinate_axis`
+
+![coordinate_axis](assets/layout-coordinate-axis.svg)
+
+适用场景：
+
+- 用坐标轴表达概念位置（不一定是严格数据图）
+- 两个维度同时解释时（例如：投入/收益、风险/回报）
+- 为后续的散点图/气泡图做“坐标框架页”
+
+关键字段：
+
+- `title`
+- `x_label`
+- `y_label`
+- `points`
+
+示例：
+
+```json
+{
+  "layout_type": "coordinate_axis",
+  "title": "能力位置图",
+  "x_label": "投入",
+  "y_label": "收益",
+  "points": [
+    { "label": "A", "x": 2, "y": 7, "size": 12, "color": "#2563eb" },
+    { "label": "B", "x": 5, "y": 9, "size": 18, "color": "#7c3aed" },
+    { "label": "C", "x": 8, "y": 4, "size": 14, "color": "#16a34a" }
   ]
 }
 ```
@@ -1743,3 +1842,7 @@
 - 阶段页不要退回普通表格
 - 工作流页优先保留时序和泳道语义
 - 三层结构图优先 `svg_full`，且内容不要写成 bullets
+- 数据对比优先 `bar_chart`，趋势优先 `line_chart/area_chart`
+- 构成占比优先 `pie_chart/donut_chart`，多维评分优先 `radar_chart`
+- 项目计划优先 `gantt_chart`，只想交付清单优先 `plan_table`
+- 坐标定位优先 `coordinate_axis/scatter_plot/bubble_chart`，四象限解释优先 `quadrant_axes/impact_effort/matrix_2x2`

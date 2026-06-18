@@ -43,11 +43,13 @@
 - `svg_full`: `title?` `svg`（整页 SVG 展示，适合结构图、架构图、流程总图、对比大图）
 - `swot`: `title` `quadrants`（4 象限）
 - `matrix_2x2`: `title` `quadrants`（4 象限）
+- `quadrant_axes`: `title` `x_label` `y_label` `quadrants`（带坐标轴的 4 象限）
 - `pyramid`: `title` `levels` 或 `bullets` 或 `blocks`
 - `logic_tree`: `title` `root`（text/children）
 - `icicle_tree`: `title` `root`（text/children）
 - `architecture_layered`: `title` `layers`（{ title, bullets? }[]）
 - `dependency_graph`: `title` `nodes` `links`
+- `fishbone`: `title` `effect` `bones`（{ category, causes }[]，适合根因分析）
 - `process_flow`: `title` `bullets` 或 `table`
 - `timeline`: `title` `bullets` 或 `table`
 - `roadmap`: `title` `bullets` 或 `table`
@@ -65,6 +67,7 @@
 - `radar_chart`: `title` `categories` `values` 或 `series` `max?`
 - `impact_effort`: `title` `items`（name/impact/effort/size?）
 - `gantt_chart`: `title` `tasks`（name/start/end/owner?）
+- `coordinate_axis`: `title` `x_label` `y_label` `points`（x/y/label/size?/color?）
 - `mind_map`: `title` `root`（text/children）
 - `area_chart` / `scatter_plot` / `bubble_chart` / `waterfall_chart` / `funnel_chart` / `heatmap` / `treemap` / `sankey` / `gauge`
 

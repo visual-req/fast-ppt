@@ -28,6 +28,9 @@ import SwimlaneProcess from "./components/layouts/SwimlaneProcess.vue";
 import BeforeAfter from "./components/layouts/BeforeAfter.vue";
 import ImpactEffort from "./components/layouts/ImpactEffort.vue";
 import Raci from "./components/layouts/Raci.vue";
+import QuadrantAxes from "./components/layouts/QuadrantAxes.vue";
+import CoordinateAxis from "./components/layouts/CoordinateAxis.vue";
+import Fishbone from "./components/layouts/Fishbone.vue";
 import SvgCanvas from "./components/layouts/SvgCanvas.vue";
 
 export const layoutComponentMap: Record<string, any> = {
@@ -43,6 +46,7 @@ export const layoutComponentMap: Record<string, any> = {
   problem_statement: ProblemStatement,
   matrix_2x2: Matrix2x2,
   swot: Matrix2x2,
+  quadrant_axes: QuadrantAxes,
   pie_chart: PieChart,
   donut_chart: PieChart,
   bar_chart: BarChart,
@@ -50,6 +54,9 @@ export const layoutComponentMap: Record<string, any> = {
   area_chart: LineChart,
   radar_chart: RadarChart,
   gantt_chart: GanttChart,
+  coordinate_axis: CoordinateAxis,
+  scatter_plot: CoordinateAxis,
+  bubble_chart: CoordinateAxis,
   mind_map: MindMap,
   top_bottom: TopBottom,
   steps: Steps,
@@ -66,6 +73,7 @@ export const layoutComponentMap: Record<string, any> = {
   dependency_graph: DependencyGraph,
   journey_map: JourneyMap,
   swimlane_process: SwimlaneProcess,
+  fishbone: Fishbone,
   impact_effort: ImpactEffort,
   comparison_table: TableLayout,
   plan_table: TableLayout,

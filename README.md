@@ -14,6 +14,7 @@
 - 支持 `课件类`、`方案类`、`汇报类`、`演示类` 四种类型
 - 支持图形化页面、SVG 素材、结构化 layout
 - 支持在本地浏览器中打开、检查和回改
+- 支持一键导出 PPTX（从 deck.json 生成）
 - 支持继续 fork 成你自己的风格和类型体系
 
 ## 新手先看这里
@@ -27,6 +28,7 @@
 命令如下：
 
 ```bash
+npm install
 npm --prefix ppt-viewer install
 node server.mjs
 ```

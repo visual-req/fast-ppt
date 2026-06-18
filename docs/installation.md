@@ -12,6 +12,7 @@
 在项目根目录执行：
 
 ```bash
+npm install
 npm --prefix ppt-viewer install
 ```
 
@@ -22,6 +23,7 @@ npm --prefix ppt-viewer install
 如果你希望显式通过 `npx` 走 npm 命令，也可以执行：
 
 ```bash
+npx npm install
 npx npm --prefix ppt-viewer install
 ```
 

@@ -586,30 +586,48 @@ body {
 .phasesFlow {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: minmax(240px, 1fr);
-  gap: 14px;
+  grid-auto-columns: minmax(200px, 1fr);
+  gap: 0;
   align-items: stretch;
   height: 100%;
+  padding: 10px 0;
 }
 
 .phaseCardWrap {
   display: grid;
-  grid-template-columns: 1fr 28px;
-  gap: 10px;
+  grid-template-columns: 1fr;
+  gap: 0;
   align-items: center;
   min-width: 0;
+  position: relative;
 }
 
 .phaseCard {
   display: grid;
-  gap: 12px;
+  gap: 10px;
   height: 100%;
-  min-height: 240px;
-  padding: 18px 18px 16px 18px;
-  border-radius: 20px;
+  min-height: 220px;
+  padding: 18px 22px 16px 30px;
   background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
   border: 1px solid rgba(15, 23, 42, 0.08);
   box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+  clip-path: polygon(14px 0%, 100% 0%, calc(100% - 14px) 50%, 100% 100%, 14px 100%, 0% 50%);
+  position: relative;
+}
+
+/* Arrow connector between phases */
+.phaseCardWrap:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  z-index: 2;
+  width: 18px;
+  height: 18px;
+  transform: translateY(-50%);
+  border-top: 3px solid rgba(37, 99, 235, 0.45);
+  border-right: 3px solid rgba(37, 99, 235, 0.45);
+  rotate: 45deg;
 }
 
 .phaseBadge {
@@ -657,25 +675,6 @@ body {
   line-height: 1.45;
 }
 
-.phaseArrow {
-  position: relative;
-  width: 28px;
-  height: 8px;
-  border-radius: 999px;
-  background: rgba(15, 23, 42, 0.2);
-}
-
-.phaseArrow::after {
-  content: "";
-  position: absolute;
-  right: -2px;
-  top: 50%;
-  transform: translateY(-50%);
-  border-top: 8px solid transparent;
-  border-bottom: 8px solid transparent;
-  border-left: 12px solid rgba(15, 23, 42, 0.45);
-}
-
 .layout-cover .slideTitle {
   font-size: 46px;
   line-height: 1.1;
@@ -695,4 +694,209 @@ body {
   bottom: 14px;
   font-size: 11px;
   color: rgba(15, 23, 42, 0.45);
+}
+
+/* ===== KPI Cards ===== */
+.kpiGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+  height: 100%;
+}
+
+.kpiCard {
+  display: grid;
+  gap: 8px;
+  align-content: start;
+  padding: 20px;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+}
+
+.kpiLabel {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(15, 23, 42, 0.55);
+}
+
+.kpiValueRow {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.kpiValue {
+  font-size: 42px;
+  font-weight: 900;
+  color: #0f172a;
+  line-height: 1;
+}
+
+.kpiUnit {
+  font-size: 16px;
+  color: rgba(15, 23, 42, 0.50);
+  font-weight: 600;
+}
+
+.kpiTrend {
+  font-size: 14px;
+  font-weight: 700;
+  color: #15803d;
+}
+
+.kpiNote {
+  font-size: 13px;
+  color: rgba(15, 23, 42, 0.50);
+  line-height: 1.45;
+}
+
+/* ===== Case Study ===== */
+/* full_image mode */
+.caseFullImage {
+  position: relative;
+  height: 100%;
+  border-radius: 18px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.caseOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.68);
+}
+
+.caseFullGrid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding: 6% 7%;
+  height: 100%;
+  align-content: center;
+}
+
+.caseFullCard {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 18px;
+  display: grid;
+  gap: 8px;
+  align-content: start;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.caseFullCardTitle {
+  font-size: 17px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.caseFullCardText {
+  font-size: 14px;
+  color: #334155;
+  line-height: 1.55;
+}
+
+.caseFullBullets {
+  margin: 0;
+  padding-left: 16px;
+  font-size: 14px;
+  color: #334155;
+  line-height: 1.55;
+}
+
+/* left_right mode */
+.caseLeftRight {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  height: 100%;
+}
+
+.caseImageCol {
+  display: grid;
+  align-content: center;
+}
+
+.caseImageBox {
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+}
+
+.caseImage {
+  width: 100%;
+  display: block;
+}
+
+.caseImageCap {
+  padding: 10px 14px;
+  font-size: 13px;
+  color: rgba(15, 23, 42, 0.55);
+  background: #f8fafc;
+}
+
+.caseImagePlaceholder {
+  display: grid;
+  gap: 12px;
+  justify-items: center;
+  align-content: center;
+  height: 100%;
+  min-height: 260px;
+  border-radius: 18px;
+  background: #f8fafc;
+  border: 1px dashed rgba(15, 23, 42, 0.12);
+}
+
+.caseImagePlaceholderText {
+  font-size: 14px;
+  color: rgba(15, 23, 42, 0.35);
+}
+
+.caseTextCol {
+  display: grid;
+  gap: 16px;
+  align-content: center;
+  overflow-y: auto;
+}
+
+.caseBlock {
+  display: grid;
+  gap: 6px;
+}
+
+.caseBlockTitle {
+  font-size: 20px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.caseBlockText {
+  font-size: 15px;
+  color: #334155;
+  line-height: 1.6;
+}
+
+.caseBullets {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 15px;
+  color: #334155;
+  line-height: 1.6;
+}
+
+/* fallback grid for case_study without mode */
+.caseGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  height: 100%;
+  align-content: center;
 }

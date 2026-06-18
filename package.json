@@ -4,7 +4,10 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "start": "node server.mjs"
+    "start": "node server.mjs",
+    "dev": "npm --prefix ppt-viewer run build && node server.mjs",
+    "viewer": "node server.mjs",
+    "build": "npm --prefix ppt-viewer run build"
   },
   "dependencies": {
     "pptxgenjs": "^3.13.0"

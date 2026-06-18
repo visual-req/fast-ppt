@@ -9,13 +9,14 @@
   "slide_files": [
     "slides/001_cover.json",
     "slides/002_agenda.json",
-    "slides/003_title_bullets.json",
-    "slides/004_problem_statement.json",
-    "slides/005_architecture_layered.json",
-    "slides/006_comparison_table.json",
-    "slides/007_roadmap.json",
-    "slides/008_cost_benefit.json",
-    "slides/009_risk_register.json",
-    "slides/010_summary.json"
+    "slides/003_section_divider.json",
+    "slides/004_title_bullets.json",
+    "slides/005_problem_statement.json",
+    "slides/006_architecture_layered.json",
+    "slides/007_comparison_table.json",
+    "slides/008_roadmap.json",
+    "slides/009_cost_benefit.json",
+    "slides/010_risk_register.json",
+    "slides/011_summary.json"
   ]
 }

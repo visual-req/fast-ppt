@@ -29,7 +29,6 @@ function toBullets(value: unknown): string[] {
         </ul>
         <div v-if="item?.gate" class="phaseGate">{{ item.gate }}</div>
       </div>
-      <div v-if="index < phases.length - 1" class="phaseArrow" aria-hidden="true"></div>
     </div>
   </div>
 </template>

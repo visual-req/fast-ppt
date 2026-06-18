@@ -36,55 +36,62 @@
       "slides": [
         {
           "slide_no": "003",
+          "title": "问题与方案闭环",
+          "layout_type": "section_divider",
+          "page_purpose": "章节转场",
+          "core_message": "本章要回答：现状是什么、问题在哪里、方案怎么解决。"
+        },
+        {
+          "slide_no": "004",
           "title": "背景与目标",
           "layout_type": "title_bullets",
           "page_purpose": "说明为什么要做",
           "core_message": "先明确业务背景、建设目标和约束条件。"
         },
         {
-          "slide_no": "004",
+          "slide_no": "005",
           "title": "现状与问题",
           "layout_type": "problem_statement",
           "page_purpose": "说明问题严重性",
           "core_message": "把现象、影响和问题根因讲清楚。"
         },
         {
-          "slide_no": "005",
+          "slide_no": "006",
           "title": "总体方案",
           "layout_type": "architecture_layered",
           "page_purpose": "展示总体设计",
           "core_message": "先给总体方案框架，再解释核心模块。"
         },
         {
-          "slide_no": "006",
+          "slide_no": "007",
           "title": "方案对比",
           "layout_type": "comparison_table",
           "page_purpose": "支持方案选择",
           "core_message": "把候选路径的差异、代价和适用场景讲明白。"
         },
         {
-          "slide_no": "007",
+          "slide_no": "008",
           "title": "实施路径",
           "layout_type": "roadmap",
           "page_purpose": "说明怎么落地",
           "core_message": "把阶段、里程碑、依赖和责任拆清楚。"
         },
         {
-          "slide_no": "008",
+          "slide_no": "009",
           "title": "收益分析",
           "layout_type": "cost_benefit",
           "page_purpose": "证明可行性",
           "core_message": "说明投入、收益和测算前提。"
         },
         {
-          "slide_no": "009",
+          "slide_no": "010",
           "title": "风险与保障",
           "layout_type": "risk_register",
           "page_purpose": "说明风险控制",
           "core_message": "补齐风险识别、治理机制和保障动作。"
         },
         {
-          "slide_no": "010",
+          "slide_no": "011",
           "title": "建议与结论",
           "layout_type": "summary",
           "page_purpose": "推动决策",

@@ -18,6 +18,16 @@
 - Q&A：`thank_you`
 - 补充材料：`appendix`
 
+KPI 与指标（新增）：
+
+- KPI 仪表盘/核心指标总览/关键数字：`kpi_cards`
+- 每张卡片必填 `label`/`value`/`unit`，可选 `trend`/`note`
+
+案例（新增）：
+
+- 案例拆解/实践复盘/落地回顾：`case_study`
+- 支持两种模式：`mode: "left_right"`（左图右文）和 `mode: "full_image"`（大图叠加卡片）
+
 结论与论据：
 
 - 单页结论 + 3-6 条要点：`title_bullets`

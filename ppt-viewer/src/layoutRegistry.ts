@@ -31,6 +31,8 @@ import Raci from "./components/layouts/Raci.vue";
 import QuadrantAxes from "./components/layouts/QuadrantAxes.vue";
 import CoordinateAxis from "./components/layouts/CoordinateAxis.vue";
 import Fishbone from "./components/layouts/Fishbone.vue";
+import KpiCards from "./components/layouts/KpiCards.vue";
+import CaseStudy from "./components/layouts/CaseStudy.vue";
 import SvgCanvas from "./components/layouts/SvgCanvas.vue";
 
 export const layoutComponentMap: Record<string, any> = {
@@ -74,6 +76,8 @@ export const layoutComponentMap: Record<string, any> = {
   journey_map: JourneyMap,
   swimlane_process: SwimlaneProcess,
   fishbone: Fishbone,
+  kpi_cards: KpiCards,
+  case_study: CaseStudy,
   impact_effort: ImpactEffort,
   comparison_table: TableLayout,
   plan_table: TableLayout,

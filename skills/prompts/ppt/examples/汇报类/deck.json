@@ -1,0 +1,20 @@
+{
+  "deck": {
+    "aspect_ratio": "16:9",
+    "style": "executive",
+    "language": "zh-CN",
+    "type": "汇报类",
+    "title": "汇报标题"
+  },
+  "slide_files": [
+    "slides/001_cover.json",
+    "slides/002_summary.json",
+    "slides/003_kpi_cards.json",
+    "slides/004_problem_statement.json",
+    "slides/005_bar_chart.json",
+    "slides/006_title_bullets.json",
+    "slides/007_comparison_table.json",
+    "slides/008_roadmap.json",
+    "slides/009_thank_you.json"
+  ]
+}

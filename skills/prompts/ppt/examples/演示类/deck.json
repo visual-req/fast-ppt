@@ -1,0 +1,20 @@
+{
+  "deck": {
+    "aspect_ratio": "16:9",
+    "style": "demo",
+    "language": "zh-CN",
+    "type": "演示类",
+    "title": "演示标题"
+  },
+  "slide_files": [
+    "slides/001_cover.json",
+    "slides/002_section_divider.json",
+    "slides/003_title_bullets.json",
+    "slides/004_four_grid.json",
+    "slides/005_steps.json",
+    "slides/006_before_after.json",
+    "slides/007_journey_map.json",
+    "slides/008_summary.json",
+    "slides/009_thank_you.json"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "layout_type": "two_column",
+  "title": "课堂练习：为本课件设计 3 条 Evaluator 规则",
+  "left": {
+    "title": "练习要求",
+    "bullets": [
+      "先写一条结构规则",
+      "再写一条内容规则",
+      "最后写一条视觉质量规则",
+      "思考哪些规则最适合自动化执行"
+    ]
+  },
+  "right": {
+    "title": "Evaluator 门禁图",
+    "image": {
+      "src": "work/assets/001-evaluator-rules.svg",
+      "caption": "右侧门禁图帮助学员把结构、类型、内容、质量四层规则组织成一个完整检查框架。"
+    }
+  }
+}

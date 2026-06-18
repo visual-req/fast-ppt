@@ -1,0 +1,24 @@
+{
+  "deck": {
+    "aspect_ratio": "16:9",
+    "style": "training",
+    "language": "zh-CN",
+    "type": "课件类",
+    "title": "课件标题"
+  },
+  "slide_files": [
+    "slides/001_cover.json",
+    "slides/002_agenda.json",
+    "slides/003_section_divider.json",
+    "slides/004_two_column.json",
+    "slides/005_two_column.json",
+    "slides/006_steps.json",
+    "slides/007_four_grid.json",
+    "slides/008_top_bottom.json",
+    "slides/009_four_grid.json",
+    "slides/010_two_column.json",
+    "slides/011_summary.json",
+    "slides/012_section_divider.json",
+    "slides/013_thank_you.json"
+  ]
+}

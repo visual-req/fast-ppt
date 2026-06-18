@@ -1,0 +1,429 @@
+{
+  "outline": {
+    "type": "课件类",
+    "title": "从 Skill 到 Harness 工程",
+    "subtitle": "从提示词优化走向可执行、可验证、可回归的 Agent 工程体系",
+    "audience": "希望理解 Agent 工程化落地的产品、研发、提示词设计与交付人员",
+    "goal": "让学员理解三代工程的演进逻辑，掌握 Skill 的设计方法、Harness 的组成方式，以及 Evaluator 在质量闭环中的关键作用。",
+    "style": "training",
+    "detail_mode": "detailed",
+    "visual_density": "high",
+    "concept_page_rule": "核心概念页优先使用结构图、关系图、流程图、矩阵图和图文联动页，不接受纯文字定义页。"
+  },
+  "chapters": [
+    {
+      "chapter_no": 0,
+      "chapter_title": "课程导入",
+      "chapter_goal": "说明课程目标、学习路径与本课件的真实案例背景。",
+      "slides": [
+        {
+          "slide_no": "001",
+          "title": "课程封面",
+          "layout_type": "cover",
+          "page_purpose": "开场",
+          "core_message": "先交代主题、对象和课程定位。",
+          "visual_plan": "重做封面布局，采用全幅背景图 + 深色遮罩 + 强标题层，增强课程感与科技感。",
+          "asset_hint": "work/assets/001-cover-hero.svg"
+        },
+        {
+          "slide_no": "002",
+          "title": "这节课会先讲什么、再讲什么、最后带走什么",
+          "layout_type": "agenda",
+          "page_purpose": "说明课程结构",
+          "core_message": "学习路径应从演进逻辑进入 Skill，再进入 Harness 与 Evaluator。",
+          "visual_plan": "重做目录页布局，采用背景图 + 左侧目录结构 + 右侧学习结果卡片，避免普通列表页。",
+          "asset_hint": "work/assets/001-agenda-bg.svg"
+        }
+      ]
+    },
+    {
+      "chapter_no": 1,
+      "chapter_title": "第 1 章 从 Prompt 到 Harness 的演进",
+      "chapter_goal": "讲清三代工程各自解决什么问题，为什么最后需要 Harness。",
+      "slides": [
+        {
+          "slide_no": "003",
+          "title": "第 1 章",
+          "layout_type": "section_divider",
+          "page_purpose": "引入章节",
+          "core_message": "先回答为什么只优化提示词已经不够。",
+          "visual_plan": "重做章节封面，采用全幅背景图 + 章节编号 + 一句学习目标。",
+          "asset_hint": "work/assets/001-chapter-01-bg.svg"
+        },
+        {
+          "slide_no": "004",
+          "title": "为什么今天要从“写提示词”升级到“做工程”",
+          "layout_type": "top_bottom",
+          "page_purpose": "问题导入",
+          "core_message": "任务越复杂，失败点越不只在问法，而在材料、流程和质量控制。",
+          "visual_plan": "上结论下解释，用短句引出工程化需求。"
+        },
+        {
+          "slide_no": "005",
+          "title": "提示词工程：先把问题问准",
+          "layout_type": "mind_map",
+          "page_purpose": "定义概念",
+          "core_message": "提示词工程的重点是角色、目标、格式和约束表达。",
+          "visual_plan": "改成概念导图，围绕“任务目标”向外展开角色、目标、格式、约束、示例五个分支。"
+        },
+        {
+          "slide_no": "006",
+          "title": "上下文工程：再把材料组织对",
+          "layout_type": "logic_tree",
+          "page_purpose": "定义概念",
+          "core_message": "上下文工程的重点是材料召回、规则注入和示例组织。",
+          "visual_plan": "改成逻辑树，按材料来源、规则约束、示例骨架、召回边界、污染风险五层展开。"
+        },
+        {
+          "slide_no": "007",
+          "title": "三代工程的演进关系图",
+          "layout_type": "svg_full",
+          "page_purpose": "详细解析",
+          "core_message": "能力边界从“问法”逐步扩展到“材料”，最终走向“执行与验证闭环”。",
+          "visual_plan": "SVG 总览图。",
+          "asset_hint": "work/assets/001-evolution-compare.svg"
+        },
+        {
+          "slide_no": "008",
+          "title": "三代工程的差异到底在哪里",
+          "layout_type": "comparison_table",
+          "page_purpose": "概念对比",
+          "core_message": "三代工程在核心问题、处理对象、适用任务和典型风险上都不同。",
+          "visual_plan": "对比表。"
+        },
+        {
+          "slide_no": "009",
+          "title": "什么时候一个任务该升级到 Harness",
+          "layout_type": "impact_effort",
+          "page_purpose": "判断升级场景",
+          "core_message": "多步骤、可回归、强约束任务更适合进入 Harness 阶段。",
+          "visual_plan": "影响投入矩阵，把任务复杂度和稳定性需求可视化。"
+        },
+        {
+          "slide_no": "010",
+          "title": "从单轮生成到闭环执行，任务形态发生了什么变化",
+          "layout_type": "before_after",
+          "page_purpose": "解释变化",
+          "core_message": "工程化不是把提示词写长，而是把输入、执行、检查和回改都纳入设计。",
+          "visual_plan": "Before/After 对照页。"
+        },
+        {
+          "slide_no": "011",
+          "title": "为什么“生成网页 PPT”是一个典型 Harness 任务",
+          "layout_type": "dependency_graph",
+          "page_purpose": "连接案例",
+          "core_message": "这道题同时要求目录组织、两阶段产物、前端预览与质量检查，已经超过单纯提示词优化。",
+          "visual_plan": "改成依赖关系图，把输入、outline、detail、assets、viewer、evaluator 串成任务依赖网络。"
+        },
+        {
+          "slide_no": "012",
+          "title": "课堂讨论：三代工程分别解决什么核心问题？",
+          "layout_type": "pyramid",
+          "page_purpose": "课堂互动",
+          "core_message": "通过讨论把三代工程的边界和升级条件讲透。",
+          "visual_plan": "左题右图。",
+          "asset_hint": "work/assets/001-evolution-compare.svg"
+        },
+        {
+          "slide_no": "013",
+          "title": "本章小结：先学会区分三代工程，再决定该用哪一代",
+          "layout_type": "summary",
+          "page_purpose": "结论回顾",
+          "core_message": "不是所有任务都要上 Harness，但复杂任务迟早需要闭环设计。",
+          "visual_plan": "总结页。"
+        }
+      ]
+    },
+    {
+      "chapter_no": 2,
+      "chapter_title": "第 2 章 Skill 工程",
+      "chapter_goal": "讲清 Skill 的用途、结构、触发、目录、质量保障与本题案例。",
+      "slides": [
+        {
+          "slide_no": "014",
+          "title": "第 2 章",
+          "layout_type": "section_divider",
+          "page_purpose": "引入章节",
+          "core_message": "Skill 的重点不是写一个 prompt，而是沉淀一个可复用能力单元。",
+          "visual_plan": "重做章节封面，采用全幅背景图 + 章节编号 + 一句学习目标。",
+          "asset_hint": "work/assets/001-chapter-02-bg.svg"
+        },
+        {
+          "slide_no": "015",
+          "title": "Skill 是什么，它先解决什么问题",
+          "layout_type": "two_column",
+          "page_purpose": "定义概念",
+          "core_message": "Skill 用来把高频任务固化成可重复触发的能力单元。",
+          "visual_plan": "改成金字塔图，从底层任务碎片到中层能力单元，再到上层稳定复用价值。"
+        },
+        {
+          "slide_no": "016",
+          "title": "一个 Skill 至少要把哪几件事讲清楚",
+          "layout_type": "four_grid",
+          "page_purpose": "结构拆解",
+          "core_message": "能力边界、触发方式、输入输出、质量保障是 Skill 设计的基本骨架。",
+          "visual_plan": "四宫格。"
+        },
+        {
+          "slide_no": "017",
+          "title": "从触发到产出：Skill 的执行路径",
+          "layout_type": "steps",
+          "page_purpose": "讲解过程",
+          "core_message": "Skill 需要把意图识别、prompt 执行、产物写入和校验串起来。",
+          "visual_plan": "步骤流程图。"
+        },
+        {
+          "slide_no": "018",
+          "title": "`proposal-generator` 的 Skill 设计骨架",
+          "layout_type": "architecture_layered",
+          "page_purpose": "案例介绍",
+          "core_message": "真实项目中的 Skill 设计应同时考虑能力边界、入口、目录与质量闭环。",
+          "visual_plan": "分层结构图。"
+        },
+        {
+          "slide_no": "019",
+          "title": "工作区为什么要分成 input、ppt、assets 三类目录",
+          "layout_type": "icicle_tree",
+          "page_purpose": "解释目录组织",
+          "core_message": "目录清晰是为了让输入、产物和素材都能被稳定管理。",
+          "visual_plan": "改成层级分解图，把 work 目录向下拆到 input、ppt、assets 及各自职责。"
+        },
+        {
+          "slide_no": "020",
+          "title": "提示词体系为什么要拆成总入口 + 四类子 prompt",
+          "layout_type": "logic_tree",
+          "page_purpose": "解释 prompt 设计",
+          "core_message": "总入口负责公共规则，类型子 prompt 负责结构节奏和文风分流。",
+          "visual_plan": "逻辑树。"
+        },
+        {
+          "slide_no": "021",
+          "title": "为什么一定要先做 outline，再做 detail",
+          "layout_type": "before_after",
+          "page_purpose": "解释两阶段机制",
+          "core_message": "先确认结构，再细化页面，能显著减少返工和整体跑偏。",
+          "visual_plan": "改成前后对照图，对比“直接写详细页”和“先 outline 再 detail”的质量差异。"
+        },
+        {
+          "slide_no": "022",
+          "title": "Skill 的质量闭环：大纲质检与详细页质检",
+          "layout_type": "swimlane_process",
+          "page_purpose": "解释质量保障",
+          "core_message": "没有阶段质检，Skill 很容易产出看似完整但不可用的结果。",
+          "visual_plan": "泳道流程图。"
+        },
+        {
+          "slide_no": "023",
+          "title": "好 Skill 与坏 Skill，差别通常不在字数，而在结构",
+          "layout_type": "comparison_table",
+          "page_purpose": "质量对比",
+          "core_message": "好的 Skill 会把边界、阶段、目录、示例和质检都固定下来。",
+          "visual_plan": "对比表。"
+        },
+        {
+          "slide_no": "024",
+          "title": "本题里的 Skill 真实落地链路",
+          "layout_type": "swimlane_process",
+          "page_purpose": "连接真实案例",
+          "core_message": "从读输入、判类型、产大纲、产详细页到前端预览，整个链路都可被追踪。",
+          "visual_plan": "改成泳道流程图，把用户输入、skill、文件系统、viewer 的动作串起来。"
+        },
+        {
+          "slide_no": "025",
+          "title": "课堂练习：为一个新任务设计 Skill",
+          "layout_type": "matrix_2x2",
+          "page_purpose": "课堂互动",
+          "core_message": "让学员从边界、触发、结构、目录和质检五个方面独立设计一个 Skill。",
+          "visual_plan": "左题右图。",
+          "asset_hint": "work/assets/001-skill-template.svg"
+        },
+        {
+          "slide_no": "026",
+          "title": "本章小结：Skill 的价值在于沉淀能力，而不是堆一份提示词",
+          "layout_type": "summary",
+          "page_purpose": "结论回顾",
+          "core_message": "Skill 先解决复用问题，再为更大的 Harness 体系提供稳定零件。",
+          "visual_plan": "总结页。"
+        }
+      ]
+    },
+    {
+      "chapter_no": 3,
+      "chapter_title": "第 3 章 Harness 工程与 Evaluator",
+      "chapter_goal": "讲清 Harness 的整体结构、六大组件、执行链路和 Evaluator 的关键作用。",
+      "slides": [
+        {
+          "slide_no": "027",
+          "title": "第 3 章",
+          "layout_type": "section_divider",
+          "page_purpose": "引入章节",
+          "core_message": "Harness 的重点不是某个组件，而是把任务组织成一个稳定闭环。",
+          "visual_plan": "重做章节封面，采用全幅背景图 + 章节编号 + 一句学习目标。",
+          "asset_hint": "work/assets/001-chapter-03-bg.svg"
+        },
+        {
+          "slide_no": "028",
+          "title": "为什么有了 Skill 还不够，还要继续做 Harness",
+          "layout_type": "two_column",
+          "page_purpose": "问题导入",
+          "core_message": "当任务跨目录、跨阶段、跨工具并需要回归验证时，就进入 Harness 设计范围。",
+          "visual_plan": "改成任务复杂度 × 质量要求矩阵，说明哪些任务会进入 Harness 区间。"
+        },
+        {
+          "slide_no": "029",
+          "title": "Harness 总体关系图",
+          "layout_type": "svg_full",
+          "page_purpose": "总览结构",
+          "core_message": "Harness 把 context、planner、tools、memory、evaluator、environment 围绕任务目标连接起来。",
+          "visual_plan": "SVG 总览图。",
+          "asset_hint": "work/assets/001-harness-overview.svg"
+        },
+        {
+          "slide_no": "030",
+          "title": "Harness 至少要把哪六个核心组件组织起来",
+          "layout_type": "mind_map",
+          "page_purpose": "组件总览",
+          "core_message": "六大组件分别负责输入、执行、环境、记忆、规划与评估。",
+          "visual_plan": "改成中心化组件导图，以 task goal 为中心向外展开六大组件。"
+        },
+        {
+          "slide_no": "031",
+          "title": "Context：决定模型到底能看到什么、看到多少",
+          "layout_type": "logic_tree",
+          "page_purpose": "组件细讲",
+          "core_message": "上下文不是越多越好，而是越准越好。",
+          "visual_plan": "改成逻辑树，从输入材料向下拆到规则、示例、约束、风险和裁剪边界。"
+        },
+        {
+          "slide_no": "032",
+          "title": "Tools：让模型不只会说，还能真的去做",
+          "layout_type": "dependency_graph",
+          "page_purpose": "组件细讲",
+          "core_message": "工具能力决定任务能否跨越读、写、搜、构建和验证。",
+          "visual_plan": "改成工具依赖图，展示 read、write、build、preview、check 等能力如何协同。"
+        },
+        {
+          "slide_no": "033",
+          "title": "Environment 与 Memory：让结果可复现、让过程可延续",
+          "layout_type": "before_after",
+          "page_purpose": "组件细讲",
+          "core_message": "环境保证运行稳定，记忆保证跨轮连续。",
+          "visual_plan": "改成前后对照图，展示没有环境/记忆与具备环境/记忆时的执行差异。"
+        },
+        {
+          "slide_no": "034",
+          "title": "Planner：决定先做什么、后做什么、什么时候该回改",
+          "layout_type": "steps",
+          "page_purpose": "组件细讲",
+          "core_message": "Planner 让复杂任务不再只是顺手生成，而是按阶段推进。",
+          "visual_plan": "改成阶段步骤图，把判断、拆解、执行、回改、收束画成流程。"
+        },
+        {
+          "slide_no": "035",
+          "title": "从输入到交付：Harness 的任务执行链路",
+          "layout_type": "swimlane_process",
+          "page_purpose": "讲解过程",
+          "core_message": "任务执行是一个有阶段、有角色、有回改点的流程，而不是一次性输出。",
+          "visual_plan": "泳道流程图。"
+        },
+        {
+          "slide_no": "036",
+          "title": "Harness 应该优先优化什么，而不是到处一起改",
+          "layout_type": "impact_effort",
+          "page_purpose": "优化方法",
+          "core_message": "先补高影响低投入的结构性问题，效果通常最好。",
+          "visual_plan": "影响投入矩阵。"
+        },
+        {
+          "slide_no": "037",
+          "title": "为什么 Evaluator 是 Harness 里最值得重点讲的组件",
+          "layout_type": "pyramid",
+          "page_purpose": "重点组件导入",
+          "core_message": "没有 Evaluator，任务再复杂也很难形成稳定可回归的质量闭环。",
+          "visual_plan": "改成金字塔图，从底层错误发现到中层质量门禁，再到上层稳定交付价值。"
+        },
+        {
+          "slide_no": "038",
+          "title": "Evaluator 的四层检查链路",
+          "layout_type": "swimlane_process",
+          "page_purpose": "重点组件细讲",
+          "core_message": "Evaluator 不只是最后挑错，而是按结构、类型、内容、质量逐层设门。",
+          "visual_plan": "泳道流程图。"
+        },
+        {
+          "slide_no": "039",
+          "title": "本题里可以把 Evaluator 规则设计成什么样",
+          "layout_type": "architecture_layered",
+          "page_purpose": "案例介绍",
+          "core_message": "规则应覆盖目录结构、类型匹配、教学完整性和视觉质量。",
+          "visual_plan": "改成分层规则图，把结构、类型、内容、质量四层规则做成门禁架构。"
+        },
+        {
+          "slide_no": "040",
+          "title": "本题里的 Harness 落地示例：它是怎么把生成、检查和预览串起来的",
+          "layout_type": "dependency_graph",
+          "page_purpose": "连接真实案例",
+          "core_message": "真实项目会把 prompt、目录、构建、预览与回改组织成持续运行链路。",
+          "visual_plan": "改成依赖图，把 prompts、outline、slides、assets、viewer、preview server 串成落地网络。"
+        },
+        {
+          "slide_no": "041",
+          "title": "课堂练习：为本课件设计 3 条 Evaluator 规则",
+          "layout_type": "two_column",
+          "page_purpose": "课堂互动",
+          "core_message": "让学员把 Evaluator 从概念理解推进到规则设计。",
+          "visual_plan": "左题右图。",
+          "asset_hint": "work/assets/001-evaluator-rules.svg"
+        },
+        {
+          "slide_no": "042",
+          "title": "本章小结：Harness 的核心，是把任务组织成可验证闭环",
+          "layout_type": "summary",
+          "page_purpose": "结论回顾",
+          "core_message": "真正让复杂任务稳定的，不是单点技巧，而是整体闭环设计。",
+          "visual_plan": "总结页。"
+        }
+      ]
+    },
+    {
+      "chapter_no": 4,
+      "chapter_title": "课程收束",
+      "chapter_goal": "把全课内容串成知识地图，并帮助学员形成带走结论。",
+      "slides": [
+        {
+          "slide_no": "043",
+          "title": "全课总复盘",
+          "layout_type": "section_divider",
+          "page_purpose": "全课收束",
+          "core_message": "最后把三代工程、Skill、Harness 和 Evaluator 串回同一条主线。",
+          "visual_plan": "重做收束章节封面，采用全幅背景图 + 总复盘标题 + 课程收束氛围。",
+          "asset_hint": "work/assets/001-chapter-04-bg.svg"
+        },
+        {
+          "slide_no": "044",
+          "title": "从 Skill 到 Harness 的知识地图",
+          "layout_type": "mind_map",
+          "page_purpose": "知识收束",
+          "core_message": "把全课拆散的知识点重新收束成一张图，帮助学员建立整体认知。",
+          "visual_plan": "思维导图。"
+        },
+        {
+          "slide_no": "045",
+          "title": "这节课真正要带走的 5 句话",
+          "layout_type": "summary",
+          "page_purpose": "结论沉淀",
+          "core_message": "学完以后，学员应能说清什么时候该做 Skill，什么时候该做 Harness，为什么 Evaluator 重要。",
+          "visual_plan": "强结论总结页。"
+        },
+        {
+          "slide_no": "046",
+          "title": "Q&A",
+          "layout_type": "thank_you",
+          "page_purpose": "结束",
+          "core_message": "完成收尾并引导互动提问。",
+          "visual_plan": "结束页。"
+        }
+      ]
+    }
+  ]
+}

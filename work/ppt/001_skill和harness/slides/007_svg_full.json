@@ -1,0 +1,10 @@
+{
+  "layout_type": "svg_full",
+  "title": "三代工程的演进关系图",
+  "svg": {
+    "src": "work/assets/001-evolution-compare.svg",
+    "alt": "三代工程演进关系图",
+    "caption": "从 Prompt、Context 到 Harness，关注点从“写对一句话”升级为“设计一整条稳定交付链路”。"
+  },
+  "show_title": true
+}

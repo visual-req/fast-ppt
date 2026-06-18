@@ -1,0 +1,21 @@
+{
+  "layout_type": "two_column",
+  "title": "概念介绍",
+  "left": {
+    "title": "概念要点",
+    "bullets": [
+      "概念定义",
+      "适用场景",
+      "关键术语",
+      "与相近概念的区别"
+    ]
+  },
+  "right": {
+    "title": "说明图",
+    "image": {
+      "src": "work/assets/example-concept.png",
+      "caption": "配图建议：概念结构图、流程图或示意图"
+    }
+  },
+  "page_purpose": "概念介绍"
+}

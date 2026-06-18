@@ -1,0 +1,34 @@
+{
+  "layout_type": "architecture_layered",
+  "title": "总体方案",
+  "layers": [
+    {
+      "title": "治理层",
+      "bullets": [
+        "规则",
+        "边界"
+      ]
+    },
+    {
+      "title": "流程层",
+      "bullets": [
+        "流程优化",
+        "协同机制"
+      ]
+    },
+    {
+      "title": "能力层",
+      "bullets": [
+        "能力模块",
+        "支撑能力"
+      ]
+    },
+    {
+      "title": "基础设施层",
+      "bullets": [
+        "平台",
+        "环境"
+      ]
+    }
+  ]
+}

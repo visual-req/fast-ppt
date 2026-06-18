@@ -1,0 +1,13 @@
+{
+  "layout_type": "two_column",
+  "title": "应用场景：什么情况下需要 Harness",
+  "left": {
+    "title": "需要 Harness 的任务",
+    "text": "当任务是多步骤、需要工具调用、要反复交付、需要多人协作或需要回归验证时，就不能只靠提示词或上下文，而需要 Harness。"
+  },
+  "right": {
+    "title": "本题相关示例",
+    "text": "本题不是让模型一次性写一页文案，而是要在固定目录下先生成并确认 `outline.json`，再生成 `deck.json + slides/*.json`，同时管理提示词、支持多类型、补充素材位，并分别校验大纲结构和详细页结构，这已经是一个 Harness 场景。"
+  },
+  "page_purpose": "案例介绍"
+}

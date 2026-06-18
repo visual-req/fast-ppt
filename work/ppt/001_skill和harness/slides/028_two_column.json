@@ -1,0 +1,20 @@
+{
+  "layout_type": "two_column",
+  "title": "课堂练习：为一个新任务设计 Skill",
+  "left": {
+    "title": "练习题",
+    "bullets": [
+      "如果要做“自动生成测试报告”的 Skill，你第一步会怎么划清能力边界？",
+      "为了让别人也能接着维护，它至少要补哪些文档和目录？",
+      "如果想让输出稳定、后面还能持续优化，你会先加哪几种保障手段？"
+    ]
+  },
+  "right": {
+    "title": "Skill 设计模板图",
+    "image": {
+      "src": "work/assets/001-skill-template.svg",
+      "caption": "右侧给出真实 Skill 设计模板图，帮助学员从“边界、触发、结构、目录、质检、优化”六个方面组织答案。"
+    }
+  },
+  "page_purpose": "课堂练习"
+}

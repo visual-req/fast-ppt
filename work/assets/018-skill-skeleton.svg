@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="rgba(15,23,42,0.16)"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <text x="90" y="110" font-size="44" font-weight="800" fill="#0f172a">`proposal-generator` 的 Skill 设计骨架</text>
+  <text x="90" y="155" font-size="20" fill="#475569">把能力做成“可触发、可落盘、可质检、可回改”的稳定单元</text>
+
+  <g filter="url(#shadow)">
+    <rect x="220" y="220" width="1160" height="560" rx="28" fill="#ffffff" stroke="#cbd5e1"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="280" y="270" width="1040" height="90" rx="20" fill="#eff6ff" stroke="#93c5fd"/>
+    <rect x="300" y="292" width="160" height="46" rx="14" fill="#1d4ed8"/>
+    <text x="380" y="323" text-anchor="middle" font-size="18" font-weight="900" fill="#ffffff">能力边界</text>
+    <text x="500" y="324" font-size="18" fill="#0f172a">只做 PPT 生成，不混入其他内容生产</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="280" y="382" width="1040" height="90" rx="20" fill="#ffffff" stroke="#cbd5e1"/>
+    <rect x="300" y="404" width="160" height="46" rx="14" fill="#0f172a"/>
+    <text x="380" y="435" text-anchor="middle" font-size="18" font-weight="900" fill="#ffffff">触发入口</text>
+    <text x="500" y="436" font-size="18" fill="#0f172a">/fppt:outline（大纲） 与 /fppt:detail（详细页）</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="280" y="494" width="1040" height="90" rx="20" fill="#ecfdf5" stroke="#86efac"/>
+    <rect x="300" y="516" width="160" height="46" rx="14" fill="#047857"/>
+    <text x="380" y="547" text-anchor="middle" font-size="18" font-weight="900" fill="#ffffff">类型分流</text>
+    <text x="500" y="548" font-size="18" fill="#0f172a">课件类 / 方案类 / 汇报类 / 演示类（结构节奏不同）</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="280" y="606" width="1040" height="90" rx="20" fill="#fff7ed" stroke="#fdba74"/>
+    <rect x="300" y="628" width="160" height="46" rx="14" fill="#c2410c"/>
+    <text x="380" y="659" text-anchor="middle" font-size="18" font-weight="900" fill="#ffffff">目录规范</text>
+    <text x="500" y="660" font-size="18" fill="#0f172a">work/input（输入） / work/ppt（产物） / work/assets（素材）</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="280" y="718" width="1040" height="90" rx="20" fill="#dbeafe" stroke="#2563eb"/>
+    <rect x="300" y="740" width="160" height="46" rx="14" fill="#1d4ed8"/>
+    <text x="380" y="771" text-anchor="middle" font-size="18" font-weight="900" fill="#ffffff">质量闭环</text>
+    <text x="500" y="772" font-size="18" fill="#0f172a">先大纲质检，再详细页质检；不通过就回改</text>
+  </g>
+</svg>

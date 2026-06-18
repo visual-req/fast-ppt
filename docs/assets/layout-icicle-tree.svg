@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect width="1600" height="900" fill="#f8fafc"/>
+<rect x="60" y="50" width="1480" height="800" rx="32" fill="#ffffff" stroke="#dbeafe" stroke-width="2"/>
+<text x="110" y="126" fill="#0f172a" font-size="44" font-family="Arial, sans-serif" font-weight="700">Icicle Tree</text>
+
+<rect x="160" y="210" width="1280" height="116" rx="22" fill="#dbeafe"/>
+<rect x="160" y="354" width="560" height="144" rx="22" fill="#bfdbfe"/>
+<rect x="748" y="354" width="692" height="144" rx="22" fill="#bfdbfe"/>
+<rect x="160" y="526" width="260" height="156" rx="22" fill="#93c5fd"/>
+<rect x="448" y="526" width="272" height="156" rx="22" fill="#93c5fd"/>
+<rect x="748" y="526" width="330" height="156" rx="22" fill="#93c5fd"/>
+<rect x="1106" y="526" width="334" height="156" rx="22" fill="#93c5fd"/>
+<text x="210" y="280" fill="#1d4ed8" font-size="28" font-family="Arial, sans-serif" font-weight="700">顶层主题</text>
+<text x="210" y="434" fill="#1d4ed8" font-size="26" font-family="Arial, sans-serif" font-weight="700">一级分支 A</text>
+<text x="798" y="434" fill="#1d4ed8" font-size="26" font-family="Arial, sans-serif" font-weight="700">一级分支 B</text>
+
+</svg>

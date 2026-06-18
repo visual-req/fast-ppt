@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect width="1600" height="900" fill="#f8fafc"/>
+<rect x="48" y="44" width="1504" height="812" rx="32" fill="#ffffff" stroke="#dbeafe" stroke-width="2"/>
+<text x="96" y="108" fill="#0f172a" font-size="38" font-family="Arial, sans-serif" font-weight="700">Outline to Detail Workflow</text>
+<text x="96" y="148" fill="#64748b" font-size="22" font-family="Arial, sans-serif">先确认结构，再生成详细页，最后交给前端验证</text>
+
+<g transform="translate(96 250)">
+<rect width="280" height="380" rx="28" fill="#eff6ff" stroke="#bfdbfe"/>
+<rect x="24" y="24" width="78" height="34" rx="17" fill="#2563eb"/>
+<text x="63" y="46" text-anchor="middle" fill="#ffffff" font-size="16" font-family="Arial, sans-serif" font-weight="700">输入</text>
+<text x="32" y="112" fill="#0f172a" font-size="30" font-family="Arial, sans-serif" font-weight="700">项目材料</text>
+<text x="32" y="162" fill="#334155" font-size="21" font-family="Arial, sans-serif">需求说明</text>
+<text x="32" y="198" fill="#334155" font-size="21" font-family="Arial, sans-serif">类型判断</text>
+<text x="32" y="234" fill="#334155" font-size="21" font-family="Arial, sans-serif">目标与约束</text>
+</g>
+
+<g transform="translate(446 220)">
+<rect width="300" height="440" rx="28" fill="#eef2ff" stroke="#c7d2fe"/>
+<rect x="24" y="24" width="90" height="34" rx="17" fill="#4338ca"/>
+<text x="69" y="46" text-anchor="middle" fill="#ffffff" font-size="16" font-family="Arial, sans-serif" font-weight="700">阶段 1</text>
+<text x="32" y="112" fill="#0f172a" font-size="30" font-family="Arial, sans-serif" font-weight="700">outline</text>
+<text x="32" y="162" fill="#334155" font-size="21" font-family="Arial, sans-serif">规划章节</text>
+<text x="32" y="198" fill="#334155" font-size="21" font-family="Arial, sans-serif">规划页意图</text>
+<text x="32" y="234" fill="#334155" font-size="21" font-family="Arial, sans-serif">选择 layout</text>
+<rect x="32" y="318" width="220" height="78" rx="16" fill="#ffffff" stroke="#c7d2fe"/>
+<text x="52" y="360" fill="#4338ca" font-size="18" font-family="Arial, sans-serif" font-weight="700">门禁</text>
+<text x="52" y="388" fill="#334155" font-size="18" font-family="Arial, sans-serif">未通过先回改大纲</text>
+</g>
+
+<g transform="translate(826 220)">
+<rect width="300" height="440" rx="28" fill="#ecfeff" stroke="#a5f3fc"/>
+<rect x="24" y="24" width="90" height="34" rx="17" fill="#0891b2"/>
+<text x="69" y="46" text-anchor="middle" fill="#ffffff" font-size="16" font-family="Arial, sans-serif" font-weight="700">阶段 2</text>
+<text x="32" y="112" fill="#0f172a" font-size="30" font-family="Arial, sans-serif" font-weight="700">detail</text>
+<text x="32" y="162" fill="#334155" font-size="21" font-family="Arial, sans-serif">生成 deck</text>
+<text x="32" y="198" fill="#334155" font-size="21" font-family="Arial, sans-serif">生成 slides</text>
+<text x="32" y="234" fill="#334155" font-size="21" font-family="Arial, sans-serif">补 SVG 素材</text>
+<rect x="32" y="318" width="220" height="78" rx="16" fill="#ffffff" stroke="#a5f3fc"/>
+<text x="52" y="360" fill="#0891b2" font-size="18" font-family="Arial, sans-serif" font-weight="700">门禁</text>
+<text x="52" y="388" fill="#334155" font-size="18" font-family="Arial, sans-serif">未通过先回改详细页</text>
+</g>
+
+<g transform="translate(1206 250)">
+<rect width="250" height="380" rx="28" fill="#dcfce7" stroke="#86efac"/>
+<rect x="24" y="24" width="78" height="34" rx="17" fill="#16a34a"/>
+<text x="63" y="46" text-anchor="middle" fill="#ffffff" font-size="16" font-family="Arial, sans-serif" font-weight="700">交付</text>
+<text x="32" y="112" fill="#0f172a" font-size="30" font-family="Arial, sans-serif" font-weight="700">前端预览</text>
+<text x="32" y="162" fill="#334155" font-size="21" font-family="Arial, sans-serif">viewer 打开</text>
+<text x="32" y="198" fill="#334155" font-size="21" font-family="Arial, sans-serif">返回 /api/deck</text>
+<text x="32" y="234" fill="#334155" font-size="21" font-family="Arial, sans-serif">浏览器核对</text>
+</g>
+
+<path d="M376 440 L446 440" stroke="#94a3b8" stroke-width="8" stroke-linecap="round"/>
+<polygon points="446,440 426,428 426,452" fill="#94a3b8"/>
+<path d="M746 440 L826 440" stroke="#94a3b8" stroke-width="8" stroke-linecap="round"/>
+<polygon points="826,440 806,428 806,452" fill="#94a3b8"/>
+<path d="M1126 440 L1206 440" stroke="#94a3b8" stroke-width="8" stroke-linecap="round"/>
+<polygon points="1206,440 1186,428 1186,452" fill="#94a3b8"/>
+</svg>

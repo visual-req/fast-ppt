@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="rgba(15,23,42,0.14)"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="90" y="90" width="1420" height="720" rx="28" fill="#ffffff" stroke="rgba(15,23,42,0.10)"/>
+  </g>
+
+  <g stroke="rgba(15,23,42,0.08)" stroke-width="2">
+    <line x1="90" y1="260" x2="1510" y2="260"/>
+    <line x1="90" y1="420" x2="1510" y2="420"/>
+    <line x1="90" y1="580" x2="1510" y2="580"/>
+    <line x1="90" y1="740" x2="1510" y2="740"/>
+  </g>
+
+  <g>
+    <rect x="120" y="130" width="150" height="70" rx="18" fill="#0f172a"/>
+    <text x="195" y="175" text-anchor="middle" font-size="18" font-weight="900" fill="#ffffff">用户</text>
+
+    <rect x="120" y="290" width="150" height="70" rx="18" fill="#1d4ed8"/>
+    <text x="195" y="335" text-anchor="middle" font-size="18" font-weight="900" fill="#ffffff">Skill</text>
+
+    <rect x="120" y="450" width="150" height="70" rx="18" fill="#047857"/>
+    <text x="195" y="495" text-anchor="middle" font-size="18" font-weight="900" fill="#ffffff">文件系统</text>
+
+    <rect x="120" y="610" width="150" height="70" rx="18" fill="#5b21b6"/>
+    <text x="195" y="655" text-anchor="middle" font-size="18" font-weight="900" fill="#ffffff">前端预览</text>
+  </g>
+
+  <g stroke="rgba(37,99,235,0.35)" stroke-width="6" fill="none">
+    <line x1="320" y1="206" x2="1460" y2="206"/>
+    <line x1="320" y1="366" x2="1460" y2="366"/>
+    <line x1="320" y1="526" x2="1460" y2="526"/>
+    <line x1="320" y1="686" x2="1460" y2="686"/>
+  </g>
+
+  <g fill="#1d4ed8" opacity="0.78">
+    <polygon points="320,206 352,190 352,222"/>
+    <polygon points="320,366 352,350 352,382"/>
+    <polygon points="320,526 352,510 352,542"/>
+    <polygon points="320,686 352,670 352,702"/>
+    <polygon points="1460,206 1428,190 1428,222"/>
+    <polygon points="1460,366 1428,350 1428,382"/>
+    <polygon points="1460,526 1428,510 1428,542"/>
+    <polygon points="1460,686 1428,670 1428,702"/>
+  </g>
+
+  <g fill="#2563eb" opacity="0.62">
+    <polygon points="620,206 604,198 604,214"/>
+    <polygon points="900,206 884,198 884,214"/>
+    <polygon points="1180,206 1164,198 1164,214"/>
+
+    <polygon points="620,366 604,358 604,374"/>
+    <polygon points="900,366 884,358 884,374"/>
+    <polygon points="1180,366 1164,358 1164,374"/>
+
+    <polygon points="620,526 604,518 604,534"/>
+    <polygon points="900,526 884,518 884,534"/>
+    <polygon points="1180,526 1164,518 1164,534"/>
+
+    <polygon points="620,686 604,678 604,694"/>
+    <polygon points="900,686 884,678 884,694"/>
+    <polygon points="1180,686 1164,678 1164,694"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="360" y="158" width="240" height="96" rx="18" fill="rgba(15,23,42,0.04)" stroke="rgba(15,23,42,0.10)"/>
+    <text x="380" y="200" font-size="18" font-weight="900" fill="#0f172a">提供需求</text>
+    <text x="380" y="232" font-size="15" fill="#334155">目标 / 风格 / 页数</text>
+
+    <rect x="640" y="158" width="240" height="96" rx="18" fill="rgba(15,23,42,0.04)" stroke="rgba(15,23,42,0.10)"/>
+    <text x="660" y="200" font-size="18" font-weight="900" fill="#0f172a">确认大纲</text>
+    <text x="660" y="232" font-size="15" fill="#334155">章节顺序与重点</text>
+
+    <rect x="920" y="158" width="240" height="96" rx="18" fill="rgba(15,23,42,0.04)" stroke="rgba(15,23,42,0.10)"/>
+    <text x="940" y="200" font-size="18" font-weight="900" fill="#0f172a">查看预览</text>
+    <text x="940" y="232" font-size="15" fill="#334155">真实渲染与跳转</text>
+
+    <rect x="1200" y="158" width="240" height="96" rx="18" fill="rgba(15,23,42,0.04)" stroke="rgba(15,23,42,0.10)"/>
+    <text x="1220" y="200" font-size="18" font-weight="900" fill="#0f172a">提出回改</text>
+    <text x="1220" y="232" font-size="15" fill="#334155">缺图 / 布局 / 文案</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="360" y="318" width="240" height="96" rx="18" fill="rgba(29,78,216,0.08)" stroke="rgba(29,78,216,0.22)"/>
+    <text x="380" y="360" font-size="18" font-weight="900" fill="#0f172a">读取输入</text>
+    <text x="380" y="392" font-size="15" fill="#334155">材料 / 规则 / 示例</text>
+
+    <rect x="640" y="318" width="240" height="96" rx="18" fill="rgba(29,78,216,0.08)" stroke="rgba(29,78,216,0.22)"/>
+    <text x="660" y="360" font-size="18" font-weight="900" fill="#0f172a">判断类型</text>
+    <text x="660" y="392" font-size="15" fill="#334155">选择对应提示词</text>
+
+    <rect x="920" y="318" width="240" height="96" rx="18" fill="rgba(29,78,216,0.08)" stroke="rgba(29,78,216,0.22)"/>
+    <text x="940" y="360" font-size="18" font-weight="900" fill="#0f172a">生成 outline</text>
+    <text x="940" y="392" font-size="15" fill="#334155">先结构后细节</text>
+
+    <rect x="1200" y="318" width="240" height="96" rx="18" fill="rgba(29,78,216,0.08)" stroke="rgba(29,78,216,0.22)"/>
+    <text x="1220" y="360" font-size="18" font-weight="900" fill="#0f172a">生成 detail</text>
+    <text x="1220" y="392" font-size="15" fill="#334155">按规则补图与布局</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="360" y="478" width="240" height="96" rx="18" fill="rgba(4,120,87,0.08)" stroke="rgba(4,120,87,0.22)"/>
+    <text x="380" y="520" font-size="18" font-weight="900" fill="#0f172a">写 outline.json</text>
+    <text x="380" y="552" font-size="15" fill="#334155">确认稿</text>
+
+    <rect x="640" y="478" width="240" height="96" rx="18" fill="rgba(4,120,87,0.08)" stroke="rgba(4,120,87,0.22)"/>
+    <text x="660" y="520" font-size="18" font-weight="900" fill="#0f172a">写 deck.json</text>
+    <text x="660" y="552" font-size="15" fill="#334155">页序与全局信息</text>
+
+    <rect x="920" y="478" width="240" height="96" rx="18" fill="rgba(4,120,87,0.08)" stroke="rgba(4,120,87,0.22)"/>
+    <text x="940" y="520" font-size="18" font-weight="900" fill="#0f172a">写 slides/*.json</text>
+    <text x="940" y="552" font-size="15" fill="#334155">布局与数据</text>
+
+    <rect x="1200" y="478" width="240" height="96" rx="18" fill="rgba(4,120,87,0.08)" stroke="rgba(4,120,87,0.22)"/>
+    <text x="1220" y="520" font-size="18" font-weight="900" fill="#0f172a">写 assets</text>
+    <text x="1220" y="552" font-size="15" fill="#334155">SVG 必须真实存在</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="360" y="638" width="240" height="96" rx="18" fill="rgba(91,33,182,0.08)" stroke="rgba(91,33,182,0.22)"/>
+    <text x="380" y="680" font-size="18" font-weight="900" fill="#0f172a">读取 deck</text>
+    <text x="380" y="712" font-size="15" fill="#334155">/api/deck</text>
+
+    <rect x="640" y="638" width="240" height="96" rx="18" fill="rgba(91,33,182,0.08)" stroke="rgba(91,33,182,0.22)"/>
+    <text x="660" y="680" font-size="18" font-weight="900" fill="#0f172a">聚合页面</text>
+    <text x="660" y="712" font-size="15" fill="#334155">渲染布局组件</text>
+
+    <rect x="920" y="638" width="240" height="96" rx="18" fill="rgba(91,33,182,0.08)" stroke="rgba(91,33,182,0.22)"/>
+    <text x="940" y="680" font-size="18" font-weight="900" fill="#0f172a">构建预览</text>
+    <text x="940" y="712" font-size="15" fill="#334155">生成 preview.html</text>
+
+    <rect x="1200" y="638" width="240" height="96" rx="18" fill="rgba(91,33,182,0.08)" stroke="rgba(91,33,182,0.22)"/>
+    <text x="1220" y="680" font-size="18" font-weight="900" fill="#0f172a">打开查看</text>
+    <text x="1220" y="712" font-size="15" fill="#334155">失败就回改再跑</text>
+  </g>
+</svg>

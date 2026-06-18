@@ -1,0 +1,20 @@
+{
+  "layout_type": "two_column",
+  "title": "课堂讨论：三代工程分别解决什么核心问题？",
+  "left": {
+    "title": "讨论题",
+    "bullets": [
+      "请用一句话区分提示词工程、上下文工程、Harness 工程",
+      "如果只有提示词优化，没有结构化上下文，会出现哪些问题？",
+      "如果只有上下文，没有评估与回归，会出现哪些工程风险？"
+    ]
+  },
+  "right": {
+    "title": "演进总览图",
+    "image": {
+      "src": "work/assets/001-evolution-compare.svg",
+      "caption": "右侧配真实 SVG 演进图，帮助学员把三代工程的“问题边界、输入深度、工程闭环”放到同一张图里理解。"
+    }
+  },
+  "page_purpose": "课堂讨论"
+}

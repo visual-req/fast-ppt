@@ -1,0 +1,10 @@
+{
+  "layout_type": "svg_full",
+  "title": "为什么一定要先做 outline，再做 detail",
+  "svg": {
+    "src": "work/assets/021-outline-detail-layout-choice.svg",
+    "alt": "outline/detail 工作原理与布局选择逻辑图",
+    "caption": "先用 outline 确认结构和节奏，再做 detail；布局选择先看页面意图，再选最合适的版式。"
+  },
+  "show_title": true
+}

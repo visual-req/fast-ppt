@@ -1,0 +1,30 @@
+{
+  "layout_type": "four_grid",
+  "title": "核心卖点",
+  "items": [
+    {
+      "title": "卖点 1",
+      "bullets": [
+        "说明"
+      ]
+    },
+    {
+      "title": "卖点 2",
+      "bullets": [
+        "说明"
+      ]
+    },
+    {
+      "title": "卖点 3",
+      "bullets": [
+        "说明"
+      ]
+    },
+    {
+      "title": "卖点 4",
+      "bullets": [
+        "说明"
+      ]
+    }
+  ]
+}

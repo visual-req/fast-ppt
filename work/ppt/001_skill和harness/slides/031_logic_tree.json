@@ -1,0 +1,10 @@
+{
+  "layout_type": "svg_full",
+  "title": "Context：决定模型到底能看到什么、看到多少",
+  "svg": {
+    "src": "work/assets/031-context-breakdown.svg",
+    "alt": "Context 拆解与风险治理图",
+    "caption": "把 Context 拆成可管理对象，并配套风险治理策略，才能让复杂任务稳定执行。"
+  },
+  "show_title": true
+}

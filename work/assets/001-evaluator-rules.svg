@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="780" viewBox="0 0 1400 780">
+  <rect width="1400" height="780" fill="#f8fafc" rx="28" />
+
+  <g transform="translate(90 150)">
+    <rect width="250" height="290" rx="26" fill="#dbeafe" stroke="#93c5fd" />
+    <text x="125" y="70" text-anchor="middle" font-size="28" font-weight="700" fill="#1d4ed8">01</text>
+    <text x="125" y="118" text-anchor="middle" font-size="28" font-weight="700" fill="#0f172a">结构</text>
+    <text x="125" y="170" text-anchor="middle" font-size="20" fill="#334155">目录 / 文件 / 阶段顺序</text>
+    <text x="125" y="212" text-anchor="middle" font-size="18" fill="#475569">先 outline 后 detail</text>
+    <text x="125" y="248" text-anchor="middle" font-size="18" fill="#475569">slide_files 必须一致</text>
+  </g>
+
+  <g transform="translate(410 150)">
+    <rect width="250" height="290" rx="26" fill="#dcfce7" stroke="#86efac" />
+    <text x="125" y="70" text-anchor="middle" font-size="28" font-weight="700" fill="#15803d">02</text>
+    <text x="125" y="118" text-anchor="middle" font-size="28" font-weight="700" fill="#0f172a">类型</text>
+    <text x="125" y="170" text-anchor="middle" font-size="20" fill="#334155">需求与 deck.type 匹配</text>
+    <text x="125" y="212" text-anchor="middle" font-size="18" fill="#475569">课件 / 方案 / 报告</text>
+    <text x="125" y="248" text-anchor="middle" font-size="18" fill="#475569">布局遵守类型规则</text>
+  </g>
+
+  <g transform="translate(730 150)">
+    <rect width="250" height="290" rx="26" fill="#fef3c7" stroke="#fcd34d" />
+    <text x="125" y="70" text-anchor="middle" font-size="28" font-weight="700" fill="#b45309">03</text>
+    <text x="125" y="118" text-anchor="middle" font-size="28" font-weight="700" fill="#0f172a">内容</text>
+    <text x="125" y="170" text-anchor="middle" font-size="20" fill="#334155">教学链路与核心答案</text>
+    <text x="125" y="212" text-anchor="middle" font-size="18" fill="#475569">概念 / 案例 / 练习</text>
+    <text x="125" y="248" text-anchor="middle" font-size="18" fill="#475569">不缺关键页面</text>
+  </g>
+
+  <g transform="translate(1050 150)">
+    <rect width="250" height="290" rx="26" fill="#fee2e2" stroke="#fca5a5" />
+    <text x="125" y="70" text-anchor="middle" font-size="28" font-weight="700" fill="#dc2626">04</text>
+    <text x="125" y="118" text-anchor="middle" font-size="28" font-weight="700" fill="#0f172a">质量</text>
+    <text x="125" y="170" text-anchor="middle" font-size="20" fill="#334155">可读性与视觉比例</text>
+    <text x="125" y="212" text-anchor="middle" font-size="18" fill="#475569">避免 bullet 墙</text>
+    <text x="125" y="248" text-anchor="middle" font-size="18" fill="#475569">素材必须真实存在</text>
+  </g>
+
+  <g stroke="#2563eb" stroke-width="7" fill="none">
+    <line x1="340" y1="295" x2="410" y2="295" />
+    <line x1="660" y1="295" x2="730" y2="295" />
+    <line x1="980" y1="295" x2="1050" y2="295" />
+  </g>
+
+  <text x="700" y="610" text-anchor="middle" font-size="26" font-weight="800" fill="#1d4ed8">门禁全部通过后，结果才允许进入下一阶段</text>
+</svg>

@@ -1,0 +1,82 @@
+{
+  "outline": {
+    "type": "演示类",
+    "title": "演示标题",
+    "audience": "潜在客户或观众",
+    "goal": "吸引注意、展示亮点、强化记忆并引导下一步。",
+    "style": "demo",
+    "detail_mode": "visual"
+  },
+  "chapters": [
+    {
+      "chapter_no": 0,
+      "chapter_title": "演示主线",
+      "chapter_goal": "建立完整故事线，突出亮点、流程和价值。",
+      "slides": [
+        {
+          "slide_no": "001",
+          "title": "演示封面",
+          "layout_type": "cover",
+          "page_purpose": "开场抓注意力",
+          "core_message": "先交代主题与展示对象。"
+        },
+        {
+          "slide_no": "002",
+          "title": "场景引入",
+          "layout_type": "section_divider",
+          "page_purpose": "带入场景",
+          "core_message": "先让观众进入问题或机会场景。"
+        },
+        {
+          "slide_no": "003",
+          "title": "核心卖点",
+          "layout_type": "title_bullets",
+          "page_purpose": "给出亮点主张",
+          "core_message": "先告诉观众最值得记住的亮点。"
+        },
+        {
+          "slide_no": "004",
+          "title": "能力展示",
+          "layout_type": "four_grid",
+          "page_purpose": "展开能力",
+          "core_message": "把核心能力拆成可理解的几个点。"
+        },
+        {
+          "slide_no": "005",
+          "title": "使用流程",
+          "layout_type": "steps",
+          "page_purpose": "展示过程",
+          "core_message": "按用户视角讲清关键步骤和体验路径。"
+        },
+        {
+          "slide_no": "006",
+          "title": "效果对比",
+          "layout_type": "before_after",
+          "page_purpose": "强化价值",
+          "core_message": "说明新方式相比旧方式好在哪里。"
+        },
+        {
+          "slide_no": "007",
+          "title": "应用场景",
+          "layout_type": "journey_map",
+          "page_purpose": "场景落地",
+          "core_message": "把能力放回真实用户场景。"
+        },
+        {
+          "slide_no": "008",
+          "title": "总结与行动",
+          "layout_type": "summary",
+          "page_purpose": "收束并转化",
+          "core_message": "提炼记忆点并引导观众进入下一步。"
+        },
+        {
+          "slide_no": "009",
+          "title": "结束页",
+          "layout_type": "thank_you",
+          "page_purpose": "结束",
+          "core_message": "完成演示收尾。"
+        }
+      ]
+    }
+  ]
+}

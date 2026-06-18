@@ -1,0 +1,21 @@
+{
+  "layout_type": "two_column",
+  "title": "课堂练习 / 课堂讨论",
+  "left": {
+    "title": "题目与要求",
+    "bullets": [
+      "练习题或讨论题 1",
+      "练习题或讨论题 2",
+      "回答提示",
+      "讲师点评方向"
+    ]
+  },
+  "right": {
+    "title": "配图",
+    "image": {
+      "src": "work/assets/example-exercise.png",
+      "caption": "这里建议放示意图、案例截图、结构图或流程图"
+    }
+  },
+  "page_purpose": "课堂练习或课堂讨论"
+}

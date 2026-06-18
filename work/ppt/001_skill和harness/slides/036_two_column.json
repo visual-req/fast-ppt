@@ -1,0 +1,43 @@
+{
+  "layout_type": "impact_effort",
+  "title": "优化方法：Harness 优先优化矩阵",
+  "items": [
+    {
+      "name": "补齐 outline/detail 质检规则",
+      "impact": 5,
+      "effort": 2,
+      "quadrant": "quick_wins"
+    },
+    {
+      "name": "增加图页与 SVG 素材生成能力",
+      "impact": 5,
+      "effort": 3,
+      "quadrant": "quick_wins"
+    },
+    {
+      "name": "细化四类 prompt 的章节模板",
+      "impact": 4,
+      "effort": 3,
+      "quadrant": "quick_wins"
+    },
+    {
+      "name": "引入更强的 evaluator 自动回归",
+      "impact": 5,
+      "effort": 5,
+      "quadrant": "strategic"
+    },
+    {
+      "name": "补更多 examples 与版式样本",
+      "impact": 3,
+      "effort": 2,
+      "quadrant": "fill_ins"
+    },
+    {
+      "name": "继续堆长 bullets 不改结构",
+      "impact": 1,
+      "effort": 4,
+      "quadrant": "deprioritize"
+    }
+  ],
+  "page_purpose": "详细解析"
+}

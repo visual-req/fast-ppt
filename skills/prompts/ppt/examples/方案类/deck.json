@@ -1,0 +1,21 @@
+{
+  "deck": {
+    "aspect_ratio": "16:9",
+    "style": "consulting",
+    "language": "zh-CN",
+    "type": "方案类",
+    "title": "方案标题"
+  },
+  "slide_files": [
+    "slides/001_cover.json",
+    "slides/002_agenda.json",
+    "slides/003_title_bullets.json",
+    "slides/004_problem_statement.json",
+    "slides/005_architecture_layered.json",
+    "slides/006_comparison_table.json",
+    "slides/007_roadmap.json",
+    "slides/008_cost_benefit.json",
+    "slides/009_risk_register.json",
+    "slides/010_summary.json"
+  ]
+}

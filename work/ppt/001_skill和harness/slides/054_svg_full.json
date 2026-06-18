@@ -1,0 +1,10 @@
+{
+  "layout_type": "svg_full",
+  "title": "从 Auth 到图表：数据如何变成可交付页面",
+  "svg": {
+    "src": "work/assets/054-auth-data-chart-flow.svg",
+    "alt": "auth、抓取、清洗、分析、图表、deck 交付的流程图",
+    "caption": "先把数据访问稳定下来，再把数据落盘成可回归资产，然后做指标与可视化，最后把图表页写入 slides。"
+  },
+  "show_title": true
+}

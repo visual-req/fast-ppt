@@ -1,0 +1,10 @@
+{
+  "layout_type": "svg_full",
+  "show_title": true,
+  "title": "从触发到产出：Skill 的执行路径",
+  "svg": {
+    "src": "work/assets/017-skill-execution-path.svg",
+    "alt": "Skill 执行路径：从触发到产出与回改",
+    "caption": "强调“阶段结果 + 质量门禁 + 可回改”：先产出可确认的阶段产物，再决定是否进入下一阶段。"
+  }
+}

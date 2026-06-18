@@ -1,0 +1,10 @@
+{
+  "layout_type": "svg_full",
+  "title": "工作区为什么要分成 input、ppt、assets 三类目录",
+  "svg": {
+    "src": "work/assets/019-work-dirs.svg",
+    "alt": "work 目录分工图",
+    "caption": "用目录分工把“输入、产物、素材”分离，才能让生成任务可追溯、可复用、可回归。"
+  },
+  "show_title": true
+}

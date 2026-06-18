@@ -1,0 +1,96 @@
+{
+  "outline": {
+    "type": "方案类",
+    "title": "方案标题",
+    "audience": "客户或决策方",
+    "goal": "说明问题、提出方案、证明可行并推动决策。",
+    "style": "consulting",
+    "detail_mode": "standard"
+  },
+  "chapters": [
+    {
+      "chapter_no": 0,
+      "chapter_title": "方案开场",
+      "chapter_goal": "说明背景、目录和决策路径。",
+      "slides": [
+        {
+          "slide_no": "001",
+          "title": "方案封面",
+          "layout_type": "cover",
+          "page_purpose": "开场",
+          "core_message": "先交代方案主题、对象和场景。"
+        },
+        {
+          "slide_no": "002",
+          "title": "目录",
+          "layout_type": "agenda",
+          "page_purpose": "说明决策路径",
+          "core_message": "让读者先看到背景、问题、方案、落地和风险。"
+        }
+      ]
+    },
+    {
+      "chapter_no": 1,
+      "chapter_title": "问题与方案闭环",
+      "chapter_goal": "完成从问题界定到方案落地的完整闭环。",
+      "slides": [
+        {
+          "slide_no": "003",
+          "title": "背景与目标",
+          "layout_type": "title_bullets",
+          "page_purpose": "说明为什么要做",
+          "core_message": "先明确业务背景、建设目标和约束条件。"
+        },
+        {
+          "slide_no": "004",
+          "title": "现状与问题",
+          "layout_type": "problem_statement",
+          "page_purpose": "说明问题严重性",
+          "core_message": "把现象、影响和问题根因讲清楚。"
+        },
+        {
+          "slide_no": "005",
+          "title": "总体方案",
+          "layout_type": "architecture_layered",
+          "page_purpose": "展示总体设计",
+          "core_message": "先给总体方案框架，再解释核心模块。"
+        },
+        {
+          "slide_no": "006",
+          "title": "方案对比",
+          "layout_type": "comparison_table",
+          "page_purpose": "支持方案选择",
+          "core_message": "把候选路径的差异、代价和适用场景讲明白。"
+        },
+        {
+          "slide_no": "007",
+          "title": "实施路径",
+          "layout_type": "roadmap",
+          "page_purpose": "说明怎么落地",
+          "core_message": "把阶段、里程碑、依赖和责任拆清楚。"
+        },
+        {
+          "slide_no": "008",
+          "title": "收益分析",
+          "layout_type": "cost_benefit",
+          "page_purpose": "证明可行性",
+          "core_message": "说明投入、收益和测算前提。"
+        },
+        {
+          "slide_no": "009",
+          "title": "风险与保障",
+          "layout_type": "risk_register",
+          "page_purpose": "说明风险控制",
+          "core_message": "补齐风险识别、治理机制和保障动作。"
+        },
+        {
+          "slide_no": "010",
+          "title": "建议与结论",
+          "layout_type": "summary",
+          "page_purpose": "推动决策",
+          "core_message": "收束核心判断并给出建议动作。"
+        }
+      ]
+    }
+  ]
+}

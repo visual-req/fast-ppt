@@ -1,0 +1,42 @@
+{
+  "layout_type": "architecture_layered",
+  "title": "案例介绍：`proposal-generator` 的 Skill 设计骨架",
+  "layers": [
+    {
+      "title": "能力边界",
+      "bullets": [
+        "只做 PPT 生成，不混入泛写作或其他内容生产",
+        "把任务收敛到 outline 与 detail 两阶段"
+      ]
+    },
+    {
+      "title": "触发入口",
+      "bullets": [
+        "通过 `/fppt:outline` 先产出结构确认稿",
+        "通过 `/fppt:detail` 再产出详细页"
+      ]
+    },
+    {
+      "title": "类型分流",
+      "bullets": [
+        "按课件类 / 方案类 / 汇报类 / 演示类加载不同 prompt",
+        "避免不同文风和结构混在一起"
+      ]
+    },
+    {
+      "title": "目录与素材",
+      "bullets": [
+        "统一写入 `work/input`、`work/ppt`、`work/assets`",
+        "让页面 JSON、图表字段和素材路径显式落盘"
+      ]
+    },
+    {
+      "title": "质量闭环",
+      "bullets": [
+        "先做大纲质检，再做详细页质检",
+        "用 examples、layouts、rules 降低生成偏差"
+      ]
+    }
+  ],
+  "page_purpose": "案例介绍"
+}

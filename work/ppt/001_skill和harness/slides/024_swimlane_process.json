@@ -1,0 +1,42 @@
+{
+  "layout_type": "swimlane_process",
+  "title": "本题里的 Skill 真实落地链路",
+  "lanes": [
+    {
+      "name": "用户",
+      "steps": [
+        "提出课件需求",
+        "确认 outline 结构",
+        "查看预览结果",
+        "给出回改反馈"
+      ]
+    },
+    {
+      "name": "Skill",
+      "steps": [
+        "读取输入与约束",
+        "生成并修正 outline",
+        "生成 deck 与 slides",
+        "根据反馈继续细化"
+      ]
+    },
+    {
+      "name": "文件系统",
+      "steps": [
+        "准备项目目录",
+        "写 outline.json",
+        "写 deck/slides/assets",
+        "保留可回归产物"
+      ]
+    },
+    {
+      "name": "前端预览",
+      "steps": [
+        "等待产物",
+        "读取 outline/deck",
+        "渲染页面与图形",
+        "打开预览验证"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "layout_type": "cover",
+  "title": "课程标题",
+  "subtitle": "副标题或课程定位",
+  "meta": {
+    "audience": "目标学员",
+    "duration": "60 分钟",
+    "version": "v0.1"
+  }
+}

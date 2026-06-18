@@ -1,0 +1,20 @@
+{
+  "layout_type": "before_after",
+  "title": "效果对比",
+  "before": {
+    "title": "传统方式",
+    "bullets": [
+      "流程长",
+      "体验差",
+      "效率低"
+    ]
+  },
+  "after": {
+    "title": "演示方案",
+    "bullets": [
+      "流程短",
+      "体验好",
+      "效率提升"
+    ]
+  }
+}

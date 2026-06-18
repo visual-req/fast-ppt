@@ -1,0 +1,13 @@
+{
+  "layout_type": "top_bottom",
+  "title": "执行框架补充展开",
+  "top": {
+    "title": "运行组织",
+    "text": "说明这个执行框架如何从输入、执行、校验到反馈形成闭环。"
+  },
+  "bottom": {
+    "title": "质量与优化",
+    "text": "说明它如何保证稳定性，以及如何根据失败案例持续演进。"
+  },
+  "page_purpose": "Harness 框架页"
+}

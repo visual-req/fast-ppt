@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="rgba(15,23,42,0.16)"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#2563eb"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <text x="90" y="110" font-size="44" font-weight="800" fill="#0f172a">从单轮生成到闭环执行：任务形态的变化</text>
+  <text x="90" y="155" font-size="20" fill="#475569">“多一步规划 + 多一步验证”带来数量级的稳定性提升</text>
+
+  <g filter="url(#shadow)">
+    <rect x="120" y="240" width="660" height="560" rx="26" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="160" y="310" font-size="22" font-weight="900" fill="#0f172a">只做单轮生成</text>
+    <g fill="#334155" font-size="18">
+      <text x="160" y="360">• 重点：问法是否精确</text>
+      <text x="160" y="400">• 结果：一段答案/草稿</text>
+      <text x="160" y="440">• 出错：靠人工追问修补</text>
+    </g>
+    <g stroke="#94a3b8" stroke-width="6" fill="none" opacity="0.9">
+      <line x1="220" y1="560" x2="680" y2="560" marker-end="url(#arrow)"/>
+    </g>
+    <g fill="#0f172a" font-size="16" opacity="0.75">
+      <text x="220" y="530">输入</text>
+      <text x="460" y="530">生成</text>
+      <text x="650" y="530">输出</text>
+    </g>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="820" y="240" width="660" height="560" rx="26" fill="#dbeafe" stroke="#2563eb"/>
+    <text x="860" y="310" font-size="22" font-weight="900" fill="#1d4ed8">进入闭环执行（Harness）</text>
+    <g fill="#0f172a" font-size="18">
+      <text x="860" y="360">• 先规划：阶段与产物（outline/detail/verify）</text>
+      <text x="860" y="400">• 再执行：工具与环境参与真实动作</text>
+      <text x="860" y="440">• 再验证：Evaluator 作为质量门禁</text>
+      <text x="860" y="480">• 出错可回改：定位问题 → 回改 → 回归验证</text>
+    </g>
+    <g stroke="#2563eb" stroke-width="6" fill="none" opacity="0.95">
+      <path d="M900 620 H1320" marker-end="url(#arrow)"/>
+      <path d="M1320 620 C1400 620 1400 520 1320 520" marker-end="url(#arrow)"/>
+      <path d="M1320 520 H980" marker-end="url(#arrow)"/>
+    </g>
+    <g fill="#0f172a" font-size="16" opacity="0.75">
+      <text x="900" y="592">规划</text>
+      <text x="1040" y="592">执行</text>
+      <text x="1180" y="592">检查</text>
+      <text x="1325" y="560">回改</text>
+    </g>
+  </g>
+</svg>

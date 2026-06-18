@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820">
+  <rect width="1400" height="820" fill="#f8fafc" rx="28" />
+  <text x="80" y="90" font-size="38" font-weight="700" fill="#0f172a">Harness Overview</text>
+  <text x="80" y="128" font-size="20" fill="#475569">A harness turns a task into a closed loop by connecting context, planning, tools, environment and evaluation.</text>
+
+  <circle cx="700" cy="410" r="128" fill="#dbeafe" stroke="#2563eb" stroke-width="4" />
+  <text x="700" y="398" text-anchor="middle" font-size="30" font-weight="700" fill="#0f172a">Task Goal</text>
+  <text x="700" y="434" text-anchor="middle" font-size="20" fill="#334155">intent to stable delivery</text>
+
+  <g font-size="22" fill="#0f172a">
+    <rect x="120" y="170" width="260" height="110" rx="24" fill="#dcfce7" stroke="#16a34a" />
+    <text x="250" y="220" text-anchor="middle" font-weight="700">Context</text>
+    <text x="250" y="252" text-anchor="middle" font-size="18">docs, rules, examples</text>
+
+    <rect x="510" y="118" width="380" height="102" rx="24" fill="#fef3c7" stroke="#d97706" />
+    <text x="700" y="168" text-anchor="middle" font-weight="700">Planner</text>
+    <text x="700" y="198" text-anchor="middle" font-size="18">stage split and next action</text>
+
+    <rect x="1020" y="170" width="260" height="110" rx="24" fill="#fee2e2" stroke="#dc2626" />
+    <text x="1150" y="220" text-anchor="middle" font-weight="700">Tools</text>
+    <text x="1150" y="252" text-anchor="middle" font-size="18">search, read, write, build</text>
+
+    <rect x="120" y="540" width="260" height="110" rx="24" fill="#ede9fe" stroke="#7c3aed" />
+    <text x="250" y="590" text-anchor="middle" font-weight="700">Memory</text>
+    <text x="250" y="622" text-anchor="middle" font-size="18">history and reusable context</text>
+
+    <rect x="510" y="600" width="380" height="102" rx="24" fill="#cffafe" stroke="#0891b2" />
+    <text x="700" y="650" text-anchor="middle" font-weight="700">Evaluator</text>
+    <text x="700" y="680" text-anchor="middle" font-size="18">quality gate and feedback loop</text>
+
+    <rect x="1020" y="540" width="260" height="110" rx="24" fill="#e2e8f0" stroke="#475569" />
+    <text x="1150" y="590" text-anchor="middle" font-weight="700">Environment</text>
+    <text x="1150" y="622" text-anchor="middle" font-size="18">dirs, ports, deps, runtime</text>
+  </g>
+
+  <g stroke="#2563eb" stroke-width="6" fill="none">
+    <path d="M380 225 C500 225 520 308 575 340" />
+    <path d="M890 170 C980 190 1030 210 1020 225" />
+    <path d="M1140 280 C1030 338 980 360 830 385" />
+    <path d="M1020 595 C930 560 900 520 820 475" />
+    <path d="M580 650 C580 560 610 530 635 510" />
+    <path d="M380 595 C500 560 530 520 585 480" />
+  </g>
+
+  <text x="700" y="770" text-anchor="middle" font-size="24" font-weight="700" fill="#1d4ed8">The key is not one component, but the generate-execute-check-fix loop.</text>
+</svg>

@@ -1,0 +1,30 @@
+{
+  "layout_type": "problem_statement",
+  "title": "当前问题与影响",
+  "blocks": [
+    {
+      "heading": "问题",
+      "bullets": [
+        "当前问题"
+      ]
+    },
+    {
+      "heading": "影响",
+      "bullets": [
+        "业务影响"
+      ]
+    },
+    {
+      "heading": "原因判断",
+      "bullets": [
+        "初步判断"
+      ]
+    },
+    {
+      "heading": "风险",
+      "bullets": [
+        "主要风险"
+      ]
+    }
+  ]
+}

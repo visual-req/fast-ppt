@@ -1,0 +1,34 @@
+{
+  "layout_type": "architecture_layered",
+  "title": "本题里可以把 Evaluator 规则设计成什么样",
+  "layers": [
+    {
+      "title": "结构层规则",
+      "bullets": [
+        "先有 outline，再有 detail",
+        "slide_files 必须与文件一致"
+      ]
+    },
+    {
+      "title": "类型层规则",
+      "bullets": [
+        "需求写课件类，则 deck.type 必须是课件类",
+        "布局应符合课件类节奏"
+      ]
+    },
+    {
+      "title": "内容层规则",
+      "bullets": [
+        "每章有概念、案例、互动、小结",
+        "核心问题必须被回答"
+      ]
+    },
+    {
+      "title": "质量层规则",
+      "bullets": [
+        "关键概念页应有图形表达",
+        "背景图、SVG 素材必须真实存在"
+      ]
+    }
+  ]
+}

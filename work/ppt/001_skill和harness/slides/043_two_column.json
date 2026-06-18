@@ -1,0 +1,13 @@
+{
+  "layout_type": "two_column",
+  "title": "组件细讲：Planner",
+  "left": {
+    "title": "作用与输入输出",
+    "text": "作用：先把复杂目标拆成真能执行的步骤。\n输入：任务目标、当前状态、可用工具、时间和风险。\n输出：执行顺序、阶段目标、必要的中间检查点。"
+  },
+  "right": {
+    "title": "本题例子与注意事项",
+    "text": "放到本题里，先拆 prompts、再补 examples、再生 `outline.json`、最后做详细页细化，这条顺序本身就是 Planner 在工作。\n注意事项：没有 Planner，复杂任务最常见的问题就是顺序混乱、返工过多、局部看着对但整体跑偏。"
+  },
+  "page_purpose": "详细解析"
+}

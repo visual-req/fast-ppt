@@ -1,0 +1,21 @@
+{
+  "layout_type": "two_column",
+  "title": "课堂练习：为本课件设计 3 条 Evaluator 规则",
+  "left": {
+    "title": "练习要求",
+    "bullets": [
+      "规则 1：先检查 `deck.type` 有没有写成 `课件类`",
+      "规则 2：再检查每个教学节有没有概念介绍和课堂互动页",
+      "规则 3：最后检查 Evaluator 有没有被单独讲清楚，并说明它在 Harness 里的作用",
+      "加分题：再补 1 条你认为最值得自动化检查的质量规则"
+    ]
+  },
+  "right": {
+    "title": "规则门禁图",
+    "image": {
+      "src": "work/assets/001-evaluator-rules.svg",
+      "caption": "右侧给出 Evaluator 门禁图，帮助学员把“结构、类型、内容、质量”四层检查组织成可执行规则。"
+    }
+  },
+  "page_purpose": "课堂练习"
+}

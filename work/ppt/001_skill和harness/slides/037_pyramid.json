@@ -1,0 +1,10 @@
+{
+  "layout_type": "svg_full",
+  "title": "为什么 Evaluator 是 Harness 里最值得重点讲的组件",
+  "svg": {
+    "src": "work/assets/037-evaluator-pyramid.svg",
+    "alt": "Evaluator 金字塔价值图",
+    "caption": "从“发现错误”到“形成门禁”，最终获得“稳定交付”。"
+  },
+  "show_title": true
+}

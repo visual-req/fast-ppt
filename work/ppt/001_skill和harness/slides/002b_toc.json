@@ -1,0 +1,10 @@
+{
+  "layout_type": "svg_full",
+  "title": "目录",
+  "svg": {
+    "src": "work/assets/002-toc.svg",
+    "alt": "课程目录页",
+    "caption": "目录页用于快速建立全局结构感，后续再逐章展开。"
+  },
+  "show_title": true
+}

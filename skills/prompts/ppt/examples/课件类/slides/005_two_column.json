@@ -1,0 +1,16 @@
+{
+  "layout_type": "two_column",
+  "title": "应用场景 / 典型示例",
+  "left": {
+    "title": "适用任务",
+    "text": "说明这个概念适合用在哪些任务，不适合用在哪些任务。"
+  },
+  "right": {
+    "title": "案例图",
+    "image": {
+      "src": "work/assets/example-scene.png",
+      "caption": "建议放应用场景图、流程图或案例截图"
+    }
+  },
+  "page_purpose": "概念应用"
+}

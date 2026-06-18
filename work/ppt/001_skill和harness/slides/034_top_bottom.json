@@ -1,0 +1,13 @@
+{
+  "layout_type": "top_bottom",
+  "title": "运行组织：Harness 如何把任务串起来",
+  "top": {
+    "title": "运行主线",
+    "text": "一个典型 Harness 通常按“读取输入 -> 识别任务 -> 调用 Skill / 规则 -> 生成中间结果 -> 确认与校验 -> 生成详细结果 -> 再次校验 -> 根据反馈修正”的顺序运行。"
+  },
+  "bottom": {
+    "title": "本题中的组织方式",
+    "text": "本题里从读取 `设计思路.md`，到判断 PPT 类型、加载类型提示词、生成并确认 `outline.json`、再生成 `deck.json + slides/*.json`、校验页序与字段、同步到前端查看，形成了一个明确的执行链。"
+  },
+  "page_purpose": "详细解析"
+}

@@ -1,0 +1,10 @@
+{
+  "layout_type": "svg_full",
+  "show_title": true,
+  "title": "Skill 是什么，它先解决什么问题",
+  "svg": {
+    "src": "work/assets/015-skill-pyramid.svg",
+    "alt": "Skill 三层结构：从任务碎片到能力单元再到复用价值",
+    "caption": "用三层结构表达 Skill 的价值路径：先收束“任务碎片”，再固化为“能力单元”，最终产生“复用价值”。"
+  }
+}

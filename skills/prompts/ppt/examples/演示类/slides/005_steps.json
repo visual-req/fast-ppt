@@ -1,0 +1,24 @@
+{
+  "layout_type": "steps",
+  "title": "演示流程",
+  "steps": [
+    {
+      "title": "步骤一",
+      "bullets": [
+        "操作或展示点"
+      ]
+    },
+    {
+      "title": "步骤二",
+      "bullets": [
+        "操作或展示点"
+      ]
+    },
+    {
+      "title": "步骤三",
+      "bullets": [
+        "操作或展示点"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "layout_type": "svg_full",
+  "title": "从单轮生成到闭环执行，任务形态发生了什么变化",
+  "svg": {
+    "src": "work/assets/010-single-vs-loop.svg",
+    "alt": "单轮生成 vs 闭环执行",
+    "caption": "关键差异：闭环任务把“规划、执行、检查、回改”纳入设计，从而获得稳定性。"
+  },
+  "show_title": true
+}

@@ -1,0 +1,13 @@
+{
+  "layout_type": "line_chart",
+  "title": "示例：按时间趋势（用于观察变化）",
+  "unit": "条",
+  "data": [
+    { "label": "Mon", "value": 120 },
+    { "label": "Tue", "value": 168 },
+    { "label": "Wed", "value": 210 },
+    { "label": "Thu", "value": 196 },
+    { "label": "Fri", "value": 248 }
+  ]
+}
+

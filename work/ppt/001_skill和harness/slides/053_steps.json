@@ -1,0 +1,12 @@
+{
+  "layout_type": "steps",
+  "title": "Auth：让数据抓取可用且可复现",
+  "steps": [
+    { "title": "选认证方式", "bullets": ["API Key", "OAuth2", "Cookie/Session（不推荐长期使用）"] },
+    { "title": "安全存储", "bullets": ["用环境变量/本地配置", "不要把密钥写进 repo", "日志里不要打印 token"] },
+    { "title": "封装请求", "bullets": ["统一 Header 注入", "统一错误处理", "处理限流与重试"] },
+    { "title": "可复现记录", "bullets": ["记录请求参数与版本", "落盘原始响应", "保存抓取时间窗口"] },
+    { "title": "最小验证", "bullets": ["先跑通一个接口", "再扩成批量抓取", "最后接入分析与图表"] }
+  ]
+}
+

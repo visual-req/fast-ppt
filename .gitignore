@@ -1,0 +1,17 @@
+.DS_Store
+.idea/
+.vscode/
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+ppt-viewer/node_modules/
+ppt-viewer/dist/
+
+work/input/
+work/ppt/**/preview.html
+
+.trae/

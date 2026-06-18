@@ -1,0 +1,30 @@
+{
+  "layout_type": "problem_statement",
+  "title": "现状与问题",
+  "blocks": [
+    {
+      "heading": "现象",
+      "bullets": [
+        "现状描述"
+      ]
+    },
+    {
+      "heading": "影响",
+      "bullets": [
+        "业务影响"
+      ]
+    },
+    {
+      "heading": "根因",
+      "bullets": [
+        "问题成因"
+      ]
+    },
+    {
+      "heading": "证据",
+      "bullets": [
+        "数据或事实支撑"
+      ]
+    }
+  ]
+}

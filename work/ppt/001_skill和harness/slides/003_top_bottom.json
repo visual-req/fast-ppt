@@ -1,0 +1,13 @@
+{
+  "layout_type": "top_bottom",
+  "title": "课程目标",
+  "top": {
+    "title": "本课核心问题",
+    "text": "为什么 AI 工程会从“把话说清楚”，一路走到“把任务稳定做完”？这背后变化的，不只是方法名字，而是任务复杂度、交付要求和工程稳定性都在持续抬高。"
+  },
+  "bottom": {
+    "title": "学完后要掌握",
+    "text": "学完这节课，你要能讲清三代工程分别解决什么问题、为什么会继续演进；也要能把 Skill 看成可复用能力，把 Harness 看成由 context、tools、environment、memory、planner、evaluator 组成的运行闭环，并映射回本题的真实课件生成项目。"
+  },
+  "page_purpose": "课程目标"
+}

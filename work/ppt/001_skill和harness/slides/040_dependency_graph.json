@@ -1,0 +1,10 @@
+{
+  "layout_type": "svg_full",
+  "title": "本题里的 Harness 落地示例：它是怎么把生成、检查和预览串起来的",
+  "svg": {
+    "src": "work/assets/040-harness-implementation.svg",
+    "alt": "Harness 落地：生成-检查-预览闭环图",
+    "caption": "以 slides/assets 为核心产物，build/evaluator 做门禁，viewer 做真实预览，失败就回改再验证。"
+  },
+  "show_title": true
+}

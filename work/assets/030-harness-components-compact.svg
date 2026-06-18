@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#eff6ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="rgba(15,23,42,0.16)"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+
+  <g filter="url(#shadow)">
+    <circle cx="800" cy="440" r="165" fill="#1d4ed8"/>
+    <text x="800" y="432" text-anchor="middle" font-size="32" font-weight="900" fill="#ffffff">任务目标</text>
+    <text x="800" y="472" text-anchor="middle" font-size="18" fill="rgba(255,255,255,0.9)">稳定交付的目标</text>
+  </g>
+
+  <g stroke="#1d4ed8" stroke-width="6" opacity="0.5" fill="none">
+    <path d="M800 275 V210"/>
+    <path d="M640 395 L500 320"/>
+    <path d="M960 395 L1100 320"/>
+    <path d="M700 585 L560 680"/>
+    <path d="M900 585 L1040 680"/>
+    <path d="M800 605 V730"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="640" y="120" width="320" height="120" rx="22" fill="#ffffff" stroke="#cbd5e1"/>
+    <rect x="660" y="138" width="140" height="42" rx="12" fill="#0f172a"/>
+    <text x="730" y="166" text-anchor="middle" font-size="16" font-weight="900" fill="#ffffff">规划</text>
+    <text x="660" y="206" font-size="16" fill="#475569">拆阶段 / 决定下一步</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="340" y="260" width="320" height="120" rx="22" fill="#ffffff" stroke="#cbd5e1"/>
+    <rect x="360" y="278" width="140" height="42" rx="12" fill="#1d4ed8"/>
+    <text x="430" y="306" text-anchor="middle" font-size="16" font-weight="900" fill="#ffffff">上下文</text>
+    <text x="360" y="346" font-size="16" fill="#475569">材料 / 规则 / 示例</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="940" y="260" width="320" height="120" rx="22" fill="#ffffff" stroke="#cbd5e1"/>
+    <rect x="960" y="278" width="140" height="42" rx="12" fill="#047857"/>
+    <text x="1030" y="306" text-anchor="middle" font-size="16" font-weight="900" fill="#ffffff">工具</text>
+    <text x="960" y="346" font-size="16" fill="#475569">读写搜构建与执行</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="420" y="660" width="320" height="120" rx="22" fill="#ffffff" stroke="#cbd5e1"/>
+    <rect x="440" y="678" width="140" height="42" rx="12" fill="#5b21b6"/>
+    <text x="510" y="706" text-anchor="middle" font-size="16" font-weight="900" fill="#ffffff">记忆</text>
+    <text x="440" y="746" font-size="16" fill="#475569">跨轮延续与复用</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="860" y="660" width="320" height="120" rx="22" fill="#ffffff" stroke="#cbd5e1"/>
+    <rect x="880" y="678" width="180" height="42" rx="12" fill="#c2410c"/>
+    <text x="970" y="706" text-anchor="middle" font-size="16" font-weight="900" fill="#ffffff">环境</text>
+    <text x="880" y="746" font-size="16" fill="#475569">目录 / 端口 / 依赖</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="640" y="740" width="320" height="110" rx="22" fill="#dbeafe" stroke="#2563eb"/>
+    <rect x="660" y="758" width="160" height="42" rx="12" fill="#1d4ed8"/>
+    <text x="740" y="786" text-anchor="middle" font-size="16" font-weight="900" fill="#ffffff">评估器</text>
+    <text x="660" y="826" font-size="16" fill="#475569">质量门禁与回改反馈</text>
+  </g>
+</svg>

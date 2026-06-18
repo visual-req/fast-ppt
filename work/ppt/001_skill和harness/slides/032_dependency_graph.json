@@ -1,0 +1,10 @@
+{
+  "layout_type": "svg_full",
+  "title": "Tools：让模型不只会说，还能真的去做",
+  "svg": {
+    "src": "work/assets/032-tools-execution-loop.svg",
+    "alt": "工具执行闭环图",
+    "caption": "工具链把任务变成可执行闭环：读/搜/写后通过构建与预览验证，再用诊断信号驱动回改。"
+  },
+  "show_title": true
+}

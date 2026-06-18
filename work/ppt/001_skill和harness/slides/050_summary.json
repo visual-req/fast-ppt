@@ -1,0 +1,10 @@
+{
+  "layout_type": "summary",
+  "title": "全课总结",
+  "bullets": [
+    "从提示词工程走到 Harness 工程，核心变化是从“能生成”走到“能稳定交付”",
+    "Skill 负责把能力封装清楚，Harness 负责把流程组织起来",
+    "Harness 不是单个组件，而是 context、tools、environment、memory、planner、evaluator 共同配合",
+    "这门课的案例，本质上就是把课件类 PPT 生成能力做成一个可迭代的工程闭环"
+  ]
+}

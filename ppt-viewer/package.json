@@ -1,0 +1,21 @@
+{
+  "name": "ppt-viewer",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "build-deck": "node scripts/build-deck.mjs"
+  },
+  "dependencies": {
+    "vue": "^3.5.17"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.1",
+    "@types/node": "^22.13.10",
+    "typescript": "^5.8.3",
+    "vite": "^6.0.11"
+  }
+}

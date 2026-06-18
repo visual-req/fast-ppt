@@ -1,0 +1,33 @@
+{
+  "layout_type": "journey_map",
+  "title": "用户体验路径",
+  "stages": [
+    {
+      "name": "接触",
+      "touchpoints": [
+        "触点"
+      ],
+      "opportunities": [
+        "亮点"
+      ]
+    },
+    {
+      "name": "使用",
+      "touchpoints": [
+        "触点"
+      ],
+      "opportunities": [
+        "亮点"
+      ]
+    },
+    {
+      "name": "收获",
+      "touchpoints": [
+        "触点"
+      ],
+      "opportunities": [
+        "亮点"
+      ]
+    }
+  ]
+}

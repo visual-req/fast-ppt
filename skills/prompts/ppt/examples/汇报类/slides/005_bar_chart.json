@@ -1,0 +1,19 @@
+{
+  "layout_type": "bar_chart",
+  "title": "关键数据支撑",
+  "data": [
+    {
+      "label": "项 1",
+      "value": 0
+    },
+    {
+      "label": "项 2",
+      "value": 0
+    },
+    {
+      "label": "项 3",
+      "value": 0
+    }
+  ],
+  "unit": "%"
+}

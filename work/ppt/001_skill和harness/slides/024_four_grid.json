@@ -1,0 +1,23 @@
+{
+  "layout_type": "four_grid",
+  "title": "质量保证：Skill 常用的保障手段",
+  "items": [
+    {
+      "title": "命令入口清晰",
+      "text": "用显式命令减少歧义，例如 `/fppt:outline`。"
+    },
+    {
+      "title": "输出格式固定",
+      "text": "规定字段、目录和命名方式，减少自由发挥。"
+    },
+    {
+      "title": "示例骨架辅助",
+      "text": "给出正确参考，降低第一次生成偏航。"
+    },
+    {
+      "title": "结果校验回路",
+      "text": "先校验 `outline.json` 的结构与章节规划，再校验 `deck.json + slides/*.json` 的字段、页序和规则符合性。"
+    }
+  ],
+  "page_purpose": "详细解析"
+}

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="rgba(15,23,42,0.14)"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="220" y="180" width="1160" height="120" rx="28" fill="#eff6ff" stroke="rgba(37,99,235,0.18)"/>
+    <rect x="258" y="212" width="220" height="56" rx="16" fill="#1d4ed8"/>
+    <text x="368" y="248" text-anchor="middle" font-size="20" font-weight="900" fill="#ffffff">上层：复用价值</text>
+    <text x="540" y="246" font-size="24" font-weight="900" fill="#0f172a">让团队稳定复用与交付</text>
+    <text x="540" y="278" font-size="18" fill="#334155">新人可接手，结果更一致，后续优化能持续累积，而不是每次重新从零组织。</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="170" y="356" width="1260" height="128" rx="28" fill="#dbeafe" stroke="rgba(37,99,235,0.18)"/>
+    <rect x="208" y="392" width="220" height="56" rx="16" fill="#0f172a"/>
+    <text x="318" y="428" text-anchor="middle" font-size="20" font-weight="900" fill="#ffffff">中层：能力单元</text>
+    <text x="492" y="424" font-size="24" font-weight="900" fill="#0f172a">把能力固化成结构化单元</text>
+    <text x="492" y="458" font-size="18" fill="#334155">明确边界、固定输入输出、可重复触发，让“会做一次”变成“能稳定反复做”。</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="120" y="544" width="1360" height="136" rx="28" fill="#bfdbfe" stroke="rgba(37,99,235,0.18)"/>
+    <rect x="158" y="584" width="220" height="56" rx="16" fill="#1d4ed8"/>
+    <text x="268" y="620" text-anchor="middle" font-size="20" font-weight="900" fill="#ffffff">底层：任务碎片</text>
+    <text x="442" y="616" font-size="24" font-weight="900" fill="#0f172a">先解决“碎片化与不可复现”</text>
+    <text x="442" y="650" font-size="18" fill="#334155">零散 prompt、一次性操作、靠个人经验记忆，这些碎片要先被收束，才有机会沉淀成稳定能力。</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="430" y="748" width="740" height="72" rx="20" fill="#ffffff" stroke="rgba(15,23,42,0.10)"/>
+    <text x="800" y="794" text-anchor="middle" font-size="18" font-weight="900" fill="#0f172a">Skill 的第一步不是“写长提示词”，而是先把零散任务收束成可复用的能力结构。</text>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+{
+  "layout_type": "steps",
+  "title": "如何开发一个 Skill（从 0 到 1）",
+  "steps": [
+    { "title": "定义边界", "bullets": ["明确不做什么", "明确输入与输出", "把交付写成目录结构"] },
+    { "title": "定义流程", "bullets": ["强制 outline -> detail", "每阶段都有可检查产物"] },
+    { "title": "定义布局", "bullets": ["先写 layout 类型库", "为高频页面定模板", "概念页优先 svg_full"] },
+    { "title": "落成产物", "bullets": ["写 deck.json + slides/*.json", "SVG 素材落盘到 work/assets"] },
+    { "title": "接入预览", "bullets": ["viewer 读取 /api/deck", "检查超屏/缺图/错 layout", "支持回改再验证"] }
+  ]
+}
+

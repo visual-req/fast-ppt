@@ -1,0 +1,10 @@
+{
+  "layout_type": "cover",
+  "title": "方案标题",
+  "subtitle": "项目副标题",
+  "meta": {
+    "client": "客户名称",
+    "date": "2026-06-17",
+    "version": "v0.1"
+  }
+}

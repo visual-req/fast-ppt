@@ -1,0 +1,9 @@
+{
+  "layout_type": "cover",
+  "title": "演示标题",
+  "subtitle": "一句话价值主张",
+  "meta": {
+    "audience": "目标受众",
+    "version": "v0.1"
+  }
+}

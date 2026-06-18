@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="780" viewBox="0 0 1400 780">
+  <rect width="1400" height="780" fill="#f8fafc" rx="28" />
+  <text x="80" y="90" font-size="38" font-weight="700" fill="#0f172a">Skill 设计模板</text>
+  <text x="80" y="128" font-size="20" fill="#475569">把任务做成稳定 Skill：明确边界、入口、结构、产物与质检闭环。</text>
+
+  <g font-size="18" fill="#0f172a">
+    <rect x="120" y="210" width="240" height="120" rx="22" fill="#dbeafe" stroke="#93c5fd" />
+    <text x="240" y="258" text-anchor="middle" font-size="24" font-weight="700">1. 能力边界</text>
+    <text x="240" y="292" text-anchor="middle">做什么 / 不做什么</text>
+
+    <rect x="420" y="210" width="240" height="120" rx="22" fill="#dcfce7" stroke="#86efac" />
+    <text x="540" y="258" text-anchor="middle" font-size="24" font-weight="700">2. 触发入口</text>
+    <text x="540" y="292" text-anchor="middle">命令 / 意图 / 场景</text>
+
+    <rect x="720" y="210" width="240" height="120" rx="22" fill="#fef3c7" stroke="#fcd34d" />
+    <text x="840" y="258" text-anchor="middle" font-size="24" font-weight="700">3. 规则与步骤</text>
+    <text x="840" y="292" text-anchor="middle">步骤 / 约束 / 模板</text>
+
+    <rect x="1020" y="210" width="240" height="120" rx="22" fill="#fee2e2" stroke="#fca5a5" />
+    <text x="1140" y="258" text-anchor="middle" font-size="24" font-weight="700">4. 输出产物</text>
+    <text x="1140" y="292" text-anchor="middle">input / ppt / assets / logs</text>
+
+    <rect x="270" y="430" width="260" height="140" rx="22" fill="#ede9fe" stroke="#c4b5fd" />
+    <text x="400" y="490" text-anchor="middle" font-size="24" font-weight="700">5. 质检闭环</text>
+    <text x="400" y="524" text-anchor="middle">大纲质检 / 详细页质检</text>
+
+    <rect x="570" y="430" width="260" height="140" rx="22" fill="#cffafe" stroke="#67e8f9" />
+    <text x="700" y="490" text-anchor="middle" font-size="24" font-weight="700">6. 示例与版式</text>
+    <text x="700" y="524" text-anchor="middle">examples / layouts / rules</text>
+
+    <rect x="870" y="430" width="260" height="140" rx="22" fill="#e2e8f0" stroke="#94a3b8" />
+    <text x="1000" y="490" text-anchor="middle" font-size="24" font-weight="700">7. 持续迭代</text>
+    <text x="1000" y="524" text-anchor="middle">用失败样本驱动改进</text>
+  </g>
+
+  <path d="M240 330 L240 382 L700 382 L700 430" fill="none" stroke="#2563eb" stroke-width="6" />
+  <path d="M540 330 L540 382" fill="none" stroke="#2563eb" stroke-width="6" />
+  <path d="M840 330 L840 382" fill="none" stroke="#2563eb" stroke-width="6" />
+  <path d="M1140 330 L1140 382 L1000 382 L1000 430" fill="none" stroke="#2563eb" stroke-width="6" />
+  <rect x="520" y="642" width="360" height="84" rx="24" fill="#0f172a" />
+  <text x="700" y="694" text-anchor="middle" font-size="26" font-weight="700" fill="#ffffff">稳定 Skill = 清晰边界 + 稳定结构 + 可回归质量</text>
+</svg>

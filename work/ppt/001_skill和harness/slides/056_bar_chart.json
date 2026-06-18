@@ -1,0 +1,12 @@
+{
+  "layout_type": "bar_chart",
+  "title": "示例：按类别统计（用于对比）",
+  "unit": "次",
+  "data": [
+    { "label": "认证成功", "value": 1280 },
+    { "label": "认证失败", "value": 64 },
+    { "label": "抓取成功", "value": 980 },
+    { "label": "抓取失败", "value": 38 }
+  ]
+}
+

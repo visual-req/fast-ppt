@@ -1,0 +1,13 @@
+{
+  "layout_type": "section_divider",
+  "title": "第 3 章 Harness 工程与 Evaluator",
+  "chapter_label": "Chapter 03",
+  "subtitle": "Harness 的关键不是某个组件，而是一个稳定闭环。",
+  "goal": "本章重点是理解 Harness 六大组件、任务执行链路，以及 Evaluator 为什么是最关键的质量门禁。",
+  "background": {
+    "src": "work/assets/001-chapter-03-bg.svg",
+    "overlay": "rgba(15,23,42,0.34)",
+    "size": "cover",
+    "position": "center"
+  }
+}

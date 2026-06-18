@@ -1,0 +1,13 @@
+{
+  "layout_type": "cover",
+  "title": "从 Skill 到 Harness 工程",
+  "subtitle": "从提示词优化走向可执行、可验证、可回归的 Agent 工程体系",
+  "date": "2026-06-17",
+  "lecturer": "Stephen Wang",
+  "background": {
+    "src": "work/assets/001-cover-hero.svg",
+    "overlay": "rgba(15,23,42,0.52)",
+    "size": "cover",
+    "position": "75% 50%"
+  }
+}

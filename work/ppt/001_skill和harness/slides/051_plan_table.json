@@ -1,0 +1,20 @@
+{
+  "layout_type": "plan_table",
+  "title": "第 11 期产出物（Skill 初版交付清单）",
+  "table": {
+    "headers": ["类别", "文件/目录", "说明"],
+    "rows": [
+      ["Skill 入口", "skills/SKILL.md", "定义能力范围、命令入口、输出结构、质量要求"],
+      ["总提示词", "skills/prompts/ppt/00_PPT生成.md", "通用规则：先 outline 再 detail、layout 选型、SVG 规范"],
+      ["类型提示词", "skills/prompts/ppt/01~04_*.md", "四类 deck 的结构节奏与页面密度约束"],
+      ["布局库", "skills/prompts/ppt/layouts.md", "layout 类型与字段全集（生成时的字段参考）"],
+      ["选型规则", "skills/prompts/ppt/layout_rules.md", "页面意图 -> layout 的映射规则与禁用项"],
+      ["示例模板", "skills/prompts/ppt/examples/*", "每种类型一套 outline/deck/slides 示例"],
+      ["前端预览", "ppt-viewer/", "按 layout_type 渲染，支持目录跳转与快速检查"],
+      ["本地服务", "server.mjs", "固定 9030，提供 /api/deck 与 /work/ 资源读取"],
+      ["真实产物", "work/ppt/<项目名>/", "outline.json + deck.json + slides/*.json"],
+      ["图形素材", "work/assets/*.svg", "SVG 必须真实落盘，可被 slides 引用"]
+    ]
+  }
+}
+

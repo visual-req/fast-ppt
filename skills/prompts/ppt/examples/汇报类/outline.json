@@ -1,0 +1,82 @@
+{
+  "outline": {
+    "type": "汇报类",
+    "title": "汇报标题",
+    "audience": "管理层",
+    "goal": "快速传达结论、支撑判断并推动决策。",
+    "style": "executive",
+    "detail_mode": "concise"
+  },
+  "chapters": [
+    {
+      "chapter_no": 0,
+      "chapter_title": "汇报主线",
+      "chapter_goal": "用最短路径把结论、支撑、问题和动作讲清楚。",
+      "slides": [
+        {
+          "slide_no": "001",
+          "title": "汇报封面",
+          "layout_type": "cover",
+          "page_purpose": "开场",
+          "core_message": "交代汇报主题与时间范围。"
+        },
+        {
+          "slide_no": "002",
+          "title": "核心结论",
+          "layout_type": "summary",
+          "page_purpose": "先给结论",
+          "core_message": "管理层应在 30 秒内知道当前判断。"
+        },
+        {
+          "slide_no": "003",
+          "title": "关键指标",
+          "layout_type": "kpi_cards",
+          "page_purpose": "事实支撑",
+          "core_message": "用关键指标支撑当前结论。"
+        },
+        {
+          "slide_no": "004",
+          "title": "问题与影响",
+          "layout_type": "problem_statement",
+          "page_purpose": "说明偏差",
+          "core_message": "把主要问题、影响范围和风险讲清楚。"
+        },
+        {
+          "slide_no": "005",
+          "title": "趋势与异常",
+          "layout_type": "bar_chart",
+          "page_purpose": "补充数据解释",
+          "core_message": "解释指标变化、异常点和原因。"
+        },
+        {
+          "slide_no": "006",
+          "title": "建议动作",
+          "layout_type": "title_bullets",
+          "page_purpose": "提出动作",
+          "core_message": "给出优先级明确、可执行的建议。"
+        },
+        {
+          "slide_no": "007",
+          "title": "决策项",
+          "layout_type": "comparison_table",
+          "page_purpose": "推动拍板",
+          "core_message": "明确需要管理层拍板的事项与建议选择。"
+        },
+        {
+          "slide_no": "008",
+          "title": "下一步安排",
+          "layout_type": "roadmap",
+          "page_purpose": "说明后续动作",
+          "core_message": "把责任、时间点和阶段目标讲清楚。"
+        },
+        {
+          "slide_no": "009",
+          "title": "结束页",
+          "layout_type": "thank_you",
+          "page_purpose": "收尾",
+          "core_message": "完成汇报收束。"
+        }
+      ]
+    }
+  ]
+}

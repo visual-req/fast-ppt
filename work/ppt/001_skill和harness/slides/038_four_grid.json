@@ -1,0 +1,23 @@
+{
+  "layout_type": "four_grid",
+  "title": "详细解析：Harness 六个部件先看一句话",
+  "items": [
+    {
+      "title": "Context",
+      "text": "把做任务需要的信息先喂够，但它本身不负责执行。"
+    },
+    {
+      "title": "Tools",
+      "text": "让模型真的能查、读、改、执行，而不只是会说。"
+    },
+    {
+      "title": "Environment",
+      "text": "规定任务在哪跑、能碰什么、不能碰什么。"
+    },
+    {
+      "title": "Memory / Planner / Evaluator",
+      "text": "分别记状态、排步骤、做判断，一起把闭环真正撑起来。"
+    }
+  ],
+  "page_purpose": "详细解析"
+}

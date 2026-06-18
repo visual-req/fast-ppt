@@ -1,0 +1,19 @@
+{
+  "layout_type": "two_column",
+  "title": "课堂练习：为一个新任务设计 Skill",
+  "left": {
+    "title": "练习要求",
+    "bullets": [
+      "为“自动生成测试报告”划清能力边界",
+      "设计一个两阶段输出流程",
+      "想一想你会如何补质检与目录规范"
+    ]
+  },
+  "right": {
+    "title": "Skill 模板图",
+    "image": {
+      "src": "work/assets/001-skill-template.svg",
+      "caption": "右侧模板图帮助学员从边界、入口、结构、目录和质检五个维度组织答案。"
+    }
+  }
+}

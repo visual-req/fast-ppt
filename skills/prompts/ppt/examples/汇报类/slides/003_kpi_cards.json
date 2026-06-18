@@ -1,0 +1,26 @@
+{
+  "layout_type": "kpi_cards",
+  "title": "关键指标概览",
+  "cards": [
+    {
+      "label": "指标 1",
+      "value": "",
+      "note": ""
+    },
+    {
+      "label": "指标 2",
+      "value": "",
+      "note": ""
+    },
+    {
+      "label": "指标 3",
+      "value": "",
+      "note": ""
+    },
+    {
+      "label": "指标 4",
+      "value": "",
+      "note": ""
+    }
+  ]
+}

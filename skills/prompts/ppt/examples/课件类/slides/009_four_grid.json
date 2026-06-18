@@ -1,0 +1,31 @@
+{
+  "layout_type": "four_grid",
+  "title": "案例介绍",
+  "items": [
+    {
+      "title": "背景",
+      "bullets": [
+        "案例背景"
+      ]
+    },
+    {
+      "title": "做法",
+      "bullets": [
+        "关键步骤"
+      ]
+    },
+    {
+      "title": "结果",
+      "bullets": [
+        "案例结果"
+      ]
+    },
+    {
+      "title": "启示",
+      "bullets": [
+        "可迁移经验"
+      ]
+    }
+  ],
+  "page_purpose": "案例介绍"
+}

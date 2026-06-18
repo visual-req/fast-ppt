@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect width="1600" height="900" fill="#f8fafc"/>
+<rect x="60" y="50" width="1480" height="800" rx="32" fill="#ffffff" stroke="#dbeafe" stroke-width="2"/>
+<text x="110" y="126" fill="#0f172a" font-size="44" font-family="Arial, sans-serif" font-weight="700">Bubble Chart</text>
+
+<line x1="200" y1="700" x2="1380" y2="700" stroke="#94a3b8" stroke-width="4"/>
+<line x1="200" y1="220" x2="200" y2="700" stroke="#94a3b8" stroke-width="4"/>
+<circle cx="420" cy="560" r="36" fill="#93c5fd" opacity="0.9"/>
+<circle cx="650" cy="500" r="62" fill="#60a5fa" opacity="0.82"/>
+<circle cx="900" cy="360" r="84" fill="#2563eb" opacity="0.78"/>
+<circle cx="1180" cy="300" r="52" fill="#1d4ed8" opacity="0.82"/>
+<text x="420" y="568" text-anchor="middle" fill="#0f172a" font-size="20" font-family="Arial, sans-serif" font-weight="700">A</text>
+<text x="650" y="508" text-anchor="middle" fill="#0f172a" font-size="24" font-family="Arial, sans-serif" font-weight="700">B</text>
+<text x="900" y="368" text-anchor="middle" fill="#ffffff" font-size="26" font-family="Arial, sans-serif" font-weight="700">C</text>
+<text x="1180" y="308" text-anchor="middle" fill="#ffffff" font-size="22" font-family="Arial, sans-serif" font-weight="700">D</text>
+
+</svg>

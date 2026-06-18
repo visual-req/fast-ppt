@@ -1,0 +1,10 @@
+{
+  "layout_type": "svg_full",
+  "title": "Planner：决定先做什么、后做什么、什么时候该回改",
+  "svg": {
+    "src": "work/assets/034-planner-loop.svg",
+    "alt": "Planner 决策与回改闭环图",
+    "caption": "Planner 的关键不是“列清单”，而是把目标拆成阶段，选对下一步动作，并在门禁失败或偏离目标时及时回改。"
+  },
+  "show_title": true
+}

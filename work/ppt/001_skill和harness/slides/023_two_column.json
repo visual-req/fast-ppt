@@ -1,0 +1,13 @@
+{
+  "layout_type": "two_column",
+  "title": "质量保证：如何判断一个 Skill 是否写得好",
+  "left": {
+    "title": "检查维度",
+    "text": "至少检查四件事：触发是否准确、输出是否稳定、结构是否清晰、边界是否明确。好的 Skill 不只是能跑通一次，而是多次执行也不容易跑偏。"
+  },
+  "right": {
+    "title": "本题里的质量要求",
+    "text": "例如必须正确识别 PPT 类型、正确写入项目目录、先输出合法 `outline.json` 供确认、再生成一致的 `deck.json + slides/*.json`，并遵守课件类章节结构和布局规则。这些都属于 Skill 质量保证的一部分。"
+  },
+  "page_purpose": "详细解析"
+}

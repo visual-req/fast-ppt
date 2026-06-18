@@ -1,0 +1,13 @@
+{
+  "layout_type": "section_divider",
+  "title": "第 2 章 Skill 工程",
+  "chapter_label": "Chapter 02",
+  "subtitle": "Skill 不是一份 prompt，而是一个可复用能力单元。",
+  "goal": "本章重点是理解 Skill 的边界、结构、目录、阶段化输出与质量闭环。",
+  "background": {
+    "src": "work/assets/001-chapter-02-bg.svg",
+    "overlay": "rgba(15,23,42,0.34)",
+    "size": "cover",
+    "position": "center"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "layout_type": "agenda",
+  "title": "这节课会先讲什么、再讲什么、最后带走什么",
+  "subtitle": "课程路径从“为什么升级”出发，最终收束到“如何做出稳定可回归的 Agent 工程”。",
+  "bullets": [
+    "第 1 章：区分 Prompt Engineering、Context Engineering 与 Harness Engineering",
+    "第 2 章：把 Skill 设计成可复用、可分阶段、可质检的能力单元",
+    "第 3 章：理解 Harness 六大组件与 Evaluator 的质量闭环价值",
+    "第 4 章：把整套方法收束成知识地图与带走结论"
+  ],
+  "cards": [
+    {
+      "title": "学完后能解释",
+      "text": "为什么复杂任务不能只靠“把提示词写长”。"
+    },
+    {
+      "title": "学完后能设计",
+      "text": "如何为真实任务规划 Skill、阶段产物、目录与检查链路。"
+    },
+    {
+      "title": "学完后能落地",
+      "text": "如何把生成、预览、检查与回改串成稳定的 Harness。"
+    }
+  ],
+  "background": {
+    "src": "work/assets/001-agenda-bg.svg",
+    "overlay": "rgba(255,255,255,0.42)",
+    "size": "cover",
+    "position": "center"
+  },
+  "foreground": "dark"
+}

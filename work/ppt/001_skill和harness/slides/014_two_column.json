@@ -12,7 +12,7 @@
   "right": {
     "title": "演进总览图",
     "image": {
-      "src": "work/assets/001-evolution-compare.svg",
+      "src": "work/assets/001/001-evolution-compare.svg",
       "caption": "右侧配真实 SVG 演进图，帮助学员把三代工程的“问题边界、输入深度、工程闭环”放到同一张图里理解。"
     }
   },

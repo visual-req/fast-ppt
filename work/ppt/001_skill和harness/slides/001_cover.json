@@ -5,7 +5,7 @@
   "date": "2026-06-17",
   "lecturer": "Stephen Wang",
   "background": {
-    "src": "work/assets/001-cover-hero.svg",
+    "src": "work/assets/001/001-cover-hero.svg",
     "overlay": "rgba(15,23,42,0.52)",
     "size": "cover",
     "position": "75% 50%"

@@ -1,0 +1,9 @@
+{
+  "layout_type": "svg_full",
+  "title": "/vspec:new 工作流程：从一句话到结构化规约",
+  "svg": {
+    "src": "work/assets/003/015-vspec-new-flow.svg",
+    "alt": "/vspec:new 三步工作流程",
+    "caption": "三步流程：① 解析任意格式输入（一句话/PRD/群聊/文档）→ ② 按背景、角色、功能清单、业务流程、场景矩阵、术语表 6 维度结构化展开 → ③ 生成 Open Questions 将模糊点显式化。输出 /specs/baseline/ + /specs/questions/ + /specs/glossary/，所有角色在同一份需求基线上工作。"
+  }
+}

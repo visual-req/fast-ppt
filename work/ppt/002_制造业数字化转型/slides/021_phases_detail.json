@@ -2,7 +2,7 @@
   "layout_type": "svg_full",
   "title": "从需求生成单元测试、集成测试、验收测试",
   "svg": {
-    "src": "work/assets/021-requirement-to-tests.svg",
+    "src": "work/assets/002/021-requirement-to-tests.svg",
     "alt": "从需求到单元测试、集成测试、验收测试案例生成的过程图",
     "caption": "先把需求结构化，再按模块、接口、流程三个层级分别生成单测、集成测试和验收测试案例。"
   }

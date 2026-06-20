@@ -5,7 +5,7 @@
   "subtitle": "把三代工程、Skill、Harness 与 Evaluator 串回一条主线。",
   "goal": "最后收束成一张知识图和几条关键结论，帮助学员形成可复述、可迁移的方法框架。",
   "background": {
-    "src": "work/assets/001-chapter-04-bg.svg",
+    "src": "work/assets/001/001-chapter-04-bg.svg",
     "overlay": "rgba(15,23,42,0.34)",
     "size": "cover",
     "position": "center"

@@ -2,7 +2,7 @@
   "layout_type": "svg_full",
   "title": "数据贯通：全链路集成与追溯",
   "svg": {
-    "src": "work/assets/010-data-integration.svg",
+    "src": "work/assets/002/010-data-integration.svg",
     "alt": "数据集成架构",
     "caption": "统一编码 → 时间同步 → 全链路追溯 → 30 秒 SLA"
   }

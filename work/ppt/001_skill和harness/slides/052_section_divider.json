@@ -5,7 +5,7 @@
   "subtitle": "把“能访问数据”变成“能把数据变成图表并交付到 deck”。",
   "goal": "补齐 auth、抓取、清洗、分析、图表的最小方法与页面模板。",
   "background": {
-    "src": "work/assets/001-chapter-03-bg.svg",
+    "src": "work/assets/001/001-chapter-03-bg.svg",
     "overlay": "rgba(15,23,42,0.34)",
     "size": "cover",
     "position": "center"

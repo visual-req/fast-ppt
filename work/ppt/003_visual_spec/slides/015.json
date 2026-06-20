@@ -1,0 +1,9 @@
+{
+  "layout_type": "svg_full",
+  "title": "痛点十一：需求频繁变更，版本管理混乱",
+  "svg": {
+    "src": "work/assets/003/012d-frequent-changes.svg",
+    "alt": "需求频繁变更与版本混乱",
+    "caption": "当前：PRD_v3.docx → PRD_final.docx → PRD_final2_修.docx，变更靠群聊通知。visual-spec 解法：/vspec:refine 变更一处自动同步下游（设计/原型/测试），所有变更记录在版本树上，关联角色自动收到通知"
+  }
+}

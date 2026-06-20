@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" fill="none">
+  <rect width="900" height="480" rx="16" fill="#f8fafc"/>
+  <text x="450" y="36" text-anchor="middle" font-size="17" font-weight="800" fill="#0f172a">痛点十：缺少有效的确认与验证过程</text>
+  <text x="450" y="70" text-anchor="middle" font-size="12" font-weight="700" fill="#dc2626">当前：口头确认即视为验收</text>
+  <rect x="30" y="85" width="400" height="130" rx="12" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5"/>
+  <text x="100" y="112" font-size="12" font-weight="700" fill="#b91c1c">问题链</text>
+  <text x="50" y="136" font-size="10" fill="#64748b">1. 需求评审「过了」→ 但标准全是口头的</text>
+  <text x="50" y="154" font-size="10" fill="#64748b">2. 开发完成 → 演示一下「看着差不多」→ 就算验收</text>
+  <text x="50" y="172" font-size="10" fill="#64748b">3. 没有量化的验收标准：边界条件、性能指标、异常处理</text>
+  <text x="50" y="190" font-size="10" fill="#64748b">4. 上线后用户发现偏差 → 返工 → 信任度下降</text>
+  <rect x="460" y="85" width="400" height="130" rx="12" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5"/>
+  <text x="530" y="112" font-size="12" font-weight="700" fill="#166534">visual-spec 解法</text>
+  <text x="480" y="136" font-size="10" fill="#64748b">1. /vspec:accept 自动生成可执行的验收用例</text>
+  <text x="480" y="154" font-size="10" fill="#64748b">2. 每个用例含：前置条件·操作步骤·预期结果·通过标准</text>
+  <text x="480" y="172" font-size="10" fill="#64748b">3. 覆盖正常/边界/异常三种路径</text>
+  <text x="480" y="190" font-size="10" fill="#64748b">4. 验收 = 逐条过用例，不靠主观判断</text>
+  <rect x="30" y="240" width="830" height="55" rx="10" fill="#fefce8" stroke="#fef08a" stroke-width="1"/>
+  <text x="445" y="264" font-size="12" font-weight="700" fill="#d97706">根源：缺少系统化的确认与验证过程，交付质量完全依赖个人经验</text>
+  <text x="445" y="282" font-size="10" fill="#64748b">没有可执行验收标准 → 验收流于形式 → 上线后才发现理解偏差 → 返工成本指数级增长</text>
+</svg>

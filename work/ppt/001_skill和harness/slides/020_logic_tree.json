@@ -2,7 +2,7 @@
   "layout_type": "svg_full",
   "title": "提示词体系为什么要拆成总入口 + 四类子 prompt",
   "svg": {
-    "src": "work/assets/020-prompt-system.svg",
+    "src": "work/assets/001/020-prompt-system.svg",
     "alt": "prompt 分流体系图",
     "caption": "总入口负责公共规则与交付约束，子 prompt 负责内容结构与节奏分流，避免不同类型混写。"
   },

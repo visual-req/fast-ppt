@@ -1,0 +1,10 @@
+{
+  "layout_type": "title_bullets",
+  "title": "存量升级：/vspec:upgrade",
+  "bullets": [
+    "专为存量系统升级/改造场景设计",
+    "读入 /docs/legacy/ 存量资料 + /docs/current/ 新需求",
+    "生成升级方案并同步技术选型到 /scheme.yaml",
+    "输出：改造目标规约 + 技术栈选择 + 迁移路径建议"
+  ]
+}

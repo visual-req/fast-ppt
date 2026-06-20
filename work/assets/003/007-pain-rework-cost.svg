@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540">
+  <defs><style>
+    .bg{fill:#f8fafc}.card{fill:#fff;stroke:#cbd5e1;stroke-width:1.5;rx:10}
+    .fail{fill:#fee2e2;stroke:#fca5a5;stroke-width:1.5;rx:8}
+    .tl{font:700 22px sans-serif;fill:#0f172a}.sub{font:600 14px sans-serif;fill:#334155}
+    .sm{font:500 12px sans-serif;fill:#475569}.xs{font:400 10px sans-serif;fill:#64748b}
+    .num{font:700 36px sans-serif;fill:#ef4444}
+    .arrow{stroke:#ef4444;stroke-width:2;fill:none;marker-end:url(#ar)}
+  </style><marker id="ar" markerWidth="6" markerHeight="6" refX="5" refY="3"><path d="M0,0L6,3L0,6Z" fill="#ef4444"/></marker></defs>
+  <rect class="bg" width="960" height="540"/>
+
+  <text class="tl" x="480" y="32" text-anchor="middle">返工成本：每次需求变更都是一次多米诺</text>
+
+  <!-- 核心数据 -->
+  <rect class="fail" x="280" y="52" width="400" height="90"/>
+  <text class="num" x="480" y="82" text-anchor="middle">40%</text>
+  <text class="sm" x="480" y="102" text-anchor="middle">研发总工时花在返工上</text>
+  <text class="xs" x="480" y="120" text-anchor="middle">平均每个需求经历 2.7 次返工，每次投入 3-5 人天</text>
+
+  <!-- 多米诺链 -->
+  <text class="sub" x="480" y="180" text-anchor="middle">一次需求变更的连锁效应</text>
+
+  <rect class="card" x="30" y="200" width="130" height="70" fill="#fef2f2"/>
+  <text class="sm" x="95" y="226" text-anchor="middle">需求变更</text>
+  <text class="xs" x="95" y="246" text-anchor="middle">一句话调整</text>
+  <text class="xs" x="95" y="260" text-anchor="middle">0.5h 沟通</text>
+
+  <line class="arrow" x1="160" y1="235" x2="195" y2="235"/>
+
+  <rect class="card" x="205" y="200" width="130" height="70" fill="#fef2f2"/>
+  <text class="sm" x="270" y="226" text-anchor="middle">设计改写</text>
+  <text class="xs" x="270" y="246" text-anchor="middle">改权限/状态机</text>
+  <text class="xs" x="270" y="260" text-anchor="middle">2h 返工</text>
+
+  <line class="arrow" x1="335" y1="235" x2="370" y2="235"/>
+
+  <rect class="card" x="380" y="200" width="130" height="70" fill="#fef2f2"/>
+  <text class="sm" x="445" y="226" text-anchor="middle">代码重写</text>
+  <text class="xs" x="445" y="246" text-anchor="middle">改接口/逻辑</text>
+  <text class="xs" x="445" y="260" text-anchor="middle">8h 返工</text>
+
+  <line class="arrow" x1="510" y1="235" x2="545" y2="235"/>
+
+  <rect class="card" x="555" y="200" width="130" height="70" fill="#fef2f2"/>
+  <text class="sm" x="620" y="226" text-anchor="middle">测试重测</text>
+  <text class="xs" x="620" y="246" text-anchor="middle">用例全重写</text>
+  <text class="xs" x="620" y="260" text-anchor="middle">6h 返工</text>
+
+  <line class="arrow" x1="685" y1="235" x2="720" y2="235"/>
+
+  <rect class="card" x="730" y="200" width="200" height="70" fill="#fef2f2"/>
+  <text class="sm" x="830" y="226" text-anchor="middle">文档/评审同步</text>
+  <text class="xs" x="830" y="246" text-anchor="middle">重新评审+更新文档</text>
+  <text class="xs" x="830" y="260" text-anchor="middle">3h</text>
+
+  <!-- 底部对比 -->
+  <text class="sub" x="480" y="320" text-anchor="middle">一次变更 = 19.5 人时返工 = 2.4 人天</text>
+
+  <rect class="card" x="50" y="345" width="400" height="80" fill="#fee2e2"/>
+  <text class="sm" x="250" y="370" text-anchor="middle" fill="#dc2626">不用 visual-spec</text>
+  <text class="xs" x="250" y="388" text-anchor="middle">需求模糊→理解错误→开发完才发现→返工</text>
+  <text class="xs" x="250" y="406" text-anchor="middle">全年返工 40% 工时</text>
+
+  <rect class="card" x="510" y="345" width="400" height="80" fill="#d1fae5"/>
+  <text class="sm" x="710" y="370" text-anchor="middle" fill="#059669">用 visual-spec</text>
+  <text class="xs" x="710" y="388" text-anchor="middle">规约明确→设计写完→原型对齐→再编码</text>
+  <text class="xs" x="710" y="406" text-anchor="middle">返工率 &lt;10%</text>
+</svg>

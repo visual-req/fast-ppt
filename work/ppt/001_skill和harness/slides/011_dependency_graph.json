@@ -3,7 +3,7 @@
   "show_title": true,
   "title": "为什么“生成网页 PPT”是一个典型 Harness 任务",
   "svg": {
-    "src": "work/assets/011-ppt-harness-task.svg",
+    "src": "work/assets/001/011-ppt-harness-task.svg",
     "alt": "网页 PPT 任务的 Harness 闭环图",
     "caption": "它需要把阶段产物、素材、预览与质检组织成闭环，而不是只生成一段文字。"
   }

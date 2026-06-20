@@ -3,7 +3,7 @@
   "title": "Q&A",
   "subtitle": "下一步你最想补哪一块：新 layout？新类型？还是一套可复现的数据抓取与图表流程？",
   "background": {
-    "src": "work/assets/001-cover-hero.svg",
+    "src": "work/assets/001/001-cover-hero.svg",
     "overlay": "rgba(15,23,42,0.58)",
     "size": "cover",
     "position": "center"

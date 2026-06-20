@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540">
+  <defs><style>
+    .bg{fill:#f8fafc}.card{fill:#fff;stroke:#cbd5e1;stroke-width:1.5;rx:10}
+    .miss{fill:#fef9e7;stroke:#fcd34d;stroke-width:1.5;rx:6}
+    .tl{font:700 22px sans-serif;fill:#0f172a}.sub{font:600 13px sans-serif;fill:#475569}
+    .lbl{font:700 12px sans-serif;fill:#b45309}.item{font:400 11px sans-serif;fill:#64748b}
+  </style></defs>
+  <rect class="bg" width="960" height="540"/>
+
+  <text class="tl" x="480" y="32" text-anchor="middle">被忽略的边界：正常流程之外占线上 Bug 的 60%</text>
+
+  <!-- 正常流程区域 -->
+  <rect class="card" x="240" y="52" width="480" height="40" fill="#d1fae5" stroke="#22c55e"/>
+  <text class="sub" x="480" y="77" text-anchor="middle" fill="#059669">PRD 里的正常流程：提交 → 审核 → 通过 → 入库</text>
+
+  <!-- 六类遗漏 -->
+  <rect class="miss" x="30" y="120" width="280" height="60"/>
+  <text class="lbl" x="170" y="140" text-anchor="middle">权限与角色</text>
+  <text class="item" x="170" y="158" text-anchor="middle">无权限时看到什么？</text>
+  <text class="item" x="170" y="172" text-anchor="middle">审批人离职/转岗怎么办？</text>
+
+  <rect class="miss" x="330" y="120" width="280" height="60"/>
+  <text class="lbl" x="470" y="140" text-anchor="middle">并发与数据</text>
+  <text class="item" x="470" y="158" text-anchor="middle">两人同时审批会冲突吗？</text>
+  <text class="item" x="470" y="172" text-anchor="middle">库存扣减超卖/负数？</text>
+
+  <rect class="miss" x="630" y="120" width="300" height="60"/>
+  <text class="lbl" x="780" y="140" text-anchor="middle">网络与系统异常</text>
+  <text class="item" x="780" y="158" text-anchor="middle">接口超时/断网时怎么处理？</text>
+  <text class="item" x="780" y="172" text-anchor="middle">消息队列堆积/消费失败？</text>
+
+  <rect class="miss" x="30" y="200" width="280" height="60"/>
+  <text class="lbl" x="170" y="220" text-anchor="middle">输入边界</text>
+  <text class="item" x="170" y="238" text-anchor="middle">金额为 0 或负数？文件名超长？</text>
+  <text class="item" x="170" y="252" text-anchor="middle">特殊字符、SQL 注入、XSS？</text>
+
+  <rect class="miss" x="330" y="200" width="280" height="60"/>
+  <text class="lbl" x="470" y="220" text-anchor="middle">数据量级</text>
+  <text class="item" x="470" y="238" text-anchor="middle">一次导出 10 万行会怎样？</text>
+  <text class="item" x="470" y="252" text-anchor="middle">列表 100 万条分页性能？</text>
+
+  <rect class="miss" x="630" y="200" width="300" height="60"/>
+  <text class="lbl" x="780" y="220" text-anchor="middle">空状态与时间</text>
+  <text class="item" x="780" y="238" text-anchor="middle">首次使用没有任何数据？</text>
+  <text class="item" x="780" y="252" text-anchor="middle">跨时区/日期跨度/夏令时？</text>
+
+  <!-- 底部结论 -->
+  <rect class="card" x="130" y="300" width="700" height="80" fill="#fef2f2" stroke="#fca5a5"/>
+  <text class="sub" x="480" y="324" text-anchor="middle" fill="#dc2626">这些「没写但必须考虑」的边界条件 = 上线后 60% 的缺陷来源</text>
+  <text class="item" x="480" y="346" text-anchor="middle" fill="#64748b">visual-spec 会在需求分析阶段自动检出常见边界遗漏，并生成边界值测试数据</text>
+  <text class="item" x="480" y="364" text-anchor="middle" fill="#64748b">权限检查 · 空数据处理 · 并发冲突 · 超时重试 · 文件大小 · 输入校验 · 状态转换 · 日志审计</text>
+
+  <text class="item" x="480" y="520" text-anchor="middle" fill="#94a3b8">每个边界条件都是线上故障的前哨——不是会不会发生，是何时发生</text>
+</svg>

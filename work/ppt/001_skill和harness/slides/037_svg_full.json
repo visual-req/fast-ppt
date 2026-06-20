@@ -2,7 +2,7 @@
   "layout_type": "svg_full",
   "title": "详细解析：Harness 总体关系图",
   "svg": {
-    "src": "work/assets/029-harness-overview-layered.svg",
+    "src": "work/assets/001/029-harness-overview-layered.svg",
     "alt": "Harness 总体关系图",
     "caption": "把 context、planner、tools、memory、evaluator、environment 与任务目标放到同一张图里，帮助学员理解 Harness 为什么是闭环工程。"
   },

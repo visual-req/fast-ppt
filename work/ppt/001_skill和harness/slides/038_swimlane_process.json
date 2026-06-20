@@ -2,7 +2,7 @@
   "layout_type": "svg_full",
   "title": "Evaluator 的四层检查链路",
   "svg": {
-    "src": "work/assets/038-evaluator-4-layers-steps.svg",
+    "src": "work/assets/001/038-evaluator-4-layers-steps.svg",
     "alt": "Evaluator 四层检查：行首映射到步骤链路",
     "caption": "保留每一层的检查域（行首），并把它们映射到统一的解析-校验-判定步骤链路。"
   },

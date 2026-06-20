@@ -2,7 +2,7 @@
   "layout_type": "svg_full",
   "title": "什么时候一个任务该升级到 Harness",
   "svg": {
-    "src": "work/assets/009-upgrade-to-harness.svg",
+    "src": "work/assets/001/009-upgrade-to-harness.svg",
     "alt": "升级到 Harness 判断矩阵",
     "caption": "判断不是“任务难不难”，而是“复杂度 + 稳定性交付要求”是否同时上来。"
   },

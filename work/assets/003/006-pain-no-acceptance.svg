@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540">
+  <defs><style>
+    .bg{fill:#f8fafc}.tl{font:700 22px sans-serif;fill:#0f172a}.sub{font:600 13px sans-serif;fill:#475569}
+    .bad{fill:#fee2e2;stroke:#fca5a5;stroke-width:1.5;rx:8}.good{fill:#d1fae5;stroke:#86efac;stroke-width:1.5;rx:8}
+    .sm{font:600 13px sans-serif;fill:#1e293b}.xs{font:400 11px sans-serif;fill:#64748b}
+    .arrow{stroke:#22c55e;stroke-width:2;fill:none;marker-end:url(#ar)}
+  </style><marker id="ar" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0L6,3L0,6Z" fill="#22c55e"/></marker></defs>
+  <rect class="bg" width="960" height="540"/>
+
+  <text class="tl" x="480" y="32" text-anchor="middle">验收标准：一句话 vs 可执行规约</text>
+
+  <!-- 左边：坏的做法 -->
+  <text class="sub" x="240" y="70" text-anchor="middle" fill="#dc2626">传统 PRD 的验收标准</text>
+  <rect class="bad" x="30" y="86" width="420" height="180"/>
+  <text class="sm" x="240" y="112" text-anchor="middle">功能：报表导出</text>
+  <text class="sm" x="240" y="138" text-anchor="middle">验收标准：功能正常</text>
+  <text class="xs" x="240" y="164" text-anchor="middle" fill="#ef4444">「功能正常」到底怎么判断？</text>
+  <text class="xs" x="240" y="182" text-anchor="middle" fill="#ef4444">= 不可量化 = 不可验收 = 不可交付</text>
+
+  <rect class="bad" x="30" y="280" width="420" height="90"/>
+  <text class="sm" x="240" y="306" text-anchor="middle" fill="#dc2626">后果</text>
+  <text class="xs" x="240" y="326" text-anchor="middle">上线后出现「我以为」的争论</text>
+  <text class="xs" x="240" y="344" text-anchor="middle">验收拖着不签字</text>
+  <text class="xs" x="240" y="362" text-anchor="middle">缺陷排查周期长</text>
+
+  <!-- 中间箭头 -->
+  <line x1="460" y1="176" x2="500" y2="176" class="arrow"/>
+  <text class="xs" x="480" y="170" text-anchor="middle" fill="#22c55e">→</text>
+
+  <!-- 右边：好的做法 -->
+  <text class="sub" x="720" y="70" text-anchor="middle" fill="#059669">visual-spec 生成的验收标准</text>
+  <rect class="good" x="510" y="86" width="420" height="180"/>
+  <text class="sm" x="720" y="112" text-anchor="middle">功能：报表导出</text>
+  <text class="sm" x="720" y="138" text-anchor="middle">验收标准（可执行）：</text>
+  <text class="xs" x="720" y="160" text-anchor="middle">1. 已登录 + 有导出权限 → 点击导出 → 5 秒内生成 Excel</text>
+  <text class="xs" x="720" y="178" text-anchor="middle">2. 未登录 → 重定向登录页 → 提示请先登录</text>
+  <text class="xs" x="720" y="196" text-anchor="middle">3. 数据量 >50000 行 → 自动分页导出 → 每页 ≤1000 行</text>
+  <text class="xs" x="720" y="214" text-anchor="middle">4. 导出文件含汇总行 → 列名 + 合计 + 导出时间戳</text>
+  <text class="xs" x="720" y="232" text-anchor="middle">5. 导出期间取消 → 终止生成 + 提示已取消</text>
+  <text class="xs" x="720" y="250" text-anchor="middle">6. 异常：网络中断 → 自动重试 3 次 → 仍失败提示原因</text>
+
+  <rect class="good" x="510" y="280" width="420" height="90"/>
+  <text class="sm" x="720" y="306" text-anchor="middle" fill="#059669">效果</text>
+  <text class="xs" x="720" y="326" text-anchor="middle">验收标准 = 可执行的测试脚本</text>
+  <text class="xs" x="720" y="344" text-anchor="middle">开发、测试、产品基于同一套标准</text>
+  <text class="xs" x="720" y="362" text-anchor="middle">交付标准明确，验收不扯皮</text>
+
+  <text class="xs" x="480" y="520" text-anchor="middle" fill="#94a3b8">可执行 = 场景 + 条件 + 预期结果，而不是「功能正常」</text>
+</svg>

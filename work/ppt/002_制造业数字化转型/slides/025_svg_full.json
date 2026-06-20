@@ -2,7 +2,7 @@
   "layout_type": "svg_full",
   "title": "研发导入路径：工具化→平台化",
   "svg": {
-    "src": "work/assets/016-rd-ai-path.svg",
+    "src": "work/assets/002/016-rd-ai-path.svg",
     "alt": "三阶段路径图",
     "caption": "工具接入→工程融合→资产沉淀"
   }

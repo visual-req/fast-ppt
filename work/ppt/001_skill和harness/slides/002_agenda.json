@@ -23,7 +23,7 @@
     }
   ],
   "background": {
-    "src": "work/assets/001-agenda-bg.svg",
+    "src": "work/assets/001/001-agenda-bg.svg",
     "overlay": "rgba(255,255,255,0.42)",
     "size": "cover",
     "position": "center"

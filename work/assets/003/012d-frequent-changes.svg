@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" fill="none">
+  <rect width="900" height="480" rx="16" fill="#f8fafc"/>
+  <text x="450" y="36" text-anchor="middle" font-size="17" font-weight="800" fill="#0f172a">痛点十一：需求频繁变更，版本管理混乱</text>
+  <text x="450" y="70" text-anchor="middle" font-size="12" font-weight="700" fill="#dc2626">当前：变更靠口头传递，版本靠文件名管理</text>
+  <rect x="30" y="85" width="400" height="90" rx="12" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5"/>
+  <text x="230" y="112" font-size="12" font-weight="700" fill="#b91c1c">典型场景</text>
+  <text x="50" y="136" font-size="10" fill="#64748b">PRD_v3.docx → PRD_final.docx → PRD_final2_修.docx</text>
+  <text x="50" y="154" font-size="10" fill="#64748b">「群聊里说的那个变更你看到了吗？」「什么时候的？」</text>
+  <rect x="460" y="85" width="400" height="90" rx="12" fill="#fefce8" stroke="#fef08a" stroke-width="1.5"/>
+  <text x="660" y="112" font-size="12" font-weight="700" fill="#d97706">连锁影响</text>
+  <text x="480" y="136" font-size="10" fill="#64748b">需求改一行 → 设计要对 → 代码要改 → 测试用例要更新</text>
+  <text x="480" y="154" font-size="10" fill="#64748b">手工通知 5 个角色 → 总有人漏掉 → 版本不一致</text>
+  <rect x="30" y="200" width="830" height="55" rx="10" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5"/>
+  <text x="445" y="224" font-size="12" font-weight="700" fill="#166534">visual-spec 解法：/vspec:refine — 变更一处，自动同步下游</text>
+  <text x="445" y="242" font-size="10" fill="#64748b">所有变更记录在版本树上，每次 refine 自动更新设计/原型/测试用例，关联角色自动收到通知</text>
+</svg>

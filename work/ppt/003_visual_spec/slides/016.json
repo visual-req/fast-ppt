@@ -1,0 +1,9 @@
+{
+  "layout_type": "svg_full",
+  "title": "痛点十二：外部依赖识别不足",
+  "svg": {
+    "src": "work/assets/003/012e-external-dep.svg",
+    "alt": "外部依赖识别不足",
+    "caption": "当前：「订单取消后退款」只说了功能，没说需要对接支付网关/库存/物流/风控系统。visual-spec 解法：/vspec:detail 自动展开 inter-service-calls 维度，详细设计阶段列出所有上下游接口依赖、调用方式、超时策略、降级方案"
+  }
+}

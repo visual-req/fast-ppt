@@ -1,0 +1,15 @@
+{
+  "layout_type": "summary",
+  "title": "马上开始你的第一个可视化需求规格",
+  "bullets": [
+    "安装：npx skills add visual-req/visual-spec --skill visual-spec",
+    "只需一句 /vspec:new，把散乱需求变成结构化规约",
+    "从需求澄清到验收测试，全链路 11 个命令覆盖"
+  ],
+  "cards": [
+    { "title": "安装", "text": "npx skills add visual-req/visual-spec --skill visual-spec" },
+    { "title": "开始", "text": "/vspec:new 你的需求描述" },
+    { "title": "迭代", "text": "/vspec:refine 变更自动同步" },
+    { "title": "验收", "text": "/vspec:accept 自动生成用例" }
+  ]
+}

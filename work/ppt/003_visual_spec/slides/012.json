@@ -1,0 +1,9 @@
+{
+  "layout_type": "svg_full",
+  "title": "痛点八：不可追溯——谁改的、为什么、影响什么",
+  "svg": {
+    "src": "work/assets/003/011-pain-untraceable.svg",
+    "alt": "需求变更断裂与追溯链条",
+    "caption": "当前：需求变更后设计未同步、测试未更新、验收脱节，最终上线 Bug 谁都没发现。审计追查链断裂。用 visual-spec 后：所有产出物关联同一基线，/vspec:refine 变更自动标注影响范围，每次变更可追溯。"
+  }
+}

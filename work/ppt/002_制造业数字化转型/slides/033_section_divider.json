@@ -2,7 +2,7 @@
   "layout_type": "svg_full",
   "title": "基础设施：统一底座",
   "svg": {
-    "src": "work/assets/033-unified-base.svg",
+    "src": "work/assets/002/033-unified-base.svg",
     "alt": "统一底座平台群总览图",
     "caption": "数据、集成、AI、安全、开发、监控、物联网、知识八类平台协同组成统一底座"
   }

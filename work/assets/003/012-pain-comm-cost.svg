@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540">
+  <defs><style>
+    .bg{fill:#f8fafc}.box{fill:#fff;stroke:#cbd5e1;stroke-width:1.5;rx:8}
+    .node{fill:#eff6ff;stroke:#3b82f6;stroke-width:1.5;rx:8}
+    .distort{fill:#fee2e2;stroke:#ef4444;stroke-width:1.5;rx:6}
+    .tl{font:700 22px sans-serif;fill:#0f172a}.sub{font:600 14px sans-serif;fill:#1d4ed8}
+    .sm{font:500 12px sans-serif;fill:#334155}.xs{font:400 10px sans-serif;fill:#64748b}
+    .num{font:700 36px sans-serif;fill:#ef4444}.cost{font:600 16px sans-serif;fill:#dc2626}
+  </style></defs>
+  <rect class="bg" width="960" height="540"/>
+  <text class="tl" x="480" y="32" text-anchor="middle">沟通成本：8 轮评审，每轮都在重新讲</text>
+
+  <!-- 8轮沟通 -->
+  <text class="sub" x="480" y="65" text-anchor="middle">一个中型需求的典型沟通路径</text>
+
+  <rect class="distort" x="30" y="82" width="200" height="48"/>
+  <text class="sm" x="130" y="102" text-anchor="middle">① 需求评审会</text>
+  <text class="xs" x="130" y="118" text-anchor="middle">5 人 × 2h = 10 人时</text>
+
+  <text class="xs" x="260" y="106" text-anchor="middle" fill="#ef4444">→</text>
+
+  <rect class="distort" x="280" y="82" width="200" height="48"/>
+  <text class="sm" x="380" y="102" text-anchor="middle">② 会后理解偏差</text>
+  <text class="xs" x="380" y="118" text-anchor="middle">3 人 × 1h = 3 人时</text>
+
+  <text class="xs" x="510" y="106" text-anchor="middle" fill="#ef4444">→</text>
+
+  <rect class="distort" x="530" y="82" width="200" height="48"/>
+  <text class="sm" x="630" y="102" text-anchor="middle">③ 二次对齐</text>
+  <text class="xs" x="630" y="118" text-anchor="middle">4 人 × 1.5h = 6 人时</text>
+
+  <text class="xs" x="730" y="106" text-anchor="middle" fill="#ef4444">→</text>
+
+  <rect class="distort" x="750" y="82" width="180" height="48"/>
+  <text class="sm" x="840" y="102" text-anchor="middle">④ 设计评审争议</text>
+  <text class="xs" x="840" y="118" text-anchor="middle">5 人 × 2h = 10 人时</text>
+
+  <rect class="distort" x="30" y="145" width="200" height="48"/>
+  <text class="sm" x="130" y="165" text-anchor="middle">⑤ 开发中再次确认</text>
+  <text class="xs" x="130" y="181" text-anchor="middle">2 人 × 0.5h × 4 次 = 4 人时</text>
+
+  <text class="xs" x="260" y="169" text-anchor="middle" fill="#ef4444">→</text>
+
+  <rect class="distort" x="280" y="145" width="200" height="48"/>
+  <text class="sm" x="380" y="165" text-anchor="middle">⑥ 测试时重新解释</text>
+  <text class="xs" x="380" y="181" text-anchor="middle">2 人 × 1h × 3 次 = 6 人时</text>
+
+  <text class="xs" x="510" y="169" text-anchor="middle" fill="#ef4444">→</text>
+
+  <rect class="distort" x="530" y="145" width="200" height="48"/>
+  <text class="sm" x="630" y="165" text-anchor="middle">⑦ UAT 扯皮</text>
+  <text class="xs" x="630" y="181" text-anchor="middle">3 人 × 2h = 6 人时</text>
+
+  <text class="xs" x="730" y="169" text-anchor="middle" fill="#ef4444">→</text>
+
+  <rect class="distort" x="750" y="145" width="180" height="48"/>
+  <text class="sm" x="840" y="165" text-anchor="middle">⑧ 上线后补救</text>
+  <text class="xs" x="840" y="181" text-anchor="middle">2 人 × 2h = 4 人时</text>
+
+  <!-- 总成本 -->
+  <rect class="distort" x="200" y="220" width="560" height="60"/>
+  <text class="cost" x="480" y="250" text-anchor="middle">总计：49 人时 = 6+ 人天</text>
+  <text class="xs" x="480" y="268" text-anchor="middle">一个需求光沟通就消耗一整个工作周——还没算写代码的时间</text>
+
+  <!-- 底部对比 -->
+  <rect class="box" x="50" y="310" width="400" height="90" fill="#fee2e2"/>
+  <text class="sm" x="250" y="336" text-anchor="middle" fill="#dc2626">无统一规约：多源信息 → 多次对齐</text>
+  <text class="xs" x="250" y="354" text-anchor="middle">每个环节基于「前一环节的输出」理解</text>
+  <text class="xs" x="250" y="372" text-anchor="middle">信息每经过一手就衰减一次</text>
+  <text class="xs" x="250" y="390" text-anchor="middle">沟通轮次多→理解偏差大→返工多</text>
+
+  <rect class="box" x="510" y="310" width="400" height="90" fill="#d1fae5"/>
+  <text class="sm" x="710" y="336" text-anchor="middle" fill="#059669">visual-spec：单一基线 → 一次对齐</text>
+  <text class="xs" x="710" y="354" text-anchor="middle">所有角色基于「同一份规约基线」讨论</text>
+  <text class="xs" x="710" y="372" text-anchor="middle">原型让讨论变成「看同一页」而不是「各自想」</text>
+  <text class="xs" x="710" y="390" text-anchor="middle">沟通从 8 轮 → 2 轮，人时压缩 70%</text>
+
+  <text class="xs" x="480" y="440" text-anchor="middle" fill="#64748b">需求评审最大的成本不是开会本身，而是「开完会后每个人带着不同理解离开」</text>
+</svg>

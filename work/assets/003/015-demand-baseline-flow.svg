@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" fill="none">
+  <defs>
+    <linearGradient id="gNew" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#2563eb"/><stop offset="100%" stop-color="#3b82f6"/></linearGradient>
+    <linearGradient id="gRefine" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#a78bfa"/></linearGradient>
+    <linearGradient id="gQQ" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f59e0b"/><stop offset="100%" stop-color="#fbbf24"/></linearGradient>
+  </defs>
+  <rect width="900" height="520" rx="16" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="450" y="36" text-anchor="middle" font-size="17" font-weight="800" fill="#0f172a">需求基线三件套：从模糊想法到无歧义基线</text>
+
+  <!-- === PHASE 1: /vspec:new === -->
+  <rect x="20" y="58" width="270" height="200" rx="14" fill="white" stroke="#2563eb" stroke-width="1.5"/>
+  <rect x="20" y="58" width="270" height="38" rx="14" fill="url(#gNew)"/>
+  <rect x="20" y="82" width="270" height="14" fill="url(#gNew)"/>
+  <text x="155" y="83" text-anchor="middle" font-size="14" font-weight="800" fill="white">/vspec:new  需求分析</text>
+
+  <!-- new detail boxes -->
+  <rect x="34" y="104" width="110" height="40" rx="8" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
+  <text x="89" y="120" text-anchor="middle" font-size="10" fill="#1e40af" font-weight="600">原始需求文本</text>
+  <text x="89" y="135" text-anchor="middle" font-size="9" fill="#64748b">PRD / 会议纪要</text>
+
+  <path d="M144 124h14" stroke="#93c5fd" stroke-width="1.5" marker-end="url(#arrBlue)"/>
+  <defs><marker id="arrBlue" markerWidth="6" markerHeight="5" refX="6" refY="2.5"><path d="M0 0l6 2.5-6 2.5z" fill="#93c5fd"/></marker></defs>
+
+  <rect x="158" y="104" width="118" height="40" rx="8" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
+  <text x="217" y="120" text-anchor="middle" font-size="10" fill="#1e40af" font-weight="600">结构化规约</text>
+  <text x="217" y="135" text-anchor="middle" font-size="9" fill="#64748b">角色/功能/流程/场景</text>
+
+  <!-- output -->
+  <rect x="34" y="156" width="242" height="32" rx="8" fill="#fef3c7" stroke="#fcd34d" stroke-width="1" stroke-dasharray="4 2"/>
+  <text x="155" y="176" text-anchor="middle" font-size="11" fill="#92400e" font-weight="600">输出：Open Questions（待澄清项）</text>
+
+  <!-- why Q&A -->
+  <text x="155" y="208" text-anchor="middle" font-size="9" fill="#dc2626">⚠ 未澄清的假设 = 未来的返工</text>
+  <text x="155" y="222" text-anchor="middle" font-size="8" fill="#64748b">模糊点如果不答清楚，下游设计无法进行</text>
+
+  <!-- Arrow 1→2 -->
+  <path d="M290 158h8" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrGray)"/>
+  <defs><marker id="arrGray" markerWidth="7" markerHeight="6" refX="7" refY="3"><path d="M0 0l7 3-7 3z" fill="#64748b"/></marker></defs>
+  <text x="310" y="146" font-size="9" fill="#64748b" font-weight="600">变更触发</text>
+
+  <!-- === PHASE 2: /vspec:refine === -->
+  <rect x="315" y="58" width="270" height="200" rx="14" fill="white" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="315" y="58" width="270" height="38" rx="14" fill="url(#gRefine)"/>
+  <rect x="315" y="82" width="270" height="14" fill="url(#gRefine)"/>
+  <text x="450" y="83" text-anchor="middle" font-size="14" font-weight="800" fill="white">/vspec:refine  迭代精炼</text>
+
+  <rect x="329" y="104" width="110" height="40" rx="8" fill="#ede9fe" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="384" y="120" text-anchor="middle" font-size="10" fill="#5b21b6" font-weight="600">描述变更</text>
+  <text x="384" y="135" text-anchor="middle" font-size="9" fill="#64748b">/docs/refine/refine.md</text>
+
+  <path d="M439 124h14" stroke="#c4b5fd" stroke-width="1.5" marker-end="url(#arrPurple)"/>
+  <defs><marker id="arrPurple" markerWidth="6" markerHeight="5" refX="6" refY="2.5"><path d="M0 0l6 2.5-6 2.5z" fill="#c4b5fd"/></marker></defs>
+
+  <rect x="453" y="104" width="118" height="40" rx="8" fill="#ede9fe" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="512" y="120" text-anchor="middle" font-size="10" fill="#5b21b6" font-weight="600">自动同步下游</text>
+  <text x="512" y="135" text-anchor="middle" font-size="9" fill="#64748b">设计/原型/测试</text>
+
+  <rect x="329" y="156" width="242" height="32" rx="8" fill="#ecfdf5" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="450" y="176" text-anchor="middle" font-size="11" fill="#065f46" font-weight="600">下游 artifacts 自动更新 · 追溯链完整</text>
+
+  <text x="450" y="208" text-anchor="middle" font-size="9" fill="#7c3aed">✓ 变更一处，全部同步，消除信息断层</text>
+
+  <!-- Arrow 2→3 -->
+  <path d="M585 158h8" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrGray)"/>
+  <text x="608" y="146" font-size="9" fill="#64748b" font-weight="600">消除歧义</text>
+
+  <!-- === PHASE 3: /vspec:refine-q === -->
+  <rect x="610" y="58" width="270" height="200" rx="14" fill="white" stroke="#f59e0b" stroke-width="1.5"/>
+  <rect x="610" y="58" width="270" height="38" rx="14" fill="url(#gQQ)"/>
+  <rect x="610" y="82" width="270" height="14" fill="url(#gQQ)"/>
+  <text x="745" y="83" text-anchor="middle" font-size="14" font-weight="800" fill="white">/vspec:refine-q  问答闭环</text>
+
+  <rect x="624" y="104" width="242" height="40" rx="8" fill="#fef3c7" stroke="#fcd34d" stroke-width="1"/>
+  <text x="745" y="120" text-anchor="middle" font-size="10" fill="#92400e" font-weight="600">回答 Open Questions</text>
+  <text x="745" y="135" text-anchor="middle" font-size="9" fill="#64748b">逐条澄清不确定的设计决策</text>
+
+  <rect x="624" y="156" width="242" height="32" rx="8" fill="#ecfdf5" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="745" y="176" text-anchor="middle" font-size="11" fill="#065f46" font-weight="600">合并到正式需求基线，消除假设与歧义</text>
+
+  <text x="745" y="208" text-anchor="middle" font-size="9" fill="#f59e0b">🔄 闭环：澄清 → 合并 → 基线确立</text>
+  <text x="745" y="222" text-anchor="middle" font-size="8" fill="#64748b">无歧义基线 = 下游设计无需停顿</text>
+
+  <!-- Summary bottom row -->
+  <rect x="20" y="275" width="860" height="60" rx="12" fill="#f0f9ff" stroke="#bae6fd" stroke-width="1"/>
+  <text x="90" y="298" font-size="11" fill="#0284c7" font-weight="700">阶段 1：发散</text>
+  <text x="90" y="316" font-size="10" fill="#0369a1">从模糊→结构，发现未知</text>
+
+  <text x="250" y="298" font-size="11" fill="#7c3aed" font-weight="700">阶段 2：收敛</text>
+  <text x="250" y="316" font-size="10" fill="#7c3aed">变更驱动，自动同步下游</text>
+
+  <text x="420" y="298" font-size="11" fill="#d97706" font-weight="700">阶段 3：锁定</text>
+  <text x="420" y="316" font-size="10" fill="#d97706">消除歧义，确立基线</text>
+
+  <rect x="570" y="288" width="290" height="34" rx="8" fill="#dcfce7" stroke="#86efac" stroke-width="1"/>
+  <text x="715" y="309" text-anchor="middle" font-size="12" fill="#166534" font-weight="800">基线确立后 → /vspec:detail 详细设计可无条件启动</text>
+
+  <!-- Q&A explanation -->
+  <rect x="20" y="350" width="860" height="155" rx="12" fill="#fff7ed" stroke="#fed7aa" stroke-width="1"/>
+  <text x="450" y="376" text-anchor="middle" font-size="13" font-weight="800" fill="#ea580c">为什么需要 Q&amp;A 问答闭环？</text>
+  
+  <rect x="38" y="392" width="270" height="100" rx="10" fill="white" stroke="#fcd34d" stroke-width="1"/>
+  <text x="173" y="416" text-anchor="middle" font-size="12" font-weight="700" fill="#b91c1c">没有 Q&amp;A 的风险</text>
+  <text x="173" y="438" font-size="10" fill="#64748b">需求模糊点一直存在</text>
+  <text x="173" y="455" font-size="10" fill="#64748b">开发凭猜测编码 → 验收时才发现</text>
+  <text x="173" y="472" font-size="10" fill="#64748b">理解偏差 → 返工率高 → 项目延期</text>
+
+  <rect x="328" y="392" width="270" height="100" rx="10" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="463" y="416" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">有了 Q&amp;A 闭环</text>
+  <text x="463" y="438" font-size="10" fill="#64748b">所有待澄清项被显式记录</text>
+  <text x="463" y="455" font-size="10" fill="#64748b">产品/技术早参与，在需求阶段就消除</text>
+  <text x="463" y="472" font-size="10" fill="#64748b">消除假设 → 设计可推进 → 返工明显减少</text>
+
+  <rect x="618" y="392" width="244" height="100" rx="10" fill="white" stroke="#93c5fd" stroke-width="1"/>
+  <text x="740" y="416" text-anchor="middle" font-size="12" font-weight="700" fill="#1e40af">关键价值</text>
+  <text x="740" y="438" font-size="10" fill="#64748b">Open Questions = 显式承接信息差</text>
+  <text x="740" y="455" font-size="10" fill="#64748b">问答 = 把口头对齐变成可追溯记录</text>
+  <text x="740" y="472" font-size="10" fill="#64748b">基线 = 需求的单一事实来源 (SSOT)</text>
+</svg>

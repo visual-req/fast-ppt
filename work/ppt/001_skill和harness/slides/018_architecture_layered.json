@@ -2,7 +2,7 @@
   "layout_type": "svg_full",
   "title": "`proposal-generator` 的 Skill 设计骨架",
   "svg": {
-    "src": "work/assets/018-skill-skeleton.svg",
+    "src": "work/assets/001/018-skill-skeleton.svg",
     "alt": "Skill 设计骨架图",
     "caption": "把边界、入口、类型、目录与质检闭环组织起来，Skill 才能稳定复用。"
   },

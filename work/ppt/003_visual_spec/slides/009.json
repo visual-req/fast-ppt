@@ -1,0 +1,9 @@
+{
+  "layout_type": "svg_full",
+  "title": "痛点五：信息分散——没有单一事实来源",
+  "svg": {
+    "src": "work/assets/003/008-pain-scattered-info.svg",
+    "alt": "信息分散对比图",
+    "caption": "当前：需求散落在 PRD、飞书群聊、Jira、会议纪要 5 个信息源，0 个权威版本。用 visual-spec 后：一份结构化需求基线 = 所有角色的单一事实来源（SSOT），变更自动通知相关方。从 8 轮对齐降到 2 轮。"
+  }
+}

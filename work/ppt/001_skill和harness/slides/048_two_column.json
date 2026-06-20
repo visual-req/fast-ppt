@@ -13,7 +13,7 @@
   "right": {
     "title": "规则门禁图",
     "image": {
-      "src": "work/assets/001-evaluator-rules.svg",
+      "src": "work/assets/001/001-evaluator-rules.svg",
       "caption": "右侧给出 Evaluator 门禁图，帮助学员把“结构、类型、内容、质量”四层检查组织成可执行规则。"
     }
   },

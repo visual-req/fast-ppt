@@ -12,7 +12,7 @@
   "right": {
     "title": "Skill 模板图",
     "image": {
-      "src": "work/assets/001-skill-template.svg",
+      "src": "work/assets/001/001-skill-template.svg",
       "caption": "右侧模板图帮助学员从边界、入口、结构、目录和质检五个维度组织答案。"
     }
   }

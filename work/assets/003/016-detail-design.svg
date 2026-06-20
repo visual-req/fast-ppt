@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540">
+  <defs><style>
+    .bg{fill:#f8fafc}.dim{fill:#fff;stroke:#cbd5e1;stroke-width:1.5;rx:8}
+    .tl{font:700 22px sans-serif;fill:#0f172a}
+    .tag{font:700 12px sans-serif;fill:#1d4ed8}.sub{font:400 10px sans-serif;fill:#64748b}
+  </style></defs>
+  <rect class="bg" width="960" height="540"/>
+
+  <text class="tl" x="480" y="32" text-anchor="middle">详细设计展开：20+ 维度全覆盖</text>
+
+  <!-- Row 1 -->
+  <rect class="dim" x="30" y="56" width="170" height="52" fill="#eff6ff"/>
+  <text class="tag" x="115" y="78" text-anchor="middle">权限模型</text><text class="sub" x="115" y="96" text-anchor="middle">RBAC/ABAC/数据权限</text>
+
+  <rect class="dim" x="210" y="56" width="170" height="52" fill="#eff6ff"/>
+  <text class="tag" x="295" y="78" text-anchor="middle">校验矩阵</text><text class="sub" x="295" y="96" text-anchor="middle">必填/格式/长度/业务规则</text>
+
+  <rect class="dim" x="390" y="56" width="170" height="52" fill="#eefbf5"/>
+  <text class="tag" x="475" y="78" text-anchor="middle" fill="#059669">状态机</text><text class="sub" x="475" y="96" text-anchor="middle">流转/前置条件/后置动作</text>
+
+  <rect class="dim" x="570" y="56" width="170" height="52" fill="#eefbf5"/>
+  <text class="tag" x="655" y="78" text-anchor="middle" fill="#059669">公式计算</text><text class="sub" x="655" y="96" text-anchor="middle">金额/折扣/加权/汇总</text>
+
+  <rect class="dim" x="750" y="56" width="180" height="52" fill="#fef9e7"/>
+  <text class="tag" x="840" y="78" text-anchor="middle" fill="#b45309">交互链路</text><text class="sub" x="840" y="96" text-anchor="middle">操作序列/页面跳转</text>
+
+  <!-- Row 2 -->
+  <rect class="dim" x="30" y="120" width="170" height="52" fill="#fef9e7"/>
+  <text class="tag" x="115" y="142" text-anchor="middle" fill="#b45309">消息通知</text><text class="sub" x="115" y="160" text-anchor="middle">触发条件/渠道/模板</text>
+
+  <rect class="dim" x="210" y="120" width="170" height="52" fill="#f5f3ff"/>
+  <text class="tag" x="295" y="142" text-anchor="middle" fill="#7c3aed">消息队列</text><text class="sub" x="295" y="160" text-anchor="middle">Topic/消费者/重试/死信</text>
+
+  <rect class="dim" x="390" y="120" width="170" height="52" fill="#f5f3ff"/>
+  <text class="tag" x="475" y="142" text-anchor="middle" fill="#7c3aed">定时任务</text><text class="sub" x="475" y="160" text-anchor="middle">Cron/分布式锁/幂等</text>
+
+  <rect class="dim" x="570" y="120" width="170" height="52" fill="#eff6ff"/>
+  <text class="tag" x="655" y="142" text-anchor="middle">数据权限</text><text class="sub" x="655" y="160" text-anchor="middle">行级/列级/租户隔离</text>
+
+  <rect class="dim" x="750" y="120" width="180" height="52" fill="#fef2f2"/>
+  <text class="tag" x="840" y="142" text-anchor="middle" fill="#dc2626">安全审计</text><text class="sub" x="840" y="160" text-anchor="middle">敏感数据/脱敏/日志</text>
+
+  <!-- Row 3 -->
+  <rect class="dim" x="30" y="184" width="170" height="52" fill="#fef2f2"/>
+  <text class="tag" x="115" y="206" text-anchor="middle" fill="#dc2626">异常处理</text><text class="sub" x="115" y="224" text-anchor="middle">重试策略/熔断/降级</text>
+
+  <rect class="dim" x="210" y="184" width="170" height="52" fill="#eff6ff"/>
+  <text class="tag" x="295" y="206" text-anchor="middle">文件导入导出</text><text class="sub" x="295" y="224" text-anchor="middle">模板/校验/批量处理</text>
+
+  <rect class="dim" x="390" y="184" width="170" height="52" fill="#eefbf5"/>
+  <text class="tag" x="475" y="206" text-anchor="middle" fill="#059669">缓存设计</text><text class="sub" x="475" y="224" text-anchor="middle">策略/失效/热点/击穿</text>
+
+  <rect class="dim" x="570" y="184" width="170" height="52" fill="#f5f3ff"/>
+  <text class="tag" x="655" y="206" text-anchor="middle" fill="#7c3aed">分布式锁</text><text class="sub" x="655" y="224" text-anchor="middle">Redisson/续期/释放</text>
+
+  <rect class="dim" x="750" y="184" width="180" height="52" fill="#eff6ff"/>
+  <text class="tag" x="840" y="206" text-anchor="middle">数据库设计</text><text class="sub" x="840" y="224" text-anchor="middle">表结构/索引/分库分表</text>
+
+  <!-- Row 4 -->
+  <rect class="dim" x="30" y="248" width="170" height="52" fill="#eefbf5"/>
+  <text class="tag" x="115" y="270" text-anchor="middle" fill="#059669">接口设计</text><text class="sub" x="115" y="288" text-anchor="middle">REST/参数/返回值/版本</text>
+
+  <rect class="dim" x="210" y="248" width="170" height="52" fill="#fef9e7"/>
+  <text class="tag" x="295" y="270" text-anchor="middle" fill="#b45309">配置管理</text><text class="sub" x="295" y="288" text-anchor="middle">开关/灰度/动态变更</text>
+
+  <rect class="dim" x="390" y="248" width="170" height="52" fill="#eff6ff"/>
+  <text class="tag" x="475" y="270" text-anchor="middle">分页排序</text><text class="sub" x="475" y="288" text-anchor="middle">游标/OFFSET/排序字段</text>
+
+  <rect class="dim" x="570" y="248" width="170" height="52" fill="#f5f3ff"/>
+  <text class="tag" x="655" y="270" text-anchor="middle" fill="#7c3aed">国际化</text><text class="sub" x="655" y="288" text-anchor="middle">多语言/时区/格式</text>
+
+  <rect class="dim" x="750" y="248" width="180" height="52" fill="#fef2f2"/>
+  <text class="tag" x="840" y="270" text-anchor="middle" fill="#dc2626">监控埋点</text><text class="sub" x="840" y="288" text-anchor="middle">监控/业务指标/链路</text>
+
+  <!-- 底部 -->
+  <rect class="dim" x="120" y="330" width="720" height="55" fill="#eff6ff" stroke="#3b82f6"/>
+  <text class="tag" x="480" y="355" text-anchor="middle" fill="#1d4ed8">从「写需求」到「定设计」一步到位，降低设计遗漏和沟通歧义</text>
+  <text class="sub" x="480" y="375" text-anchor="middle">研发阶段最常见的设计盲区——权限、并发、异常、事件驱动、数据一致性——均已覆盖</text>
+</svg>

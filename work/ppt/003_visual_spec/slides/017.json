@@ -1,0 +1,20 @@
+{
+  "layout_type": "two_column",
+  "title": "解决方案原理",
+  "left": {
+    "text": "Visual-Spec 通过 3 层架构将原始需求转化为可验证的结构化规约",
+    "bullets": [
+      "第 1 层 · 需求基线：/vspec:new 将一句话需求展开为 6 维度结构化规约（背景/角色/功能/流程/场景/术语），生成 Open Questions 消除模糊假设",
+      "第 2 层 · 设计展开：/vspec:detail 逐模块展开 20+ 技术维度（权限/校验/状态机/日志/通知/并发），设计阶段就发现遗漏",
+      "第 3 层 · 验证闭环：/vspec:verify 生成交互式 HTML 原型，/vspec:accept 生成验收用例，/vspec:append-test 生成自动化测试代码",
+      "质量保障：/vspec:qc 按完整性/正确性/精确性三维检查，输出结构化质检报告",
+      "变更追溯：所有产出物关联同一需求基线，/vspec:refine 变更自动同步下游并更新版本记录",
+      "知识产权：每个需求的 /vspec 生成物自动进行知识产权登记注册，确保团队的知识产出有明确版权归属和法律保障"
+    ]
+  },
+  "right": {
+    "image": "work/assets/003/017-IP-registration.png",
+    "title": "知识产权登记",
+    "caption": "生成物自动注册确权"
+  }
+}

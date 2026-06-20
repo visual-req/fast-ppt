@@ -2,7 +2,7 @@
   "layout_type": "svg_full",
   "title": "Environment 与 Memory：让结果可复现、让过程可延续",
   "svg": {
-    "src": "work/assets/033-env-memory.svg",
+    "src": "work/assets/001/033-env-memory.svg",
     "alt": "Environment 与 Memory 图解",
     "caption": "Environment 保证可运行与可复现；Memory 保证可延续与可回归；两者共同支撑稳定交付。"
   },

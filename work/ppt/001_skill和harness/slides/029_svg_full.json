@@ -2,7 +2,7 @@
   "layout_type": "svg_full",
   "title": "Harness 总体关系图",
   "svg": {
-    "src": "work/assets/029-harness-overview-layered.svg",
+    "src": "work/assets/001/029-harness-overview-layered.svg",
     "alt": "Harness 总体关系图",
     "caption": "把 Context、Planner、Tools、Memory、Environment、Evaluator 围绕 Task Goal 组织起来，才是 Harness 的完整形态。"
   },

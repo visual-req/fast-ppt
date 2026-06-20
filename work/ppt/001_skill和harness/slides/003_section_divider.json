@@ -5,7 +5,7 @@
   "subtitle": "先回答：为什么今天只优化提示词已经不够。",
   "goal": "本章重点是区分三代工程分别解决什么问题，以及任务在什么情况下必须升级到 Harness。",
   "background": {
-    "src": "work/assets/001-chapter-01-bg.svg",
+    "src": "work/assets/001/001-chapter-01-bg.svg",
     "overlay": "rgba(15,23,42,0.40)",
     "size": "cover",
     "position": "center"

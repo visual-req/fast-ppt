@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" fill="none">
+  <defs>
+    <linearGradient id="gNew19" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#2563eb"/><stop offset="100%" stop-color="#6366f1"/></linearGradient>
+    <linearGradient id="gOutput" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#059669"/><stop offset="100%" stop-color="#10b981"/></linearGradient>
+    <marker id="arr19" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0 0l8 3-8 3z" fill="#64748b"/></marker>
+    <filter id="sh19"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.08"/></filter>
+  </defs>
+  <rect width="900" height="540" rx="16" fill="#f8fafc"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="17" font-weight="800" fill="#0f172a">/vspec:new 工作流程：从一句话需求到结构化规约</text>
+
+  <!-- Input -->
+  <rect x="30" y="58" width="190" height="70" rx="12" fill="white" stroke="#94a3b8" stroke-width="1.5" filter="url(#sh19)"/>
+  <text x="125" y="85" text-anchor="middle" font-size="12" font-weight="700" fill="#475569">用户输入</text>
+  <text x="125" y="105" text-anchor="middle" font-size="10" fill="#64748b">一句话/PRD/群聊/文档</text>
+  <text x="125" y="120" text-anchor="middle" font-size="9" fill="#94a3b8">任意格式的需求描述</text>
+
+  <path d="M220 93h22" stroke="#64748b" stroke-width="2" marker-end="url(#arr19)"/>
+
+  <!-- Step 1: Parse -->
+  <rect x="245" y="58" width="190" height="70" rx="12" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5" filter="url(#sh19)"/>
+  <text x="340" y="78" text-anchor="middle" font-size="10" fill="#64748b">步骤 1</text>
+  <text x="340" y="98" text-anchor="middle" font-size="13" font-weight="700" fill="#1e40af">需求解析</text>
+  <text x="340" y="118" text-anchor="middle" font-size="10" fill="#3b82f6">提取关键实体与意图</text>
+
+  <path d="M435 93h22" stroke="#64748b" stroke-width="2" marker-end="url(#arr19)"/>
+
+  <!-- Step 2: Structure -->
+  <rect x="460" y="58" width="190" height="70" rx="12" fill="#eef2ff" stroke="#a5b4fc" stroke-width="1.5" filter="url(#sh19)"/>
+  <text x="555" y="78" text-anchor="middle" font-size="10" fill="#64748b">步骤 2</text>
+  <text x="555" y="98" text-anchor="middle" font-size="13" font-weight="700" fill="#4338ca">结构化展开</text>
+  <text x="555" y="118" text-anchor="middle" font-size="10" fill="#6366f1">按 6 维度展开</text>
+
+  <path d="M650 93h22" stroke="#64748b" stroke-width="2" marker-end="url(#arr19)"/>
+
+  <!-- Step 3: Questions -->
+  <rect x="675" y="58" width="195" height="70" rx="12" fill="#fef3c7" stroke="#fcd34d" stroke-width="1.5" filter="url(#sh19)"/>
+  <text x="772" y="78" text-anchor="middle" font-size="10" fill="#64748b">步骤 3</text>
+  <text x="772" y="98" text-anchor="middle" font-size="13" font-weight="700" fill="#b45309">生成 Open Questions</text>
+  <text x="772" y="118" text-anchor="middle" font-size="10" fill="#d97706">列出待澄清项</text>
+
+  <!-- 6 dimensions grid -->
+  <text x="450" y="160" text-anchor="middle" font-size="12" font-weight="700" fill="#4338ca">步骤 2 详解：6 维度结构化展开</text>
+
+  <rect x="40" y="175" width="125" height="50" rx="10" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
+  <text x="102" y="197" text-anchor="middle" font-size="11" font-weight="700" fill="#1e40af">背景</text>
+  <text x="102" y="215" text-anchor="middle" font-size="9" fill="#64748b">为什么需要？</text>
+
+  <rect x="175" y="175" width="125" height="50" rx="10" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
+  <text x="237" y="197" text-anchor="middle" font-size="11" font-weight="700" fill="#1e40af">角色</text>
+  <text x="237" y="215" text-anchor="middle" font-size="9" fill="#64748b">谁使用？权限？</text>
+
+  <rect x="310" y="175" width="125" height="50" rx="10" fill="#ede9fe" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="372" y="197" text-anchor="middle" font-size="11" font-weight="700" fill="#5b21b6">功能清单</text>
+  <text x="372" y="215" text-anchor="middle" font-size="9" fill="#64748b">做什么？</text>
+
+  <rect x="445" y="175" width="125" height="50" rx="10" fill="#ede9fe" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="507" y="197" text-anchor="middle" font-size="11" font-weight="700" fill="#5b21b6">业务流程</text>
+  <text x="507" y="215" text-anchor="middle" font-size="9" fill="#64748b">怎么做？顺序？</text>
+
+  <rect x="580" y="175" width="125" height="50" rx="10" fill="#fce7f3" stroke="#f9a8d4" stroke-width="1"/>
+  <text x="642" y="197" text-anchor="middle" font-size="11" font-weight="700" fill="#be185d">场景矩阵</text>
+  <text x="642" y="215" text-anchor="middle" font-size="9" fill="#64748b">正常/边界/异常</text>
+
+  <rect x="715" y="175" width="150" height="50" rx="10" fill="#fce7f3" stroke="#f9a8d4" stroke-width="1"/>
+  <text x="790" y="197" text-anchor="middle" font-size="11" font-weight="700" fill="#be185d">术语表</text>
+  <text x="790" y="215" text-anchor="middle" font-size="9" fill="#64748b">定义统一用语</text>
+
+  <!-- Output section -->
+  <text x="450" y="260" text-anchor="middle" font-size="12" font-weight="700" fill="#059669">输出：放入 /specs/ 目录的结构化产制品</text>
+
+  <rect x="30" y="280" width="260" height="45" rx="10" fill="#ecfdf5" stroke="#6ee7b7" stroke-width="1.5"/>
+  <text x="160" y="302" text-anchor="middle" font-size="11" font-weight="700" fill="#166534">/specs/baseline/</text>
+  <text x="160" y="318" text-anchor="middle" font-size="9" fill="#059669">需求基线（SSOT）</text>
+
+  <rect x="320" y="280" width="260" height="45" rx="10" fill="#ecfdf5" stroke="#6ee7b7" stroke-width="1.5"/>
+  <text x="450" y="302" text-anchor="middle" font-size="11" font-weight="700" fill="#166534">/specs/questions/</text>
+  <text x="450" y="318" text-anchor="middle" font-size="9" fill="#059669">待澄清问题清单</text>
+
+  <rect x="610" y="280" width="260" height="45" rx="10" fill="#ecfdf5" stroke="#6ee7b7" stroke-width="1.5"/>
+  <text x="740" y="302" text-anchor="middle" font-size="11" font-weight="700" fill="#166534">/specs/glossary/</text>
+  <text x="740" y="318" text-anchor="middle" font-size="9" fill="#059669">术语表</text>
+
+  <!-- Key value box -->
+  <rect x="30" y="348" width="840" height="70" rx="12" fill="#f0f9ff" stroke="#bae6fd" stroke-width="1.5"/>
+  <text x="450" y="372" text-anchor="middle" font-size="13" font-weight="800" fill="#2563eb">为什么需要这个流程？</text>
+  <text x="450" y="394" text-anchor="middle" font-size="11" fill="#475569">一句话需求缺少：谁用？什么场景？正常流程之外怎么处理？权限边界？用词统一吗？</text>
+  <text x="450" y="410" text-anchor="middle" font-size="11" fill="#475569">/vspec:new 自动补全这 6 个维度，把模糊假设变成显式规约，为下游设计提供坚实基础</text>
+
+  <!-- Bottom -->
+  <rect x="30" y="440" width="840" height="55" rx="12" fill="#dcfce7" stroke="#86efac" stroke-width="1"/>
+  <text x="450" y="463" text-anchor="middle" font-size="13" font-weight="800" fill="#166534">输出即基线 → 所有角色都在同一份规约上工作 → 消除理解偏差</text>
+  <text x="450" y="484" text-anchor="middle" font-size="10" fill="#15803d">下一步：/vspec:refine 变更自动同步 · /vspec:refine-q 回答 Open Questions · /vspec:detail 详细设计展开</text>
+</svg>

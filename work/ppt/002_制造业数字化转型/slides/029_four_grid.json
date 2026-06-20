@@ -2,7 +2,7 @@
   "layout_type": "svg_full",
   "title": "库存预测 AI 工作原理",
   "svg": {
-    "src": "work/assets/029-inventory-ai.svg",
+    "src": "work/assets/002/029-inventory-ai.svg",
     "alt": "库存预测 AI：数据采集 → 特征工程 → 模型推理 → 决策闭环",
     "caption": "四层 pipeline + 反馈闭环：预测准确率 >=85%，缺货率下降 60%"
   }

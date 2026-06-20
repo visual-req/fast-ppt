@@ -1,0 +1,14 @@
+{
+  "layout_type": "journey_map",
+  "title": "典型应用场景",
+  "stages": [
+    { "label": "项目立项", "description": "方案评审前补全需求基线", "icon": "document" },
+    { "label": "需求澄清", "description": "/vspec:new 生成结构化规约", "icon": "search" },
+    { "label": "迭代精炼", "description": "/vspec:refine 变更自动同步", "icon": "refactor" },
+    { "label": "详细设计", "description": "20+ 维度逐项展开", "icon": "code" },
+    { "label": "原型验证", "description": "可交互 HTML 对齐期望", "icon": "dashboard" },
+    { "label": "验收测试", "description": "用例自动生成 + 自动化测试", "icon": "test" },
+    { "label": "质量检查", "description": "15+ 行业标准自动扫描", "icon": "shield" },
+    { "label": "集成实现", "description": "/vspec:impl 生成代码", "icon": "flow" }
+  ]
+}

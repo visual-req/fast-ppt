@@ -2,7 +2,7 @@
   "layout_type": "svg_full",
   "title": "提示词工程：先把问题问准",
   "svg": {
-    "src": "work/assets/005-prompt-engineering.svg",
+    "src": "work/assets/001/005-prompt-engineering.svg",
     "alt": "Prompt Engineering 图解",
     "caption": "用结构化要素降低歧义：先定任务目标，再明确角色、格式、约束与示例。"
   },

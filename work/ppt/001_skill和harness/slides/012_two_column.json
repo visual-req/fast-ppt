@@ -12,7 +12,7 @@
   "right": {
     "title": "演进图",
     "image": {
-      "src": "work/assets/001-evolution-compare.svg",
+      "src": "work/assets/001/001-evolution-compare.svg",
       "caption": "借助右侧演进图，让学员把三代工程的升级原因和边界差异放到同一张图上讨论。"
     }
   }

@@ -5,7 +5,7 @@
   "subtitle": "围绕“用户- Skill - 文件系统 - 前端预览”的闭环，讲清怎么开发、怎么质检、怎么交付。",
   "goal": "把 Skill 从提示词变成可交付工程：有结构、有产物、有预览、有门禁、有回改。",
   "background": {
-    "src": "work/assets/001-chapter-04-bg.svg",
+    "src": "work/assets/001/001-chapter-04-bg.svg",
     "overlay": "rgba(15,23,42,0.36)",
     "size": "cover",
     "position": "center"

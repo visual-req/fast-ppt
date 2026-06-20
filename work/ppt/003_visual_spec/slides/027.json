@@ -1,0 +1,9 @@
+{
+  "layout_type": "svg_full",
+  "title": "规划排期：/vspec:plan",
+  "svg": {
+    "src": "work/assets/003/021-vspec-plan-flow.svg",
+    "alt": "规划排期流程",
+    "caption": "基于功能清单 + 详细设计 + 质检报告 + 依赖关系，自动估算工时并生成排期。输出 plan_estimate.md（按模块/角色拆解的工时估算）和 plan_schedule.html（可视化排期甘特图），支撑项目立项和资源调配决策。"
+  }
+}

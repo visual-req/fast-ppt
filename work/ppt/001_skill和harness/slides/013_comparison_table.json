@@ -2,7 +2,7 @@
   "layout_type": "svg_full",
   "title": "详细解析：三代工程的演进关系图",
   "svg": {
-    "src": "work/assets/001-evolution-compare.svg",
+    "src": "work/assets/001/001-evolution-compare.svg",
     "alt": "三代工程演进关系图",
     "caption": "用一张演进总览图讲清三代工程各自解决什么问题，以及为什么能力边界会从问法优化逐步走向系统闭环。"
   },

@@ -1,0 +1,9 @@
+{
+  "layout_type": "svg_full",
+  "title": "Visual-Spec 完整工作流",
+  "svg": {
+    "src": "work/assets/003/013-visual-spec-workflow.svg",
+    "alt": "visual-spec 工作流全貌",
+    "caption": "从 /vspec:new 需求分析 → refine 迭代精炼 → detail 详细设计 → verify 原型验证 → accept 验收用例 → append-test 自动化测试 → qc 质量检查 → impl 集成实现 → plan 规划排期，完整的需求工程化闭环"
+  }
+}

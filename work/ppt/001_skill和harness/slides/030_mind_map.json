@@ -2,7 +2,7 @@
   "layout_type": "svg_full",
   "title": "Harness 至少要把哪六个核心组件组织起来",
   "svg": {
-    "src": "work/assets/030-harness-components-compact.svg",
+    "src": "work/assets/001/030-harness-components-compact.svg",
     "alt": "Harness 六大组件总览图",
     "caption": "六大组件围绕任务目标协同：Context 决定看到什么，Planner 决定先做什么，Tools 负责执行，Environment 保证运行，Memory 负责延续，Evaluator 负责门禁。"
   },

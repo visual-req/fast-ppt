@@ -2,7 +2,7 @@
   "layout_type": "svg_full",
   "title": "AI建设内容分层",
   "svg": {
-    "src": "work/assets/007-ai-construction-content.svg",
+    "src": "work/assets/002/007-ai-construction-content.svg",
     "alt": "AI建设内容分层图：数字化底座的数据汇总、AI基础设施、业务研发办公三类分析系统",
     "caption": "从下到上：先汇总数字化数据，再建设 AI 基础设施，最终支撑业务、研发、办公三类 AI 分析系统。"
   }

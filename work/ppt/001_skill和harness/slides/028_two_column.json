@@ -12,7 +12,7 @@
   "right": {
     "title": "Skill 设计模板图",
     "image": {
-      "src": "work/assets/001-skill-template.svg",
+      "src": "work/assets/001/001-skill-template.svg",
       "caption": "右侧给出真实 Skill 设计模板图，帮助学员从“边界、触发、结构、目录、质检、优化”六个方面组织答案。"
     }
   },

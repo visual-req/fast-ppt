@@ -1,0 +1,9 @@
+{
+  "layout_type": "svg_full",
+  "title": "质量检查：/vspec:qc",
+  "svg": {
+    "src": "work/assets/003/019-quality-framework.svg",
+    "alt": "质量检查体系",
+    "caption": "三维质量评估模型：正确性（逻辑一致性/状态机完整性，做的事对不对？）、精确性（字段类型/校验规则，描述得够不够细？）、完整性（20+ 维度逐项覆盖，有没有遗漏？）。扫描 /specs/ 全量制品 → 15+ 标准校验 → 缺失项清单 → 补充指导 → 输出 qc_report.json + qc_report.html"
+  }
+}

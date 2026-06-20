@@ -2,7 +2,7 @@
   "layout_type": "svg_full",
   "title": "第 11 期复盘：生成网页 PPT 的 Skill 闭环",
   "svg": {
-    "src": "work/assets/024-skill-ppt-pipeline.svg",
+    "src": "work/assets/001/024-skill-ppt-pipeline.svg",
     "alt": "用户、Skill、文件系统、前端预览的闭环流程图",
     "caption": "辅导内容围绕这张图展开：如何开发 Skill、如何保证质量、交付物应该包含哪些文件与样例。"
   },

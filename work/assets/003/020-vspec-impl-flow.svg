@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" fill="none">
+  <defs>
+    <linearGradient id="gi" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#2563eb"/><stop offset="100%" stop-color="#7c3aed"/></linearGradient>
+    <filter id="si"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.08"/></filter>
+  </defs>
+  <rect width="960" height="540" rx="16" fill="#f8fafc"/>
+
+  <text x="480" y="34" text-anchor="middle" font-size="17" font-weight="800" fill="#0f172a">/vspec:impl 集成实现工作流</text>
+
+  <!-- Input row: 3 boxes, evenly spaced -->
+  <!-- Box width=200, total=600, margin=60, gap=(960-120-600)/2=120 -->
+  <rect x="60" y="62" width="200" height="90" rx="12" fill="white" stroke="#2563eb" stroke-width="2" filter="url(#si)"/>
+  <text x="160" y="96" text-anchor="middle" font-size="14" font-weight="700" fill="#1e40af">详细设计</text>
+  <text x="160" y="120" text-anchor="middle" font-size="11" fill="#64748b">/specs/details/</text>
+  <text x="160" y="140" text-anchor="middle" font-size="10" fill="#94a3b8">20+ 设计维度</text>
+
+  <path d="M260 107h90" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrI)"/>
+  <defs><marker id="arrI" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0 0l8 3-8 3z" fill="#94a3b8"/></marker></defs>
+
+  <rect x="380" y="62" width="200" height="90" rx="12" fill="white" stroke="#7c3aed" stroke-width="2" filter="url(#si)"/>
+  <text x="480" y="96" text-anchor="middle" font-size="14" font-weight="700" fill="#5b21b6">数据模型</text>
+  <text x="480" y="120" text-anchor="middle" font-size="11" fill="#64748b">/specs/models/</text>
+  <text x="480" y="140" text-anchor="middle" font-size="10" fill="#94a3b8">实体 · 字段 · 关系</text>
+
+  <path d="M580 107h90" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrI)"/>
+
+  <rect x="700" y="62" width="200" height="90" rx="12" fill="white" stroke="#0891b2" stroke-width="2" filter="url(#si)"/>
+  <text x="800" y="96" text-anchor="middle" font-size="14" font-weight="700" fill="#155e75">技术选型</text>
+  <text x="800" y="120" text-anchor="middle" font-size="11" fill="#64748b">/scheme.yaml</text>
+  <text x="800" y="140" text-anchor="middle" font-size="10" fill="#94a3b8">框架 · 语言 · 规范</text>
+
+  <!-- Central impl box -->
+  <rect x="330" y="180" width="300" height="80" rx="14" fill="url(#gi)" stroke="#1d4ed8" stroke-width="2" filter="url(#si)"/>
+  <text x="480" y="212" text-anchor="middle" font-size="16" font-weight="800" fill="white">/vspec:impl</text>
+  <text x="480" y="238" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.85)">智能代码生成引擎</text>
+  <text x="480" y="254" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.65)">对齐项目技术栈 · 代码风格 · 开发规范</text>
+
+  <!-- Output row: 3 boxes, evenly spaced, same dimensions -->
+  <rect x="60" y="290" width="200" height="80" rx="12" fill="#dbeafe" stroke="#93c5fd" stroke-width="1.5" filter="url(#si)"/>
+  <text x="160" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#1e40af">API Controller</text>
+  <text x="160" y="344" text-anchor="middle" font-size="10" fill="#475569">REST / GraphQL</text>
+  <text x="160" y="360" text-anchor="middle" font-size="9" fill="#64748b">路由 · 校验 · 文档</text>
+
+  <rect x="380" y="290" width="200" height="80" rx="12" fill="#ede9fe" stroke="#c4b5fd" stroke-width="1.5" filter="url(#si)"/>
+  <text x="480" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#5b21b6">Service / Domain</text>
+  <text x="480" y="344" text-anchor="middle" font-size="10" fill="#475569">DDD / Clean Arch</text>
+  <text x="480" y="360" text-anchor="middle" font-size="9" fill="#64748b">领域 · 业务 · 数据</text>
+
+  <rect x="700" y="290" width="200" height="80" rx="12" fill="#e0f2fe" stroke="#67e8f9" stroke-width="1.5" filter="url(#si)"/>
+  <text x="800" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#155e75">前端页面</text>
+  <text x="800" y="344" text-anchor="middle" font-size="10" fill="#475569">Vue / React 组件</text>
+  <text x="800" y="360" text-anchor="middle" font-size="9" fill="#64748b">页面 · 组件 · 状态</text>
+
+  <!-- Bottom value -->
+  <rect x="120" y="400" width="720" height="55" rx="12" fill="#f0f9ff" stroke="#bae6fd" stroke-width="1.5"/>
+  <text x="480" y="424" text-anchor="middle" font-size="12" font-weight="700" fill="#2563eb">输入：详细设计 + 数据模型 + 技术选型 → 输出：可运行的前后端代码</text>
+  <text x="480" y="444" text-anchor="middle" font-size="10" fill="#475569">消除「从设计到代码」的手工断层，让代码忠实反映设计意图</text>
+
+  <text x="480" y="495" text-anchor="middle" font-size="10" fill="#94a3b8">代码输出到 /specs/backend/ 和项目对应目录，可直接编译运行</text>
+</svg>

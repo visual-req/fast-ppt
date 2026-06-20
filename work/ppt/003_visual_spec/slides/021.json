@@ -1,0 +1,9 @@
+{
+  "layout_type": "svg_full",
+  "title": "详细设计：/vspec:detail",
+  "svg": {
+    "src": "work/assets/003/016-detail-design.svg",
+    "alt": "20+ 详细设计维度",
+    "caption": "基于 /specs/functions/ 中的功能清单，逐模块展开 RBAC 权限、数据权限、交互链路、校验规则、日志、通知、消息队列、导入导出、定时任务等 20+ 技术维度，输出到 /specs/details/"
+  }
+}

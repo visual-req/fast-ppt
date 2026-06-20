@@ -2,7 +2,7 @@
   "layout_type": "svg_full",
   "title": "测试阶段：验收、自动化与归因",
   "svg": {
-    "src": "work/assets/022-testing-phase-flow.svg",
+    "src": "work/assets/002/022-testing-phase-flow.svg",
     "alt": "测试阶段三大核心能力：验收测试、自动化回归、缺陷归因的流程与关键技术",
     "caption": "验收自动生成 → 回归智能筛选 → 缺陷自动归因 → 门禁自动判定，形成持续改进闭环"
   }

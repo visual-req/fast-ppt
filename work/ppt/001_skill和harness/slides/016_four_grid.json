@@ -3,7 +3,7 @@
   "show_title": true,
   "title": "一个 Skill 至少要把哪几件事讲清楚",
   "svg": {
-    "src": "work/assets/016-skill-minimum-4parts.svg",
+    "src": "work/assets/001/016-skill-minimum-4parts.svg",
     "alt": "Skill 最小闭环：边界、入口、输入输出、质量保障",
     "caption": "把 Skill 写成工程化能力，最少要把：边界、入口、输入输出、质量保障这四件事讲清楚。"
   }

@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" fill="none">
+  <defs>
+    <linearGradient id="gPlan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+    <filter id="shPl"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.08"/></filter>
+  </defs>
+  <rect width="900" height="540" rx="16" fill="#f8fafc"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="17" font-weight="800" fill="#0f172a">/vspec:plan 规划排期工作流</text>
+
+  <!-- Input boxes -->
+  <text x="450" y="68" text-anchor="middle" font-size="12" font-weight="700" fill="#64748b">输入：从 /specs/ 读取的 4 类结构化数据</text>
+
+  <rect x="40" y="82" width="190" height="65" rx="12" fill="#fef3c7" stroke="#fcd34d" stroke-width="1.5" filter="url(#shPl)"/>
+  <text x="135" y="108" text-anchor="middle" font-size="12" font-weight="700" fill="#92400e">功能清单</text>
+  <text x="135" y="128" text-anchor="middle" font-size="10" fill="#a16207">/specs/functions/</text>
+  <text x="135" y="142" text-anchor="middle" font-size="9" fill="#94a3b8">模块 · 功能 · 复杂度</text>
+
+  <rect x="245" y="82" width="190" height="65" rx="12" fill="#dbeafe" stroke="#93c5fd" stroke-width="1.5" filter="url(#shPl)"/>
+  <text x="340" y="108" text-anchor="middle" font-size="12" font-weight="700" fill="#1e40af">详细设计</text>
+  <text x="340" y="128" text-anchor="middle" font-size="10" fill="#2563eb">/specs/details/</text>
+  <text x="340" y="142" text-anchor="middle" font-size="9" fill="#94a3b8">维度 · 技术约束</text>
+
+  <rect x="450" y="82" width="190" height="65" rx="12" fill="#ecfdf5" stroke="#6ee7b7" stroke-width="1.5" filter="url(#shPl)"/>
+  <text x="545" y="108" text-anchor="middle" font-size="12" font-weight="700" fill="#065f46">质检报告</text>
+  <text x="545" y="128" text-anchor="middle" font-size="10" fill="#059669">qc_report.json</text>
+  <text x="545" y="142" text-anchor="middle" font-size="9" fill="#94a3b8">缺失项 · 风险点</text>
+
+  <rect x="655" y="82" width="205" height="65" rx="12" fill="#fff1f2" stroke="#fda4af" stroke-width="1.5" filter="url(#shPl)"/>
+  <text x="757" y="108" text-anchor="middle" font-size="12" font-weight="700" fill="#9f1239">依赖关系</text>
+  <text x="757" y="128" text-anchor="middle" font-size="10" fill="#e11d48">/specs/deps/</text>
+  <text x="757" y="142" text-anchor="middle" font-size="9" fill="#94a3b8">先后 · 并行</text>
+
+  <!-- Arrows down -->
+  <path d="M135 147l0 25" stroke="#94a3b8" stroke-width="1.5"/>
+  <path d="M340 147l0 25" stroke="#94a3b8" stroke-width="1.5"/>
+  <path d="M545 147l0 25" stroke="#94a3b8" stroke-width="1.5"/>
+  <path d="M757 147l0 25" stroke="#94a3b8" stroke-width="1.5"/>
+
+  <!-- Central box: /vspec:plan -->
+  <rect x="270" y="178" width="360" height="85" rx="14" fill="url(#gPlan)" stroke="#d97706" stroke-width="2" filter="url(#shPl)"/>
+  <text x="450" y="210" text-anchor="middle" font-size="17" font-weight="800" fill="white">/vspec:plan</text>
+  <text x="450" y="234" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.9)">自动估算工时 · 智能排期 · 依赖分析</text>
+  <text x="450" y="252" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.7)">基于功能复杂度 + 依赖关系 + 质检风险</text>
+
+  <!-- Arrows down -->
+  <path d="M450 263l0 20" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrPl)"/>
+  <defs><marker id="arrPl" markerWidth="7" markerHeight="5" refX="7" refY="2.5"><path d="M0 0l7 2.5-7 2.5z" fill="#64748b"/></marker></defs>
+
+  <!-- Output section -->
+  <text x="450" y="300" text-anchor="middle" font-size="12" font-weight="700" fill="#059669">输出：结构化 JSON 文件</text>
+
+  <rect x="80" y="315" width="350" height="85" rx="12" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5" filter="url(#shPl)"/>
+  <text x="255" y="342" text-anchor="middle" font-size="14" font-weight="800" fill="#166534">plan_estimate.json</text>
+  <text x="255" y="362" text-anchor="middle" font-size="10" fill="#047857">工时估算（按模块 · 角色 · 功能拆解）</text>
+  <text x="100" y="382" font-size="9" fill="#64748b" font-family="monospace">{"modules": [{"name": "...", "estimate_hours": 24,</text>
+  <text x="100" y="395" font-size="9" fill="#64748b" font-family="monospace">"role": "backend", "tasks": [...]}], "total_hours": 160}</text>
+
+  <rect x="470" y="315" width="350" height="85" rx="12" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5" filter="url(#shPl)"/>
+  <text x="645" y="342" text-anchor="middle" font-size="14" font-weight="800" fill="#166534">plan_schedule.json</text>
+  <text x="645" y="362" text-anchor="middle" font-size="10" fill="#047857">排期数据（依赖关系 · 时间线）</text>
+  <text x="490" y="382" font-size="9" fill="#64748b" font-family="monospace">{"sprints": [{"id": "S1", "duration_days": 14,</text>
+  <text x="490" y="395" font-size="9" fill="#64748b" font-family="monospace">"deps": [], "modules": ["auth","order"]}]}</text>
+
+  <!-- Key value boxes -->
+  <rect x="40" y="420" width="820" height="60" rx="12" fill="#f0f9ff" stroke="#bae6fd" stroke-width="1.5"/>
+  <text x="450" y="444" text-anchor="middle" font-size="13" font-weight="800" fill="#2563eb">JSON 格式 = 可直接导入 Jira / Linear / Notion / 飞书多维表格</text>
+  <text x="450" y="466" text-anchor="middle" font-size="11" fill="#475569">上游 /vspec:refine 变更触发后，重新运行 /vspec:plan 自动更新排期数据</text>
+
+  <!-- Bottom chain -->
+  <rect x="80" y="496" width="100" height="32" rx="8" fill="#dbeafe"/><text x="130" y="517" text-anchor="middle" font-size="9" font-weight="700" fill="#1e40af">功能清单</text>
+  <path d="M180 512h16" stroke="#94a3b8" stroke-width="1.5"/>
+  <rect x="200" y="496" width="100" height="32" rx="8" fill="#fef3c7"/><text x="250" y="517" text-anchor="middle" font-size="9" font-weight="700" fill="#92400e">工期估算</text>
+  <path d="M300 512h16" stroke="#94a3b8" stroke-width="1.5"/>
+  <rect x="320" y="496" width="100" height="32" rx="8" fill="#ede9fe"/><text x="370" y="517" text-anchor="middle" font-size="9" font-weight="700" fill="#7c3aed">依赖分析</text>
+  <path d="M420 512h16" stroke="#94a3b8" stroke-width="1.5"/>
+  <rect x="440" y="496" width="100" height="32" rx="8" fill="#dcfce7"/><text x="490" y="517" text-anchor="middle" font-size="9" font-weight="700" fill="#166534">排期输出</text>
+  <path d="M540 512h16" stroke="#94a3b8" stroke-width="1.5"/>
+  <rect x="560" y="496" width="100" height="32" rx="8" fill="#f0fdf4"/><text x="610" y="517" text-anchor="middle" font-size="9" font-weight="700" fill="#059669">导入工具</text>
+  <path d="M660 512h16" stroke="#94a3b8" stroke-width="1.5"/>
+  <rect x="680" y="496" width="140" height="32" rx="8" fill="#fff1f2"/><text x="750" y="517" text-anchor="middle" font-size="9" font-weight="700" fill="#9f1239">自动化流水线</text>
+</svg>

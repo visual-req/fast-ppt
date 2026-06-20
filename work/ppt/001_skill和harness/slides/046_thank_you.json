@@ -3,7 +3,7 @@
   "title": "Q&A",
   "subtitle": "欢迎继续讨论：你的任务现在处在哪一代工程？下一步最值得补哪一个环节？",
   "background": {
-    "src": "work/assets/001-cover-hero.svg",
+    "src": "work/assets/001/001-cover-hero.svg",
     "overlay": "rgba(15,23,42,0.58)",
     "size": "cover",
     "position": "center"

@@ -2,7 +2,7 @@
   "layout_type": "svg_full",
   "title": "从 Skill 到 Harness 的知识地图",
   "svg": {
-    "src": "work/assets/044-knowledge-map.svg",
+    "src": "work/assets/001/044-knowledge-map.svg",
     "alt": "课程知识地图",
     "caption": "把三代工程、Skill、Harness 组件与交付闭环收束到一张地图里，帮助形成整体认知。"
   },

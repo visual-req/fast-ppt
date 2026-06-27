@@ -10,8 +10,8 @@
 <rect x="448" y="526" width="272" height="156" rx="22" fill="#93c5fd"/>
 <rect x="748" y="526" width="330" height="156" rx="22" fill="#93c5fd"/>
 <rect x="1106" y="526" width="334" height="156" rx="22" fill="#93c5fd"/>
-<text x="210" y="280" fill="#1d4ed8" font-size="28" font-family="Arial, sans-serif" font-weight="700">顶层主题</text>
-<text x="210" y="434" fill="#1d4ed8" font-size="26" font-family="Arial, sans-serif" font-weight="700">一级分支 A</text>
-<text x="798" y="434" fill="#1d4ed8" font-size="26" font-family="Arial, sans-serif" font-weight="700">一级分支 B</text>
+<text x="210" y="280" fill="#1d4ed8" font-size="28" font-family="Arial, sans-serif" font-weight="700">Top-level Theme</text>
+<text x="210" y="434" fill="#1d4ed8" font-size="26" font-family="Arial, sans-serif" font-weight="700">Branch A</text>
+<text x="798" y="434" fill="#1d4ed8" font-size="26" font-family="Arial, sans-serif" font-weight="700">Branch B</text>
 
 </svg>

@@ -10,10 +10,10 @@
 <line x1="1160" y1="220" x2="1160" y2="680" stroke="#cbd5e1" stroke-width="2"/>
 <line x1="120" y1="430" x2="1480" y2="430" stroke="#e2e8f0" stroke-width="2"/>
 <line x1="120" y1="550" x2="1480" y2="550" stroke="#e2e8f0" stroke-width="2"/>
-<text x="160" y="276" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">风险项</text>
-<text x="460" y="276" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">影响</text>
-<text x="940" y="276" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">等级</text>
-<text x="1200" y="276" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">应对</text>
+<text x="160" y="276" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">Risk Item</text>
+<text x="460" y="276" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">Impact</text>
+<text x="940" y="276" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">Level</text>
+<text x="1200" y="276" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">Response</text>
 <rect x="928" y="340" width="160" height="52" rx="14" fill="#fee2e2"/><rect x="928" y="460" width="160" height="52" rx="14" fill="#fef3c7"/><rect x="928" y="580" width="160" height="52" rx="14" fill="#d1fae5"/>
 
 </svg>

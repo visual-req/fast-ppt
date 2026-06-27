@@ -8,9 +8,9 @@
 <polygon points="620,446 654,480 620,514 586,480" fill="#2563eb"/>
 <polygon points="960,446 994,480 960,514 926,480" fill="#2563eb"/>
 <polygon points="1300,446 1334,480 1300,514 1266,480" fill="#2563eb"/>
-<text x="206" y="396" fill="#0f172a" font-size="24" font-family="Arial, sans-serif">立项</text>
-<text x="546" y="396" fill="#0f172a" font-size="24" font-family="Arial, sans-serif">上线 Beta</text>
-<text x="886" y="396" fill="#0f172a" font-size="24" font-family="Arial, sans-serif">验收</text>
+<text x="206" y="396" fill="#0f172a" font-size="24" font-family="Arial, sans-serif">Kickoff</text>
+<text x="546" y="396" fill="#0f172a" font-size="24" font-family="Arial, sans-serif">Beta Launch</text>
+<text x="886" y="396" fill="#0f172a" font-size="24" font-family="Arial, sans-serif">Acceptance</text>
 <text x="1226" y="396" fill="#0f172a" font-size="24" font-family="Arial, sans-serif">规模化</text>
 
 </svg>

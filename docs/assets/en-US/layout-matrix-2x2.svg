@@ -8,8 +8,8 @@
 <rect x="780" y="210" width="510" height="240" rx="20" fill="#eff6ff" stroke="#bfdbfe"/>
 <rect x="270" y="450" width="510" height="240" rx="20" fill="#fff7ed" stroke="#fdba74"/>
 <rect x="780" y="450" width="510" height="240" rx="20" fill="#ecfdf5" stroke="#86efac"/>
-<text x="448" y="344" fill="#334155" font-size="28" font-family="Arial, sans-serif">低价值 / 低投入</text>
-<text x="958" y="344" fill="#1d4ed8" font-size="28" font-family="Arial, sans-serif" font-weight="700">高价值 / 低投入</text>
-<text x="448" y="584" fill="#c2410c" font-size="28" font-family="Arial, sans-serif">低价值 / 高投入</text>
-<text x="958" y="584" fill="#15803d" font-size="28" font-family="Arial, sans-serif" font-weight="700">高价值 / 高投入</text>
+<text x="448" y="344" fill="#334155" font-size="28" font-family="Arial, sans-serif">Low Value / Low Effort</text>
+<text x="958" y="344" fill="#1d4ed8" font-size="28" font-family="Arial, sans-serif" font-weight="700">High Value / Low Effort</text>
+<text x="448" y="584" fill="#c2410c" font-size="28" font-family="Arial, sans-serif">Low Value / High Effort</text>
+<text x="958" y="584" fill="#15803d" font-size="28" font-family="Arial, sans-serif" font-weight="700">High Value / High Effort</text>
 </svg>

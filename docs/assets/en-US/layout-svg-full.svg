@@ -10,5 +10,5 @@
 <path d="M446 454 L580 308" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
 <path d="M446 454 L580 448" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
 <path d="M446 454 L580 566" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
-<text x="118" y="804" fill="#64748b" font-size="22" font-family="Arial, sans-serif">真实图示承载结构、关系、流程或层次，页标题由 deck 提供</text>
+<text x="118" y="804" fill="#64748b" font-size="22" font-family="Arial, sans-serif">Real diagram carrying structure, relationships, flow or layers; title provided by deck</text>
 </svg>

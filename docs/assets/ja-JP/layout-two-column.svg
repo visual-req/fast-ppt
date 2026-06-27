@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
 <rect width="1600" height="900" fill="#f8fafc"/>
 <rect x="60" y="50" width="1480" height="800" rx="32" fill="#ffffff" stroke="#dbeafe" stroke-width="2"/>
-<text x="110" y="126" fill="#0f172a" font-size="44" font-family="Arial, sans-serif" font-weight="700">Two Column</text>
+<text x="110" y="126" fill="#0f172a" font-size="44" font-family="Arial, sans-serif" font-weight="700">2 カラム</text>
 <rect x="110" y="186" width="520" height="560" rx="28" fill="#f8fafc" stroke="#e2e8f0"/>
 <rect x="670" y="186" width="720" height="560" rx="28" fill="#f8fafc" stroke="#e2e8f0"/>
-<text x="146" y="256" fill="#0f172a" font-size="32" font-family="Arial, sans-serif" font-weight="700">左侧结论</text>
-<text x="146" y="320" fill="#334155" font-size="26" font-family="Arial, sans-serif">先定义输入</text>
-<text x="146" y="374" fill="#334155" font-size="26" font-family="Arial, sans-serif">再定义输出</text>
+<text x="146" y="256" fill="#0f172a" font-size="32" font-family="Arial, sans-serif" font-weight="700">左：結論</text>
+<text x="146" y="320" fill="#334155" font-size="26" font-family="Arial, sans-serif">入力を先に定義</text>
+<text x="146" y="374" fill="#334155" font-size="26" font-family="Arial, sans-serif">出力を次に定義</text>
 <text x="146" y="428" fill="#334155" font-size="26" font-family="Arial, sans-serif">最后定义执行约束</text>
 <text x="706" y="256" fill="#0f172a" font-size="32" font-family="Arial, sans-serif" font-weight="700">右侧图示</text>
 <rect x="706" y="312" width="290" height="68" rx="18" fill="#dbeafe"/>

@@ -6,9 +6,9 @@
 <polygon points="800,230 1030,350 1030,610 800,730 570,610 570,350" fill="none" stroke="#cbd5e1" stroke-width="2"/>
 <polygon points="800,310 960,390 960,570 800,650 640,570 640,390" fill="none" stroke="#cbd5e1" stroke-width="2"/>
 <polygon points="800,390 890,430 890,530 800,570 710,530 710,430" fill="#bfdbfe" stroke="#2563eb" stroke-width="4"/>
-<text x="800" y="206" text-anchor="middle" fill="#0f172a" font-size="24" font-family="Arial, sans-serif">质量</text>
-<text x="1080" y="350" fill="#0f172a" font-size="24" font-family="Arial, sans-serif">速度</text>
-<text x="1080" y="630" fill="#0f172a" font-size="24" font-family="Arial, sans-serif">稳定性</text>
+<text x="800" y="206" text-anchor="middle" fill="#0f172a" font-size="24" font-family="Arial, sans-serif">Quality</text>
+<text x="1080" y="350" fill="#0f172a" font-size="24" font-family="Arial, sans-serif">Speed</text>
+<text x="1080" y="630" fill="#0f172a" font-size="24" font-family="Arial, sans-serif">Stability</text>
 <text x="800" y="770" text-anchor="middle" fill="#0f172a" font-size="24" font-family="Arial, sans-serif">可维护性</text>
 <text x="470" y="630" fill="#0f172a" font-size="24" font-family="Arial, sans-serif">复用性</text>
 <text x="470" y="350" fill="#0f172a" font-size="24" font-family="Arial, sans-serif">表达力</text>

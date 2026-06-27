@@ -4,7 +4,7 @@
 <text x="110" y="126" fill="#0f172a" font-size="44" font-family="Arial, sans-serif" font-weight="700">Mind Map</text>
 
 <rect x="660" y="360" width="280" height="110" rx="24" fill="#dbeafe"/>
-<text x="800" y="425" text-anchor="middle" fill="#1d4ed8" font-size="28" font-family="Arial, sans-serif" font-weight="700">中心主题</text>
+<text x="800" y="425" text-anchor="middle" fill="#1d4ed8" font-size="28" font-family="Arial, sans-serif" font-weight="700">Central Topic</text>
 <line x1="660" y1="415" x2="430" y2="270" stroke="#94a3b8" stroke-width="6"/>
 <line x1="940" y1="415" x2="1170" y2="270" stroke="#94a3b8" stroke-width="6"/>
 <line x1="660" y1="415" x2="430" y2="610" stroke="#94a3b8" stroke-width="6"/>

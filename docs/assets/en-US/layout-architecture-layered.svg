@@ -5,9 +5,9 @@
 <rect x="260" y="210" width="1080" height="110" rx="24" fill="#dbeafe"/>
 <rect x="220" y="354" width="1160" height="110" rx="24" fill="#bfdbfe"/>
 <rect x="180" y="498" width="1240" height="110" rx="24" fill="#93c5fd"/>
-<text x="320" y="276" fill="#1d4ed8" font-size="28" font-family="Arial, sans-serif" font-weight="700">交互层</text>
-<text x="320" y="420" fill="#1d4ed8" font-size="28" font-family="Arial, sans-serif" font-weight="700">编排层</text>
-<text x="320" y="564" fill="#1d4ed8" font-size="28" font-family="Arial, sans-serif" font-weight="700">执行层</text>
+<text x="320" y="276" fill="#1d4ed8" font-size="28" font-family="Arial, sans-serif" font-weight="700">Interaction Layer</text>
+<text x="320" y="420" fill="#1d4ed8" font-size="28" font-family="Arial, sans-serif" font-weight="700">Orchestration Layer</text>
+<text x="320" y="564" fill="#1d4ed8" font-size="28" font-family="Arial, sans-serif" font-weight="700">Execution Layer</text>
 <text x="500" y="276" fill="#334155" font-size="24" font-family="Arial, sans-serif">viewer、导航、预览、渲染</text>
 <text x="500" y="420" fill="#334155" font-size="24" font-family="Arial, sans-serif">Skill、Planner、Evaluator、质检链路</text>
 <text x="500" y="564" fill="#334155" font-size="24" font-family="Arial, sans-serif">Tools、文件系统、服务、命令执行</text>

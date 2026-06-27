@@ -6,9 +6,9 @@
 <rect x="320" y="190" width="280" height="58" rx="18" fill="#eff6ff" stroke="#bfdbfe"/>
 <rect x="630" y="190" width="280" height="58" rx="18" fill="#eff6ff" stroke="#bfdbfe"/>
 <rect x="940" y="190" width="280" height="58" rx="18" fill="#eff6ff" stroke="#bfdbfe"/>
-<text x="162" y="226" fill="#1d4ed8" font-size="22" font-family="Arial, sans-serif" font-weight="700">泳道</text>
-<text x="418" y="226" fill="#1d4ed8" font-size="22" font-family="Arial, sans-serif" font-weight="700">步骤 1</text>
-<text x="728" y="226" fill="#1d4ed8" font-size="22" font-family="Arial, sans-serif" font-weight="700">步骤 2</text>
+<text x="162" y="226" fill="#1d4ed8" font-size="22" font-family="Arial, sans-serif" font-weight="700">Swimlane</text>
+<text x="418" y="226" fill="#1d4ed8" font-size="22" font-family="Arial, sans-serif" font-weight="700">Step 1</text>
+<text x="728" y="226" fill="#1d4ed8" font-size="22" font-family="Arial, sans-serif" font-weight="700">Step 2</text>
 <text x="1038" y="226" fill="#1d4ed8" font-size="22" font-family="Arial, sans-serif" font-weight="700">步骤 3</text>
 
 <rect x="110" y="282" width="180" height="94" rx="20" fill="#dbeafe"/>

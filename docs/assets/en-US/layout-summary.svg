@@ -5,9 +5,9 @@
 
 <rect x="120" y="192" width="1360" height="540" rx="28" fill="#eff6ff"/>
 <circle cx="174" cy="286" r="10" fill="#2563eb"/><circle cx="174" cy="386" r="10" fill="#2563eb"/><circle cx="174" cy="486" r="10" fill="#2563eb"/><circle cx="174" cy="586" r="10" fill="#2563eb"/>
-<text x="208" y="294" fill="#0f172a" font-size="30" font-family="Arial, sans-serif">先确认页面意图，再选 layout</text>
-<text x="208" y="394" fill="#0f172a" font-size="30" font-family="Arial, sans-serif">概念页尽量用图，不继续堆文字</text>
-<text x="208" y="494" fill="#0f172a" font-size="30" font-family="Arial, sans-serif">结构图优先 SVG，数据图优先 ECharts</text>
+<text x="208" y="294" fill="#0f172a" font-size="30" font-family="Arial, sans-serif">Confirm page intent first, then choose layout</text>
+<text x="208" y="394" fill="#0f172a" font-size="30" font-family="Arial, sans-serif">Use diagrams for concept pages, avoid text walls</text>
+<text x="208" y="494" fill="#0f172a" font-size="30" font-family="Arial, sans-serif">Structure diagrams → SVG, data charts → ECharts</text>
 <text x="208" y="594" fill="#0f172a" font-size="30" font-family="Arial, sans-serif">每个 deck 独立存储，方便回改和预览</text>
 
 </svg>

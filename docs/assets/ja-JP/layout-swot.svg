@@ -9,9 +9,9 @@
 <rect x="820" y="220" width="560" height="230" rx="24" fill="#d1fae5"/>
 <rect x="220" y="490" width="560" height="230" rx="24" fill="#fee2e2"/>
 <rect x="820" y="490" width="560" height="230" rx="24" fill="#fef3c7"/>
-<text x="260" y="284" fill="#1d4ed8" font-size="30" font-family="Arial, sans-serif" font-weight="700">Strength</text>
-<text x="860" y="284" fill="#047857" font-size="30" font-family="Arial, sans-serif" font-weight="700">Opportunity</text>
-<text x="260" y="554" fill="#b91c1c" font-size="30" font-family="Arial, sans-serif" font-weight="700">Weakness</text>
-<text x="860" y="554" fill="#b45309" font-size="30" font-family="Arial, sans-serif" font-weight="700">Threat</text>
+<text x="260" y="284" fill="#1d4ed8" font-size="30" font-family="Arial, sans-serif" font-weight="700">強み</text>
+<text x="860" y="284" fill="#047857" font-size="30" font-family="Arial, sans-serif" font-weight="700">機会</text>
+<text x="260" y="554" fill="#b91c1c" font-size="30" font-family="Arial, sans-serif" font-weight="700">弱み</text>
+<text x="860" y="554" fill="#b45309" font-size="30" font-family="Arial, sans-serif" font-weight="700">脅威</text>
 
 </svg>

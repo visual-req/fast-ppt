@@ -6,9 +6,9 @@
 <rect x="120" y="210" width="420" height="500" rx="28" fill="#eff6ff"/>
 <rect x="590" y="210" width="420" height="500" rx="28" fill="#ffffff" stroke="#cbd5e1"/>
 <rect x="1060" y="210" width="380" height="500" rx="28" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="170" y="280" fill="#1d4ed8" font-size="30" font-family="Arial, sans-serif" font-weight="700">角色</text>
-<text x="640" y="280" fill="#0f172a" font-size="30" font-family="Arial, sans-serif" font-weight="700">职责</text>
-<text x="1110" y="280" fill="#0f172a" font-size="30" font-family="Arial, sans-serif" font-weight="700">交付物</text>
+<text x="170" y="280" fill="#1d4ed8" font-size="30" font-family="Arial, sans-serif" font-weight="700">Role</text>
+<text x="640" y="280" fill="#0f172a" font-size="30" font-family="Arial, sans-serif" font-weight="700">Responsibility</text>
+<text x="1110" y="280" fill="#0f172a" font-size="30" font-family="Arial, sans-serif" font-weight="700">Deliverables</text>
 <text x="170" y="356" fill="#334155" font-size="24" font-family="Arial, sans-serif">用户</text>
 <text x="170" y="426" fill="#334155" font-size="24" font-family="Arial, sans-serif">Skill</text>
 <text x="170" y="496" fill="#334155" font-size="24" font-family="Arial, sans-serif">Viewer</text>

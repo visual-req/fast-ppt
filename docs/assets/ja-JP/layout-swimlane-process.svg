@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
 <rect width="1600" height="900" fill="#f8fafc"/>
 <rect x="60" y="50" width="1480" height="800" rx="32" fill="#ffffff" stroke="#dbeafe" stroke-width="2"/>
-<text x="110" y="126" fill="#0f172a" font-size="44" font-family="Arial, sans-serif" font-weight="700">Swimlane Process</text>
+<text x="110" y="126" fill="#0f172a" font-size="44" font-family="Arial, sans-serif" font-weight="700">スイムレーンプロセス</text>
 <rect x="110" y="190" width="180" height="58" rx="18" fill="#f8fafc" stroke="#cbd5e1"/>
 <rect x="320" y="190" width="280" height="58" rx="18" fill="#eff6ff" stroke="#bfdbfe"/>
 <rect x="630" y="190" width="280" height="58" rx="18" fill="#eff6ff" stroke="#bfdbfe"/>
 <rect x="940" y="190" width="280" height="58" rx="18" fill="#eff6ff" stroke="#bfdbfe"/>
-<text x="162" y="226" fill="#1d4ed8" font-size="22" font-family="Arial, sans-serif" font-weight="700">泳道</text>
-<text x="418" y="226" fill="#1d4ed8" font-size="22" font-family="Arial, sans-serif" font-weight="700">步骤 1</text>
-<text x="728" y="226" fill="#1d4ed8" font-size="22" font-family="Arial, sans-serif" font-weight="700">步骤 2</text>
+<text x="162" y="226" fill="#1d4ed8" font-size="22" font-family="Arial, sans-serif" font-weight="700">スイムレーン</text>
+<text x="418" y="226" fill="#1d4ed8" font-size="22" font-family="Arial, sans-serif" font-weight="700">ステップ 1</text>
+<text x="728" y="226" fill="#1d4ed8" font-size="22" font-family="Arial, sans-serif" font-weight="700">ステップ 2</text>
 <text x="1038" y="226" fill="#1d4ed8" font-size="22" font-family="Arial, sans-serif" font-weight="700">步骤 3</text>
 
 <rect x="110" y="282" width="180" height="94" rx="20" fill="#dbeafe"/>

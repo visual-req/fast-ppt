@@ -1,6 +1,6 @@
 # Concept
 
-![Outline Detail Workflow](assets/outline-detail-flow.svg)
+![Outline Detail Workflow](../assets/zh-CN/outline-detail-flow.svg)
 
 ## 这套系统在解决什么
 

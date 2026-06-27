@@ -7,22 +7,22 @@
   <polygon points="1240,470 1206,454 1206,486" fill="#2563eb" opacity="0.75"/>
 
   <rect x="1270" y="410" width="240" height="120" rx="18" fill="#ffffff" stroke="#bfdbfe" stroke-width="2"/>
-  <text x="1390" y="455" text-anchor="middle" fill="#0f172a" font-size="20" font-family="Arial, sans-serif" font-weight="800">结果 / 影响</text>
-  <text x="1390" y="488" text-anchor="middle" fill="#475569" font-size="16" font-family="Arial, sans-serif">要解释的问题</text>
+  <text x="1390" y="455" text-anchor="middle" fill="#0f172a" font-size="20" font-family="Arial, sans-serif" font-weight="800">Result / Impact</text>
+  <text x="1390" y="488" text-anchor="middle" fill="#475569" font-size="16" font-family="Arial, sans-serif">Problem to Explain</text>
 
   <line x1="360" y1="470" x2="300" y2="330" stroke="#334155" stroke-opacity="0.45" stroke-width="6"/>
   <rect x="180" y="260" width="240" height="96" rx="16" fill="#ffffff" stroke="#e2e8f0"/>
-  <text x="300" y="298" text-anchor="middle" fill="#2563eb" font-size="16" font-family="Arial, sans-serif" font-weight="800">人</text>
+  <text x="300" y="298" text-anchor="middle" fill="#2563eb" font-size="16" font-family="Arial, sans-serif" font-weight="800">People</text>
   <text x="300" y="326" text-anchor="middle" fill="#334155" font-size="14" font-family="Arial, sans-serif">技能不足 / 沟通不畅</text>
 
   <line x1="520" y1="470" x2="460" y2="330" stroke="#334155" stroke-opacity="0.45" stroke-width="6"/>
   <rect x="340" y="260" width="240" height="96" rx="16" fill="#ffffff" stroke="#e2e8f0"/>
-  <text x="460" y="298" text-anchor="middle" fill="#2563eb" font-size="16" font-family="Arial, sans-serif" font-weight="800">流程</text>
+  <text x="460" y="298" text-anchor="middle" fill="#2563eb" font-size="16" font-family="Arial, sans-serif" font-weight="800">Process</text>
   <text x="460" y="326" text-anchor="middle" fill="#334155" font-size="14" font-family="Arial, sans-serif">步骤缺失 / 缺少门禁</text>
 
   <line x1="680" y1="470" x2="620" y2="330" stroke="#334155" stroke-opacity="0.45" stroke-width="6"/>
   <rect x="500" y="260" width="240" height="96" rx="16" fill="#ffffff" stroke="#e2e8f0"/>
-  <text x="620" y="298" text-anchor="middle" fill="#2563eb" font-size="16" font-family="Arial, sans-serif" font-weight="800">工具</text>
+  <text x="620" y="298" text-anchor="middle" fill="#2563eb" font-size="16" font-family="Arial, sans-serif" font-weight="800">Tools</text>
   <text x="620" y="326" text-anchor="middle" fill="#334155" font-size="14" font-family="Arial, sans-serif">链路不通 / 缺少自动化</text>
 
   <line x1="840" y1="470" x2="780" y2="610" stroke="#334155" stroke-opacity="0.45" stroke-width="6"/>
@@ -32,7 +32,7 @@
 
   <line x1="1000" y1="470" x2="940" y2="610" stroke="#334155" stroke-opacity="0.45" stroke-width="6"/>
   <rect x="820" y="584" width="240" height="96" rx="16" fill="#ffffff" stroke="#e2e8f0"/>
-  <text x="940" y="622" text-anchor="middle" fill="#2563eb" font-size="16" font-family="Arial, sans-serif" font-weight="800">环境</text>
+  <text x="940" y="622" text-anchor="middle" fill="#2563eb" font-size="16" font-family="Arial, sans-serif" font-weight="800">Environment</text>
   <text x="940" y="650" text-anchor="middle" fill="#334155" font-size="14" font-family="Arial, sans-serif">不可复现 / 依赖漂移</text>
 
   <line x1="1160" y1="470" x2="1100" y2="610" stroke="#334155" stroke-opacity="0.45" stroke-width="6"/>

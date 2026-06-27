@@ -15,10 +15,10 @@
   <rect x="270" y="460" width="510" height="250" rx="20" fill="#fff7ed" stroke="#fdba74"/>
   <rect x="780" y="460" width="510" height="250" rx="20" fill="#ecfdf5" stroke="#86efac"/>
 
-  <text x="448" y="342" fill="#334155" font-size="26" font-family="Arial, sans-serif">象限 1</text>
-  <text x="958" y="342" fill="#1d4ed8" font-size="26" font-family="Arial, sans-serif" font-weight="700">象限 2</text>
-  <text x="448" y="592" fill="#c2410c" font-size="26" font-family="Arial, sans-serif">象限 3</text>
-  <text x="958" y="592" fill="#15803d" font-size="26" font-family="Arial, sans-serif" font-weight="700">象限 4</text>
+  <text x="448" y="342" fill="#334155" font-size="26" font-family="Arial, sans-serif">Quadrant 1</text>
+  <text x="958" y="342" fill="#1d4ed8" font-size="26" font-family="Arial, sans-serif" font-weight="700">Quadrant 2</text>
+  <text x="448" y="592" fill="#c2410c" font-size="26" font-family="Arial, sans-serif">Quadrant 3</text>
+  <text x="958" y="592" fill="#15803d" font-size="26" font-family="Arial, sans-serif" font-weight="700">Quadrant 4</text>
 
   <rect x="710" y="740" width="140" height="44" rx="22" fill="#ffffff" stroke="#e2e8f0"/>
   <text x="780" y="769" text-anchor="middle" fill="#334155" font-size="18" font-family="Arial, sans-serif" font-weight="700">X 轴</text>

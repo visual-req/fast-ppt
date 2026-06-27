@@ -7,9 +7,9 @@
 <polygon points="500,360 1100,360 1000,470 600,470" fill="#bfdbfe"/>
 <polygon points="600,490 1000,490 920,590 680,590" fill="#93c5fd"/>
 <polygon points="680,610 920,610 850,700 750,700" fill="#60a5fa"/>
-<text x="800" y="294" text-anchor="middle" fill="#1d4ed8" font-size="28" font-family="Arial, sans-serif" font-weight="700">曝光 100%</text>
-<text x="800" y="430" text-anchor="middle" fill="#1d4ed8" font-size="26" font-family="Arial, sans-serif" font-weight="700">点击 45%</text>
-<text x="800" y="556" text-anchor="middle" fill="#1d4ed8" font-size="24" font-family="Arial, sans-serif" font-weight="700">试用 18%</text>
+<text x="800" y="294" text-anchor="middle" fill="#1d4ed8" font-size="28" font-family="Arial, sans-serif" font-weight="700">Impressions 100%</text>
+<text x="800" y="430" text-anchor="middle" fill="#1d4ed8" font-size="26" font-family="Arial, sans-serif" font-weight="700">Clicks 45%</text>
+<text x="800" y="556" text-anchor="middle" fill="#1d4ed8" font-size="24" font-family="Arial, sans-serif" font-weight="700">Trials 18%</text>
 <text x="800" y="668" text-anchor="middle" fill="#ffffff" font-size="22" font-family="Arial, sans-serif" font-weight="700">转化 7%</text>
 
 </svg>

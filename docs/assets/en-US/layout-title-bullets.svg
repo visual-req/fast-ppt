@@ -6,7 +6,7 @@
 <circle cx="168" cy="270" r="10" fill="#2563eb"/>
 <circle cx="168" cy="390" r="10" fill="#2563eb"/>
 <circle cx="168" cy="510" r="10" fill="#2563eb"/>
-<text x="208" y="280" fill="#334155" font-size="32" font-family="Arial, sans-serif">先讲目标，再讲路径，再讲最终带走什么</text>
-<text x="208" y="400" fill="#334155" font-size="32" font-family="Arial, sans-serif">适合 agenda、summary、roadmap 等页面</text>
-<text x="208" y="520" fill="#334155" font-size="32" font-family="Arial, sans-serif">标题由 deck 提供，内容保持简洁可讲</text>
+<text x="208" y="280" fill="#334155" font-size="32" font-family="Arial, sans-serif">Start with goals, then the path, then key takeaways</text>
+<text x="208" y="400" fill="#334155" font-size="32" font-family="Arial, sans-serif">Ideal for agenda, summary, roadmap pages</text>
+<text x="208" y="520" fill="#334155" font-size="32" font-family="Arial, sans-serif">Title from deck, keep content concise & speakable</text>
 </svg>

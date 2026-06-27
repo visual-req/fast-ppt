@@ -6,13 +6,13 @@
 <rect x="450" y="190" width="300" height="220" rx="24" fill="#f8fafc" stroke="#e2e8f0"/>
 <rect x="790" y="190" width="300" height="220" rx="24" fill="#f8fafc" stroke="#e2e8f0"/>
 <rect x="1130" y="190" width="300" height="220" rx="24" fill="#f8fafc" stroke="#e2e8f0"/>
-<text x="144" y="252" fill="#1d4ed8" font-size="26" font-family="Arial, sans-serif" font-weight="700">现象</text>
-<text x="484" y="252" fill="#1d4ed8" font-size="26" font-family="Arial, sans-serif" font-weight="700">影响</text>
-<text x="824" y="252" fill="#1d4ed8" font-size="26" font-family="Arial, sans-serif" font-weight="700">根因假设</text>
+<text x="144" y="252" fill="#1d4ed8" font-size="26" font-family="Arial, sans-serif" font-weight="700">Symptom</text>
+<text x="484" y="252" fill="#1d4ed8" font-size="26" font-family="Arial, sans-serif" font-weight="700">Impact</text>
+<text x="824" y="252" fill="#1d4ed8" font-size="26" font-family="Arial, sans-serif" font-weight="700">Root Cause Hypothesis</text>
 <text x="1164" y="252" fill="#1d4ed8" font-size="26" font-family="Arial, sans-serif" font-weight="700">证据</text>
 <text x="144" y="314" fill="#334155" font-size="20" font-family="Arial, sans-serif">把问题拆成四个稳定观察面，</text>
 <text x="144" y="344" fill="#334155" font-size="20" font-family="Arial, sans-serif">避免只写一个空泛标题。</text>
-<text x="484" y="314" fill="#334155" font-size="20" font-family="Arial, sans-serif">单独说明影响范围、成本、</text>
+<text x="484" y="314" fill="#334155" font-size="20" font-family="Arial, sans-serif">单独说明Impact范围、成本、</text>
 <text x="484" y="344" fill="#334155" font-size="20" font-family="Arial, sans-serif">优先级和业务后果。</text>
 <text x="824" y="314" fill="#334155" font-size="20" font-family="Arial, sans-serif">用“可验证的假设”而不是</text>
 <text x="824" y="344" fill="#334155" font-size="20" font-family="Arial, sans-serif">直接给出武断结论。</text>

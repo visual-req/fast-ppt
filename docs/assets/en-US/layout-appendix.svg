@@ -5,9 +5,9 @@
 
 <rect x="120" y="188" width="640" height="580" rx="28" fill="#ffffff" stroke="#cbd5e1"/>
 <rect x="840" y="188" width="600" height="580" rx="28" fill="#eff6ff"/>
-<text x="170" y="258" fill="#0f172a" font-size="30" font-family="Arial, sans-serif" font-weight="700">补充资料</text>
-<text x="170" y="324" fill="#334155" font-size="22" font-family="Arial, sans-serif">• 术语解释</text>
-<text x="170" y="374" fill="#334155" font-size="22" font-family="Arial, sans-serif">• 额外案例</text>
+<text x="170" y="258" fill="#0f172a" font-size="30" font-family="Arial, sans-serif" font-weight="700">Supplementary Materials</text>
+<text x="170" y="324" fill="#334155" font-size="22" font-family="Arial, sans-serif">• Glossary</text>
+<text x="170" y="374" fill="#334155" font-size="22" font-family="Arial, sans-serif">• Extra Cases</text>
 <text x="170" y="424" fill="#334155" font-size="22" font-family="Arial, sans-serif">• 参考链接</text>
 <text x="170" y="474" fill="#334155" font-size="22" font-family="Arial, sans-serif">• 备选方案</text>
 <text x="890" y="258" fill="#1d4ed8" font-size="30" font-family="Arial, sans-serif" font-weight="700">附录区块</text>

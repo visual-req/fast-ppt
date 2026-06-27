@@ -1,5 +1,49 @@
 # Fork
 
+## Fork 和下载有什么区别
+
+这是一个常被跳过但非常重要的问题。
+
+**下载（clone / download ZIP）**：
+
+- 拿到一份代码副本，放在本地运行
+- 你可以改代码，但和原项目没有任何关联
+- 原项目更新后，你需要手动重新下载或手动合并
+- 适合：只想用这套系统、不改动，或者临时跑一次
+
+**Fork（GitHub Fork）**：
+
+- 在你的 GitHub 账号下创建一个与原项目关联的分支仓库
+- 你可以在 Fork 上自由修改，同时保留与原项目的同步能力
+- 当原项目更新时，可以通过 `git pull upstream` 拉取合并
+- 当你做了有价值的改动，可以通过 Pull Request 回馈原项目
+- 适合：想持续使用、持续定制、长期维护自己的版本
+
+简单一句话：
+
+> 下载 = 拿一份用，用完就完了。
+> Fork = 拿一份改，改成自己的，还能跟上原项目的更新。
+
+**GitHub 上 Fork 的操作路径**：
+
+1. 打开原项目页面（如 `https://github.com/visual-req/fast-ppt`）
+2. 点击右上角 **Fork** 按钮
+3. 选择 Fork 到你的个人账号或组织
+4. Clone 你 Fork 后的仓库到本地：`git clone https://github.com/你的账号/fast-ppt.git`
+5. 添加原项目为 upstream：`git remote add upstream https://github.com/visual-req/fast-ppt.git`
+6. 以后需要同步时：`git fetch upstream && git merge upstream/main`
+
+**本项目的 Fork 特指什么**：
+
+本文档中的 "Fork" 不止是 GitHub 上的功能操作，更是指**将这套系统定制成你自己的风格和生成体系**。Fork 之后，你可以：
+
+- 改视觉风格、改 layout 组件
+- 新增或调整 PPT 类型
+- 换大纲结构和质检规则
+- 形成你自己的提示词体系和 examples
+
+如果你只是想用这个项目生成 PPT、不改代码，请直接看 [getting-started.md](getting-started.md) 和 [installation.md](installation.md)，不需要读 Fork 指南。
+
 ## 适用场景
 
 当你希望把这套系统改成自己喜欢的风格，或者扩展自己的 PPT 生成方法时，可以从以下几层入手：

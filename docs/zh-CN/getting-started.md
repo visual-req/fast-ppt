@@ -1,6 +1,6 @@
 # Getting Started
 
-![Outline Detail Workflow](assets/outline-detail-flow.svg)
+![Outline Detail Workflow](../assets/zh-CN/outline-detail-flow.svg)
 
 ## 快速开始
 

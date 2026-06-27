@@ -1,6 +1,6 @@
 # Structure
 
-![Project Structure](assets/project-structure.svg)
+![Project Structure](../assets/zh-CN/project-structure.svg)
 
 ## 项目目录
 

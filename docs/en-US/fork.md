@@ -1,5 +1,51 @@
 # Fork Guide
 
+## Fork vs. Download
+
+This is a question that's often skipped but very important.
+
+**Download (git clone / Download ZIP)**:
+
+- You get a copy of the code to run locally
+- You can modify it, but there's no connection to the original project
+- When the original project updates, you have to manually re-download or merge
+- Best for: just using the system as-is, no modifications, or one-off runs
+
+**Fork (GitHub Fork)**:
+
+- Creates a linked copy under your GitHub account connected to the original repo
+- You can freely modify your fork while keeping the ability to sync with upstream
+- When the original project updates, use `git pull upstream` to merge
+- When you make valuable changes, you can send Pull Requests back to the original project
+- Best for: continuous use, continuous customization, long-term maintenance of your own version
+
+In a nutshell:
+
+> Download = Take a copy and use it. Done.
+> Fork = Take a copy and make it yours, while staying in sync with the original.
+
+**How to Fork on GitHub**:
+
+1. Open the original project page (e.g., `https://github.com/visual-req/fast-ppt`)
+2. Click the **Fork** button in the top-right corner
+3. Choose to fork to your personal account or organization
+4. Clone your forked repo locally: `git clone https://github.com/your-account/fast-ppt.git`
+5. Add the original as upstream: `git remote add upstream https://github.com/visual-req/fast-ppt.git`
+6. To sync later: `git fetch upstream && git merge upstream/main`
+
+**What "Fork" means in this guide**:
+
+In this guide, "Fork" goes beyond the GitHub feature — it means **customizing this system into your own style and generation workflow**. After forking, you can:
+
+- Change visual styles and layout components
+- Add or modify PPT types
+- Swap outline structures and QA rules
+- Build your own prompt system and examples
+
+If you only want to use this project to generate PPTs without modifying code, see [getting-started.md](getting-started.md) and [installation.md](installation.md) instead.
+
+---
+
 Want to customize this system? Fork at these layers:
 
 - Visual style

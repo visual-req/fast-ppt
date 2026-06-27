@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
 <rect width="1600" height="900" fill="#f8fafc"/>
 <rect x="60" y="50" width="1480" height="800" rx="32" fill="#ffffff" stroke="#dbeafe" stroke-width="2"/>
-<text x="110" y="126" fill="#0f172a" font-size="44" font-family="Arial, sans-serif" font-weight="700">Steps</text>
+<text x="110" y="126" fill="#0f172a" font-size="44" font-family="Arial, sans-serif" font-weight="700">ステップ</text>
 <rect x="120" y="260" width="280" height="280" rx="24" fill="#ffffff" stroke="#cbd5e1"/>
 <rect x="462" y="260" width="280" height="280" rx="24" fill="#ffffff" stroke="#cbd5e1"/>
 <rect x="804" y="260" width="280" height="280" rx="24" fill="#ffffff" stroke="#cbd5e1"/>
@@ -9,10 +9,10 @@
 <path d="M400 400 L462 400" stroke="#94a3b8" stroke-width="8" stroke-linecap="round"/>
 <path d="M742 400 L804 400" stroke="#94a3b8" stroke-width="8" stroke-linecap="round"/>
 <path d="M1084 400 L1146 400" stroke="#94a3b8" stroke-width="8" stroke-linecap="round"/>
-<text x="152" y="326" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">步骤 1</text>
-<text x="494" y="326" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">步骤 2</text>
-<text x="836" y="326" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">步骤 3</text>
-<text x="1178" y="326" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">步骤 4</text>
+<text x="152" y="326" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">ステップ 1</text>
+<text x="494" y="326" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">ステップ 2</text>
+<text x="836" y="326" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">ステップ 3</text>
+<text x="1178" y="326" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">ステップ 4</text>
 <text x="152" y="386" fill="#334155" font-size="22" font-family="Arial, sans-serif">判断输入</text>
 <text x="494" y="386" fill="#334155" font-size="22" font-family="Arial, sans-serif">生成结果</text>
 <text x="836" y="386" fill="#334155" font-size="22" font-family="Arial, sans-serif">执行质检</text>

@@ -8,8 +8,8 @@
 <rect width="1600" height="900" fill="#f8fafc"/>
 <rect x="60" y="50" width="1480" height="800" rx="32" fill="url(#sectionBg)"/>
 <text x="140" y="210" fill="#93c5fd" font-size="24" font-family="Arial, sans-serif" font-weight="700">Chapter 02</text>
-<text x="140" y="308" fill="#ffffff" font-size="58" font-family="Arial, sans-serif" font-weight="700">Section Divider</text>
-<text x="140" y="378" fill="#dbeafe" font-size="30" font-family="Arial, sans-serif">适合章节切换、阶段分段和节奏重置</text>
+<text x="140" y="308" fill="#ffffff" font-size="58" font-family="Arial, sans-serif" font-weight="700">セクション区切り</text>
+<text x="140" y="378" fill="#dbeafe" font-size="30" font-family="Arial, sans-serif">章の切替・フェーズ区切り・リズムリセットに最適</text>
 <rect x="140" y="600" width="340" height="92" rx="22" fill="#ffffff" opacity="0.14"/>
-<text x="174" y="654" fill="#ffffff" font-size="24" font-family="Arial, sans-serif" font-weight="700">这一章要回答什么问题</text>
+<text x="174" y="654" fill="#ffffff" font-size="24" font-family="Arial, sans-serif" font-weight="700">この章で何を明らかにするか</text>
 </svg>

@@ -5,8 +5,8 @@
 
 <defs><linearGradient id="thanks" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0f172a"/><stop offset="100%" stop-color="#1d4ed8"/></linearGradient></defs>
 <rect x="120" y="180" width="1360" height="580" rx="30" fill="url(#thanks)"/>
-<text x="800" y="410" text-anchor="middle" fill="#ffffff" font-size="84" font-family="Arial, sans-serif" font-weight="700">感谢观看</text>
-<text x="800" y="474" text-anchor="middle" fill="#dbeafe" font-size="28" font-family="Arial, sans-serif">欢迎继续调整样式、布局和类型规则</text>
+<text x="800" y="410" text-anchor="middle" fill="#ffffff" font-size="84" font-family="Arial, sans-serif" font-weight="700">Thank You for Watching</text>
+<text x="800" y="474" text-anchor="middle" fill="#dbeafe" font-size="28" font-family="Arial, sans-serif">Feel free to customize styles, layouts & type rules</text>
 <rect x="610" y="552" width="380" height="92" rx="20" fill="#ffffff" opacity="0.92"/>
 <text x="800" y="610" text-anchor="middle" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">Stephen Wang</text>
 

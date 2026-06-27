@@ -19,11 +19,11 @@
   <line x1="1100" y1="260" x2="1100" y2="700" stroke="#0f172a" stroke-opacity="0.10" stroke-width="2"/>
 
   <circle cx="540" cy="560" r="14" fill="#2563eb" opacity="0.85"/>
-  <text x="566" y="566" fill="#0f172a" font-size="20" font-family="Arial, sans-serif" font-weight="700">点 A</text>
+  <text x="566" y="566" fill="#0f172a" font-size="20" font-family="Arial, sans-serif" font-weight="700">Point A</text>
   <circle cx="980" cy="410" r="18" fill="#7c3aed" opacity="0.82"/>
-  <text x="1010" y="416" fill="#0f172a" font-size="20" font-family="Arial, sans-serif" font-weight="700">点 B</text>
+  <text x="1010" y="416" fill="#0f172a" font-size="20" font-family="Arial, sans-serif" font-weight="700">Point B</text>
   <circle cx="1180" cy="310" r="16" fill="#16a34a" opacity="0.82"/>
-  <text x="1210" y="316" fill="#0f172a" font-size="20" font-family="Arial, sans-serif" font-weight="700">点 C</text>
+  <text x="1210" y="316" fill="#0f172a" font-size="20" font-family="Arial, sans-serif" font-weight="700">Point C</text>
 
   <rect x="730" y="740" width="140" height="44" rx="22" fill="#ffffff" stroke="#e2e8f0"/>
   <text x="800" y="769" text-anchor="middle" fill="#334155" font-size="18" font-family="Arial, sans-serif" font-weight="700">X 轴</text>

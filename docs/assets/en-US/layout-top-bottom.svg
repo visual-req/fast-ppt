@@ -5,8 +5,8 @@
 
 <rect x="140" y="190" width="1320" height="220" rx="28" fill="#eff6ff"/>
 <rect x="140" y="450" width="1320" height="280" rx="28" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="190" y="266" fill="#1d4ed8" font-size="30" font-family="Arial, sans-serif" font-weight="700">上半区：结论 / 框架 / 总览</text>
-<text x="190" y="526" fill="#0f172a" font-size="30" font-family="Arial, sans-serif" font-weight="700">下半区：解释 / 细节 / 支撑内容</text>
+<text x="190" y="266" fill="#1d4ed8" font-size="30" font-family="Arial, sans-serif" font-weight="700">Top: Conclusion / Framework / Overview</text>
+<text x="190" y="526" fill="#0f172a" font-size="30" font-family="Arial, sans-serif" font-weight="700">Bottom: Explanation / Details / Supporting content</text>
 <rect x="190" y="566" width="360" height="118" rx="22" fill="#f8fafc" stroke="#e2e8f0"/>
 <rect x="620" y="566" width="360" height="118" rx="22" fill="#f8fafc" stroke="#e2e8f0"/>
 <rect x="1050" y="566" width="360" height="118" rx="22" fill="#f8fafc" stroke="#e2e8f0"/>

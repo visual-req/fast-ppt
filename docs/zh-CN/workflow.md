@@ -1,6 +1,6 @@
 # Workflow
 
-![Outline Detail Workflow](assets/outline-detail-flow.svg)
+![Outline Detail Workflow](../assets/zh-CN/outline-detail-flow.svg)
 
 ## 两阶段模型
 

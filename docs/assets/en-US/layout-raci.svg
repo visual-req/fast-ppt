@@ -11,9 +11,9 @@
 <line x1="1150" y1="220" x2="1150" y2="690" stroke="#cbd5e1" stroke-width="2"/>
 <line x1="120" y1="443" x2="1480" y2="443" stroke="#e2e8f0" stroke-width="2"/>
 <line x1="120" y1="566" x2="1480" y2="566" stroke="#e2e8f0" stroke-width="2"/>
-<text x="170" y="286" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">任务</text>
-<text x="472" y="286" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">产品</text>
-<text x="722" y="286" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">研发</text>
+<text x="170" y="286" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">Task</text>
+<text x="472" y="286" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">Product</text>
+<text x="722" y="286" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">Engineering</text>
 <text x="972" y="286" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">设计</text>
 <text x="1222" y="286" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">运营</text>
 <text x="504" y="390" fill="#2563eb" font-size="34" font-family="Arial, sans-serif" font-weight="700">A</text>

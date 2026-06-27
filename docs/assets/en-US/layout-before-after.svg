@@ -8,7 +8,7 @@
 <polygon points="870,450 842,434 842,466" fill="#94a3b8"/>
 <text x="150" y="262" fill="#c2410c" font-size="32" font-family="Arial, sans-serif" font-weight="700">Before</text>
 <text x="968" y="262" fill="#15803d" font-size="32" font-family="Arial, sans-serif" font-weight="700">After</text>
-<text x="150" y="340" fill="#334155" font-size="22" font-family="Arial, sans-serif">单轮生成，依赖当次发挥</text>
+<text x="150" y="340" fill="#334155" font-size="22" font-family="Arial, sans-serif">Single-shot generation, inconsistent output</text>
 <text x="150" y="378" fill="#334155" font-size="22" font-family="Arial, sans-serif">图页不足，缺回改闭环</text>
 <text x="150" y="416" fill="#334155" font-size="22" font-family="Arial, sans-serif">页面质量不稳定</text>
 <text x="968" y="340" fill="#334155" font-size="22" font-family="Arial, sans-serif">生成-检查-回改循环</text>

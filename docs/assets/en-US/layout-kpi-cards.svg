@@ -6,9 +6,9 @@
 <rect x="450" y="210" width="300" height="240" rx="24" fill="#eef2ff" stroke="#c7d2fe"/>
 <rect x="790" y="210" width="300" height="240" rx="24" fill="#ecfeff" stroke="#a5f3fc"/>
 <rect x="1130" y="210" width="300" height="240" rx="24" fill="#fef3c7" stroke="#fde68a"/>
-<text x="148" y="274" fill="#1d4ed8" font-size="24" font-family="Arial, sans-serif" font-weight="700">完成率</text>
-<text x="488" y="274" fill="#4338ca" font-size="24" font-family="Arial, sans-serif" font-weight="700">图页占比</text>
-<text x="828" y="274" fill="#0891b2" font-size="24" font-family="Arial, sans-serif" font-weight="700">回改次数</text>
+<text x="148" y="274" fill="#1d4ed8" font-size="24" font-family="Arial, sans-serif" font-weight="700">Completion Rate</text>
+<text x="488" y="274" fill="#4338ca" font-size="24" font-family="Arial, sans-serif" font-weight="700">Diagram Ratio</text>
+<text x="828" y="274" fill="#0891b2" font-size="24" font-family="Arial, sans-serif" font-weight="700">Revision Count</text>
 <text x="1168" y="274" fill="#b45309" font-size="24" font-family="Arial, sans-serif" font-weight="700">通过率</text>
 <text x="148" y="360" fill="#0f172a" font-size="56" font-family="Arial, sans-serif" font-weight="700">92%</text>
 <text x="488" y="360" fill="#0f172a" font-size="56" font-family="Arial, sans-serif" font-weight="700">48%</text>

@@ -5,8 +5,8 @@
 
 <rect x="150" y="220" width="1300" height="460" rx="30" fill="#eff6ff"/>
 <text x="210" y="356" fill="#2563eb" font-size="120" font-family="Georgia, serif">“</text>
-<text x="300" y="362" fill="#0f172a" font-size="42" font-family="Arial, sans-serif" font-weight="700">先把流程变成可执行系统，再把回答变成稳定交付。</text>
-<text x="300" y="428" fill="#475569" font-size="26" font-family="Arial, sans-serif">Quote 页适合强调一句关键判断、原则或结论。</text>
+<text x="300" y="362" fill="#0f172a" font-size="42" font-family="Arial, sans-serif" font-weight="700">First turn the process into an executable system, then turn answers into stable delivery.</text>
+<text x="300" y="428" fill="#475569" font-size="26" font-family="Arial, sans-serif">Quote page: emphasize a key judgment, principle, or conclusion.</text>
 <text x="300" y="554" fill="#1e293b" font-size="24" font-family="Arial, sans-serif" font-weight="700">Stephen Wang</text>
 
 </svg>

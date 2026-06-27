@@ -8,8 +8,8 @@
 <path d="M560 470 L751 580 A220 220 0 0 1 380 597 Z" fill="#60a5fa"/>
 <path d="M560 470 L380 597 A220 220 0 0 1 560 250 Z" fill="#93c5fd"/>
 <rect x="930" y="286" width="28" height="28" rx="8" fill="#2563eb"/><rect x="930" y="356" width="28" height="28" rx="8" fill="#60a5fa"/><rect x="930" y="426" width="28" height="28" rx="8" fill="#93c5fd"/>
-<text x="978" y="308" fill="#0f172a" font-size="24" font-family="Arial, sans-serif">结构图</text>
-<text x="978" y="378" fill="#0f172a" font-size="24" font-family="Arial, sans-serif">流程图</text>
-<text x="978" y="448" fill="#0f172a" font-size="24" font-family="Arial, sans-serif">图表</text>
+<text x="978" y="308" fill="#0f172a" font-size="24" font-family="Arial, sans-serif">Structure Diagrams</text>
+<text x="978" y="378" fill="#0f172a" font-size="24" font-family="Arial, sans-serif">Flow Diagrams</text>
+<text x="978" y="448" fill="#0f172a" font-size="24" font-family="Arial, sans-serif">Charts</text>
 
 </svg>

@@ -8,7 +8,7 @@
 <line x1="110" y1="286" x2="1390" y2="286" stroke="#cbd5e1" stroke-width="2"/>
 <line x1="110" y1="414" x2="1390" y2="414" stroke="#cbd5e1" stroke-width="2"/>
 <line x1="110" y1="542" x2="1390" y2="542" stroke="#cbd5e1" stroke-width="2"/>
-<text x="156" y="250" fill="#1d4ed8" font-size="28" font-family="Arial, sans-serif" font-weight="700">维度</text>
+<text x="156" y="250" fill="#1d4ed8" font-size="28" font-family="Arial, sans-serif" font-weight="700">Dimension</text>
 <text x="470" y="250" fill="#1d4ed8" font-size="28" font-family="Arial, sans-serif" font-weight="700">Prompt</text>
 <text x="934" y="250" fill="#1d4ed8" font-size="28" font-family="Arial, sans-serif" font-weight="700">Harness</text>
 <text x="156" y="362" fill="#334155" font-size="26" font-family="Arial, sans-serif">目标</text>

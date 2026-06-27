@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect width="1600" height="900" fill="#f8fafc"/>
+<rect x="60" y="50" width="1480" height="800" rx="32" fill="#ffffff" stroke="#dbeafe" stroke-width="2"/>
+<text x="110" y="126" fill="#0f172a" font-size="44" font-family="Arial, sans-serif" font-weight="700">Milestones</text>
+
+<line x1="180" y1="480" x2="1420" y2="480" stroke="#cbd5e1" stroke-width="10" stroke-linecap="round"/>
+<polygon points="280,446 314,480 280,514 246,480" fill="#2563eb"/>
+<polygon points="620,446 654,480 620,514 586,480" fill="#2563eb"/>
+<polygon points="960,446 994,480 960,514 926,480" fill="#2563eb"/>
+<polygon points="1300,446 1334,480 1300,514 1266,480" fill="#2563eb"/>
+<text x="206" y="396" fill="#0f172a" font-size="24" font-family="Arial, sans-serif">立项</text>
+<text x="546" y="396" fill="#0f172a" font-size="24" font-family="Arial, sans-serif">上线 Beta</text>
+<text x="886" y="396" fill="#0f172a" font-size="24" font-family="Arial, sans-serif">验收</text>
+<text x="1226" y="396" fill="#0f172a" font-size="24" font-family="Arial, sans-serif">规模化</text>
+
+</svg>

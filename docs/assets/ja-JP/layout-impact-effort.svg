@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect width="1600" height="900" fill="#f8fafc"/>
+<rect x="60" y="50" width="1480" height="800" rx="32" fill="#ffffff" stroke="#dbeafe" stroke-width="2"/>
+<text x="110" y="126" fill="#0f172a" font-size="44" font-family="Arial, sans-serif" font-weight="700">Impact Effort</text>
+
+<line x1="260" y1="700" x2="1320" y2="700" stroke="#94a3b8" stroke-width="4"/>
+<line x1="260" y1="700" x2="260" y2="220" stroke="#94a3b8" stroke-width="4"/>
+<line x1="790" y1="220" x2="790" y2="700" stroke="#cbd5e1" stroke-width="2"/>
+<line x1="260" y1="460" x2="1320" y2="460" stroke="#cbd5e1" stroke-width="2"/>
+<circle cx="460" cy="610" r="34" fill="#93c5fd"/><circle cx="1040" cy="320" r="46" fill="#2563eb"/><circle cx="940" cy="560" r="30" fill="#60a5fa"/><circle cx="560" cy="330" r="26" fill="#bfdbfe"/>
+<text x="1260" y="744" fill="#0f172a" font-size="24" font-family="Arial, sans-serif">投入</text>
+<text x="190" y="246" fill="#0f172a" font-size="24" font-family="Arial, sans-serif">价值</text>
+
+</svg>

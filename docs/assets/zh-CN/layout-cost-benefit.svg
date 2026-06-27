@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect width="1600" height="900" fill="#f8fafc"/>
+<rect x="60" y="50" width="1480" height="800" rx="32" fill="#ffffff" stroke="#dbeafe" stroke-width="2"/>
+<text x="110" y="126" fill="#0f172a" font-size="44" font-family="Arial, sans-serif" font-weight="700">Cost Benefit</text>
+
+<rect x="150" y="220" width="560" height="500" rx="28" fill="#fee2e2"/>
+<rect x="890" y="220" width="560" height="500" rx="28" fill="#d1fae5"/>
+<text x="210" y="296" fill="#b91c1c" font-size="34" font-family="Arial, sans-serif" font-weight="700">成本</text>
+<text x="950" y="296" fill="#047857" font-size="34" font-family="Arial, sans-serif" font-weight="700">收益</text>
+<rect x="210" y="356" width="440" height="94" rx="20" fill="#ffffff" opacity="0.9"/>
+<rect x="210" y="484" width="440" height="94" rx="20" fill="#ffffff" opacity="0.9"/>
+<rect x="950" y="356" width="440" height="94" rx="20" fill="#ffffff" opacity="0.9"/>
+<rect x="950" y="484" width="440" height="94" rx="20" fill="#ffffff" opacity="0.9"/>
+
+</svg>

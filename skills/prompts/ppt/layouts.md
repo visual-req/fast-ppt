@@ -4,10 +4,12 @@
 
 ```json
 {
-  "deck": { "aspect_ratio": "16:9", "style": "consulting", "language": "zh-CN" },
+  "deck": { "aspect_ratio": "16:9", "style": "consulting", "language": "zh-CN", "type": "方案类" },
   "slide_files": ["slides/001_cover.json"]
 }
 ```
+
+`language` 三选一：`zh-CN`（中文）/ `ja-JP`（日语）/ `en-US`（英语）。全部页面内容必须统一语言。
 
 ## layout 类型与字段
 

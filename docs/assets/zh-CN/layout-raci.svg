@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect width="1600" height="900" fill="#f8fafc"/>
+<rect x="60" y="50" width="1480" height="800" rx="32" fill="#ffffff" stroke="#dbeafe" stroke-width="2"/>
+<text x="110" y="126" fill="#0f172a" font-size="44" font-family="Arial, sans-serif" font-weight="700">RACI</text>
+
+<rect x="120" y="220" width="1360" height="470" rx="28" fill="#ffffff" stroke="#cbd5e1"/>
+<line x1="120" y1="320" x2="1480" y2="320" stroke="#cbd5e1" stroke-width="2"/>
+<line x1="400" y1="220" x2="400" y2="690" stroke="#cbd5e1" stroke-width="2"/>
+<line x1="650" y1="220" x2="650" y2="690" stroke="#cbd5e1" stroke-width="2"/>
+<line x1="900" y1="220" x2="900" y2="690" stroke="#cbd5e1" stroke-width="2"/>
+<line x1="1150" y1="220" x2="1150" y2="690" stroke="#cbd5e1" stroke-width="2"/>
+<line x1="120" y1="443" x2="1480" y2="443" stroke="#e2e8f0" stroke-width="2"/>
+<line x1="120" y1="566" x2="1480" y2="566" stroke="#e2e8f0" stroke-width="2"/>
+<text x="170" y="286" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">任务</text>
+<text x="472" y="286" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">产品</text>
+<text x="722" y="286" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">研发</text>
+<text x="972" y="286" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">设计</text>
+<text x="1222" y="286" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">运营</text>
+<text x="504" y="390" fill="#2563eb" font-size="34" font-family="Arial, sans-serif" font-weight="700">A</text>
+<text x="754" y="390" fill="#2563eb" font-size="34" font-family="Arial, sans-serif" font-weight="700">R</text>
+<text x="1004" y="390" fill="#2563eb" font-size="34" font-family="Arial, sans-serif" font-weight="700">C</text>
+<text x="1254" y="390" fill="#2563eb" font-size="34" font-family="Arial, sans-serif" font-weight="700">I</text>
+
+</svg>

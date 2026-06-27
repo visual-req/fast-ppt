@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect width="1600" height="900" fill="#f8fafc"/>
+<rect x="60" y="50" width="1480" height="800" rx="32" fill="#ffffff" stroke="#dbeafe" stroke-width="2"/>
+<text x="110" y="126" fill="#0f172a" font-size="44" font-family="Arial, sans-serif" font-weight="700">Pyramid</text>
+
+<polygon points="800,190 1180,710 420,710" fill="#dbeafe"/>
+<polygon points="800,260 1116,690 484,690" fill="#bfdbfe"/>
+<polygon points="800,344 1042,676 558,676" fill="#93c5fd"/>
+<polygon points="800,434 956,648 644,648" fill="#60a5fa"/>
+<text x="800" y="262" text-anchor="middle" fill="#1e3a8a" font-size="28" font-family="Arial, sans-serif" font-weight="700">价值主张</text>
+<text x="800" y="350" text-anchor="middle" fill="#1e3a8a" font-size="26" font-family="Arial, sans-serif" font-weight="700">关键能力</text>
+<text x="800" y="444" text-anchor="middle" fill="#1e3a8a" font-size="24" font-family="Arial, sans-serif" font-weight="700">方法流程</text>
+<text x="800" y="550" text-anchor="middle" fill="#ffffff" font-size="22" font-family="Arial, sans-serif" font-weight="700">基础资源</text>
+
+</svg>

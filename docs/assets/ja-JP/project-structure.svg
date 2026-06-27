@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect width="1600" height="900" fill="#f8fafc"/>
+<rect x="48" y="44" width="1504" height="812" rx="32" fill="#ffffff" stroke="#dbeafe" stroke-width="2"/>
+<text x="96" y="108" fill="#0f172a" font-size="38" font-family="Arial, sans-serif" font-weight="700">fast_ppt プロジェクト構造</text>
+<text x="96" y="148" fill="#64748b" font-size="22" font-family="Arial, sans-serif">ドキュメント・Skill・Viewer・ワークスペース・サーバー</text>
+
+<rect x="96" y="206" width="270" height="560" rx="28" fill="#eff6ff" stroke="#bfdbfe"/>
+<text x="132" y="264" fill="#1d4ed8" font-size="30" font-family="Arial, sans-serif" font-weight="700">docs/</text>
+<text x="132" y="314" fill="#334155" font-size="22" font-family="Arial, sans-serif">installation</text>
+<text x="132" y="352" fill="#334155" font-size="22" font-family="Arial, sans-serif">getting-started</text>
+<text x="132" y="390" fill="#334155" font-size="22" font-family="Arial, sans-serif">structure</text>
+<text x="132" y="428" fill="#334155" font-size="22" font-family="Arial, sans-serif">concept</text>
+<text x="132" y="466" fill="#334155" font-size="22" font-family="Arial, sans-serif">workflow</text>
+<text x="132" y="504" fill="#334155" font-size="22" font-family="Arial, sans-serif">layouts</text>
+<text x="132" y="584" fill="#64748b" font-size="18" font-family="Arial, sans-serif">プロジェクトドキュメントと図</text>
+
+<rect x="412" y="206" width="310" height="560" rx="28" fill="#eef2ff" stroke="#c7d2fe"/>
+<text x="448" y="264" fill="#4338ca" font-size="30" font-family="Arial, sans-serif" font-weight="700">skills/</text>
+<text x="448" y="314" fill="#334155" font-size="22" font-family="Arial, sans-serif">SKILL.md</text>
+<text x="448" y="352" fill="#334155" font-size="22" font-family="Arial, sans-serif">prompts/ppt/</text>
+<text x="448" y="432" fill="#64748b" font-size="18" font-family="Arial, sans-serif">Skill 定義とプロンプト体系</text>
+
+<rect x="768" y="206" width="360" height="560" rx="28" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="804" y="264" fill="#0f172a" font-size="30" font-family="Arial, sans-serif" font-weight="700">ppt-viewer/</text>
+<text x="804" y="314" fill="#334155" font-size="22" font-family="Arial, sans-serif">Vue layouts</text>
+<text x="804" y="352" fill="#334155" font-size="22" font-family="Arial, sans-serif">layoutRegistry.ts</text>
+<text x="804" y="390" fill="#334155" font-size="22" font-family="Arial, sans-serif">deckRenderer.ts</text>
+<text x="804" y="470" fill="#64748b" font-size="18" font-family="Arial, sans-serif">deck.json + slides/*.json を</text>
+<text x="804" y="500" fill="#64748b" font-size="18" font-family="Arial, sans-serif">Web PPT にレンダリング</text>
+
+<rect x="1174" y="206" width="274" height="250" rx="28" fill="#fef3c7" stroke="#fde68a"/>
+<text x="1210" y="264" fill="#b45309" font-size="30" font-family="Arial, sans-serif" font-weight="700">work/</text>
+<text x="1210" y="314" fill="#334155" font-size="22" font-family="Arial, sans-serif">input/</text>
+<text x="1210" y="352" fill="#334155" font-size="22" font-family="Arial, sans-serif">ppt/</text>
+<text x="1210" y="390" fill="#334155" font-size="22" font-family="Arial, sans-serif">assets/</text>
+
+<rect x="1174" y="516" width="274" height="250" rx="28" fill="#dcfce7" stroke="#86efac"/>
+<text x="1210" y="574" fill="#15803d" font-size="30" font-family="Arial, sans-serif" font-weight="700">server.mjs</text>
+<text x="1210" y="624" fill="#334155" font-size="22" font-family="Arial, sans-serif">ローカルプレビュー</text>
+<text x="1210" y="662" fill="#334155" font-size="22" font-family="Arial, sans-serif">ポート 9030</text>
+
+<path d="M366 486 L412 486" stroke="#94a3b8" stroke-width="6" stroke-linecap="round"/>
+<path d="M722 486 L768 486" stroke="#94a3b8" stroke-width="6" stroke-linecap="round"/>
+<path d="M1128 330 L1174 330" stroke="#94a3b8" stroke-width="6" stroke-linecap="round"/>
+<path d="M1128 640 L1174 640" stroke="#94a3b8" stroke-width="6" stroke-linecap="round"/>
+</svg>

@@ -23,7 +23,7 @@
 
 ### `cover`
 
-![cover](assets/layout-cover.svg)
+![cover](assets/zh-CN/layout-cover.svg)
 
 适用场景：
 
@@ -59,7 +59,7 @@
 
 ### `section_divider`
 
-![section_divider](assets/layout-section-divider.svg)
+![section_divider](assets/zh-CN/layout-section-divider.svg)
 
 适用场景：
 
@@ -93,7 +93,7 @@
 
 ### `title_bullets`
 
-![title_bullets](assets/layout-title-bullets.svg)
+![title_bullets](assets/zh-CN/layout-title-bullets.svg)
 
 适用场景：
 
@@ -135,7 +135,7 @@
 
 ### `comparison_table`
 
-![comparison_table](assets/layout-comparison-table.svg)
+![comparison_table](assets/zh-CN/layout-comparison-table.svg)
 
 适用场景：
 
@@ -168,7 +168,7 @@
 
 ### `phases`
 
-![phases](assets/layout-phases.svg)
+![phases](assets/zh-CN/layout-phases.svg)
 
 适用场景：
 
@@ -209,7 +209,7 @@
 
 ### `swimlane_process`
 
-![swimlane_process](assets/layout-swimlane-process.svg)
+![swimlane_process](assets/zh-CN/layout-swimlane-process.svg)
 
 适用场景：
 
@@ -239,7 +239,7 @@
 
 ### `svg_full`
 
-![svg_full](assets/layout-svg-full.svg)
+![svg_full](assets/zh-CN/layout-svg-full.svg)
 
 适用场景：
 
@@ -281,7 +281,7 @@
 
 ### `two_column`
 
-![two_column](assets/layout-two-column.svg)
+![two_column](assets/zh-CN/layout-two-column.svg)
 
 适用场景：
 
@@ -317,7 +317,7 @@
 
 ### `three_column`
 
-![three_column](assets/layout-three-column.svg)
+![three_column](assets/zh-CN/layout-three-column.svg)
 
 适用场景：
 
@@ -346,7 +346,7 @@
 
 ### `problem_statement`
 
-![problem_statement](assets/layout-problem-statement.svg)
+![problem_statement](assets/zh-CN/layout-problem-statement.svg)
 
 适用场景：
 
@@ -375,7 +375,7 @@
 
 ### `before_after`
 
-![before_after](assets/layout-before-after.svg)
+![before_after](assets/zh-CN/layout-before-after.svg)
 
 适用场景：
 
@@ -402,7 +402,7 @@
 
 ### `kpi_cards`
 
-![kpi_cards](assets/layout-kpi-cards.svg)
+![kpi_cards](assets/zh-CN/layout-kpi-cards.svg)
 
 适用场景：
 
@@ -431,7 +431,7 @@
 
 ### `steps`
 
-![steps](assets/layout-steps.svg)
+![steps](assets/zh-CN/layout-steps.svg)
 
 适用场景：
 
@@ -461,7 +461,7 @@
 
 ### `four_grid`
 
-![four_grid](assets/layout-four-grid.svg)
+![four_grid](assets/zh-CN/layout-four-grid.svg)
 
 适用场景：
 
@@ -491,7 +491,7 @@
 
 ### `matrix_2x2`
 
-![matrix_2x2](assets/layout-matrix-2x2.svg)
+![matrix_2x2](assets/zh-CN/layout-matrix-2x2.svg)
 
 适用场景：
 
@@ -521,7 +521,7 @@
 
 ### `quadrant_axes`
 
-![quadrant_axes](assets/layout-quadrant-axes.svg)
+![quadrant_axes](assets/zh-CN/layout-quadrant-axes.svg)
 
 适用场景：
 
@@ -555,7 +555,7 @@
 
 ### `architecture_layered`
 
-![architecture_layered](assets/layout-architecture-layered.svg)
+![architecture_layered](assets/zh-CN/layout-architecture-layered.svg)
 
 适用场景：
 
@@ -584,7 +584,7 @@
 
 ### `dependency_graph`
 
-![dependency_graph](assets/layout-dependency-graph.svg)
+![dependency_graph](assets/zh-CN/layout-dependency-graph.svg)
 
 适用场景：
 
@@ -620,7 +620,7 @@
 
 ### `fishbone`
 
-![fishbone](assets/layout-fishbone.svg)
+![fishbone](assets/zh-CN/layout-fishbone.svg)
 
 适用场景：
 
@@ -652,7 +652,7 @@
 
 ### `bar_chart`
 
-![bar_chart](assets/layout-bar-chart.svg)
+![bar_chart](assets/zh-CN/layout-bar-chart.svg)
 
 适用场景：
 
@@ -682,7 +682,7 @@
 
 ### `line_chart`
 
-![line_chart](assets/layout-line-chart.svg)
+![line_chart](assets/zh-CN/layout-line-chart.svg)
 
 适用场景：
 
@@ -714,7 +714,7 @@
 
 ### `agenda`
 
-![agenda](assets/layout-agenda.svg)
+![agenda](assets/zh-CN/layout-agenda.svg)
 
 适用场景：
 
@@ -739,7 +739,7 @@
 
 ### `summary`
 
-![summary](assets/layout-summary.svg)
+![summary](assets/zh-CN/layout-summary.svg)
 
 适用场景：
 
@@ -754,7 +754,7 @@
 
 ### `thank_you`
 
-![thank_you](assets/layout-thank-you.svg)
+![thank_you](assets/zh-CN/layout-thank-you.svg)
 
 适用场景：
 
@@ -779,7 +779,7 @@
 
 ### `appendix`
 
-![appendix](assets/layout-appendix.svg)
+![appendix](assets/zh-CN/layout-appendix.svg)
 
 适用场景：
 
@@ -804,7 +804,7 @@
 
 ### `quote`
 
-![quote](assets/layout-quote.svg)
+![quote](assets/zh-CN/layout-quote.svg)
 
 适用场景：
 
@@ -833,7 +833,7 @@
 
 ### `swot`
 
-![swot](assets/layout-swot.svg)
+![swot](assets/zh-CN/layout-swot.svg)
 
 适用场景：
 
@@ -863,7 +863,7 @@
 
 ### `pyramid`
 
-![pyramid](assets/layout-pyramid.svg)
+![pyramid](assets/zh-CN/layout-pyramid.svg)
 
 适用场景：
 
@@ -893,7 +893,7 @@
 
 ### `logic_tree`
 
-![logic_tree](assets/layout-logic-tree.svg)
+![logic_tree](assets/zh-CN/layout-logic-tree.svg)
 
 适用场景：
 
@@ -925,7 +925,7 @@
 
 ### `icicle_tree`
 
-![icicle_tree](assets/layout-icicle-tree.svg)
+![icicle_tree](assets/zh-CN/layout-icicle-tree.svg)
 
 适用场景：
 
@@ -958,7 +958,7 @@
 
 ### `process_flow`
 
-![process_flow](assets/layout-process-flow.svg)
+![process_flow](assets/zh-CN/layout-process-flow.svg)
 
 适用场景：
 
@@ -983,7 +983,7 @@
 
 ### `timeline`
 
-![timeline](assets/layout-timeline.svg)
+![timeline](assets/zh-CN/layout-timeline.svg)
 
 适用场景：
 
@@ -1008,7 +1008,7 @@
 
 ### `roadmap`
 
-![roadmap](assets/layout-roadmap.svg)
+![roadmap](assets/zh-CN/layout-roadmap.svg)
 
 适用场景：
 
@@ -1033,7 +1033,7 @@
 
 ### `milestones`
 
-![milestones](assets/layout-milestones.svg)
+![milestones](assets/zh-CN/layout-milestones.svg)
 
 适用场景：
 
@@ -1061,7 +1061,7 @@
 
 ### `org_roles`
 
-![org_roles](assets/layout-org-roles.svg)
+![org_roles](assets/zh-CN/layout-org-roles.svg)
 
 适用场景：
 
@@ -1089,7 +1089,7 @@
 
 ### `risk_register`
 
-![risk_register](assets/layout-risk-register.svg)
+![risk_register](assets/zh-CN/layout-risk-register.svg)
 
 适用场景：
 
@@ -1117,7 +1117,7 @@
 
 ### `pie_chart`
 
-![pie_chart](assets/layout-pie-chart.svg)
+![pie_chart](assets/zh-CN/layout-pie-chart.svg)
 
 适用场景：
 
@@ -1148,7 +1148,7 @@
 
 ### `donut_chart`
 
-![donut_chart](assets/layout-donut-chart.svg)
+![donut_chart](assets/zh-CN/layout-donut-chart.svg)
 
 适用场景：
 
@@ -1178,7 +1178,7 @@
 
 ### `area_chart`
 
-![area_chart](assets/layout-area-chart.svg)
+![area_chart](assets/zh-CN/layout-area-chart.svg)
 
 适用场景：
 
@@ -1208,7 +1208,7 @@
 
 ### `coordinate_axis`
 
-![coordinate_axis](assets/layout-coordinate-axis.svg)
+![coordinate_axis](assets/zh-CN/layout-coordinate-axis.svg)
 
 适用场景：
 
@@ -1241,7 +1241,7 @@
 
 ### `scatter_plot`
 
-![scatter_plot](assets/layout-scatter-plot.svg)
+![scatter_plot](assets/zh-CN/layout-scatter-plot.svg)
 
 适用场景：
 
@@ -1272,7 +1272,7 @@
 
 ### `bubble_chart`
 
-![bubble_chart](assets/layout-bubble-chart.svg)
+![bubble_chart](assets/zh-CN/layout-bubble-chart.svg)
 
 适用场景：
 
@@ -1304,7 +1304,7 @@
 
 ### `waterfall_chart`
 
-![waterfall_chart](assets/layout-waterfall-chart.svg)
+![waterfall_chart](assets/zh-CN/layout-waterfall-chart.svg)
 
 适用场景：
 
@@ -1336,7 +1336,7 @@
 
 ### `funnel_chart`
 
-![funnel_chart](assets/layout-funnel-chart.svg)
+![funnel_chart](assets/zh-CN/layout-funnel-chart.svg)
 
 适用场景：
 
@@ -1368,7 +1368,7 @@
 
 ### `heatmap`
 
-![heatmap](assets/layout-heatmap.svg)
+![heatmap](assets/zh-CN/layout-heatmap.svg)
 
 适用场景：
 
@@ -1401,7 +1401,7 @@
 
 ### `treemap`
 
-![treemap](assets/layout-treemap.svg)
+![treemap](assets/zh-CN/layout-treemap.svg)
 
 适用场景：
 
@@ -1431,7 +1431,7 @@
 
 ### `sankey`
 
-![sankey](assets/layout-sankey.svg)
+![sankey](assets/zh-CN/layout-sankey.svg)
 
 适用场景：
 
@@ -1467,7 +1467,7 @@
 
 ### `gauge`
 
-![gauge](assets/layout-gauge.svg)
+![gauge](assets/zh-CN/layout-gauge.svg)
 
 适用场景：
 
@@ -1496,7 +1496,7 @@
 
 ### `radar_chart`
 
-![radar_chart](assets/layout-radar-chart.svg)
+![radar_chart](assets/zh-CN/layout-radar-chart.svg)
 
 适用场景：
 
@@ -1525,7 +1525,7 @@
 
 ### `impact_effort`
 
-![impact_effort](assets/layout-impact-effort.svg)
+![impact_effort](assets/zh-CN/layout-impact-effort.svg)
 
 适用场景：
 
@@ -1553,7 +1553,7 @@
 
 ### `gantt_chart`
 
-![gantt_chart](assets/layout-gantt-chart.svg)
+![gantt_chart](assets/zh-CN/layout-gantt-chart.svg)
 
 适用场景：
 
@@ -1581,7 +1581,7 @@
 
 ### `mind_map`
 
-![mind_map](assets/layout-mind-map.svg)
+![mind_map](assets/zh-CN/layout-mind-map.svg)
 
 适用场景：
 
@@ -1614,7 +1614,7 @@
 
 ### `top_bottom`
 
-![top_bottom](assets/layout-top-bottom.svg)
+![top_bottom](assets/zh-CN/layout-top-bottom.svg)
 
 适用场景：
 
@@ -1641,7 +1641,7 @@
 
 ### `nine_grid`
 
-![nine_grid](assets/layout-nine-grid.svg)
+![nine_grid](assets/zh-CN/layout-nine-grid.svg)
 
 适用场景：
 
@@ -1670,7 +1670,7 @@
 
 ### `journey_map`
 
-![journey_map](assets/layout-journey-map.svg)
+![journey_map](assets/zh-CN/layout-journey-map.svg)
 
 适用场景：
 
@@ -1698,7 +1698,7 @@
 
 ### `plan_table`
 
-![plan_table](assets/layout-plan-table.svg)
+![plan_table](assets/zh-CN/layout-plan-table.svg)
 
 适用场景：
 
@@ -1726,7 +1726,7 @@
 
 ### `cost_benefit`
 
-![cost_benefit](assets/layout-cost-benefit.svg)
+![cost_benefit](assets/zh-CN/layout-cost-benefit.svg)
 
 适用场景：
 
@@ -1754,7 +1754,7 @@
 
 ### `raci`
 
-![raci](assets/layout-raci.svg)
+![raci](assets/zh-CN/layout-raci.svg)
 
 适用场景：
 
@@ -1782,7 +1782,7 @@
 
 ### `case_study`
 
-![case_study](assets/layout-case-study.svg)
+![case_study](assets/zh-CN/layout-case-study.svg)
 
 适用场景：
 
@@ -1812,7 +1812,7 @@
 
 ### `evidence_gallery`
 
-![evidence_gallery](assets/layout-evidence-gallery.svg)
+![evidence_gallery](assets/zh-CN/layout-evidence-gallery.svg)
 
 适用场景：
 

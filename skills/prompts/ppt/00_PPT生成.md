@@ -75,6 +75,27 @@
 - 质检时要单独检查“图页占比、素材是否真实落盘、是否仍存在大面积文字堆积”
 - 质检时还要单独检查“对比页是否误用步骤图、阶段页是否误用表格、时序工作流是否真的按顺序表达”
 
+## 语言（必须明确）
+
+PPT 支持三种语言，`deck.language` 字段三选一：
+
+- `zh-CN`：简体中文
+- `ja-JP`：日语
+- `en-US`：英语
+
+语言确认顺序：
+
+1. 优先从用户输入的语义判断语言（用户用中文提问 → 中文；日语提问 → 日语；英语提问 → 英语）
+2. 如果用户输入无法判断或混合多语，直接询问用户选择
+3. 语言确定后，全部内容（标题、要点、图表文案、SVG 内所有文字）必须使用该语言，不得混用
+
+多语约束：
+
+- SVG 内所有 `text`、`tspan` 节点的内容必须跟随选定语言
+- 表格 headers、chart labels、步骤标题等所有文案必须统一语言
+- 页面标题禁止出现跨语言混用（如中文标题出现英文 layout 名）
+- 输入文件（`work/input/` 下的需求说明）若为多语混合，以用户确认的语言为准
+
 ## PPT 类型（必须先选其一）
 
 生成时必须先确定 PPT 类型，并在 `deck` 中写入 `type` 字段（四选一）：
@@ -231,13 +252,17 @@
 
 ## 页面结构（deck.json + slides/*.json）
 
-`deck.json` 示例：
+`deck.json` 必须包含 `type` 和 `language` 字段，示例如下（三语）：
 
 ```json
-{
-  "deck": { "aspect_ratio": "16:9", "style": "consulting", "language": "zh-CN", "type": "方案类" },
-  "slide_files": ["slides/001_cover.json", "slides/002_agenda.json"]
-}
+// 中文
+{ "deck": { "aspect_ratio": "16:9", "style": "consulting", "language": "zh-CN", "type": "方案类" } }
+
+// 日语
+{ "deck": { "aspect_ratio": "16:9", "style": "consulting", "language": "ja-JP", "type": "方案类" } }
+
+// 英语
+{ "deck": { "aspect_ratio": "16:9", "style": "consulting", "language": "en-US", "type": "方案类" } }
 ```
 
 每页 JSON 必须声明 `layout_type`，例如：

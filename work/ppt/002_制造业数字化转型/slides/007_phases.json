@@ -1,9 +1,33 @@
 {
-  "layout_type": "svg_full",
+  "layout_type": "architecture_layered",
   "title": "AI建设内容分层",
-  "svg": {
-    "src": "work/assets/002/007-ai-construction-content.svg",
-    "alt": "AI建设内容分层图：数字化底座的数据汇总、AI基础设施、业务研发办公三类分析系统",
-    "caption": "从下到上：先汇总数字化数据，再建设 AI 基础设施，最终支撑业务、研发、办公三类 AI 分析系统。"
-  }
+  "layers": [
+    {
+      "icon": "database",
+      "title": "数字化底座的数据汇总",
+      "bullets": [
+        "统一汇聚系统数据、业务事件、设备时序和文档知识",
+        "沉淀主数据、事件数据、时序数据与知识库",
+        "先把 AI 可用的数据基础打稳"
+      ]
+    },
+    {
+      "icon": "workflow",
+      "title": "AI 基础设施",
+      "bullets": [
+        "提供模型服务与编排能力",
+        "建设向量库、知识库、算力与推理网关",
+        "统一权限、审计、安全与集成"
+      ]
+    },
+    {
+      "icon": "scale",
+      "title": "三类 AI 分析系统",
+      "bullets": [
+        "业务 AI：库存预测、经营分析、风险预警",
+        "研发 AI：需求分析、编码辅助、测试生成",
+        "办公 AI：文档生成、会议纪要、企业搜索"
+      ]
+    }
+  ]
 }

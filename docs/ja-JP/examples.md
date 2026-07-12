@@ -54,7 +54,7 @@
 6. 管理制度とガバナンス
 7. ロードマップとアクションアイテム
 
-**使用レイアウト**：cover / agenda / section_divider / svg_full / title_bullets / architecture_layered / phases / phases_detail / radar_chart / case_study / steps / kpi_cards / four_grid / two_column / org_roles / gantt_chart / plan_table / summary / thank_you
+**使用レイアウト**：cover / agenda / section_divider / phases / architecture_layered / radar_chart / case_study / steps / title_bullets / nine_grid / org_roles / plan_table / summary / thank_you / svg_full
 
 ---
 

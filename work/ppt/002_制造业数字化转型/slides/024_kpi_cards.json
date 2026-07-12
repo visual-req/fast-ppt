@@ -1,9 +1,46 @@
 {
-  "layout_type": "svg_full",
+  "layout_type": "metro_loop",
   "title": "AI 模型运维可观测系统",
-  "svg": {
-    "src": "work/assets/002/024-ai-ops-working-principle.svg",
-    "alt": "AI模型运维可观测系统工作原理与指标体系",
-    "caption": "五步闭环：模型部署 → 数据采集 → 异常检测 → 告警诊断 → 自动处置，六项核心指标量化运维成效"
-  }
+  "center": {
+    "title": "AI 模型运维闭环",
+    "text": "从部署、采集、检测、诊断到自动处置，形成主动发现、快速恢复、持续优化的一体化环线。"
+  },
+  "stops": [
+    {
+      "title": "模型部署上线",
+      "text": "灰度发布 / 分批切流 / A/B 对照",
+      "icon": "rollout",
+      "line": "blue"
+    },
+    {
+      "title": "全维度数据采集",
+      "text": "输出分布 / 特征分布 / 日志 / 链路 / 资源",
+      "icon": "database",
+      "line": "cyan"
+    },
+    {
+      "title": "智能异常检测",
+      "text": "数据漂移 / 基线偏离 / 多指标关联",
+      "icon": "search",
+      "line": "orange"
+    },
+    {
+      "title": "告警与根因诊断",
+      "text": "分级告警 / 工单联动 / 影响面评估",
+      "icon": "audit",
+      "line": "red"
+    },
+    {
+      "title": "自动处置闭环",
+      "text": "自动回滚 / 降级切流 / 规则优化",
+      "icon": "refresh",
+      "line": "green"
+    }
+  ],
+  "metrics": [
+    { "label": "漂移检测响应", "value": "<1h", "note": "自动告警触发" },
+    { "label": "灰度覆盖率", "value": "100%", "note": "全模型灰度发布" },
+    { "label": "告警闭环率", "value": "98%", "note": "24h 内闭环" },
+    { "label": "自动回滚时间", "value": "<5min", "note": "异常自动触发" }
+  ]
 }

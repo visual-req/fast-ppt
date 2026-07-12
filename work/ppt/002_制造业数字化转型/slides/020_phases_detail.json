@@ -1,8 +1,19 @@
 {
-  "layout_type": "svg_full",
+  "layout_type": "swimlane_process",
   "title": "AI赋能需求分析",
-  "svg": {
-    "src": "work/ppt/002_制造业数字化转型/slides/020-storyline-demand-confirmation.svg",
-    "alt": "020 需求确认故事线 SVG"
-  }
+  "headers": ["申请", "分派", "执行", "完成", "变更", "取消 / 异常"],
+  "lanes": [
+    {
+      "name": "用车人",
+      "steps": ["申请用车", "", "", "", "变更用车", "取消用车"]
+    },
+    {
+      "name": "派车员",
+      "steps": ["", "分派车辆", "", "", "更换车辆 / 撤销分派", "冲突处理 / 紧急变更"]
+    },
+    {
+      "name": "司机",
+      "steps": ["", "", "出发", "到达", "更换司机", "司机拒绝 / 紧急停止"]
+    }
+  ]
 }

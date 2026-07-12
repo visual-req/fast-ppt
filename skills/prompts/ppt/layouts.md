@@ -1,5 +1,7 @@
 本文件列出 PPT 的 layout 类型库与推荐字段，用作生成 `work/ppt/001_项目名/slides/*.json` 的参考。
 
+补充约定：如果当前类型库里没有完全匹配的新 layout，允许先使用 `svg_full` + `work/assets/*.svg` 落地，不必为了新增版式强行增加新的 `layout_type`。只有当该版式会被反复复用、字段结构稳定时，再考虑沉淀为独立 layout。
+
 ## deck.json 结构
 
 ```json
@@ -24,10 +26,10 @@
 
 文本与结构化：
 
-- `title_bullets`: `title` `bullets`
+- `title_bullets`: `title` `bullets` `subtitle?` `cards?` `foreground?` `background?`（适合“一个总判断 + 3-6 条要点”，也适合“执行摘要 / 一个底座 + 多类能力 + 保障”这类页；`cards` 可补充 2-4 个并列结果卡片）
 - `two_column`: `title` `columns`（2 列）
 - `three_column`: `title` `columns`（3 列）
-- `before_after`: `title` `before` `after`（对照，可包含 bullets/table/chart）
+- `before_after`: `title` `before` `after`（before / after 各支持 `title` + `text`（段落） + `bullets`（列表）。`text` 与 `bullets` 可共存（text 在上、bullets 在下），也可只填其一。before 红底，after 绿底。）
 
 混合内容（表/图/要点）：
 
@@ -52,9 +54,9 @@
 - `architecture_layered`: `title` `layers`（{ title, icon?, bullets? }[]）
 - `dependency_graph`: `title` `nodes` `links`
 - `fishbone`: `title` `effect` `bones`（{ category, causes }[]，适合根因分析）
-- `process_flow`: `title` `bullets` 或 `table`
+- `process_flow`: `title` `steps` `footer_cards?` `summary?`（适合“线性流程 + 输出卡 / 支撑卡 / 指标卡”的页面；`steps` 为 { title, subtitle?, text?, bullets?, icon?, accent?, panels? }[]，`panels` 为步骤内的子卡片）
 - `timeline`: `title` `bullets` 或 `table`
-- `roadmap`: `title` `bullets` 或 `table`
+- `roadmap`: `title` `items?` `actions?` `goal?`（`items` 支持 { title, period?, text?, subtitle? }[]，`actions` 适合“下一步启动建议 / 关键动作”）
 - `milestones`: `title` `table`
 - `org_roles`: `title` `table`（或 `bullets`）
 - `risk_register`: `title` `table`
@@ -92,12 +94,13 @@
 结构化布局：
 
 - `top_bottom`: `title` `top` `bottom`
-- `steps`: `title` `steps`（{ title, icon?, bullets? }[]）
-- `phases`: `title` `phases`（{ title, icon?, bullets? }[]）
-- `four_grid`: `title` `items`（4 个：{ title, icon?, bullets? }）
-- `nine_grid`: `title` `items`（9 个：{ title, icon?, bullets? }）
+- `steps`: `title` `steps`（{ title, icon?, text?, bullets? }[]；适合“三步/四步/五步方法论”“集成路径”“样板 -> 复制 -> 规模化”等线性推进内容）
+- `phases`: `title` `phases` `narrow?`（{ title, icon?, text?, bullets?, gate? }[]；`narrow: true` 适合 5 阶段左右的紧凑总览）
+- `four_grid`: `title` `items`（4 个：{ title, icon?, text?, bullets? }）
+- `nine_grid`: `title` `items`（9 个：{ title, icon?, text?, bullets? }；适合“系统边界 / 能力地图 / 平台全景 / 九类模块总览”）
 - `journey_map`: `title` `stages`（{ name, touchpoints?, painpoints?, opportunities? }[]）
-- `swimlane_process`: `title` `lanes`（{ name, steps }[]）
+- `swimlane_process`: `title` `headers?` `lanes`（{ name, steps }[]；适合“角色 × 阶段”矩阵型流程，如用户/派车员/司机的协同流程）
+- `metro_loop`: `title` `center` `stops` `metrics?`（适合“持续改进闭环 / AIOps 闭环 / 地铁环线式阶段链路”；`center` 含 `title/text`，`stops` 为 { title, text?, icon?, line?, color? }[]，`metrics` 为底部摘要指标）
 
 表格与对比：
 

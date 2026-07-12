@@ -1,15 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
-<rect width="1600" height="900" fill="#f8fafc"/>
-<rect x="60" y="50" width="1480" height="800" rx="32" fill="#ffffff" stroke="#dbeafe" stroke-width="2"/>
-<text x="110" y="126" fill="#0f172a" font-size="44" font-family="Arial, sans-serif" font-weight="700">Case Study</text>
-
-<rect x="120" y="200" width="300" height="520" rx="28" fill="#eff6ff"/>
-<rect x="450" y="200" width="300" height="520" rx="28" fill="#ffffff" stroke="#cbd5e1"/>
-<rect x="780" y="200" width="300" height="520" rx="28" fill="#ffffff" stroke="#cbd5e1"/>
-<rect x="1110" y="200" width="300" height="520" rx="28" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="170" y="272" fill="#1d4ed8" font-size="28" font-family="Arial, sans-serif" font-weight="700">Background</text>
-<text x="500" y="272" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">Approach</text>
-<text x="830" y="272" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">Results</text>
-<text x="1160" y="272" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">启示</text>
-
+<defs>
+  <linearGradient id="pageBg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#f4f7fb"/>
+    <stop offset="100%" stop-color="#eef3f9"/>
+  </linearGradient>
+  <linearGradient id="navyGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#1f4f97"/>
+    <stop offset="100%" stop-color="#123b7a"/>
+  </linearGradient>
+  <linearGradient id="blueGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#4da0ff"/>
+    <stop offset="100%" stop-color="#1d6fe8"/>
+  </linearGradient>
+  <filter id="panelShadow" x="-10%" y="-10%" width="120%" height="120%">
+    <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#1e3a5f" flood-opacity="0.10"/>
+  </filter>
+</defs>
+<rect width="1600" height="900" fill="url(#pageBg)"/>
+<rect x="54" y="44" width="1492" height="812" rx="36" fill="#ffffff" stroke="#d7e3f4" stroke-width="1.5" filter="url(#panelShadow)"/>
+<text x="110" y="126" fill="#143d7a" font-size="46" font-family="Arial, sans-serif" font-weight="700">Case Study Layout</text>
+<rect x="120" y="188" width="440" height="612" rx="28" fill="#f7faff" stroke="#d7e3f4"/>
+<rect x="154" y="260" width="372" height="356" rx="26" fill="#dbeafe"/>
+<rect x="188" y="300" width="304" height="240" rx="20" fill="#ffffff" opacity="0.75"/>
+<path d="M220 486 C270 438 330 520 388 454 S478 432 494 468" stroke="#8fbaf4" stroke-width="16" fill="none" stroke-linecap="round"/>
+<text x="340" y="664" fill="#64748b" font-size="24" font-family="Arial, sans-serif" text-anchor="middle">Scenario screenshot / business visual</text>
+<rect x="154" y="214" width="132" height="30" rx="15" fill="#eef5ff"/>
+<text x="220" y="234" fill="#1d4ed8" font-size="14" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">CASE STUDY</text>
+<rect x="606" y="208" width="330" height="240" rx="26" fill="#ffffff" stroke="#d7e3f4"/>
+<rect x="630" y="230" width="46" height="28" rx="14" fill="url(#blueGrad)"/>
+<text x="653" y="249" fill="#ffffff" font-size="14" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">01</text>
+<text x="630" y="300" fill="#143d7a" font-size="28" font-family="Arial, sans-serif" font-weight="700">Pain Point</text>
+<text x="630" y="354" fill="#475569" font-size="21" font-family="Arial, sans-serif">Business issue, collaboration drag, KPI pressure</text>
+<rect x="1010" y="208" width="330" height="240" rx="26" fill="#ffffff" stroke="#d7e3f4"/>
+<rect x="1034" y="230" width="46" height="28" rx="14" fill="url(#blueGrad)"/>
+<text x="1057" y="249" fill="#ffffff" font-size="14" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">02</text>
+<text x="1034" y="300" fill="#143d7a" font-size="28" font-family="Arial, sans-serif" font-weight="700">Solution</text>
+<text x="1034" y="354" fill="#475569" font-size="21" font-family="Arial, sans-serif">Platform capability, process action, key modules</text>
+<rect x="606" y="510" width="330" height="240" rx="26" fill="#ffffff" stroke="#d7e3f4"/>
+<rect x="630" y="532" width="46" height="28" rx="14" fill="url(#blueGrad)"/>
+<text x="653" y="551" fill="#ffffff" font-size="14" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">03</text>
+<text x="630" y="602" fill="#143d7a" font-size="28" font-family="Arial, sans-serif" font-weight="700">Pilot Value</text>
+<text x="630" y="656" fill="#475569" font-size="21" font-family="Arial, sans-serif">Better efficiency, lower risk, improved experience</text>
+<rect x="1010" y="510" width="330" height="240" rx="26" fill="#ffffff" stroke="#d7e3f4"/>
+<rect x="1034" y="532" width="46" height="28" rx="14" fill="url(#blueGrad)"/>
+<text x="1057" y="551" fill="#ffffff" font-size="14" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">04</text>
+<text x="1034" y="602" fill="#143d7a" font-size="28" font-family="Arial, sans-serif" font-weight="700">Acceptance</text>
+<text x="1034" y="656" fill="#475569" font-size="21" font-family="Arial, sans-serif">Metrics, timeline, rollout conditions</text>
 </svg>

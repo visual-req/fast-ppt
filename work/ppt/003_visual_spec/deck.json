@@ -1,5 +1,10 @@
 {
-  "deck": { "aspect_ratio": "16:9", "style": "demo", "language": "zh-CN", "type": "演示类" },
+  "deck": {
+    "aspect_ratio": "16:9",
+    "style": "demo",
+    "language": "zh-CN",
+    "type": "演示类"
+  },
   "slide_files": [
     "slides/001.json",
     "slides/002.json",
@@ -34,6 +39,7 @@
     "slides/031.json",
     "slides/032.json",
     "slides/033.json",
-    "slides/034.json"
+    "slides/034.json",
+    "slides/035.json"
   ]
 }

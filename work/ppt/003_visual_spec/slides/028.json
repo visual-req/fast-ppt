@@ -1,9 +1,9 @@
 {
   "layout_type": "svg_full",
-  "title": "验收用例生成：为什么场景和验收用例天然匹配？",
+  "title": "规划排期：/vspec:plan",
   "svg": {
-    "src": "work/assets/003/018-accept-scenario-match.svg",
-    "alt": "场景矩阵到验收用例的天然映射关系",
-    "caption": "场景矩阵的每一行 = 角色 + 操作 + 条件 + 预期，验收用例 = Given（前置条件）+ When（操作步骤）+ Then（预期结果 + 通过标准）。两者一一对应：正常路径 → Happy Path 测试，边界条件 → 边界测试，异常场景 → 异常测试。同构性、完整性、一致性确保不遗漏不重复。"
+    "src": "work/assets/003/021-vspec-plan-flow.svg",
+    "alt": "规划排期流程",
+    "caption": "基于功能清单 + 详细设计 + 质检报告 + 依赖关系，自动估算工时并生成排期。输出 plan_estimate.md（按模块/角色拆解的工时估算）和 plan_schedule.html（可视化排期甘特图），支撑项目立项和资源调配决策。"
   }
 }

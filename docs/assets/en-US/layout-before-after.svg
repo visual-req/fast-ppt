@@ -1,17 +1,58 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
-<rect width="1600" height="900" fill="#f8fafc"/>
-<rect x="60" y="50" width="1480" height="800" rx="32" fill="#ffffff" stroke="#dbeafe" stroke-width="2"/>
-<text x="110" y="126" fill="#0f172a" font-size="44" font-family="Arial, sans-serif" font-weight="700">Before After</text>
-<rect x="110" y="190" width="560" height="520" rx="26" fill="#fff7ed" stroke="#fdba74"/>
-<rect x="930" y="190" width="500" height="520" rx="26" fill="#ecfdf5" stroke="#86efac"/>
-<path d="M710 450 L870 450" stroke="#94a3b8" stroke-width="10" stroke-linecap="round"/>
-<polygon points="870,450 842,434 842,466" fill="#94a3b8"/>
-<text x="150" y="262" fill="#c2410c" font-size="32" font-family="Arial, sans-serif" font-weight="700">Before</text>
-<text x="968" y="262" fill="#15803d" font-size="32" font-family="Arial, sans-serif" font-weight="700">After</text>
-<text x="150" y="340" fill="#334155" font-size="22" font-family="Arial, sans-serif">Single-shot generation, inconsistent output</text>
-<text x="150" y="378" fill="#334155" font-size="22" font-family="Arial, sans-serif">图页不足，缺回改闭环</text>
-<text x="150" y="416" fill="#334155" font-size="22" font-family="Arial, sans-serif">页面质量不稳定</text>
-<text x="968" y="340" fill="#334155" font-size="22" font-family="Arial, sans-serif">生成-检查-回改循环</text>
-<text x="968" y="378" fill="#334155" font-size="22" font-family="Arial, sans-serif">图形真实落盘，可预览验证</text>
-<text x="968" y="416" fill="#334155" font-size="22" font-family="Arial, sans-serif">交付质量更稳定</text>
+<defs>
+  <linearGradient id="pageBg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#f4f7fb"/>
+    <stop offset="100%" stop-color="#eef3f9"/>
+  </linearGradient>
+  <linearGradient id="navyGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#1f4f97"/>
+    <stop offset="100%" stop-color="#123b7a"/>
+  </linearGradient>
+  <linearGradient id="blueGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#4da0ff"/>
+    <stop offset="100%" stop-color="#1d6fe8"/>
+  </linearGradient>
+  <filter id="panelShadow" x="-10%" y="-10%" width="120%" height="120%">
+    <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#1e3a5f" flood-opacity="0.10"/>
+  </filter>
+</defs>
+<rect width="1600" height="900" fill="url(#pageBg)"/>
+<rect x="54" y="44" width="1492" height="812" rx="36" fill="#ffffff" stroke="#d7e3f4" stroke-width="1.5" filter="url(#panelShadow)"/>
+<text x="110" y="126" fill="#143d7a" font-size="46" font-family="Arial, sans-serif" font-weight="700">Single-Shot vs Closed-Loop Delivery</text>
+<rect x="240" y="190" width="220" height="520" rx="36" fill="url(#navyGrad)"/>
+<rect x="1140" y="190" width="220" height="520" rx="36" fill="url(#navyGrad)"/>
+<text x="350" y="260" fill="#ffffff" font-size="32" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">Single-Shot</text>
+<text x="1250" y="260" fill="#ffffff" font-size="32" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">Closed-Loop</text>
+<path d="M120 300 L300 300 L334 336 L300 372 L120 372 L84 336 Z" fill="#ffffff" stroke="#d9e4f3"/>
+<text x="162" y="345" fill="#2aa6a4" font-size="24" font-family="Arial, sans-serif" font-weight="700">18%</text>
+<text x="368" y="345" fill="#475569" font-size="20" font-family="Arial, sans-serif" font-weight="400">One-pass output with high variance</text>
+<path d="M1000 300 L1180 300 L1214 336 L1180 372 L1000 372 L964 336 Z" fill="#ffffff" stroke="#d9e4f3"/>
+<text x="1042" y="345" fill="#2aa6a4" font-size="24" font-family="Arial, sans-serif" font-weight="700">85%</text>
+<text x="1248" y="345" fill="#475569" font-size="20" font-family="Arial, sans-serif" font-weight="400">Generate-review-fix for stable quality</text>
+<path d="M495 336 H965" stroke="#8fbaf4" stroke-width="4" stroke-dasharray="10 10"/>
+<path d="M956 336 l18 -10 v20 Z" fill="#8fbaf4"/>
+<path d="M120 400 L300 400 L334 436 L300 472 L120 472 L84 436 Z" fill="#ffffff" stroke="#d9e4f3"/>
+<text x="162" y="445" fill="#2aa6a4" font-size="24" font-family="Arial, sans-serif" font-weight="700">22%</text>
+<text x="368" y="445" fill="#475569" font-size="20" font-family="Arial, sans-serif" font-weight="400">Too few visual assets</text>
+<path d="M1000 400 L1180 400 L1214 436 L1180 472 L1000 472 L964 436 Z" fill="#ffffff" stroke="#d9e4f3"/>
+<text x="1042" y="445" fill="#2aa6a4" font-size="24" font-family="Arial, sans-serif" font-weight="700">90%</text>
+<text x="1248" y="445" fill="#475569" font-size="20" font-family="Arial, sans-serif" font-weight="400">Assets on disk, previewable and verifiable</text>
+<path d="M495 436 H965" stroke="#8fbaf4" stroke-width="4" stroke-dasharray="10 10"/>
+<path d="M956 436 l18 -10 v20 Z" fill="#8fbaf4"/>
+<path d="M120 500 L300 500 L334 536 L300 572 L120 572 L84 536 Z" fill="#ffffff" stroke="#d9e4f3"/>
+<text x="162" y="545" fill="#2aa6a4" font-size="24" font-family="Arial, sans-serif" font-weight="700">19%</text>
+<text x="368" y="545" fill="#475569" font-size="20" font-family="Arial, sans-serif" font-weight="400">Problems found only after delivery</text>
+<path d="M1000 500 L1180 500 L1214 536 L1180 572 L1000 572 L964 536 Z" fill="#ffffff" stroke="#d9e4f3"/>
+<text x="1042" y="545" fill="#2aa6a4" font-size="24" font-family="Arial, sans-serif" font-weight="700">92%</text>
+<text x="1248" y="545" fill="#475569" font-size="20" font-family="Arial, sans-serif" font-weight="400">Checks and gates at key steps</text>
+<path d="M495 536 H965" stroke="#8fbaf4" stroke-width="4" stroke-dasharray="10 10"/>
+<path d="M956 536 l18 -10 v20 Z" fill="#8fbaf4"/>
+<path d="M120 600 L300 600 L334 636 L300 672 L120 672 L84 636 Z" fill="#ffffff" stroke="#d9e4f3"/>
+<text x="162" y="645" fill="#2aa6a4" font-size="24" font-family="Arial, sans-serif" font-weight="700">15%</text>
+<text x="368" y="645" fill="#475569" font-size="20" font-family="Arial, sans-serif" font-weight="400">Hard to reuse, costly to rework</text>
+<path d="M1000 600 L1180 600 L1214 636 L1180 672 L1000 672 L964 636 Z" fill="#ffffff" stroke="#d9e4f3"/>
+<text x="1042" y="645" fill="#2aa6a4" font-size="24" font-family="Arial, sans-serif" font-weight="700">88%</text>
+<text x="1248" y="645" fill="#475569" font-size="20" font-family="Arial, sans-serif" font-weight="400">Templates and assets compound over time</text>
+<path d="M495 636 H965" stroke="#8fbaf4" stroke-width="4" stroke-dasharray="10 10"/>
+<path d="M956 636 l18 -10 v20 Z" fill="#8fbaf4"/>
 </svg>

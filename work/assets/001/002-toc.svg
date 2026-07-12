@@ -11,7 +11,7 @@
   <rect width="1600" height="900" fill="url(#bg)"/>
 
   <g filter="url(#shadow)">
-    <rect x="120" y="140" width="520" height="620" rx="28" fill="#ffffff" stroke="#cbd5e1"/>
+    <rect x="120" y="140" width="1360" height="620" rx="28" fill="#ffffff" stroke="#cbd5e1"/>
     <text x="180" y="240" font-size="54" font-weight="900" fill="#0f172a">目录</text>
     <text x="180" y="290" font-size="18" fill="#475569">本课件结构与节奏一目了然</text>
     <g fill="#0f172a" font-size="18">
@@ -19,25 +19,6 @@
       <text x="180" y="430">02  Skill 工程：把能力沉淀成可复用单元</text>
       <text x="180" y="480">03  Harness 工程：六组件与 Evaluator 质量门禁</text>
       <text x="180" y="530">04  全课复盘：知识地图与带走结论</text>
-    </g>
-  </g>
-
-  <g filter="url(#shadow)">
-    <rect x="680" y="140" width="800" height="620" rx="28" fill="#1d4ed8"/>
-    <text x="740" y="220" font-size="26" font-weight="900" fill="#ffffff">你将带走什么</text>
-    <g fill="rgba(255,255,255,0.9)" font-size="18">
-      <text x="740" y="280">• 如何判断任务是否需要升级到 Harness</text>
-      <text x="740" y="325">• Skill 的边界、阶段化产物与质检闭环怎么设计</text>
-      <text x="740" y="370">• Harness 六大组件如何协同，Evaluator 如何做门禁</text>
-      <text x="740" y="415">• 如何把生成、预览、检查、回改串成稳定链路</text>
-    </g>
-    <g filter="url(#shadow)">
-      <rect x="740" y="480" width="680" height="220" rx="24" fill="rgba(255,255,255,0.14)" stroke="rgba(255,255,255,0.18)"/>
-      <text x="780" y="540" font-size="22" font-weight="900" fill="#ffffff">学习方式</text>
-      <g fill="rgba(255,255,255,0.9)" font-size="18">
-        <text x="780" y="590">1) 每章：概念图解 → 案例 → 练习</text>
-        <text x="780" y="635">2) 贯穿：真实项目 fast_ppt 的改造与验证</text>
-      </g>
     </g>
   </g>
 </svg>

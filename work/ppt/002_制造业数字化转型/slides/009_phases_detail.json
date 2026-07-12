@@ -1,9 +1,44 @@
 {
-  "layout_type": "svg_full",
+  "layout_type": "nine_grid",
   "title": "数据底座搭建",
-  "svg": {
-    "src": "work/assets/002/009-data-foundation.svg",
-    "alt": "数据底座架构图",
-    "caption": "三大数据类型 + 四项治理关键要素"
-  }
+  "items": [
+    {
+      "icon": "document",
+      "title": "主数据",
+      "text": "低频变更，要求强一致性。",
+      "bullets": ["物料编码 / BOM", "工艺路线 / 设备台账"]
+    },
+    {
+      "icon": "flow",
+      "title": "事件数据",
+      "text": "高频写入，强调实时性。",
+      "bullets": ["生产工单 / 质检记录", "设备日志 / 出入库流水"]
+    },
+    {
+      "icon": "chart",
+      "title": "时序与多媒体",
+      "text": "海量写入，强调压缩与归档。",
+      "bullets": ["传感器 / 热成像", "设备影像 / 声纹数据"]
+    },
+    {
+      "icon": "knowledge",
+      "title": "统一数据字典",
+      "text": "业务术语标准化，保证字段语义一致。"
+    },
+    {
+      "icon": "audit",
+      "title": "数据血缘追踪",
+      "text": "覆盖端到端链路，支持影响分析与问题定位。"
+    },
+    {
+      "icon": "qa",
+      "title": "质量基线指标",
+      "text": "持续监控完整性、准确性、及时性与一致性。"
+    },
+    {
+      "icon": "lock",
+      "title": "分层存储策略",
+      "text": "热数据放内存/SSD，温数据放 HDD，冷数据归档到对象存储。"
+    }
+  ]
 }

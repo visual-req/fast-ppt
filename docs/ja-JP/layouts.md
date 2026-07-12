@@ -17,7 +17,19 @@
 - `pie_chart`・`donut_chart`・`bar_chart`・`line_chart`・`area_chart`・`waterfall_chart`・`funnel_chart`・`heatmap`・`treemap`・`sankey`・`gauge`・`radar_chart`・`impact_effort`・`gantt_chart`
 
 ## 専門特化
-- `mind_map`・`top_bottom`・`nine_grid`・`journey_map`・`plan_table`・`cost_benefit`・`raci`・`case_study`・`evidence_gallery`・`phases`・`swimlane_process`・`svg_full`・`comparison_table`・`steps`・`four_grid`・`matrix_2x2`・`quadrant_axes`・`coordinate_axis`・`scatter_plot`・`bubble_chart`
+- `mind_map`・`top_bottom`・`nine_grid`・`journey_map`・`plan_table`・`cost_benefit`・`raci`・`case_study`・`evidence_gallery`・`phases`・`swimlane_process`・`metro_loop`・`svg_full`・`comparison_table`・`steps`・`four_grid`・`matrix_2x2`・`quadrant_axes`・`coordinate_axis`・`scatter_plot`・`bubble_chart`
+
+## 最近追加された使い方
+- `title_bullets` は `subtitle` と `cards` を使ったエグゼクティブサマリー表現にも対応
+- `steps` は `icon + text + bullets` を持つ線形ステップ表現に対応
+- `phases` は 5 段階前後の概要向けに `narrow: true` を利用可能
+- `swimlane_process` は列ごとの段階名を `headers` で指定可能
+- `architecture_layered` は `icon + text + bullets` を持つ分層構造ページに対応
+- `nine_grid` は `icon + text + bullets` を持つシステム全景 / 境界整理ページに対応
+- `process_flow` は構造化された `steps + footer_cards + summary` を持てるようになり、入力→処理→出力や成果カード付きのフロー表現に対応
+- `roadmap` は `items.period`、下部 `actions`、締めの `goal` 要約に対応
+- `metro_loop` は中央カード + 環状ステップ + 下部指標の表現に対応
+- 新規または実験的なレイアウトは、最初から viewer component 化しなくてもよく、`svg_full` と `work/assets/*.svg` で先に落とし込める
 
 ## 選択原則
 - ページ意図がレイアウト選択より先

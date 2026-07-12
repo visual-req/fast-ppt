@@ -1,9 +1,9 @@
 {
   "layout_type": "svg_full",
-  "title": "痛点十一：需求频繁变更，版本管理混乱",
+  "title": "痛点十：缺少有效的确认与验证过程",
   "svg": {
-    "src": "work/assets/003/012d-frequent-changes.svg",
-    "alt": "需求频繁变更与版本混乱",
-    "caption": "当前：PRD_v3.docx → PRD_final.docx → PRD_final2_修.docx，变更靠群聊通知。visual-spec 解法：/vspec:refine 变更一处自动同步下游（设计/原型/测试），所有变更记录在版本树上，关联角色自动收到通知"
+    "src": "work/assets/003/012c-verification-gap.svg",
+    "alt": "验收验证过程缺失",
+    "caption": "当前：需求评审靠口头确认，开发完成靠演示「看着差不多」，没有量化的验收标准。visual-spec 解法：/vspec:accept 自动生成含前置条件·操作步骤·预期结果·通过标准的可执行验收用例，验收 = 逐条过用例，不靠主观判断"
   }
 }

@@ -373,7 +373,14 @@ export function renderSlideHtml(slide: Slide, context: { index: number; total: n
   const headerTitle =
     layout === "cover" || layout === "section_divider" || layout === "thank_you" || (layout === "svg_full" && !showTitle)
       ? ""
-      : `<h2 class="slideTitle">${slideTitle}</h2>`;
+      : `<div class="slideTitleBar">
+          <div class="slideTitleBarGlow"></div>
+          <div class="slideTitleBarAccent"></div>
+          <div class="slideTitleBarOrbit slideTitleBarOrbitLarge"></div>
+          <div class="slideTitleBarOrbit slideTitleBarOrbitSmall"></div>
+          <div class="slideTitleBarDots"></div>
+          <h2 class="slideTitle">${slideTitle}</h2>
+        </div>`;
 
   return `<section class="slide layout-${escapeHtml(layout)}" data-slide-index="${context.index}">
     <div class="slideInner">
@@ -387,7 +394,15 @@ export function renderSlideHtml(slide: Slide, context: { index: number; total: n
 export function getDeckCss(): string {
   return `
     .slideInner { height: 100%; padding: 42px 52px; display: grid; grid-template-rows: auto 1fr; gap: 18px; }
-    .slideTitle { font-size: 28px; font-weight: 800; margin: 0; color: #0f172a; }
+    .slideTitleBar { position:relative; overflow:hidden; min-height:72px; display:flex; align-items:center; padding:0 26px 0 30px; border-radius:22px; background:linear-gradient(180deg, rgba(255,255,255,.96) 0%, rgba(247,250,255,.98) 100%); border:1px solid rgba(215,227,244,.96); box-shadow:0 14px 30px rgba(20,61,122,.08); }
+    .slideTitleBarGlow, .slideTitleBarAccent, .slideTitleBarOrbit, .slideTitleBarDots { position:absolute; pointer-events:none; }
+    .slideTitleBarGlow { inset:auto auto -26px -18px; width:180px; height:120px; border-radius:999px; background:radial-gradient(circle, rgba(77,160,255,.18), transparent 72%); }
+    .slideTitleBarAccent { inset:14px auto 14px 14px; width:7px; border-radius:999px; background:linear-gradient(180deg, #4da0ff 0%, #1d6fe8 100%); box-shadow:0 0 0 4px rgba(77,160,255,.12); }
+    .slideTitleBarOrbit { border-radius:999px; border:1px solid rgba(215,227,244,.78); }
+    .slideTitleBarOrbitLarge { top:-22px; right:26px; width:116px; height:116px; }
+    .slideTitleBarOrbitSmall { top:10px; right:86px; width:54px; height:54px; }
+    .slideTitleBarDots { top:18px; right:24px; width:86px; height:30px; opacity:.68; background-image:radial-gradient(circle, rgba(29,111,232,.42) 0 1.8px, transparent 2px), radial-gradient(circle, rgba(77,160,255,.48) 0 1.4px, transparent 1.8px); background-size:16px 16px, 20px 20px; background-position:0 0, 8px 6px; }
+    .slideTitle { position:relative; z-index:1; padding-right:120px; font-size:28px; font-weight:800; margin:0; line-height:1.2; color:#0f172a; }
     .slideSubtitle { font-size: 16px; font-weight: 600; margin: 8px 0 0 0; color: rgba(15,23,42,.75); }
     .bullets { margin: 0; padding-left: 18px; display: grid; gap: 8px; font-size: 16px; line-height: 1.45; }
     .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }

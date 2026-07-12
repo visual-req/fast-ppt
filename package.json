@@ -7,9 +7,11 @@
     "start": "node server.mjs",
     "dev": "npm --prefix ppt-viewer run build && node server.mjs",
     "viewer": "node server.mjs",
-    "build": "npm --prefix ppt-viewer run build"
+    "build": "npm --prefix ppt-viewer run build",
+    "export:pptx": "node scripts/export-pptx.mjs",
+    "export:pptx:all": "node scripts/export-pptx.mjs --all"
   },
   "dependencies": {
-    "pptxgenjs": "^3.13.0"
+    "pptxgenjs": "^4.0.1"
   }
 }

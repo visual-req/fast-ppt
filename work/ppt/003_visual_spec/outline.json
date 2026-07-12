@@ -13,40 +13,216 @@
       "chapter_title": "演示主线",
       "chapter_goal": "从痛点引入到能力展示再到行动引导，完整演示 visual-spec 的核心价值。",
       "slides": [
-        { "slide_no": "001", "title": "封面", "layout_type": "cover", "page_purpose": "开场" },
-        { "slide_no": "002", "title": "章节分隔", "layout_type": "section_divider", "page_purpose": "带入场景" },
-        { "slide_no": "003", "title": "9 个需求痛点总览", "layout_type": "nine_grid", "page_purpose": "痛点总览" },
-        { "slide_no": "004", "title": "更多需求痛点", "layout_type": "four_grid", "page_purpose": "额外痛点总览" },
-        { "slide_no": "005", "title": "痛点一：需求模糊", "layout_type": "svg_full", "page_purpose": "痛点详解" },
-        { "slide_no": "006", "title": "痛点二：需求质量不高", "layout_type": "svg_full", "page_purpose": "痛点详解" },
-        { "slide_no": "007", "title": "痛点三：验收标准缺失", "layout_type": "svg_full", "page_purpose": "痛点详解" },
-        { "slide_no": "008", "title": "痛点四：返工成本", "layout_type": "svg_full", "page_purpose": "痛点详解" },
-        { "slide_no": "009", "title": "痛点五：信息分散", "layout_type": "svg_full", "page_purpose": "痛点详解" },
-        { "slide_no": "010", "title": "痛点六：设计遗漏", "layout_type": "svg_full", "page_purpose": "痛点详解" },
-        { "slide_no": "011", "title": "痛点七：流程断裂", "layout_type": "svg_full", "page_purpose": "痛点详解" },
-        { "slide_no": "012", "title": "痛点八：不可追溯", "layout_type": "svg_full", "page_purpose": "痛点详解" },
-        { "slide_no": "013", "title": "痛点九：沟通成本", "layout_type": "svg_full", "page_purpose": "痛点详解" },
-        { "slide_no": "014", "title": "痛点十：缺少确认与验证过程", "layout_type": "svg_full", "page_purpose": "痛点详解" },
-        { "slide_no": "015", "title": "痛点十一：需求频繁变更", "layout_type": "svg_full", "page_purpose": "痛点详解" },
-        { "slide_no": "016", "title": "痛点十二：外部依赖识别不足", "layout_type": "svg_full", "page_purpose": "痛点详解" },
-        { "slide_no": "017", "title": "解决方案原理", "layout_type": "two_column", "page_purpose": "原理讲解" },
-        { "slide_no": "018", "title": "Visual-Spec 完整工作流", "layout_type": "svg_full", "page_purpose": "方案概览" },
-        { "slide_no": "019", "title": "核心能力全景", "layout_type": "nine_grid", "page_purpose": "能力总览" },
-        { "slide_no": "020", "title": "/vspec:new 工作流程", "layout_type": "svg_full", "page_purpose": "命令详解" },
-        { "slide_no": "021", "title": "详细设计：/vspec:detail", "layout_type": "svg_full", "page_purpose": "命令详解" },
-        { "slide_no": "022", "title": "确认与验证流程", "layout_type": "svg_full", "page_purpose": "流程展示" },
-        { "slide_no": "023", "title": "原型验证：/vspec:verify", "layout_type": "svg_full", "page_purpose": "命令详解" },
-        { "slide_no": "024", "title": "质量检查：/vspec:qc", "layout_type": "svg_full", "page_purpose": "命令详解" },
-        { "slide_no": "025", "title": "集成实现：/vspec:impl", "layout_type": "svg_full", "page_purpose": "命令详解" },
-        { "slide_no": "026", "title": "自动化测试：/vspec:append-test", "layout_type": "title_bullets", "page_purpose": "命令详解" },
-        { "slide_no": "027", "title": "规划排期：/vspec:plan", "layout_type": "svg_full", "page_purpose": "命令详解" },
-        { "slide_no": "028", "title": "验收用例：/vspec:accept", "layout_type": "svg_full", "page_purpose": "命令详解" },
-        { "slide_no": "029", "title": "存量升级：/vspec:upgrade", "layout_type": "title_bullets", "page_purpose": "命令详解" },
-        { "slide_no": "030", "title": "效果对比", "layout_type": "before_after", "page_purpose": "强化价值" },
-        { "slide_no": "031", "title": "谁应该用 visual-spec", "layout_type": "four_grid", "page_purpose": "目标用户" },
-        { "slide_no": "032", "title": "典型应用场景", "layout_type": "journey_map", "page_purpose": "场景展示" },
-        { "slide_no": "033", "title": "马上开始", "layout_type": "summary", "page_purpose": "行动引导" },
-        { "slide_no": "034", "title": "谢谢观看", "layout_type": "thank_you", "page_purpose": "结束" }
+        {
+          "slide_no": "001",
+          "title": "封面",
+          "layout_type": "cover",
+          "page_purpose": "开场"
+        },
+        {
+          "slide_no": "002",
+          "title": "目录",
+          "layout_type": "agenda",
+          "page_purpose": "总览结构"
+        },
+        {
+          "slide_no": "003",
+          "title": "章节分隔",
+          "layout_type": "section_divider",
+          "page_purpose": "带入场景"
+        },
+        {
+          "slide_no": "004",
+          "title": "9 个团队常见需求痛点",
+          "layout_type": "nine_grid",
+          "page_purpose": "痛点总览"
+        },
+        {
+          "slide_no": "005",
+          "title": "更多需求痛点",
+          "layout_type": "four_grid",
+          "page_purpose": "额外痛点总览"
+        },
+        {
+          "slide_no": "006",
+          "title": "痛点一：需求模糊",
+          "layout_type": "svg_full",
+          "page_purpose": "痛点详解"
+        },
+        {
+          "slide_no": "007",
+          "title": "痛点二：需求质量不高",
+          "layout_type": "svg_full",
+          "page_purpose": "痛点详解"
+        },
+        {
+          "slide_no": "008",
+          "title": "痛点三：验收标准缺失",
+          "layout_type": "svg_full",
+          "page_purpose": "痛点详解"
+        },
+        {
+          "slide_no": "009",
+          "title": "痛点四：返工成本",
+          "layout_type": "svg_full",
+          "page_purpose": "痛点详解"
+        },
+        {
+          "slide_no": "010",
+          "title": "痛点五：信息分散",
+          "layout_type": "svg_full",
+          "page_purpose": "痛点详解"
+        },
+        {
+          "slide_no": "011",
+          "title": "痛点六：设计遗漏",
+          "layout_type": "svg_full",
+          "page_purpose": "痛点详解"
+        },
+        {
+          "slide_no": "012",
+          "title": "痛点七：流程断裂",
+          "layout_type": "svg_full",
+          "page_purpose": "痛点详解"
+        },
+        {
+          "slide_no": "013",
+          "title": "痛点八：不可追溯",
+          "layout_type": "svg_full",
+          "page_purpose": "痛点详解"
+        },
+        {
+          "slide_no": "014",
+          "title": "痛点九：沟通成本",
+          "layout_type": "svg_full",
+          "page_purpose": "痛点详解"
+        },
+        {
+          "slide_no": "015",
+          "title": "痛点十：缺少确认与验证过程",
+          "layout_type": "svg_full",
+          "page_purpose": "痛点详解"
+        },
+        {
+          "slide_no": "016",
+          "title": "痛点十一：需求频繁变更",
+          "layout_type": "svg_full",
+          "page_purpose": "痛点详解"
+        },
+        {
+          "slide_no": "017",
+          "title": "痛点十二：外部依赖识别不足",
+          "layout_type": "svg_full",
+          "page_purpose": "痛点详解"
+        },
+        {
+          "slide_no": "018",
+          "title": "解决方案原理",
+          "layout_type": "two_column",
+          "page_purpose": "原理讲解"
+        },
+        {
+          "slide_no": "019",
+          "title": "Visual-Spec 完整工作流",
+          "layout_type": "svg_full",
+          "page_purpose": "方案概览"
+        },
+        {
+          "slide_no": "020",
+          "title": "核心能力全景",
+          "layout_type": "nine_grid",
+          "page_purpose": "能力总览"
+        },
+        {
+          "slide_no": "021",
+          "title": "/vspec:new 工作流程",
+          "layout_type": "svg_full",
+          "page_purpose": "命令详解"
+        },
+        {
+          "slide_no": "022",
+          "title": "详细设计：/vspec:detail",
+          "layout_type": "svg_full",
+          "page_purpose": "命令详解"
+        },
+        {
+          "slide_no": "023",
+          "title": "确认与验证流程",
+          "layout_type": "svg_full",
+          "page_purpose": "流程展示"
+        },
+        {
+          "slide_no": "024",
+          "title": "原型验证：/vspec:verify",
+          "layout_type": "svg_full",
+          "page_purpose": "命令详解"
+        },
+        {
+          "slide_no": "025",
+          "title": "质量检查：/vspec:qc",
+          "layout_type": "svg_full",
+          "page_purpose": "命令详解"
+        },
+        {
+          "slide_no": "026",
+          "title": "集成实现：/vspec:impl",
+          "layout_type": "svg_full",
+          "page_purpose": "命令详解"
+        },
+        {
+          "slide_no": "027",
+          "title": "自动化测试：/vspec:append-test",
+          "layout_type": "title_bullets",
+          "page_purpose": "命令详解"
+        },
+        {
+          "slide_no": "028",
+          "title": "规划排期：/vspec:plan",
+          "layout_type": "svg_full",
+          "page_purpose": "命令详解"
+        },
+        {
+          "slide_no": "029",
+          "title": "验收用例：/vspec:accept",
+          "layout_type": "svg_full",
+          "page_purpose": "命令详解"
+        },
+        {
+          "slide_no": "030",
+          "title": "存量升级：/vspec:upgrade",
+          "layout_type": "title_bullets",
+          "page_purpose": "命令详解"
+        },
+        {
+          "slide_no": "031",
+          "title": "效果对比",
+          "layout_type": "before_after",
+          "page_purpose": "强化价值"
+        },
+        {
+          "slide_no": "032",
+          "title": "谁应该用 visual-spec",
+          "layout_type": "four_grid",
+          "page_purpose": "目标用户"
+        },
+        {
+          "slide_no": "033",
+          "title": "典型应用场景",
+          "layout_type": "journey_map",
+          "page_purpose": "场景展示"
+        },
+        {
+          "slide_no": "034",
+          "title": "马上开始",
+          "layout_type": "summary",
+          "page_purpose": "行动引导"
+        },
+        {
+          "slide_no": "035",
+          "title": "谢谢观看",
+          "layout_type": "thank_you",
+          "page_purpose": "结束"
+        }
       ]
     }
   ]

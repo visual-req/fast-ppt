@@ -1,9 +1,54 @@
 {
-  "layout_type": "svg_full",
+  "layout_type": "process_flow",
   "title": "库存预测 AI 工作原理",
-  "svg": {
-    "src": "work/assets/002/029-inventory-ai.svg",
-    "alt": "库存预测 AI：数据采集 → 特征工程 → 模型推理 → 决策闭环",
-    "caption": "四层 pipeline + 反馈闭环：预测准确率 >=85%，缺货率下降 60%"
-  }
+  "steps": [
+    {
+      "icon": "database",
+      "title": "数据采集",
+      "subtitle": "多源业务与外部数据统一进入预测链路",
+      "panels": [
+        { "title": "ERP 历史订单", "text": "销量 / 客单 / 季节" },
+        { "title": "MES 生产数据", "text": "排产 / 产线 / 节拍" },
+        { "title": "WMS 库存数据", "text": "实时库存 / 库龄" },
+        { "title": "外部数据", "text": "天气 / 节假日 / 行业" }
+      ]
+    },
+    {
+      "icon": "flow",
+      "title": "数据融合与特征工程",
+      "subtitle": "输出训练数据集与实时推理特征向量",
+      "bullets": [
+        "数据清洗与缺失值填充",
+        "特征构建：时序窗口 / 滑动平均 / 交叉特征",
+        "归一化与统一口径"
+      ]
+    },
+    {
+      "icon": "spark",
+      "title": "AI 模型推理",
+      "subtitle": "预测、异常检测与补货建议协同运行",
+      "panels": [
+        { "title": "时序预测模型", "text": "Prophet / LSTM / LightGBM" },
+        { "title": "异常检测模型", "text": "Isolation Forest / AutoEncoder" },
+        { "title": "补货建议引擎", "text": "安全库存 -> 建议补货量" }
+      ]
+    },
+    {
+      "icon": "operation",
+      "title": "决策与执行",
+      "subtitle": "执行结果回写训练集，持续优化模型精度",
+      "bullets": [
+        "自动生成补货计划",
+        "人工审批 / 自动执行",
+        "下发 WMS 出库并实时跟踪库存水位"
+      ]
+    }
+  ],
+  "footer_cards": [
+    { "title": "预测准确率", "value": ">= 85%" },
+    { "title": "缺货率", "value": "↓ 60%" },
+    { "title": "库存周转", "value": "↑ 40%" },
+    { "title": "呆滞库存", "value": "↓ 45%" }
+  ],
+  "summary": "四层 pipeline + 反馈闭环：从数据采集、特征构建、模型推理到补货执行，持续回写结果优化预测能力。"
 }

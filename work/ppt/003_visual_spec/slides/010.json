@@ -1,9 +1,9 @@
 {
   "layout_type": "svg_full",
-  "title": "痛点六：设计遗漏——PRD 只写功能，不写技术约束",
+  "title": "痛点五：信息分散——没有单一事实来源",
   "svg": {
-    "src": "work/assets/003/009-pain-design-gaps.svg",
-    "alt": "PRD vs 实际需要设计维度",
-    "caption": "PRD 里一句话「用户可管理商品」，实际需要覆盖 RBAC 权限、数据权限、校验规则、状态机、操作日志、并发锁等 20+ 设计维度。开发凭经验补设计 → 质量因人而异 → 返工成本最高。用 /vspec:detail 自动展开全部维度。"
+    "src": "work/assets/003/008-pain-scattered-info.svg",
+    "alt": "信息分散对比图",
+    "caption": "当前：需求散落在 PRD、飞书群聊、Jira、会议纪要 5 个信息源，0 个权威版本。用 visual-spec 后：一份结构化需求基线 = 所有角色的单一事实来源（SSOT），变更自动通知相关方。从 8 轮对齐降到 2 轮。"
   }
 }

@@ -1,7 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
-<rect width="1600" height="900" fill="#f8fafc"/>
-<rect x="60" y="50" width="1480" height="800" rx="32" fill="#ffffff" stroke="#dbeafe" stroke-width="2"/>
-<text x="110" y="126" fill="#0f172a" font-size="44" font-family="Arial, sans-serif" font-weight="700">課題提起</text>
+  <defs>
+    <linearGradient id="pageBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f7fb"/>
+      <stop offset="100%" stop-color="#eef3f9"/>
+    </linearGradient>
+    <filter id="panelShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#1e3a5f" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+<rect width="1600" height="900" fill="url(#pageBg)"/>
+<rect x="54" y="44" width="1492" height="812" rx="36" fill="#ffffff" stroke="#d7e3f4" stroke-width="1.5" filter="url(#panelShadow)"/>
+<text x="110" y="126" fill="#143d7a" font-size="46" font-family="Arial, sans-serif" font-weight="700">問題提起</text>
 <rect x="110" y="190" width="300" height="220" rx="24" fill="#f8fafc" stroke="#e2e8f0"/>
 <rect x="450" y="190" width="300" height="220" rx="24" fill="#f8fafc" stroke="#e2e8f0"/>
 <rect x="790" y="190" width="300" height="220" rx="24" fill="#f8fafc" stroke="#e2e8f0"/>
@@ -10,12 +19,12 @@
 <text x="484" y="252" fill="#1d4ed8" font-size="26" font-family="Arial, sans-serif" font-weight="700">影響</text>
 <text x="824" y="252" fill="#1d4ed8" font-size="26" font-family="Arial, sans-serif" font-weight="700">根本原因仮説</text>
 <text x="1164" y="252" fill="#1d4ed8" font-size="26" font-family="Arial, sans-serif" font-weight="700">证据</text>
-<text x="144" y="314" fill="#334155" font-size="20" font-family="Arial, sans-serif">把问题拆成四个稳定观察面，</text>
-<text x="144" y="344" fill="#334155" font-size="20" font-family="Arial, sans-serif">避免只写一个空泛标题。</text>
-<text x="484" y="314" fill="#334155" font-size="20" font-family="Arial, sans-serif">单独说明影響范围、成本、</text>
-<text x="484" y="344" fill="#334155" font-size="20" font-family="Arial, sans-serif">优先级和业务后果。</text>
+<text x="144" y="314" fill="#334155" font-size="20" font-family="Arial, sans-serif">問題を4つの安定した観点に分解し、</text>
+<text x="144" y="344" fill="#334155" font-size="20" font-family="Arial, sans-serif">抽象的なタイトルだけで終わらせない。</text>
+<text x="484" y="314" fill="#334155" font-size="20" font-family="Arial, sans-serif">影響範囲・コスト・</text>
+<text x="484" y="344" fill="#334155" font-size="20" font-family="Arial, sans-serif">優先度と業務上の影響を明確にする。</text>
 <text x="824" y="314" fill="#334155" font-size="20" font-family="Arial, sans-serif">用“可验证的假设”而不是</text>
-<text x="824" y="344" fill="#334155" font-size="20" font-family="Arial, sans-serif">直接给出武断结论。</text>
-<text x="1164" y="314" fill="#334155" font-size="20" font-family="Arial, sans-serif">放数据、样例或观测事实，</text>
-<text x="1164" y="344" fill="#334155" font-size="20" font-family="Arial, sans-serif">让后续方案有依据。</text>
+<text x="824" y="344" fill="#334155" font-size="20" font-family="Arial, sans-serif">いきなり断定的な結論を出さない。</text>
+<text x="1164" y="314" fill="#334155" font-size="20" font-family="Arial, sans-serif">データ・事例・観測事実を置き、</text>
+<text x="1164" y="344" fill="#334155" font-size="20" font-family="Arial, sans-serif">後続施策の根拠にする。</text>
 </svg>

@@ -1,9 +1,56 @@
 {
-  "layout_type": "svg_full",
+  "layout_type": "process_flow",
   "title": "测试阶段：验收、自动化与归因",
-  "svg": {
-    "src": "work/assets/002/022-testing-phase-flow.svg",
-    "alt": "测试阶段三大核心能力：验收测试、自动化回归、缺陷归因的流程与关键技术",
-    "caption": "验收自动生成 → 回归智能筛选 → 缺陷自动归因 → 门禁自动判定，形成持续改进闭环"
-  }
+  "steps": [
+    {
+      "icon": "check",
+      "title": "验收测试",
+      "subtitle": "基于需求自动生成端到端验收用例",
+      "bullets": [
+        "需求解析：提取验收条件、场景路径、角色权限",
+        "场景生成：Given-When-Then + 签收标准"
+      ]
+    },
+    {
+      "icon": "refresh",
+      "title": "自动化测试",
+      "subtitle": "AI 智能选择回归范围，自动生成测试代码",
+      "bullets": [
+        "变更分析：识别受影响的模块、接口、数据流",
+        "代码生成：Mock、断言、边界值、异常用例自动填充"
+      ]
+    },
+    {
+      "icon": "search",
+      "title": "缺陷归因",
+      "subtitle": "失败用例自动关联变更、环境与历史模式",
+      "bullets": [
+        "多维关联：代码变更 + 环境差异 + 历史缺陷指纹",
+        "测试数据构造：边界值、异常输入、安全攻击场景"
+      ]
+    }
+  ],
+  "footer_cards": [
+    {
+      "title": "验收层",
+      "text": "Cucumber / Gherkin / Selenium",
+      "note": "自然语言 -> 可执行用例"
+    },
+    {
+      "title": "自动化层",
+      "text": "JUnit / pytest / TestNG",
+      "note": "变更影响分析 -> 精准回归"
+    },
+    {
+      "title": "归因层",
+      "text": "SHAP / 日志聚类 / 代码 diff 比对",
+      "note": "缺陷指纹库"
+    },
+    {
+      "title": "门禁层",
+      "text": "SonarQube / JaCoCo / 自定义质量策略",
+      "note": "自动准出判定"
+    }
+  ],
+  "summary": "核心思路：把测试从“被动执行”升级为“验收自动生成 -> 回归智能筛选 -> 缺陷自动归因 -> 门禁自动判定”的完整智能闭环。"
 }

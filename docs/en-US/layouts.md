@@ -17,7 +17,19 @@ The following layouts are available in `ppt-viewer`:
 - `pie_chart`, `donut_chart`, `bar_chart`, `line_chart`, `area_chart`, `waterfall_chart`, `funnel_chart`, `heatmap`, `treemap`, `sankey`, `gauge`, `radar_chart`, `impact_effort`, `gantt_chart`
 
 ## Specialized
-- `mind_map`, `top_bottom`, `nine_grid`, `journey_map`, `plan_table`, `cost_benefit`, `raci`, `case_study`, `evidence_gallery`, `phases`, `swimlane_process`, `svg_full`, `comparison_table`, `steps`, `four_grid`, `matrix_2x2`, `quadrant_axes`, `coordinate_axis`, `scatter_plot`, `bubble_chart`
+- `mind_map`, `top_bottom`, `nine_grid`, `journey_map`, `plan_table`, `cost_benefit`, `raci`, `case_study`, `evidence_gallery`, `phases`, `swimlane_process`, `metro_loop`, `svg_full`, `comparison_table`, `steps`, `four_grid`, `matrix_2x2`, `quadrant_axes`, `coordinate_axis`, `scatter_plot`, `bubble_chart`
+
+## Recent Additions
+- `title_bullets` now also covers executive-summary pages with `subtitle` and `cards`
+- `steps` supports `icon + text + bullets` for linear rollout or integration paths
+- `phases` supports `narrow: true` for compact 5-phase overviews
+- `swimlane_process` can define `headers` for each stage column
+- `architecture_layered` supports `icon + text + bullets` for layered platform/system pages
+- `nine_grid` supports `icon + text + bullets` for system-boundary or platform-overview pages
+- `process_flow` now supports structured `steps + footer_cards + summary`, which fits input-process-output, stage chains, and workflow pages with result cards
+- `roadmap` now supports `items.period`, bottom `actions`, and a closing `goal` summary
+- `metro_loop` supports loop-style stages with a center card and bottom summary metrics
+- New or experimental layouts do not have to become standalone viewer components first; they may be delivered as `svg_full` assets in `work/assets/*.svg`
 
 ## Selection Principles
 - Page intent before layout choice

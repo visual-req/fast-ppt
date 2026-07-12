@@ -1,7 +1,7 @@
 {
   "layout_type": "nine_grid",
   "title": "业务 AI 落地能力全景",
-  "grid": [
+  "items": [
     {
       "icon": "qa",
       "title": "智能问答",

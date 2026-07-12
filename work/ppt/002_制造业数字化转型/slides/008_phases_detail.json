@@ -1,9 +1,51 @@
 {
-  "layout_type": "svg_full",
+  "layout_type": "nine_grid",
   "title": "流程系统建设：系统边界与协同",
-  "svg": {
-    "src": "work/assets/002/008-system-architecture-expanded.svg",
-    "alt": "制造业系统架构总览",
-    "caption": "ERP / PLM / MES / WMS / SCM / QMS / CMMS / SCADA / TMS 多系统协同"
-  }
+  "items": [
+    {
+      "icon": "chart",
+      "title": "ERP 企业资源计划",
+      "bullets": ["财务", "采购", "销售", "库存"]
+    },
+    {
+      "icon": "document",
+      "title": "PLM 产品生命周期",
+      "bullets": ["BOM", "工艺", "变更管理"]
+    },
+    {
+      "icon": "flow",
+      "title": "MES 制造执行",
+      "bullets": ["排产", "报工", "追溯"]
+    },
+    {
+      "icon": "check",
+      "title": "WMS 仓储管理",
+      "bullets": ["入库", "出库", "盘点"]
+    },
+    {
+      "icon": "portal",
+      "title": "SCM 供应链管理",
+      "bullets": ["计划协同", "采购协同", "供应商协同"]
+    },
+    {
+      "icon": "qa",
+      "title": "QMS 质量管理",
+      "bullets": ["检验", "SPC", "不合格品"]
+    },
+    {
+      "icon": "refactor",
+      "title": "CMMS 设备维护",
+      "bullets": ["点检", "保养", "维修"]
+    },
+    {
+      "icon": "dashboard",
+      "title": "SCADA / EMS",
+      "bullets": ["实时监控", "数采", "能效"]
+    },
+    {
+      "icon": "scale",
+      "title": "TMS 物流管理",
+      "bullets": ["运输计划", "配送跟踪", "签收回传"]
+    }
+  ]
 }

@@ -1,9 +1,9 @@
 {
   "layout_type": "svg_full",
-  "title": "痛点十二：外部依赖识别不足",
+  "title": "痛点十一：需求频繁变更，版本管理混乱",
   "svg": {
-    "src": "work/assets/003/012e-external-dep.svg",
-    "alt": "外部依赖识别不足",
-    "caption": "当前：「订单取消后退款」只说了功能，没说需要对接支付网关/库存/物流/风控系统。visual-spec 解法：/vspec:detail 自动展开 inter-service-calls 维度，详细设计阶段列出所有上下游接口依赖、调用方式、超时策略、降级方案"
+    "src": "work/assets/003/012d-frequent-changes.svg",
+    "alt": "需求频繁变更与版本混乱",
+    "caption": "当前：PRD_v3.docx → PRD_final.docx → PRD_final2_修.docx，变更靠群聊通知。visual-spec 解法：/vspec:refine 变更一处自动同步下游（设计/原型/测试），所有变更记录在版本树上，关联角色自动收到通知"
   }
 }

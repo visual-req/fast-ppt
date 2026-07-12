@@ -13,7 +13,7 @@
   <text x="90" y="155" font-size="20" fill="#475569">把能力做成“可触发、可落盘、可质检、可回改”的稳定单元</text>
 
   <g filter="url(#shadow)">
-    <rect x="220" y="220" width="1160" height="560" rx="28" fill="#ffffff" stroke="#cbd5e1"/>
+    <rect x="220" y="208" width="1160" height="640" rx="28" fill="#ffffff" stroke="#cbd5e1"/>
   </g>
 
   <g filter="url(#shadow)">

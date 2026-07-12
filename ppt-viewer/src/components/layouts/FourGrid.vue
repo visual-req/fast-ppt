@@ -1,50 +1,42 @@
 <script setup lang="ts">
-defineProps<{ slide: any }>();
+import { computed } from "vue";
+import { getLayoutIconSvg } from "../../lib/layoutIcons";
 
-function toItems(value: unknown) {
-  if (!Array.isArray(value) || value.length === 0) return Array.from({ length: 4 }).map(() => ({}));
-  return value.slice(0, 4);
-}
+const props = defineProps<{ slide: any }>();
 
-function toText(value: unknown) {
+type GridItem = {
+  title?: string;
+  text?: string;
+  bullets?: string[];
+  icon?: string;
+};
+
+const items = computed<GridItem[]>(() => {
+  const raw = props.slide?.grid || props.slide?.items;
+  if (!Array.isArray(raw) || raw.length === 0) {
+    return Array.from({ length: 4 }).map(() => ({}));
+  }
+  return raw.slice(0, 4);
+});
+
+function toText(value: unknown): string {
   return typeof value === "string" ? value : "";
 }
 
 function toBullets(value: unknown): string[] {
-  return Array.isArray(value) ? value.map((v) => String(v ?? "")).filter(Boolean) : [];
+  return Array.isArray(value) ? value.map((v: unknown) => String(v ?? "")).filter(Boolean) : [];
 }
 
-function getIconSvg(name: unknown) {
-  const key = typeof name === "string" ? name : "";
-  const svgByName: Record<string, string> = {
-    target:
-      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="4"></circle><circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none"></circle></svg>',
-    grid:
-      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="7" height="7" rx="1.5"></rect><rect x="13" y="4" width="7" height="7" rx="1.5"></rect><rect x="4" y="13" width="7" height="7" rx="1.5"></rect><rect x="13" y="13" width="7" height="7" rx="1.5"></rect></svg>',
-    chart:
-      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19h16"></path><path d="M7 16V9"></path><path d="M12 16V5"></path><path d="M17 16v-3"></path></svg>',
-    shield:
-      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v5c0 5 3.4 8 7 10 3.6-2 7-5 7-10V6z"></path><path d="m9 12 2 2 4-4"></path></svg>',
-    check:
-      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>',
-    refactor:
-      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path><polyline points="12 6 16 10 12 14"></polyline><line x1="8" y1="6" x2="8" y2="18.01"></line></svg>',
-    flow:
-      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>',
-    app:
-      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>',
-    search:
-      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>',
-    sparkle:
-      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="12 3 12 21"></polyline><polyline points="3 12 21 12"></polyline></svg>'
-  };
-  return svgByName[key] ?? "";
-}
+const getIconSvg = getLayoutIconSvg;
 </script>
 
 <template>
-  <div class="grid2">
-    <div v-for="(it, i) in toItems(slide?.grid || slide?.items)" :key="i" class="card fgCard">
+  <div class="fourGridRoot">
+    <div class="fourGridAxis fourGridAxisHorizontal"></div>
+    <div class="fourGridAxis fourGridAxisVertical"></div>
+
+    <div v-for="(it, i) in items" :key="i" class="fgCard">
+      <div class="fgIndex">{{ String(i + 1).padStart(2, "0") }}</div>
       <div class="fgHeader">
         <div v-if="getIconSvg(it?.icon)" class="fgIcon" v-html="getIconSvg(it?.icon)"></div>
         <div class="fgTitle">{{ toText(it?.title) || `模块 ${Number(i) + 1}` }}</div>
@@ -58,11 +50,66 @@ function getIconSvg(name: unknown) {
 </template>
 
 <style scoped>
-.fgCard {
+.fourGridRoot {
+  position: relative;
   display: grid;
-  gap: 10px;
-  min-height: 150px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  height: 100%;
+  padding: 18px;
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at top right, var(--fppt-secondary-soft, rgba(77, 160, 255, 0.14)), transparent 32%),
+    linear-gradient(180deg, var(--fppt-surface-alt, #f7faff) 0%, var(--fppt-page-bg, #eef4fb) 100%);
+  border: 1px solid color-mix(in srgb, var(--fppt-border, #d7e3f4) 96%, transparent);
+  overflow: hidden;
+}
+
+.fourGridAxis {
+  position: absolute;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--fppt-secondary, #4da0ff) 18%, transparent) 0%, color-mix(in srgb, var(--fppt-primary, #1d6fe8) 8%, transparent) 100%);
+  border-radius: 999px;
+}
+
+.fourGridAxisHorizontal {
+  left: 22%;
+  right: 22%;
+  top: calc(50% - 3px);
+  height: 6px;
+}
+
+.fourGridAxisVertical {
+  top: 20%;
+  bottom: 20%;
+  left: calc(50% - 3px);
+  width: 6px;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--fppt-secondary, #4da0ff) 18%, transparent) 0%, color-mix(in srgb, var(--fppt-primary, #1d6fe8) 8%, transparent) 100%);
+}
+
+.fgCard {
+  position: relative;
+  z-index: 1;
+  display: grid;
   align-content: start;
+  gap: 10px;
+  min-height: 164px;
+  padding: 18px;
+  border-radius: 24px;
+  background: color-mix(in srgb, var(--fppt-surface, #ffffff) 95%, transparent);
+  border: 1px solid color-mix(in srgb, var(--fppt-border, #d7e3f4) 96%, transparent);
+  box-shadow: 0 18px 34px rgba(20, 61, 122, 0.08);
+}
+
+.fgIndex {
+  width: 44px;
+  height: 28px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(90deg, var(--fppt-secondary, #4da0ff) 0%, var(--fppt-primary, #1d6fe8) 100%);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 800;
 }
 
 .fgHeader {
@@ -72,13 +119,13 @@ function getIconSvg(name: unknown) {
 }
 
 .fgIcon {
-  width: 32px;
-  height: 32px;
-  border-radius: 10px;
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
   display: grid;
   place-items: center;
-  background: rgba(37, 99, 235, 0.1);
-  color: #2563eb;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--fppt-secondary, #4da0ff) 18%, transparent) 0%, color-mix(in srgb, var(--fppt-primary, #1d6fe8) 8%, transparent) 100%);
+  color: var(--fppt-primary, #1d6fe8);
   flex-shrink: 0;
 }
 
@@ -88,25 +135,43 @@ function getIconSvg(name: unknown) {
 }
 
 .fgTitle {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 800;
   line-height: 1.35;
-  color: #0f172a;
+  color: var(--fppt-text, #143d7a);
 }
 
 .fgText {
   font-size: 13px;
-  line-height: 1.55;
-  color: #475569;
+  line-height: 1.6;
+  color: var(--fppt-muted, #475569);
+  font-weight: 600;
 }
 
 .fgBullets {
   margin: 0;
-  padding-left: 18px;
+  padding: 0;
+  list-style: none;
   display: grid;
   gap: 6px;
-  font-size: 13px;
+}
+
+.fgBullets li {
+  position: relative;
+  padding-left: 16px;
+  font-size: 12px;
   line-height: 1.5;
-  color: #475569;
+  color: var(--fppt-muted, #475569);
+}
+
+.fgBullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--fppt-secondary, #4da0ff) 0%, var(--fppt-primary, #1d6fe8) 100%);
 }
 </style>

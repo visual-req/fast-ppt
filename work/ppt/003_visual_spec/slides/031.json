@@ -1,26 +1,12 @@
 {
-  "layout_type": "four_grid",
-  "title": "谁应该用 visual-spec",
-  "items": [
-    {
-      "icon": "document",
-      "title": "产品经理",
-      "bullets": ["快速验证需求完整性", "一键生成原型对齐预期", "变更后自动同步下游"]
-    },
-    {
-      "icon": "dashboard",
-      "title": "技术负责人",
-      "bullets": ["降低设计遗漏", "统一需求到设计的标准", "减少评审返工轮次"]
-    },
-    {
-      "icon": "code",
-      "title": "开发工程师",
-      "bullets": ["详细设计直接指导编码", "边界条件不再靠猜测", "/vspec:impl 生成代码骨架"]
-    },
-    {
-      "icon": "test",
-      "title": "测试工程师",
-      "bullets": ["/vspec:accept 自动生成验收用例", "覆盖正常/边界/异常路径", "自动化测试代码直接可用"]
-    }
-  ]
+  "layout_type": "before_after",
+  "title": "效果对比：用与不用的差别",
+  "before": {
+    "title": "不用 visual-spec",
+    "bullets": ["沟通 8 轮仍理解不一致", "返工率 40%", "需求准确率 60%", "边界条件靠开发猜", "验收标准口头传递", "需求→设计→实现脱节"]
+  },
+  "after": {
+    "title": "用 visual-spec",
+    "bullets": ["沟通 2 轮对齐", "返工率 <10%", "需求准确率 95%", "边界条件自动检出", "验收脚本自动生成", "全链路可追溯"]
+  }
 }

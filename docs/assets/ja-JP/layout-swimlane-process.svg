@@ -1,7 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
-<rect width="1600" height="900" fill="#f8fafc"/>
-<rect x="60" y="50" width="1480" height="800" rx="32" fill="#ffffff" stroke="#dbeafe" stroke-width="2"/>
-<text x="110" y="126" fill="#0f172a" font-size="44" font-family="Arial, sans-serif" font-weight="700">スイムレーンプロセス</text>
+  <defs>
+    <linearGradient id="pageBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f7fb"/>
+      <stop offset="100%" stop-color="#eef3f9"/>
+    </linearGradient>
+    <filter id="panelShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#1e3a5f" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+<rect width="1600" height="900" fill="url(#pageBg)"/>
+<rect x="54" y="44" width="1492" height="812" rx="36" fill="#ffffff" stroke="#d7e3f4" stroke-width="1.5" filter="url(#panelShadow)"/>
+<text x="110" y="126" fill="#143d7a" font-size="46" font-family="Arial, sans-serif" font-weight="700">スイムレーンプロセス</text>
 <rect x="110" y="190" width="180" height="58" rx="18" fill="#f8fafc" stroke="#cbd5e1"/>
 <rect x="320" y="190" width="280" height="58" rx="18" fill="#eff6ff" stroke="#bfdbfe"/>
 <rect x="630" y="190" width="280" height="58" rx="18" fill="#eff6ff" stroke="#bfdbfe"/>
@@ -9,32 +18,32 @@
 <text x="162" y="226" fill="#1d4ed8" font-size="22" font-family="Arial, sans-serif" font-weight="700">スイムレーン</text>
 <text x="418" y="226" fill="#1d4ed8" font-size="22" font-family="Arial, sans-serif" font-weight="700">ステップ 1</text>
 <text x="728" y="226" fill="#1d4ed8" font-size="22" font-family="Arial, sans-serif" font-weight="700">ステップ 2</text>
-<text x="1038" y="226" fill="#1d4ed8" font-size="22" font-family="Arial, sans-serif" font-weight="700">步骤 3</text>
+<text x="1038" y="226" fill="#1d4ed8" font-size="22" font-family="Arial, sans-serif" font-weight="700">ステップ 3</text>
 
 <rect x="110" y="282" width="180" height="94" rx="20" fill="#dbeafe"/>
 <rect x="320" y="282" width="280" height="94" rx="20" fill="#ffffff" stroke="#cbd5e1"/>
 <rect x="630" y="282" width="280" height="94" rx="20" fill="#ffffff" stroke="#cbd5e1"/>
 <rect x="940" y="282" width="280" height="94" rx="20" fill="#ffffff" stroke="#cbd5e1"/>
 <text x="160" y="338" fill="#1d4ed8" font-size="24" font-family="Arial, sans-serif" font-weight="700">用户</text>
-<text x="352" y="338" fill="#334155" font-size="22" font-family="Arial, sans-serif">提出需求</text>
-<text x="668" y="338" fill="#334155" font-size="22" font-family="Arial, sans-serif">确认大纲</text>
-<text x="980" y="338" fill="#334155" font-size="22" font-family="Arial, sans-serif">查看预览</text>
+<text x="352" y="338" fill="#334155" font-size="22" font-family="Arial, sans-serif">要件を出す</text>
+<text x="668" y="338" fill="#334155" font-size="22" font-family="Arial, sans-serif">アウトラインを確認</text>
+<text x="980" y="338" fill="#334155" font-size="22" font-family="Arial, sans-serif">プレビューを確認</text>
 
 <rect x="110" y="402" width="180" height="94" rx="20" fill="#dbeafe"/>
 <rect x="320" y="402" width="280" height="94" rx="20" fill="#ffffff" stroke="#cbd5e1"/>
 <rect x="630" y="402" width="280" height="94" rx="20" fill="#ffffff" stroke="#cbd5e1"/>
 <rect x="940" y="402" width="280" height="94" rx="20" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="160" y="458" fill="#1d4ed8" font-size="24" font-family="Arial, sans-serif" font-weight="700">Skill</text>
-<text x="346" y="458" fill="#334155" font-size="22" font-family="Arial, sans-serif">读取输入</text>
-<text x="660" y="458" fill="#334155" font-size="22" font-family="Arial, sans-serif">生成 deck</text>
-<text x="978" y="458" fill="#334155" font-size="22" font-family="Arial, sans-serif">回改重试</text>
+<text x="160" y="458" fill="#1d4ed8" font-size="24" font-family="Arial, sans-serif" font-weight="700">スキル</text>
+<text x="346" y="458" fill="#334155" font-size="22" font-family="Arial, sans-serif">入力を読む</text>
+<text x="660" y="458" fill="#334155" font-size="22" font-family="Arial, sans-serif">deck を生成</text>
+<text x="978" y="458" fill="#334155" font-size="22" font-family="Arial, sans-serif">修正して再試行</text>
 
 <rect x="110" y="522" width="180" height="94" rx="20" fill="#dbeafe"/>
 <rect x="320" y="522" width="280" height="94" rx="20" fill="#ffffff" stroke="#cbd5e1"/>
 <rect x="630" y="522" width="280" height="94" rx="20" fill="#ffffff" stroke="#cbd5e1"/>
 <rect x="940" y="522" width="280" height="94" rx="20" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="126" y="578" fill="#1d4ed8" font-size="24" font-family="Arial, sans-serif" font-weight="700">前端预览</text>
-<text x="338" y="578" fill="#334155" font-size="22" font-family="Arial, sans-serif">等待产物</text>
-<text x="658" y="578" fill="#334155" font-size="22" font-family="Arial, sans-serif">读取 deck</text>
-<text x="968" y="578" fill="#334155" font-size="22" font-family="Arial, sans-serif">浏览器展示</text>
+<text x="126" y="578" fill="#1d4ed8" font-size="24" font-family="Arial, sans-serif" font-weight="700">フロントエンドプレビュー</text>
+<text x="338" y="578" fill="#334155" font-size="22" font-family="Arial, sans-serif">生成物を待つ</text>
+<text x="658" y="578" fill="#334155" font-size="22" font-family="Arial, sans-serif">deck を読む</text>
+<text x="968" y="578" fill="#334155" font-size="22" font-family="Arial, sans-serif">ブラウザ表示</text>
 </svg>

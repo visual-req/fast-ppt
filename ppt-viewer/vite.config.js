@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import fs from "node:fs/promises";
 import path from "node:path";
 import vue from "@vitejs/plugin-vue";
+import { exportDeckToPptx } from "../lib/pptxExport.mjs";
 
 export default defineConfig({
   plugins: [
@@ -23,7 +24,37 @@ export default defineConfig({
           }
         }
 
-        async function resolveProjectDir() {
+        function normalizeProjectName(value) {
+          return typeof value === "string" ? value.trim() : "";
+        }
+
+        async function findProjectDirByToken(token) {
+          const normalized = normalizeProjectName(token);
+          if (!normalized) return null;
+
+          const exact = path.resolve(workPptDir, normalized);
+          if (await fileExists(exact)) return exact;
+
+          try {
+            const entries = await fs.readdir(workPptDir, { withFileTypes: true });
+            const candidates = entries
+              .filter((e) => e.isDirectory())
+              .map((e) => e.name)
+              .filter((name) => name === normalized || name.startsWith(`${normalized}_`));
+            if (candidates.length > 0) return path.resolve(workPptDir, candidates.sort()[0]);
+          } catch {}
+
+          return null;
+        }
+
+        async function resolveProjectDir(searchParams) {
+          const requestedProject = normalizeProjectName(searchParams?.get("project"));
+          if (requestedProject) {
+            const matchedDir = await findProjectDirByToken(requestedProject);
+            if (matchedDir) return matchedDir;
+            return path.resolve(workPptDir, requestedProject);
+          }
+
           const deckPathEnv = process.env.DECK_PATH ?? process.env.OUTLINE_PATH;
           if (deckPathEnv) return path.dirname(path.resolve(deckPathEnv));
 
@@ -75,9 +106,10 @@ export default defineConfig({
           return await fs.readFile(path.join(projectDir, "outline.json"), "utf8");
         }
 
-        const serveDeck = async (_req, res) => {
+        const serveDeck = async (req, res) => {
           try {
-            const projectDir = await resolveProjectDir();
+            const reqUrl = new URL(req.url ?? "/", "http://localhost");
+            const projectDir = await resolveProjectDir(reqUrl.searchParams);
             const content = await loadDeck(projectDir);
             res.statusCode = 200;
             res.setHeader("content-type", "text/plain; charset=utf-8");
@@ -91,6 +123,22 @@ export default defineConfig({
 
         server.middlewares.use("/api/deck", serveDeck);
         server.middlewares.use("/api/outline", serveDeck);
+        server.middlewares.use("/api/export/pptx", async (req, res) => {
+          try {
+            const reqUrl = new URL(req.url ?? "/", "http://localhost");
+            const projectDir = await resolveProjectDir(reqUrl.searchParams);
+            const style = normalizeProjectName(reqUrl.searchParams.get("style"));
+            const out = await exportDeckToPptx(projectDir, style ? { style } : undefined);
+            res.statusCode = 200;
+            res.setHeader("content-type", "application/vnd.openxmlformats-officedocument.presentationml.presentation");
+            res.setHeader("content-disposition", `attachment; filename="${style ? `${path.basename(projectDir)}-${style}` : path.basename(projectDir)}.pptx"`);
+            res.end(out);
+          } catch (e) {
+            res.statusCode = 500;
+            res.setHeader("content-type", "text/plain; charset=utf-8");
+            res.end(String(e?.stack ?? e));
+          }
+        });
 
         server.middlewares.use("/work", async (req, res) => {
           try {

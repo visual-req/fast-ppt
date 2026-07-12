@@ -1,6 +1,7 @@
 import Agenda from "./components/layouts/Agenda.vue";
 import Cover from "./components/layouts/Cover.vue";
 import TitleBullets from "./components/layouts/TitleBullets.vue";
+import Roadmap from "./components/layouts/Roadmap.vue";
 import Centered from "./components/layouts/Centered.vue";
 import ProblemStatement from "./components/layouts/ProblemStatement.vue";
 import Matrix2x2 from "./components/layouts/Matrix2x2.vue";
@@ -25,6 +26,7 @@ import IcicleTree from "./components/layouts/IcicleTree.vue";
 import ArchitectureLayered from "./components/layouts/ArchitectureLayered.vue";
 import DependencyGraph from "./components/layouts/DependencyGraph.vue";
 import JourneyMap from "./components/layouts/JourneyMap.vue";
+import ProcessFlow from "./components/layouts/ProcessFlow.vue";
 import SwimlaneProcess from "./components/layouts/SwimlaneProcess.vue";
 import BeforeAfter from "./components/layouts/BeforeAfter.vue";
 import ImpactEffort from "./components/layouts/ImpactEffort.vue";
@@ -37,14 +39,15 @@ import CaseStudy from "./components/layouts/CaseStudy.vue";
 import SectionDivider from "./components/layouts/SectionDivider.vue";
 import ThankYou from "./components/layouts/ThankYou.vue";
 import SvgCanvas from "./components/layouts/SvgCanvas.vue";
+import MetroLoop from "./components/layouts/MetroLoop.vue";
 
 export const layoutComponentMap: Record<string, any> = {
   cover: Cover,
   agenda: Agenda,
   title_bullets: TitleBullets,
   summary: TitleBullets,
-  roadmap: TitleBullets,
-  timeline: TitleBullets,
+  roadmap: Roadmap,
+  timeline: Roadmap,
   section_divider: SectionDivider,
   thank_you: ThankYou,
   appendix: Centered,
@@ -76,6 +79,7 @@ export const layoutComponentMap: Record<string, any> = {
   icicle_tree: IcicleTree,
   architecture_layered: ArchitectureLayered,
   dependency_graph: DependencyGraph,
+  process_flow: ProcessFlow,
   journey_map: JourneyMap,
   swimlane_process: SwimlaneProcess,
   fishbone: Fishbone,
@@ -88,7 +92,8 @@ export const layoutComponentMap: Record<string, any> = {
   milestones: TableLayout,
   cost_benefit: TableLayout,
   raci: Raci,
-  svg_full: SvgCanvas
+  svg_full: SvgCanvas,
+  metro_loop: MetroLoop
 };
 
 export function pickLayout(layoutType: unknown): any {

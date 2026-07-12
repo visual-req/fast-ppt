@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, onMounted, onUnmounted, ref } from "vue";
 import { pickLayout } from "./layoutRegistry";
+import { getStylePreset, listStylePresetKeys } from "./lib/stylePresets";
 
 type Slide = {
   layout_type?: string;
@@ -29,6 +30,9 @@ const jumpValue = ref(1);
 const isOutlineOpen = ref(false);
 const isExporting = ref(false);
 const currentProject = ref("");
+const selectedStyle = ref("");
+
+const stylePresetKeys = listStylePresetKeys();
 
 const total = computed(() => deck.value.slides.length);
 const currentSlide = computed(() => deck.value.slides[slideIndex.value] ?? null);
@@ -36,6 +40,27 @@ const layoutType = computed(() => (currentSlide.value && typeof currentSlide.val
 const LayoutComponent = computed(() => pickLayout(layoutType.value));
 const outlineTree = computed(() => buildOutlineTree(deck.value.slides));
 const hasOutline = computed(() => outlineTree.value.length > 0);
+const deckStyle = computed(() => {
+  const raw = deck.value.deck?.style;
+  return typeof raw === "string" ? raw : "";
+});
+const effectiveStyle = computed(() => selectedStyle.value || deckStyle.value || "consulting");
+const activePreset = computed(() => getStylePreset(effectiveStyle.value));
+const slideThemeStyle = computed(() => ({
+  "--fppt-page-bg": activePreset.value.page_bg,
+  "--fppt-surface": activePreset.value.surface,
+  "--fppt-surface-alt": activePreset.value.surface_alt,
+  "--fppt-border": activePreset.value.border,
+  "--fppt-text": activePreset.value.text,
+  "--fppt-muted": activePreset.value.muted,
+  "--fppt-primary": activePreset.value.primary,
+  "--fppt-primary-soft": `${activePreset.value.primary}1F`,
+  "--fppt-secondary": activePreset.value.secondary,
+  "--fppt-secondary-soft": `${activePreset.value.secondary}22`,
+  "--fppt-success": activePreset.value.success,
+  "--fppt-warning": activePreset.value.warning,
+  "--fppt-danger": activePreset.value.danger
+}));
 
 function clampIndex(i: number) {
   const t = total.value;
@@ -140,11 +165,20 @@ function renderStatus() {
   status.value = `${slideIndex.value + 1}/${total.value}${title ? " " + title : ""}`;
 }
 
+function syncUrlStyle(styleName: string) {
+  if (typeof window === "undefined") return;
+  const url = new URL(window.location.href);
+  if (styleName) url.searchParams.set("style", styleName);
+  else url.searchParams.delete("style");
+  window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
+}
+
 async function reload() {
   status.value = "加载中...";
   try {
     const params = new URLSearchParams(window.location.search);
     currentProject.value = params.get("project")?.trim() ?? "";
+    selectedStyle.value = params.get("style")?.trim() ?? "";
     const query = currentProject.value ? `?project=${encodeURIComponent(currentProject.value)}` : "";
     const res = await fetch(`/api/deck${query}`, { cache: "no-store" });
     if (!res.ok) throw new Error(`Failed to load deck: ${res.status} ${res.statusText}`);
@@ -160,6 +194,17 @@ async function reload() {
     jumpValue.value = 1;
     status.value = `加载失败：${e instanceof Error ? e.message : String(e)}`;
   }
+}
+
+function applyStylePreset(styleName: string) {
+  selectedStyle.value = styleName;
+  syncUrlStyle(styleName);
+  renderStatus();
+}
+
+function onStyleChange(event: Event) {
+  const target = event.target as HTMLSelectElement | null;
+  applyStylePreset(target?.value ?? "");
 }
 
 function prev() {
@@ -178,7 +223,10 @@ async function exportPptx() {
   if (isExporting.value) return;
   isExporting.value = true;
   try {
-    const query = currentProject.value ? `?project=${encodeURIComponent(currentProject.value)}` : "";
+    const params = new URLSearchParams();
+    if (currentProject.value) params.set("project", currentProject.value);
+    if (effectiveStyle.value) params.set("style", effectiveStyle.value);
+    const query = params.toString() ? `?${params.toString()}` : "";
     const res = await fetch(`/api/export/pptx${query}`, { cache: "no-store" });
     if (!res.ok) throw new Error(`Failed to export pptx: ${res.status} ${res.statusText}`);
     const blob = await res.blob();
@@ -244,6 +292,11 @@ onUnmounted(() => {
         <button class="button" type="button" :disabled="total <= 0 || slideIndex >= total - 1" @click="next">下一页</button>
         <input v-model.number="jumpValue" type="number" min="1" step="1" :max="Math.max(1, total)" @keydown.enter.prevent="go" />
         <button class="button" type="button" :disabled="total <= 0" @click="go">跳转</button>
+        <select class="select" :value="effectiveStyle" @change="onStyleChange">
+          <option v-for="styleKey in stylePresetKeys" :key="styleKey" :value="styleKey">
+            {{ styleKey }} / {{ getStylePreset(styleKey).name }}
+          </option>
+        </select>
         <button class="button" type="button" :disabled="total <= 0 || isExporting" @click="exportPptx">
           {{ isExporting ? "导出中..." : "导出 PPTX" }}
         </button>
@@ -296,18 +349,24 @@ onUnmounted(() => {
         </div>
       </aside>
       <div class="slideHost">
-        <section v-if="currentSlide" class="slide" :class="`layout-${layoutType}`">
+        <section v-if="currentSlide" class="slide" :class="`layout-${layoutType}`" :style="slideThemeStyle">
           <div class="slideInner">
             <div
               v-if="
                 !['cover', 'section_divider', 'thank_you', 'agenda'].includes(layoutType) &&
                 (layoutType !== 'svg_full' || (currentSlide as any)?.show_title !== false)
               "
+              class="slideTitleBar"
             >
+              <div class="slideTitleBarGlow"></div>
+              <div class="slideTitleBarAccent"></div>
+              <div class="slideTitleBarOrbit slideTitleBarOrbitLarge"></div>
+              <div class="slideTitleBarOrbit slideTitleBarOrbitSmall"></div>
+              <div class="slideTitleBarDots"></div>
               <h2 class="slideTitle">{{ currentSlide.title ?? "" }}</h2>
             </div>
-            <div>
-              <component :is="LayoutComponent" :slide="currentSlide" :ctx="{ index: slideIndex, total }" />
+            <div class="slideBody">
+              <component :is="LayoutComponent" :slide="currentSlide" :ctx="{ index: slideIndex, total, deck: { ...deck.deck, style: effectiveStyle } }" />
             </div>
           </div>
           <div class="footerMark">{{ slideIndex + 1 }}/{{ total }}</div>

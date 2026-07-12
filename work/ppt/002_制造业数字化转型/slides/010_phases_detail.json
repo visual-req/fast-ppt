@@ -1,9 +1,30 @@
 {
-  "layout_type": "svg_full",
+  "layout_type": "steps",
   "title": "数据贯通：全链路集成与追溯",
-  "svg": {
-    "src": "work/assets/002/010-data-integration.svg",
-    "alt": "数据集成架构",
-    "caption": "统一编码 → 时间同步 → 全链路追溯 → 30 秒 SLA"
-  }
+  "steps": [
+    {
+      "icon": "plan",
+      "title": "统一编码体系",
+      "text": "先统一主键和口径，打通跨系统映射。",
+      "bullets": ["统一物料、设备、工位、组织编码", "贯穿 ERP → MES → WMS 全链条"]
+    },
+    {
+      "icon": "fit",
+      "title": "NTP 时间同步",
+      "text": "保证多系统事件顺序可严格还原。",
+      "bullets": ["全系统毫秒级时钟对齐", "支撑追溯、审计与异常回放"]
+    },
+    {
+      "icon": "flow",
+      "title": "全链路追溯",
+      "text": "同时支持正向和反向追溯，覆盖完整工艺路线。",
+      "bullets": ["正向：原料 → 半成品 → 成品", "反向：成品 → 原料批次"]
+    },
+    {
+      "icon": "rank",
+      "title": "查询 SLA",
+      "text": "把集成结果落到可运营、可观测的检索体验。",
+      "bullets": ["30 秒内完成全链路数据检索", "支持实时仪表板与异常自动告警"]
+    }
+  ]
 }

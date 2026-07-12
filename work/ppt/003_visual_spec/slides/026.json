@@ -1,18 +1,9 @@
 {
-  "layout_type": "title_bullets",
-  "title": "自动化测试：/vspec:append-test",
-  "subtle": "验收用例直接变成可运行的测试代码",
-  "bullets": [
-    "读取 /specs/acceptance/ 中的验收用例 + 项目现有测试框架配置",
-    "自动生成适配当前技术栈的自动化测试代码",
-    "支持 JUnit（Java）、pytest（Python）、Cucumber（BDD）等多种格式",
-    "测试代码含：setup/teardown、断言逻辑、mock 数据、参数化用例",
-    "输出到项目 test/ 目录，可直接加入 CI 流水线运行",
-    "变更后重新运行 /vspec:refine，测试用例自动同步更新"
-  ],
-  "cards": [
-    { "title": "JUnit", "text": "Java 单元/集成测试" },
-    { "title": "pytest", "text": "Python 自动化测试" },
-    { "title": "Cucumber", "text": "BDD 行为驱动测试" }
-  ]
+  "layout_type": "svg_full",
+  "title": "集成实现：/vspec:impl",
+  "svg": {
+    "src": "work/assets/003/020-vspec-impl-flow.svg",
+    "alt": "集成实现流程",
+    "caption": "基于详细设计 + 数据模型 + 技术选型，自动生成 API Controller / Service / 前端页面代码（/specs/backend/），与项目现有技术栈、代码风格和开发规范对齐，消除从设计到代码的手工断层"
+  }
 }

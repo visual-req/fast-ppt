@@ -54,7 +54,7 @@ The project ships with three complete PPT example projects covering three of the
 6. Management & governance
 7. Roadmap & action items
 
-**Layouts Used**: cover / agenda / section_divider / svg_full / title_bullets / architecture_layered / phases / phases_detail / radar_chart / case_study / steps / kpi_cards / four_grid / two_column / org_roles / gantt_chart / plan_table / summary / thank_you
+**Layouts Used**: cover / agenda / section_divider / phases / architecture_layered / radar_chart / case_study / steps / title_bullets / nine_grid / org_roles / plan_table / summary / thank_you / svg_full
 
 ---
 

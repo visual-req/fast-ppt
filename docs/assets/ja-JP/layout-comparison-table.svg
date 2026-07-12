@@ -1,7 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
-<rect width="1600" height="900" fill="#f8fafc"/>
-<rect x="60" y="50" width="1480" height="800" rx="32" fill="#ffffff" stroke="#dbeafe" stroke-width="2"/>
-<text x="110" y="126" fill="#0f172a" font-size="44" font-family="Arial, sans-serif" font-weight="700">比較表</text>
+  <defs>
+    <linearGradient id="pageBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f7fb"/>
+      <stop offset="100%" stop-color="#eef3f9"/>
+    </linearGradient>
+    <filter id="panelShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#1e3a5f" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+<rect width="1600" height="900" fill="url(#pageBg)"/>
+<rect x="54" y="44" width="1492" height="812" rx="36" fill="#ffffff" stroke="#d7e3f4" stroke-width="1.5" filter="url(#panelShadow)"/>
+<text x="110" y="126" fill="#143d7a" font-size="46" font-family="Arial, sans-serif" font-weight="700">比較表</text>
 <rect x="110" y="188" width="1280" height="520" rx="26" fill="#f8fafc" stroke="#e2e8f0"/>
 <line x1="350" y1="188" x2="350" y2="708" stroke="#cbd5e1" stroke-width="2"/>
 <line x1="760" y1="188" x2="760" y2="708" stroke="#cbd5e1" stroke-width="2"/>
@@ -10,14 +19,14 @@
 <line x1="110" y1="542" x2="1390" y2="542" stroke="#cbd5e1" stroke-width="2"/>
 <text x="156" y="250" fill="#1d4ed8" font-size="28" font-family="Arial, sans-serif" font-weight="700">観点</text>
 <text x="470" y="250" fill="#1d4ed8" font-size="28" font-family="Arial, sans-serif" font-weight="700">プロンプト</text>
-<text x="934" y="250" fill="#1d4ed8" font-size="28" font-family="Arial, sans-serif" font-weight="700">Harness</text>
-<text x="156" y="362" fill="#334155" font-size="26" font-family="Arial, sans-serif">目标</text>
-<text x="470" y="362" fill="#334155" font-size="26" font-family="Arial, sans-serif">更会问</text>
-<text x="934" y="362" fill="#334155" font-size="26" font-family="Arial, sans-serif">更会做</text>
-<text x="156" y="490" fill="#334155" font-size="26" font-family="Arial, sans-serif">执行方式</text>
-<text x="470" y="490" fill="#334155" font-size="26" font-family="Arial, sans-serif">单轮生成</text>
-<text x="934" y="490" fill="#334155" font-size="26" font-family="Arial, sans-serif">生成-检查-回改循环</text>
-<text x="156" y="618" fill="#334155" font-size="26" font-family="Arial, sans-serif">产出稳定性</text>
-<text x="470" y="618" fill="#334155" font-size="26" font-family="Arial, sans-serif">依赖当次发挥</text>
-<text x="934" y="618" fill="#334155" font-size="26" font-family="Arial, sans-serif">依赖流程约束</text>
+<text x="934" y="250" fill="#1d4ed8" font-size="28" font-family="Arial, sans-serif" font-weight="700">ハーネス</text>
+<text x="156" y="362" fill="#334155" font-size="26" font-family="Arial, sans-serif">目標</text>
+<text x="470" y="362" fill="#334155" font-size="26" font-family="Arial, sans-serif">より上手に聞く</text>
+<text x="934" y="362" fill="#334155" font-size="26" font-family="Arial, sans-serif">より上手に実行する</text>
+<text x="156" y="490" fill="#334155" font-size="26" font-family="Arial, sans-serif">実行方式</text>
+<text x="470" y="490" fill="#334155" font-size="26" font-family="Arial, sans-serif">単発生成</text>
+<text x="934" y="490" fill="#334155" font-size="26" font-family="Arial, sans-serif">生成・チェック・修正ループ</text>
+<text x="156" y="618" fill="#334155" font-size="26" font-family="Arial, sans-serif">産出安定性</text>
+<text x="470" y="618" fill="#334155" font-size="26" font-family="Arial, sans-serif">その場の出来に依存</text>
+<text x="934" y="618" fill="#334155" font-size="26" font-family="Arial, sans-serif">プロセス制約に依存</text>
 </svg>

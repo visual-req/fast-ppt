@@ -1,20 +1,52 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
-<rect width="1600" height="900" fill="#f8fafc"/>
-<rect x="60" y="50" width="1480" height="800" rx="32" fill="#ffffff" stroke="#dbeafe" stroke-width="2"/>
-<text x="110" y="126" fill="#0f172a" font-size="44" font-family="Arial, sans-serif" font-weight="700">Steps</text>
-<rect x="120" y="260" width="280" height="280" rx="24" fill="#ffffff" stroke="#cbd5e1"/>
-<rect x="462" y="260" width="280" height="280" rx="24" fill="#ffffff" stroke="#cbd5e1"/>
-<rect x="804" y="260" width="280" height="280" rx="24" fill="#ffffff" stroke="#cbd5e1"/>
-<rect x="1146" y="260" width="280" height="280" rx="24" fill="#ffffff" stroke="#cbd5e1"/>
-<path d="M400 400 L462 400" stroke="#94a3b8" stroke-width="8" stroke-linecap="round"/>
-<path d="M742 400 L804 400" stroke="#94a3b8" stroke-width="8" stroke-linecap="round"/>
-<path d="M1084 400 L1146 400" stroke="#94a3b8" stroke-width="8" stroke-linecap="round"/>
-<text x="152" y="326" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">步骤 1</text>
-<text x="494" y="326" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">步骤 2</text>
-<text x="836" y="326" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">步骤 3</text>
-<text x="1178" y="326" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">步骤 4</text>
-<text x="152" y="386" fill="#334155" font-size="22" font-family="Arial, sans-serif">判断输入</text>
-<text x="494" y="386" fill="#334155" font-size="22" font-family="Arial, sans-serif">生成结果</text>
-<text x="836" y="386" fill="#334155" font-size="22" font-family="Arial, sans-serif">执行质检</text>
-<text x="1178" y="386" fill="#334155" font-size="22" font-family="Arial, sans-serif">交付预览</text>
+<defs>
+  <linearGradient id="pageBg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#f4f7fb"/>
+    <stop offset="100%" stop-color="#eef3f9"/>
+  </linearGradient>
+  <linearGradient id="navyGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#1f4f97"/>
+    <stop offset="100%" stop-color="#123b7a"/>
+  </linearGradient>
+  <linearGradient id="blueGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#4da0ff"/>
+    <stop offset="100%" stop-color="#1d6fe8"/>
+  </linearGradient>
+  <filter id="panelShadow" x="-10%" y="-10%" width="120%" height="120%">
+    <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#1e3a5f" flood-opacity="0.10"/>
+  </filter>
+</defs>
+<rect width="1600" height="900" fill="url(#pageBg)"/>
+<rect x="54" y="44" width="1492" height="812" rx="36" fill="#ffffff" stroke="#d7e3f4" stroke-width="1.5" filter="url(#panelShadow)"/>
+<text x="110" y="126" fill="#143d7a" font-size="46" font-family="Arial, sans-serif" font-weight="700">从问题定位到落地优化的五步</text>
+<path d="M90 490 L250 490 L288 522 L250 554 L90 554 Q72 554 72 536 L72 508 Q72 490 90 490Z" fill="url(#blueGrad)"/>
+<text x="170" y="532" fill="#ffffff" font-size="22" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">问题定位</text>
+<path d="M120 560 L250 560 L250 650 L340 650 L340 720 L120 720Z" fill="url(#navyGrad)" opacity="0.96"/>
+<text x="146" y="634" fill="#cfe4ff" font-size="34" font-family="Arial, sans-serif" font-weight="700">01</text>
+<text x="222" y="638" fill="#ffffff" font-size="24" font-family="Arial, sans-serif" font-weight="700">问题定位</text>
+<text x="148" y="678" fill="#dbeafe" font-size="18" font-family="Arial, sans-serif" font-weight="400">先收敛目标与边界</text>
+<path d="M355 430 L515 430 L553 462 L515 494 L355 494 Q337 494 337 476 L337 448 Q337 430 355 430Z" fill="url(#blueGrad)"/>
+<text x="435" y="472" fill="#ffffff" font-size="22" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">结构拆解</text>
+<path d="M385 500 L515 500 L515 590 L605 590 L605 660 L385 660Z" fill="url(#navyGrad)" opacity="0.96"/>
+<text x="411" y="574" fill="#cfe4ff" font-size="34" font-family="Arial, sans-serif" font-weight="700">02</text>
+<text x="487" y="578" fill="#ffffff" font-size="24" font-family="Arial, sans-serif" font-weight="700">结构拆解</text>
+<text x="413" y="618" fill="#dbeafe" font-size="18" font-family="Arial, sans-serif" font-weight="400">把关键要素拆成模块</text>
+<path d="M620 370 L780 370 L818 402 L780 434 L620 434 Q602 434 602 416 L602 388 Q602 370 620 370Z" fill="url(#blueGrad)"/>
+<text x="700" y="412" fill="#ffffff" font-size="22" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">数据深挖</text>
+<path d="M650 440 L780 440 L780 530 L870 530 L870 600 L650 600Z" fill="url(#navyGrad)" opacity="0.96"/>
+<text x="676" y="514" fill="#cfe4ff" font-size="34" font-family="Arial, sans-serif" font-weight="700">03</text>
+<text x="752" y="518" fill="#ffffff" font-size="24" font-family="Arial, sans-serif" font-weight="700">数据深挖</text>
+<text x="678" y="558" fill="#dbeafe" font-size="18" font-family="Arial, sans-serif" font-weight="400">补齐证据与数据支撑</text>
+<path d="M885 310 L1045 310 L1083 342 L1045 374 L885 374 Q867 374 867 356 L867 328 Q867 310 885 310Z" fill="url(#blueGrad)"/>
+<text x="965" y="352" fill="#ffffff" font-size="22" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">方案推进</text>
+<path d="M915 380 L1045 380 L1045 470 L1135 470 L1135 540 L915 540Z" fill="url(#navyGrad)" opacity="0.96"/>
+<text x="941" y="454" fill="#cfe4ff" font-size="34" font-family="Arial, sans-serif" font-weight="700">04</text>
+<text x="1017" y="458" fill="#ffffff" font-size="24" font-family="Arial, sans-serif" font-weight="700">方案推进</text>
+<text x="943" y="498" fill="#dbeafe" font-size="18" font-family="Arial, sans-serif" font-weight="400">整合方案并形成动作</text>
+<path d="M1150 250 L1310 250 L1348 282 L1310 314 L1150 314 Q1132 314 1132 296 L1132 268 Q1132 250 1150 250Z" fill="url(#blueGrad)"/>
+<text x="1230" y="292" fill="#ffffff" font-size="22" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">落地优化</text>
+<path d="M1180 320 L1310 320 L1310 410 L1400 410 L1400 480 L1180 480Z" fill="url(#navyGrad)" opacity="0.96"/>
+<text x="1206" y="394" fill="#cfe4ff" font-size="34" font-family="Arial, sans-serif" font-weight="700">05</text>
+<text x="1282" y="398" fill="#ffffff" font-size="24" font-family="Arial, sans-serif" font-weight="700">落地优化</text>
+<text x="1208" y="438" fill="#dbeafe" font-size="18" font-family="Arial, sans-serif" font-weight="400">持续复盘并优化效果</text>
 </svg>

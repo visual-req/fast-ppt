@@ -1,18 +1,48 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
-<rect width="1600" height="900" fill="#f8fafc"/>
-<rect x="60" y="50" width="1480" height="800" rx="32" fill="#ffffff" stroke="#dbeafe" stroke-width="2"/>
-<text x="110" y="126" fill="#0f172a" font-size="44" font-family="Arial, sans-serif" font-weight="700">Roadmap</text>
-
-<rect x="150" y="220" width="1240" height="460" rx="28" fill="#eff6ff"/>
-<line x1="350" y1="220" x2="350" y2="680" stroke="#cbd5e1" stroke-width="2"/>
-<line x1="650" y1="220" x2="650" y2="680" stroke="#cbd5e1" stroke-width="2"/>
-<line x1="950" y1="220" x2="950" y2="680" stroke="#cbd5e1" stroke-width="2"/>
-<text x="220" y="276" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">Phase 1</text>
-<text x="520" y="276" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">Phase 2</text>
-<text x="820" y="276" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">Phase 3</text>
-<text x="1120" y="276" fill="#0f172a" font-size="28" font-family="Arial, sans-serif" font-weight="700">阶段 4</text>
-<rect x="190" y="338" width="440" height="86" rx="18" fill="#2563eb" opacity="0.9"/>
-<rect x="394" y="456" width="436" height="86" rx="18" fill="#60a5fa" opacity="0.95"/>
-<rect x="706" y="574" width="492" height="86" rx="18" fill="#93c5fd"/>
-
+<defs>
+  <linearGradient id="pageBg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#f4f7fb"/>
+    <stop offset="100%" stop-color="#eef3f9"/>
+  </linearGradient>
+  <linearGradient id="navyGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#1f4f97"/>
+    <stop offset="100%" stop-color="#123b7a"/>
+  </linearGradient>
+  <linearGradient id="blueGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#4da0ff"/>
+    <stop offset="100%" stop-color="#1d6fe8"/>
+  </linearGradient>
+  <filter id="panelShadow" x="-10%" y="-10%" width="120%" height="120%">
+    <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#1e3a5f" flood-opacity="0.10"/>
+  </filter>
+</defs>
+<rect width="1600" height="900" fill="url(#pageBg)"/>
+<rect x="54" y="44" width="1492" height="812" rx="36" fill="#ffffff" stroke="#d7e3f4" stroke-width="1.5" filter="url(#panelShadow)"/>
+<text x="110" y="126" fill="#143d7a" font-size="46" font-family="Arial, sans-serif" font-weight="700">Six Moves for 2026</text>
+<path d="M180 230 H1290 Q1375 230 1375 315 V355 Q1375 440 1290 440 H310 Q220 440 220 530 V570 Q220 655 305 655 H1410" fill="none" stroke="url(#navyGrad)" stroke-width="54" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M180 230 H1290 Q1375 230 1375 315 V355 Q1375 440 1290 440 H310 Q220 440 220 530 V570 Q220 655 305 655 H1410" fill="none" stroke="#8fbaf4" stroke-width="4" stroke-dasharray="10 10" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="260" cy="310" r="34" fill="#ffffff" stroke="url(#blueGrad)" stroke-width="8"/>
+<text x="260" y="320" fill="#143d7a" font-size="28" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">01</text>
+<text x="310" y="210" fill="#143d7a" font-size="25" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">Market Expansion</text>
+<text x="310" y="244" fill="#475569" font-size="18" font-family="Arial, sans-serif" font-weight="400" text-anchor="middle">Deepen core regions and priority accounts</text>
+<circle cx="590" cy="310" r="34" fill="#ffffff" stroke="url(#blueGrad)" stroke-width="8"/>
+<text x="590" y="320" fill="#143d7a" font-size="28" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">02</text>
+<text x="640" y="210" fill="#143d7a" font-size="25" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">Team Capability</text>
+<text x="640" y="244" fill="#475569" font-size="18" font-family="Arial, sans-serif" font-weight="400" text-anchor="middle">Upgrade methods, templates and cadence</text>
+<circle cx="930" cy="310" r="34" fill="#ffffff" stroke="url(#blueGrad)" stroke-width="8"/>
+<text x="930" y="320" fill="#143d7a" font-size="28" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">03</text>
+<text x="980" y="210" fill="#143d7a" font-size="25" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">Client Management</text>
+<text x="980" y="244" fill="#475569" font-size="18" font-family="Arial, sans-serif" font-weight="400" text-anchor="middle">Improve conversion on high-value accounts</text>
+<circle cx="310" cy="500" r="34" fill="#ffffff" stroke="url(#blueGrad)" stroke-width="8"/>
+<text x="310" y="510" fill="#143d7a" font-size="28" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">04</text>
+<text x="360" y="600" fill="#143d7a" font-size="25" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">Product Strategy</text>
+<text x="360" y="634" fill="#475569" font-size="18" font-family="Arial, sans-serif" font-weight="400" text-anchor="middle">Align solution, content and timing</text>
+<circle cx="710" cy="500" r="34" fill="#ffffff" stroke="url(#blueGrad)" stroke-width="8"/>
+<text x="710" y="510" fill="#143d7a" font-size="28" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">05</text>
+<text x="760" y="600" fill="#143d7a" font-size="25" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">Process Integration</text>
+<text x="760" y="634" fill="#475569" font-size="18" font-family="Arial, sans-serif" font-weight="400" text-anchor="middle">Raise collaboration and delivery stability</text>
+<circle cx="1110" cy="500" r="34" fill="#ffffff" stroke="url(#blueGrad)" stroke-width="8"/>
+<text x="1110" y="510" fill="#143d7a" font-size="28" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">06</text>
+<text x="1160" y="600" fill="#143d7a" font-size="25" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">Review &amp; Iterate</text>
+<text x="1160" y="634" fill="#475569" font-size="18" font-family="Arial, sans-serif" font-weight="400" text-anchor="middle">Track monthly results and refine quickly</text>
 </svg>

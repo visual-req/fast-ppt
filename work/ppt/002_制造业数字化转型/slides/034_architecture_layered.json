@@ -1,9 +1,46 @@
 {
-  "layout_type": "svg_full",
+  "layout_type": "architecture_layered",
   "title": "四层统一底座",
-  "svg": {
-    "src": "work/assets/002/034-four-layer-base.svg",
-    "alt": "边缘安全 → AI 平台 → 集成平台 → 数据平台四层架构",
-    "caption": "自下而上：数据平台为基，集成贯通全域，AI 赋能智能，安全贯穿全栈"
-  }
+  "layers": [
+    {
+      "icon": "safety",
+      "title": "边缘与安全",
+      "text": "安全与边缘能力贯穿全栈，保障 IT/OT 融合场景稳定可控。",
+      "bullets": [
+        "IT/OT 隔离与零信任架构",
+        "边缘容器化部署与协议转换",
+        "加密、审计、密钥管理与安全网关"
+      ]
+    },
+    {
+      "icon": "spark",
+      "title": "AI 平台",
+      "text": "承接模型训练、评估、注册、发布与在线推理的全生命周期管理。",
+      "bullets": [
+        "训练 / 评估 / 注册 / 发布",
+        "在线推理 + 批处理",
+        "漂移检测、灰度发布、回滚与 A/B 实验"
+      ]
+    },
+    {
+      "icon": "workflow",
+      "title": "集成平台",
+      "text": "负责跨系统连接、消息流转与服务编排，打通 ERP / MES / WMS / QMS / PLM / SCADA。",
+      "bullets": [
+        "API 网关与服务编排",
+        "Kafka / RabbitMQ 消息总线",
+        "ESB 企业服务总线集成"
+      ]
+    },
+    {
+      "icon": "database",
+      "title": "数据平台（底座基石）",
+      "text": "为上层 AI 与集成提供统一、可信、实时的数据能力。",
+      "bullets": [
+        "数据湖 / 仓 / 时序 / 对象能力",
+        "元数据血缘追踪与统一数据字典",
+        "质量监控、告警与权限治理"
+      ]
+    }
+  ]
 }

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed } from "vue";
+import { getLayoutIconSvg } from "../../lib/layoutIcons";
 
 const props = defineProps<{ slide: any }>();
 
@@ -20,49 +21,202 @@ function toBullets(value: unknown): string[] {
   return Array.isArray(value) ? value.map((item) => String(item ?? "")).filter(Boolean) : [];
 }
 
-function getIconSvg(name: unknown) {
-  const key = typeof name === "string" ? name : "";
-  const svgByName: Record<string, string> = {
-    target:
-      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="4"></circle><circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none"></circle></svg>',
-    flow:
-      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h7"></path><path d="M13 7l2-2 2 2"></path><path d="M20 17h-7"></path><path d="M11 17l-2 2-2-2"></path><path d="M15 5v8a2 2 0 0 0 2 2h3"></path><path d="M9 19v-8a2 2 0 0 0-2-2H4"></path></svg>',
-    fit:
-      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5h6v6H5z"></path><path d="M13 13h6v6h-6z"></path><path d="m11 11 2 2"></path><path d="m13 11-2 2"></path></svg>',
-    rank:
-      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17V9"></path><path d="M12 17V5"></path><path d="M17 17v-6"></path><path d="M4 19h16"></path></svg>',
-    plan:
-      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h9l3 3v13H6z"></path><path d="M15 4v4h4"></path><path d="M9 12h6"></path><path d="M9 16h4"></path></svg>'
-  };
-  return svgByName[key] ?? "";
-}
+const getIconSvg = getLayoutIconSvg;
+
 </script>
 
 <template>
   <div class="stepsLayout">
-    <!-- Connected step indicators at top -->
-    <div class="stepsIndicators">
-      <div v-for="(item, index) in steps" :key="'ind-' + index" class="stepsIndItem">
-        <div class="stepsIndMarker">
-          <div class="stepsIndCircle">
-            <span class="stepsIndNum">{{ index + 1 }}</span>
-          </div>
-          <div class="stepsIndTitle">{{ item?.title || "步骤 " + (index + 1) }}</div>
+    <div class="stepsTrack">
+      <div class="stepsRibbon"></div>
+      <div class="stepsCurve"></div>
+      <div v-for="(item, index) in steps" :key="'step-' + index" class="stepsTier" :style="{ '--step-index': index }">
+        <div class="stepsTierLabel">
+          <span class="stepsTierNum">{{ String(index + 1).padStart(2, '0') }}</span>
+          <span class="stepsTierName">{{ item?.title || "步骤 " + (index + 1) }}</span>
         </div>
-        <!-- connector line between circles -->
-        <div v-if="index < steps.length - 1" class="stepsIndLine"></div>
-      </div>
-    </div>
-
-    <!-- Content cards below -->
-    <div class="stepsCards">
-      <div v-for="(item, index) in steps" :key="'card-' + index" class="stepsCard">
-        <div v-if="getIconSvg(item?.icon)" class="stepsCardIcon" v-html="getIconSvg(item?.icon)"></div>
-        <div v-if="item?.text" class="stepsCardText">{{ item.text }}</div>
-        <ul v-if="toBullets(item?.bullets).length" class="stepsCardBullets">
-          <li v-for="(bullet, bulletIndex) in toBullets(item?.bullets)" :key="bulletIndex">{{ bullet }}</li>
-        </ul>
+        <div class="stepsTierBody">
+          <div v-if="getIconSvg(item?.icon)" class="stepsTierIcon" v-html="getIconSvg(item?.icon)"></div>
+          <div class="stepsTierContent">
+            <div v-if="toText(item?.text)" class="stepsTierText">{{ item.text }}</div>
+            <ul v-if="toBullets(item?.bullets).length" class="stepsTierBullets">
+              <li v-for="(bullet, bulletIndex) in toBullets(item?.bullets)" :key="bulletIndex">{{ bullet }}</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
+
+<style scoped>
+.stepsLayout {
+  height: 100%;
+}
+
+.stepsTrack {
+  position: relative;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+  align-items: end;
+}
+
+.stepsRibbon {
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  top: 18%;
+  height: 16px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--fppt-secondary, #4da0ff) 0%, var(--fppt-primary, #1d6fe8) 100%);
+  opacity: 0.16;
+}
+
+.stepsCurve {
+  position: absolute;
+  left: 7%;
+  right: 7%;
+  top: 14%;
+  bottom: 10%;
+  border-left: 4px solid color-mix(in srgb, var(--fppt-primary, #1d6fe8) 10%, transparent);
+  border-bottom: 4px solid color-mix(in srgb, var(--fppt-primary, #1d6fe8) 10%, transparent);
+  border-radius: 0 0 36px 36px;
+  pointer-events: none;
+}
+
+.stepsTier {
+  position: relative;
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  min-height: calc(280px + var(--step-index) * -24px + 48px);
+  padding-top: calc(var(--step-index) * 24px);
+}
+
+.stepsTierLabel {
+  position: relative;
+  min-height: 74px;
+  padding: 14px 20px 14px 18px;
+  border-radius: 18px 18px 18px 8px;
+  background: linear-gradient(90deg, var(--fppt-secondary, #4da0ff) 0%, var(--fppt-primary, #1d6fe8) 100%);
+  color: #ffffff;
+  box-shadow: 0 18px 34px rgba(29, 111, 232, 0.18);
+}
+
+.stepsTierLabel::after {
+  content: "";
+  position: absolute;
+  right: -18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+  border-left: 18px solid var(--fppt-primary, #1d6fe8);
+}
+
+.stepsTierNum {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 28px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.stepsTierName {
+  display: block;
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.stepsTierBody {
+  min-height: 0;
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  padding: 18px;
+  border-radius: 0 22px 22px 22px;
+  background: linear-gradient(180deg, var(--fppt-surface, #ffffff) 0%, var(--fppt-surface-alt, #f8fbff) 100%);
+  border: 1px solid color-mix(in srgb, var(--fppt-border, #d7e3f4) 96%, transparent);
+  box-shadow: 0 18px 36px rgba(20, 61, 122, 0.08);
+}
+
+.stepsTierIcon {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--fppt-secondary, #4da0ff) 12%, white);
+  color: var(--fppt-primary, #1d6fe8);
+}
+
+.stepsTierIcon :deep(svg) {
+  width: 20px;
+  height: 20px;
+}
+
+.stepsTierContent {
+  display: grid;
+  gap: 10px;
+}
+
+.stepsTierText {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--fppt-muted, #334155);
+  font-weight: 600;
+}
+
+.stepsTierBullets {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.stepsTierBullets li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--fppt-muted, #4b5563);
+}
+
+.stepsTierBullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--fppt-secondary, #4da0ff) 0%, var(--fppt-primary, #1d6fe8) 100%);
+}
+@media (max-width: 960px) {
+  .stepsTrack {
+    grid-template-columns: 1fr;
+  }
+
+  .stepsRibbon,
+  .stepsCurve,
+  .stepsTierLabel::after {
+    display: none;
+  }
+
+  .stepsTier {
+    min-height: auto;
+    padding-top: 0;
+  }
+}
+</style>

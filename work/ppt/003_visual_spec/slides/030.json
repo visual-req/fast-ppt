@@ -1,12 +1,10 @@
 {
-  "layout_type": "before_after",
-  "title": "效果对比：用与不用的差别",
-  "before": {
-    "title": "不用 visual-spec",
-    "bullets": ["沟通 8 轮仍理解不一致", "返工率 40%", "需求准确率 60%", "边界条件靠开发猜", "验收标准口头传递", "需求→设计→实现脱节"]
-  },
-  "after": {
-    "title": "用 visual-spec",
-    "bullets": ["沟通 2 轮对齐", "返工率 <10%", "需求准确率 95%", "边界条件自动检出", "验收脚本自动生成", "全链路可追溯"]
-  }
+  "layout_type": "title_bullets",
+  "title": "存量升级：/vspec:upgrade",
+  "bullets": [
+    "专为存量系统升级/改造场景设计",
+    "读入 /docs/legacy/ 存量资料 + /docs/current/ 新需求",
+    "生成升级方案并同步技术选型到 /scheme.yaml",
+    "输出：改造目标规约 + 技术栈选择 + 迁移路径建议"
+  ]
 }

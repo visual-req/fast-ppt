@@ -1,9 +1,9 @@
 {
   "layout_type": "svg_full",
-  "title": "集成实现：/vspec:impl",
+  "title": "质量检查：/vspec:qc",
   "svg": {
-    "src": "work/assets/003/020-vspec-impl-flow.svg",
-    "alt": "集成实现流程",
-    "caption": "基于详细设计 + 数据模型 + 技术选型，自动生成 API Controller / Service / 前端页面代码（/specs/backend/），与项目现有技术栈、代码风格和开发规范对齐，消除从设计到代码的手工断层"
+    "src": "work/assets/003/019-quality-framework.svg",
+    "alt": "质量检查体系",
+    "caption": "三维质量评估模型：正确性（逻辑一致性/状态机完整性，做的事对不对？）、精确性（字段类型/校验规则，描述得够不够细？）、完整性（20+ 维度逐项覆盖，有没有遗漏？）。扫描 /specs/ 全量制品 → 15+ 标准校验 → 缺失项清单 → 补充指导 → 输出 qc_report.json + qc_report.html"
   }
 }

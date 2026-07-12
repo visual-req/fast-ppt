@@ -46,9 +46,11 @@
 
 ### 布局选择与图形生成规则（必须遵守）
 
-- 先判断页面意图，再选 layout：定义/结构/关系 → 优先 `svg_full`（图解）或 `architecture_layered`/`steps`；对比/权衡 → `comparison_table`/`matrix_2x2`；流程/链路 → `steps`/`swimlane_process`
+- 先判断页面意图，再选 layout：定义/结构/关系 → 优先 `svg_full`（图解）或 `architecture_layered`/`steps`/`nine_grid`；对比/权衡 → `comparison_table`/`matrix_2x2`；流程/链路 → `steps`/`process_flow`/`swimlane_process`
 - 对比类页面必须用“对比布局”表达：优先 `comparison_table`，或用 `two_column`/`four_grid` 做对比卡片；不要用 `steps` 代替对比
 - 阶段类页面必须用“阶段图”表达：如“大纲 -> 详细页 -> 质检 -> 回改”这类内容，优先 `steps`、`phases`，或直接用 `svg_full` 画阶段卡片与箭头，不要退回表格
+- 对“执行摘要 / 一个底座 + 多类能力 + 保障机制”类页面，优先 `title_bullets` 并补 `subtitle` + `cards`，不要只写普通 bullet 墙
+- 新增或实验性 layout 不强制先做独立 `layout_type` / viewer component；只要页面意图明确，允许直接用 `svg_full` 在 `work/assets/` 下生成对应 SVG 落地。只有当该版式会被反复复用、且字段结构已经稳定时，才考虑沉淀成独立 component。
 - 生成 `four_grid`、`nine_grid`、`steps`、`phases`、`architecture_layered` 时，默认给每个模块生成一个 `icon` 字段；图标值使用简短英文 key，不使用 emoji
 - 多角色、跨泳道、按时序推进的工作流，优先 `swimlane_process`；如果默认布局表现不够，应改用 `svg_full` 画成真正的泳道时序图，但仍要保留“按角色分泳道、按时间从左到右/从上到下推进”的结构
 - 三层结构（上/中/下、金字塔、价值分层）优先 `svg_full`：每层内部要有清晰的名称块，内容用短句或标签表达，不要把每层重新退回 bullet 列表

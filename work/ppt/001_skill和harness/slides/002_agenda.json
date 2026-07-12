@@ -1,6 +1,7 @@
 {
   "layout_type": "agenda",
   "title": "这节课会先讲什么、再讲什么、最后带走什么",
+  "variant": "bands",
   "subtitle": "课程路径从“为什么升级”出发，最终收束到“如何做出稳定可回归的 Agent 工程”。",
   "bullets": [
     "第 1 章：区分 Prompt Engineering、Context Engineering 与 Harness Engineering",

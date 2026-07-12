@@ -38,6 +38,12 @@ const total = computed(() => deck.value.slides.length);
 const currentSlide = computed(() => deck.value.slides[slideIndex.value] ?? null);
 const layoutType = computed(() => (currentSlide.value && typeof currentSlide.value.layout_type === "string" ? currentSlide.value.layout_type : "title_bullets"));
 const LayoutComponent = computed(() => pickLayout(layoutType.value));
+const hasSlideTitle = computed(() => {
+  if (!currentSlide.value) return false;
+  if (["cover", "section_divider", "thank_you", "agenda"].includes(layoutType.value)) return false;
+  if (layoutType.value === "svg_full" && (currentSlide.value as any)?.show_title === false) return false;
+  return true;
+});
 const outlineTree = computed(() => buildOutlineTree(deck.value.slides));
 const hasOutline = computed(() => outlineTree.value.length > 0);
 const deckStyle = computed(() => {
@@ -350,14 +356,8 @@ onUnmounted(() => {
       </aside>
       <div class="slideHost">
         <section v-if="currentSlide" class="slide" :class="`layout-${layoutType}`" :style="slideThemeStyle">
-          <div class="slideInner">
-            <div
-              v-if="
-                !['cover', 'section_divider', 'thank_you', 'agenda'].includes(layoutType) &&
-                (layoutType !== 'svg_full' || (currentSlide as any)?.show_title !== false)
-              "
-              class="slideTitleBar"
-            >
+          <div class="slideInner" :class="{ slideInnerHasTitle: hasSlideTitle }">
+            <div v-if="hasSlideTitle" class="slideTitleBar">
               <div class="slideTitleBarGlow"></div>
               <div class="slideTitleBarAccent"></div>
               <div class="slideTitleBarOrbit slideTitleBarOrbitLarge"></div>

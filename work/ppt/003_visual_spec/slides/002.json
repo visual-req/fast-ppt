@@ -1,6 +1,7 @@
 {
   "layout_type": "agenda",
   "title": "目录",
+  "variant": "bands",
   "bullets": [
     "需求之痛：每个团队都踩过的坑",
     "Visual-Spec 如何把需求变成规约",

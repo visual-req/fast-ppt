@@ -1,0 +1,143 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pageBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F5F8FD"/>
+      <stop offset="100%" stop-color="#EDF3FB"/>
+    </linearGradient>
+    <linearGradient id="panelBg" x1="120" y1="110" x2="1480" y2="790" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F8FBFF"/>
+    </linearGradient>
+    <radialGradient id="glowBlue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1280 180) rotate(90) scale(240)">
+      <stop stop-color="#93C5FD" stop-opacity="0.22"/>
+      <stop offset="0.66" stop-color="#93C5FD" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#93C5FD" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldCap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="0.48" stop-color="#F59E0B"/>
+      <stop offset="1" stop-color="#B45309"/>
+    </linearGradient>
+    <linearGradient id="goldRing" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FEF3C7"/>
+      <stop offset="0.48" stop-color="#FBBF24"/>
+      <stop offset="1" stop-color="#B45309"/>
+    </linearGradient>
+    <linearGradient id="rodBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B91C1C"/>
+      <stop offset="0.18" stop-color="#DC2626"/>
+      <stop offset="0.52" stop-color="#991B1B"/>
+      <stop offset="0.82" stop-color="#DC2626"/>
+      <stop offset="1" stop-color="#B91C1C"/>
+    </linearGradient>
+    <linearGradient id="segmentA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#DBEAFE"/>
+      <stop offset="100%" stop-color="#BFDBFE"/>
+    </linearGradient>
+    <linearGradient id="segmentB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#C7D2FE"/>
+      <stop offset="100%" stop-color="#A5B4FC"/>
+    </linearGradient>
+    <linearGradient id="segmentC" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#BFDBFE"/>
+      <stop offset="100%" stop-color="#93C5FD"/>
+    </linearGradient>
+    <linearGradient id="segmentD" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#DDD6FE"/>
+      <stop offset="100%" stop-color="#C4B5FD"/>
+    </linearGradient>
+    <filter id="panelShadow" x="0" y="0" width="1600" height="900" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#143D7A" flood-opacity="0.08"/>
+    </filter>
+    <filter id="softShadow" x="-10%" y="-30%" width="120%" height="160%" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#143D7A" flood-opacity="0.10"/>
+    </filter>
+    <clipPath id="barClip">
+      <rect x="120" y="74" width="1080" height="104" rx="28"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#pageBg)"/>
+  <circle cx="1280" cy="180" r="240" fill="url(#glowBlue)"/>
+
+  <rect x="86" y="58" width="1428" height="784" rx="38" fill="url(#panelBg)" stroke="#D7E3F4" filter="url(#panelShadow)"/>
+
+  <rect x="148" y="122" width="190" height="42" rx="21" fill="#E8F1FF"/>
+  <text x="243" y="150" text-anchor="middle" fill="#1D6FE8" font-size="18" font-family="Arial, sans-serif" font-weight="800" letter-spacing="2">STAFF BAR</text>
+  <text x="148" y="220" fill="#143D7A" font-size="42" font-family="Arial, sans-serif" font-weight="800">金箍棒分段布局</text>
+  <text x="148" y="260" fill="#64748B" font-size="20" font-family="Arial, sans-serif">整体是一根横向 bar，两端做成金箍棒端头装饰，中间分割位置严格按照百分比落位，适合结构占比、阶段配比和资源分布页。</text>
+
+  <g transform="translate(140 374)">
+    <rect x="0" y="92" width="1320" height="68" rx="34" fill="#EAF1FB"/>
+
+    <g filter="url(#softShadow)">
+      <rect x="0" y="74" width="24" height="104" rx="12" fill="url(#goldCap)"/>
+      <rect x="24" y="74" width="18" height="104" rx="9" fill="url(#goldRing)"/>
+      <rect x="42" y="74" width="50" height="104" rx="25" fill="url(#rodBody)"/>
+      <rect x="92" y="74" width="18" height="104" rx="9" fill="url(#goldRing)"/>
+      <rect x="110" y="74" width="20" height="104" rx="10" fill="url(#goldCap)"/>
+      <path d="M8 88 V164 M16 88 V164" stroke="rgba(180,83,9,0.34)" stroke-width="2"/>
+      <path d="M29 88 V164 M37 88 V164" stroke="rgba(180,83,9,0.34)" stroke-width="2"/>
+      <path d="M54 88 V164 M67 88 V164 M80 88 V164" stroke="rgba(255,255,255,0.20)" stroke-width="2"/>
+      <path d="M97 88 V164 M105 88 V164" stroke="rgba(180,83,9,0.34)" stroke-width="2"/>
+      <path d="M116 88 V164 M124 88 V164" stroke="rgba(180,83,9,0.34)" stroke-width="2"/>
+
+      <g clip-path="url(#barClip)">
+        <rect x="120" y="74" width="194" height="104" fill="url(#segmentA)"/>
+        <rect x="314" y="74" width="324" height="104" fill="url(#segmentB)"/>
+        <rect x="638" y="74" width="216" height="104" fill="url(#segmentC)"/>
+        <rect x="854" y="74" width="346" height="104" fill="url(#segmentD)"/>
+      </g>
+
+      <rect x="1190" y="74" width="20" height="104" rx="10" fill="url(#goldCap)"/>
+      <rect x="1210" y="74" width="18" height="104" rx="9" fill="url(#goldRing)"/>
+      <rect x="1228" y="74" width="50" height="104" rx="25" fill="url(#rodBody)"/>
+      <rect x="1278" y="74" width="18" height="104" rx="9" fill="url(#goldRing)"/>
+      <rect x="1296" y="74" width="24" height="104" rx="12" fill="url(#goldCap)"/>
+      <path d="M1196 88 V164 M1204 88 V164" stroke="rgba(180,83,9,0.34)" stroke-width="2"/>
+      <path d="M1215 88 V164 M1223 88 V164" stroke="rgba(180,83,9,0.34)" stroke-width="2"/>
+      <path d="M1240 88 V164 M1253 88 V164 M1266 88 V164" stroke="rgba(255,255,255,0.20)" stroke-width="2"/>
+      <path d="M1283 88 V164 M1291 88 V164" stroke="rgba(180,83,9,0.34)" stroke-width="2"/>
+      <path d="M1304 88 V164 M1312 88 V164" stroke="rgba(180,83,9,0.34)" stroke-width="2"/>
+    </g>
+
+    <rect x="313" y="82" width="2" height="88" fill="rgba(255,255,255,0.35)"/>
+    <rect x="637" y="82" width="2" height="88" fill="rgba(255,255,255,0.35)"/>
+    <rect x="853" y="82" width="2" height="88" fill="rgba(255,255,255,0.35)"/>
+
+    <text x="217" y="116" text-anchor="middle" fill="#143D7A" font-size="28" font-family="Arial, sans-serif" font-weight="800">18%</text>
+    <text x="476" y="116" text-anchor="middle" fill="#143D7A" font-size="28" font-family="Arial, sans-serif" font-weight="800">30%</text>
+    <text x="746" y="116" text-anchor="middle" fill="#143D7A" font-size="28" font-family="Arial, sans-serif" font-weight="800">20%</text>
+    <text x="1027" y="116" text-anchor="middle" fill="#143D7A" font-size="28" font-family="Arial, sans-serif" font-weight="800">32%</text>
+
+    <text x="217" y="148" text-anchor="middle" fill="#475569" font-size="16" font-family="Arial, sans-serif">基础投入</text>
+    <text x="476" y="148" text-anchor="middle" fill="#475569" font-size="16" font-family="Arial, sans-serif">能力建设</text>
+    <text x="746" y="148" text-anchor="middle" fill="#475569" font-size="16" font-family="Arial, sans-serif">协同机制</text>
+    <text x="1027" y="148" text-anchor="middle" fill="#475569" font-size="16" font-family="Arial, sans-serif">运营优化</text>
+
+    <path d="M217 74 V18" stroke="#93C5FD" stroke-width="3" stroke-dasharray="8 8"/>
+    <path d="M476 74 V18" stroke="#93C5FD" stroke-width="3" stroke-dasharray="8 8"/>
+    <path d="M746 74 V18" stroke="#93C5FD" stroke-width="3" stroke-dasharray="8 8"/>
+    <path d="M1027 74 V18" stroke="#93C5FD" stroke-width="3" stroke-dasharray="8 8"/>
+
+    <rect x="141" y="0" width="152" height="40" rx="20" fill="#FFFFFF" stroke="#D7E3F4"/>
+    <rect x="400" y="0" width="152" height="40" rx="20" fill="#FFFFFF" stroke="#D7E3F4"/>
+    <rect x="670" y="0" width="152" height="40" rx="20" fill="#FFFFFF" stroke="#D7E3F4"/>
+    <rect x="951" y="0" width="152" height="40" rx="20" fill="#FFFFFF" stroke="#D7E3F4"/>
+
+    <text x="217" y="26" text-anchor="middle" fill="#1D6FE8" font-size="16" font-family="Arial, sans-serif" font-weight="700">分段 A</text>
+    <text x="476" y="26" text-anchor="middle" fill="#1D6FE8" font-size="16" font-family="Arial, sans-serif" font-weight="700">分段 B</text>
+    <text x="746" y="26" text-anchor="middle" fill="#1D6FE8" font-size="16" font-family="Arial, sans-serif" font-weight="700">分段 C</text>
+    <text x="1027" y="26" text-anchor="middle" fill="#1D6FE8" font-size="16" font-family="Arial, sans-serif" font-weight="700">分段 D</text>
+
+    <path d="M314 196 V244" stroke="#94A3B8" stroke-width="2" stroke-dasharray="8 8"/>
+    <path d="M638 196 V244" stroke="#94A3B8" stroke-width="2" stroke-dasharray="8 8"/>
+    <path d="M854 196 V244" stroke="#94A3B8" stroke-width="2" stroke-dasharray="8 8"/>
+
+    <text x="120" y="278" text-anchor="middle" fill="#94A3B8" font-size="16" font-family="Arial, sans-serif">0%</text>
+    <text x="314" y="278" text-anchor="middle" fill="#64748B" font-size="16" font-family="Arial, sans-serif">18%</text>
+    <text x="638" y="278" text-anchor="middle" fill="#64748B" font-size="16" font-family="Arial, sans-serif">48%</text>
+    <text x="854" y="278" text-anchor="middle" fill="#64748B" font-size="16" font-family="Arial, sans-serif">68%</text>
+    <text x="1200" y="278" text-anchor="middle" fill="#94A3B8" font-size="16" font-family="Arial, sans-serif">100%</text>
+  </g>
+</svg>

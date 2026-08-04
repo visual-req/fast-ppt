@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="pageBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f7fb"/>
+      <stop offset="100%" stop-color="#eef3f9"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#1e3a5f" flood-opacity="0.10"/>
+    </filter>
+    <style>
+      .title { fill:#143d7a; font-size:46px; font-family:Arial,sans-serif; font-weight:700; }
+      .subtle { fill:#64748b; font-size:18px; font-family:Arial,sans-serif; }
+      .label { fill:#143d7a; font-size:20px; font-family:Arial,sans-serif; font-weight:700; }
+      .value { fill:#0f172a; font-size:52px; font-family:Arial,sans-serif; font-weight:800; }
+      .valueBig { fill:#0f172a; font-size:68px; font-family:Arial,sans-serif; font-weight:800; }
+      .unit { fill:rgba(15,23,42,0.48); font-size:18px; font-family:Arial,sans-serif; font-weight:700; }
+      .note { fill:#475569; font-size:14px; font-family:Arial,sans-serif; }
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="url(#pageBg)"/>
+  <text x="110" y="126" class="title">三核心数据布局</text>
+  <text x="110" y="164" class="subtle">适合用三个大圆集中展示最关键的核心指标，中间主指标更强，两侧指标辅助支撑。</text>
+
+  <rect x="220" y="446" width="1160" height="10" rx="5" fill="rgba(29,111,232,0.18)"/>
+
+  <circle cx="430" cy="450" r="154" fill="rgba(147,197,253,0.12)"/>
+  <circle cx="800" cy="430" r="198" fill="rgba(147,197,253,0.14)"/>
+  <circle cx="1170" cy="450" r="154" fill="rgba(147,197,253,0.12)"/>
+
+  <circle cx="430" cy="450" r="132" fill="#ffffff" stroke="#bfdafe" filter="url(#shadow)"/>
+  <circle cx="800" cy="430" r="170" fill="#ffffff" stroke="#bfdafe" filter="url(#shadow)"/>
+  <circle cx="1170" cy="450" r="132" fill="#ffffff" stroke="#bfdafe" filter="url(#shadow)"/>
+
+  <text x="430" y="392" text-anchor="middle" class="label">覆盖率</text>
+  <text x="430" y="452" text-anchor="middle" class="value">92</text>
+  <text x="478" y="452" class="unit">%</text>
+  <text x="430" y="490" text-anchor="middle" class="note">核心场景已覆盖主要流程。</text>
+
+  <text x="800" y="352" text-anchor="middle" class="label">自动化率</text>
+  <text x="800" y="432" text-anchor="middle" class="valueBig">68</text>
+  <text x="860" y="432" class="unit">%</text>
+  <text x="800" y="478" text-anchor="middle" class="note">高频任务已进入自动处理。</text>
+
+  <text x="1170" y="392" text-anchor="middle" class="label">响应时效</text>
+  <text x="1170" y="452" text-anchor="middle" class="value">4.2</text>
+  <text x="1226" y="452" class="unit">h</text>
+  <text x="1170" y="490" text-anchor="middle" class="note">关键事项平均响应时间。</text>
+</svg>

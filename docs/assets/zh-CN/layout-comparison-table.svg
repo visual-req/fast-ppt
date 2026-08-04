@@ -12,21 +12,21 @@
 <rect x="54" y="44" width="1492" height="812" rx="36" fill="#ffffff" stroke="#d7e3f4" stroke-width="1.5" filter="url(#panelShadow)"/>
 <text x="110" y="126" fill="#143d7a" font-size="46" font-family="Arial, sans-serif" font-weight="700">Comparison Table</text>
 <rect x="110" y="188" width="1280" height="520" rx="26" fill="#f8fafc" stroke="#e2e8f0"/>
-<line x1="350" y1="188" x2="350" y2="708" stroke="#cbd5e1" stroke-width="2"/>
-<line x1="760" y1="188" x2="760" y2="708" stroke="#cbd5e1" stroke-width="2"/>
+<line x1="537" y1="188" x2="537" y2="708" stroke="#cbd5e1" stroke-width="2"/>
+<line x1="963" y1="188" x2="963" y2="708" stroke="#cbd5e1" stroke-width="2"/>
 <line x1="110" y1="286" x2="1390" y2="286" stroke="#cbd5e1" stroke-width="2"/>
 <line x1="110" y1="414" x2="1390" y2="414" stroke="#cbd5e1" stroke-width="2"/>
 <line x1="110" y1="542" x2="1390" y2="542" stroke="#cbd5e1" stroke-width="2"/>
 <text x="156" y="250" fill="#1d4ed8" font-size="28" font-family="Arial, sans-serif" font-weight="700">维度</text>
-<text x="470" y="250" fill="#1d4ed8" font-size="28" font-family="Arial, sans-serif" font-weight="700">Prompt</text>
-<text x="934" y="250" fill="#1d4ed8" font-size="28" font-family="Arial, sans-serif" font-weight="700">Harness</text>
+<text x="583" y="250" fill="#1d4ed8" font-size="28" font-family="Arial, sans-serif" font-weight="700">Prompt</text>
+<text x="1009" y="250" fill="#1d4ed8" font-size="28" font-family="Arial, sans-serif" font-weight="700">Harness</text>
 <text x="156" y="362" fill="#334155" font-size="26" font-family="Arial, sans-serif">目标</text>
-<text x="470" y="362" fill="#334155" font-size="26" font-family="Arial, sans-serif">更会问</text>
-<text x="934" y="362" fill="#334155" font-size="26" font-family="Arial, sans-serif">更会做</text>
+<text x="583" y="362" fill="#334155" font-size="26" font-family="Arial, sans-serif">更会问</text>
+<text x="1009" y="362" fill="#334155" font-size="26" font-family="Arial, sans-serif">更会做</text>
 <text x="156" y="490" fill="#334155" font-size="26" font-family="Arial, sans-serif">执行方式</text>
-<text x="470" y="490" fill="#334155" font-size="26" font-family="Arial, sans-serif">单轮生成</text>
-<text x="934" y="490" fill="#334155" font-size="26" font-family="Arial, sans-serif">生成-检查-回改循环</text>
+<text x="583" y="490" fill="#334155" font-size="26" font-family="Arial, sans-serif">单轮生成</text>
+<text x="1009" y="490" fill="#334155" font-size="26" font-family="Arial, sans-serif">生成-检查-回改循环</text>
 <text x="156" y="618" fill="#334155" font-size="26" font-family="Arial, sans-serif">产出稳定性</text>
-<text x="470" y="618" fill="#334155" font-size="26" font-family="Arial, sans-serif">依赖当次发挥</text>
-<text x="934" y="618" fill="#334155" font-size="26" font-family="Arial, sans-serif">依赖流程约束</text>
+<text x="583" y="618" fill="#334155" font-size="26" font-family="Arial, sans-serif">依赖当次发挥</text>
+<text x="1009" y="618" fill="#334155" font-size="26" font-family="Arial, sans-serif">依赖流程约束</text>
 </svg>

@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="pageBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f7fb"/>
+      <stop offset="100%" stop-color="#eef3f9"/>
+    </linearGradient>
+    <linearGradient id="panelBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fbff"/>
+    </linearGradient>
+    <linearGradient id="waterBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#edf5ff"/>
+      <stop offset="14%" stop-color="#e1efff"/>
+      <stop offset="14%" stop-color="#d8ebff"/>
+      <stop offset="100%" stop-color="#c5dcf8"/>
+    </linearGradient>
+    <linearGradient id="iceTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#eaf4ff"/>
+    </linearGradient>
+    <linearGradient id="iceBottom" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#76afea"/>
+      <stop offset="100%" stop-color="#4d89d7"/>
+    </linearGradient>
+    <filter id="panelShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#1e3a5f" flood-opacity="0.10"/>
+    </filter>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#1e3a5f" flood-opacity="0.10"/>
+    </filter>
+    <style>
+      .title { fill: #143d7a; font-size: 46px; font-family: Arial, sans-serif; font-weight: 700; }
+      .subtle { fill: #64748b; font-size: 18px; font-family: Arial, sans-serif; }
+      .tagBlue { fill: #1d6fe8; font-size: 11px; font-family: Arial, sans-serif; font-weight: 800; letter-spacing: 1.4px; }
+      .tagWhite { fill: #ffffff; font-size: 11px; font-family: Arial, sans-serif; font-weight: 800; letter-spacing: 1.4px; }
+      .tipTitle { fill: #143d7a; font-size: 30px; font-family: Arial, sans-serif; font-weight: 800; }
+      .tipText { fill: #475569; font-size: 16px; font-family: Arial, sans-serif; }
+      .baseTitle { fill: #ffffff; font-size: 34px; font-family: Arial, sans-serif; font-weight: 800; }
+      .baseText { fill: rgba(255,255,255,0.92); font-size: 17px; font-family: Arial, sans-serif; }
+      .chipText { fill: #ffffff; font-size: 15px; font-family: Arial, sans-serif; font-weight: 700; }
+      .footerText { fill: #5b6b82; font-size: 18px; font-family: Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#pageBg)"/>
+  <rect x="54" y="44" width="1492" height="812" rx="36" fill="url(#panelBg)" stroke="#d7e3f4" stroke-width="1.5" filter="url(#panelShadow)"/>
+
+  <text x="110" y="126" class="title">冰山图布局</text>
+  <text x="110" y="164" class="subtle">水面上展示显性结果，水面下展开深层驱动因素，适合表达“表层现象只是冰山一角”的结构化认知。</text>
+
+  <rect x="110" y="194" width="6" height="26" rx="3" fill="#1d6fe8"/>
+  <text x="130" y="214" fill="#1d6fe8" font-size="20" font-family="Arial, sans-serif" font-weight="700">Preview Layout</text>
+
+  <rect x="126" y="252" width="1348" height="520" rx="30" fill="url(#waterBg)" stroke="#d7e3f4"/>
+  <ellipse cx="800" cy="344" rx="320" ry="110" fill="rgba(147,197,253,0.22)"/>
+  <ellipse cx="800" cy="420" rx="304" ry="18" fill="none" stroke="rgba(102,153,220,0.28)" stroke-width="2"/>
+  <ellipse cx="800" cy="420" rx="266" ry="14" fill="none" stroke="rgba(102,153,220,0.18)" stroke-width="1.5"/>
+
+  <rect x="126" y="420" width="1348" height="16" fill="rgba(255,255,255,0.72)"/>
+  <line x1="126" y1="420" x2="1474" y2="420" stroke="rgba(255,255,255,0.88)" stroke-width="2"/>
+  <line x1="126" y1="436" x2="1474" y2="436" stroke="rgba(147,197,253,0.42)" stroke-width="1.5"/>
+  <rect x="1222" y="396" width="122" height="28" rx="14" fill="rgba(255,255,255,0.78)" stroke="#bfdbfe"/>
+  <text x="1283" y="414" class="tagBlue" text-anchor="middle">WATERLINE</text>
+
+  <path d="M792 222 L848 246 L892 292 L938 316 L974 364 L986 408 L918 408 L874 394 L834 408 L724 408 L684 392 L654 350 L678 304 L726 256 Z" fill="url(#iceTop)" stroke="#bfdbfe" stroke-width="2" filter="url(#softShadow)"/>
+  <path d="M848 246 L892 292 L938 316 L974 364 L940 386 L898 366 L860 318 Z" fill="rgba(177,210,247,0.28)"/>
+  <path d="M726 256 L678 304 L654 350 L684 392 L730 380 L758 322 Z" fill="rgba(255,255,255,0.32)"/>
+  <path d="M792 222 L834 274 L858 336 L846 408" fill="none" stroke="rgba(255,255,255,0.42)" stroke-width="3"/>
+  <path d="M930 324 L950 362 L958 408" fill="none" stroke="rgba(255,255,255,0.24)" stroke-width="3"/>
+  <rect x="742" y="308" width="116" height="28" rx="14" fill="#edf4ff"/>
+  <text x="800" y="327" class="tagBlue" text-anchor="middle">VISIBLE</text>
+  <text x="800" y="368" class="tipTitle" text-anchor="middle">上线效果</text>
+  <text x="800" y="396" class="tipText" text-anchor="middle">用户先看到的，是结果、体验和短期变化。</text>
+
+  <path d="M694 434 L918 434 L1004 482 L1058 570 L1036 648 L1000 712 L944 744 L884 744 L816 812 L748 744 L654 744 L610 708 L572 648 L546 570 L590 486 Z" fill="url(#iceBottom)" stroke="#a7c6ee" stroke-width="2" filter="url(#softShadow)"/>
+  <path d="M918 434 L1004 482 L1058 570 L1036 648 L1000 712 L944 744 L872 662 L894 570 L876 486 Z" fill="rgba(255,255,255,0.10)"/>
+  <path d="M694 434 L590 486 L546 570 L572 648 L610 708 L654 744 L728 672 L700 586 L724 494 Z" fill="rgba(61,119,196,0.16)"/>
+  <path d="M694 434 L642 516 L620 642" fill="none" stroke="rgba(255,255,255,0.20)" stroke-width="3"/>
+  <path d="M918 434 L970 514 L992 646" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="3"/>
+  <path d="M816 812 L790 706 L796 596" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="3"/>
+  <rect x="748" y="476" width="104" height="28" rx="14" fill="rgba(255,255,255,0.18)"/>
+  <text x="800" y="495" class="tagWhite" text-anchor="middle">HIDDEN</text>
+  <text x="800" y="548" class="baseTitle" text-anchor="middle">深层驱动</text>
+  <text x="800" y="584" class="baseText" text-anchor="middle">真正决定长期成败的，是水面以下的组织、机制与能力建设。</text>
+
+  <rect x="598" y="622" width="116" height="34" rx="17" fill="rgba(255,255,255,0.18)" stroke="rgba(255,255,255,0.22)"/>
+  <text x="656" y="644" class="chipText" text-anchor="middle">数据治理</text>
+  <rect x="726" y="622" width="116" height="34" rx="17" fill="rgba(255,255,255,0.18)" stroke="rgba(255,255,255,0.22)"/>
+  <text x="784" y="644" class="chipText" text-anchor="middle">流程标准</text>
+  <rect x="854" y="622" width="116" height="34" rx="17" fill="rgba(255,255,255,0.18)" stroke="rgba(255,255,255,0.22)"/>
+  <text x="912" y="644" class="chipText" text-anchor="middle">知识沉淀</text>
+  <rect x="646" y="670" width="116" height="34" rx="17" fill="rgba(255,255,255,0.18)" stroke="rgba(255,255,255,0.22)"/>
+  <text x="704" y="692" class="chipText" text-anchor="middle">协同机制</text>
+  <rect x="774" y="670" width="116" height="34" rx="17" fill="rgba(255,255,255,0.18)" stroke="rgba(255,255,255,0.22)"/>
+  <text x="832" y="692" class="chipText" text-anchor="middle">持续运营</text>
+  <rect x="902" y="670" width="116" height="34" rx="17" fill="rgba(255,255,255,0.18)" stroke="rgba(255,255,255,0.22)"/>
+  <text x="960" y="692" class="chipText" text-anchor="middle">团队认知</text>
+
+  <rect x="110" y="794" width="1330" height="28" rx="14" fill="#f3f7fc" stroke="#d7e3f4"/>
+  <text x="775" y="813" class="footerText" text-anchor="middle">适合“表层现象 vs 深层原因”“显性成果 vs 隐性能力”“短期结果 vs 长期机制”这类需要分层说明的页面。</text>
+</svg>

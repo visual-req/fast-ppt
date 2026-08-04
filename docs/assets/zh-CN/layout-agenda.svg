@@ -4,6 +4,10 @@
       <stop offset="0%" stop-color="#f4f7fb"/>
       <stop offset="100%" stop-color="#eef3f9"/>
     </linearGradient>
+    <linearGradient id="heroGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="rgba(37,99,235,0.16)"/>
+      <stop offset="100%" stop-color="rgba(77,160,255,0.03)"/>
+    </linearGradient>
     <filter id="panelShadow" x="-10%" y="-10%" width="120%" height="120%">
       <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#1e3a5f" flood-opacity="0.10"/>
     </filter>
@@ -12,19 +16,46 @@
 <rect x="54" y="44" width="1492" height="812" rx="36" fill="#ffffff" stroke="#d7e3f4" stroke-width="1.5" filter="url(#panelShadow)"/>
 <text x="110" y="126" fill="#143d7a" font-size="46" font-family="Arial, sans-serif" font-weight="700">Agenda</text>
 
-<rect x="120" y="188" width="1320" height="128" rx="26" fill="#eff6ff"/>
-<rect x="120" y="346" width="1320" height="128" rx="26" fill="#ffffff" stroke="#cbd5e1"/>
-<rect x="120" y="504" width="1320" height="128" rx="26" fill="#ffffff" stroke="#cbd5e1"/>
-<rect x="120" y="662" width="1320" height="128" rx="26" fill="#ffffff" stroke="#cbd5e1"/>
-<circle cx="182" cy="252" r="26" fill="#2563eb"/><circle cx="182" cy="410" r="26" fill="#93c5fd"/><circle cx="182" cy="568" r="26" fill="#93c5fd"/><circle cx="182" cy="726" r="26" fill="#93c5fd"/>
-<text x="174" y="260" fill="#ffffff" font-size="22" font-family="Arial, sans-serif" font-weight="700">1</text>
-<text x="174" y="418" fill="#ffffff" font-size="22" font-family="Arial, sans-serif" font-weight="700">2</text>
-<text x="174" y="576" fill="#ffffff" font-size="22" font-family="Arial, sans-serif" font-weight="700">3</text>
-<text x="174" y="734" fill="#ffffff" font-size="22" font-family="Arial, sans-serif" font-weight="700">4</text>
-<text x="236" y="246" fill="#0f172a" font-size="30" font-family="Arial, sans-serif" font-weight="700">为什么先看 outline</text>
-<text x="236" y="286" fill="#475569" font-size="22" font-family="Arial, sans-serif">先定结构，再定页面表达</text>
-<text x="236" y="404" fill="#0f172a" font-size="30" font-family="Arial, sans-serif" font-weight="700">layout 如何选择</text>
-<text x="236" y="562" fill="#0f172a" font-size="30" font-family="Arial, sans-serif" font-weight="700">SVG 和图表如何配合</text>
-<text x="236" y="720" fill="#0f172a" font-size="30" font-family="Arial, sans-serif" font-weight="700">如何完成真实交付</text>
+<circle cx="248" cy="520" r="258" fill="url(#heroGlow)"/>
+<circle cx="248" cy="520" r="196" fill="none" stroke="rgba(37,99,235,0.12)" stroke-width="2"/>
+<circle cx="248" cy="520" r="138" fill="none" stroke="rgba(37,99,235,0.10)" stroke-width="2"/>
+<circle cx="150" cy="266" r="34" fill="rgba(37,99,235,0.08)"/>
+<circle cx="204" cy="220" r="16" fill="rgba(37,99,235,0.12)"/>
+<circle cx="330" cy="240" r="22" fill="rgba(147,197,253,0.16)"/>
+<circle cx="1328" cy="164" r="26" fill="rgba(147,197,253,0.12)"/>
+<circle cx="1380" cy="220" r="14" fill="rgba(37,99,235,0.10)"/>
+<circle cx="1288" cy="720" r="20" fill="rgba(147,197,253,0.12)"/>
+<circle cx="1360" cy="760" r="12" fill="rgba(37,99,235,0.10)"/>
+<rect x="152" y="434" width="196" height="176" rx="36" fill="#ffffff" stroke="#d7e3f4" stroke-width="1.5"/>
+<rect x="176" y="458" width="148" height="18" rx="9" fill="#dbeafe"/>
+<rect x="176" y="494" width="96" height="14" rx="7" fill="#93c5fd"/>
+<rect x="176" y="534" width="112" height="14" rx="7" fill="#60a5fa"/>
+<rect x="176" y="574" width="132" height="14" rx="7" fill="#2563eb"/>
+<circle cx="332" cy="560" r="38" fill="#eff6ff" stroke="#bfdbfe"/>
+<path d="M310 582 L325 546 L338 565 L353 535" fill="none" stroke="#2563eb" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="154" y="654" width="194" height="38" rx="19" fill="#eff6ff" stroke="#d7e3f4"/>
+<text x="251" y="678" text-anchor="middle" fill="#1d6fe8" font-size="16" font-family="Arial, sans-serif" font-weight="700">4 Topics / 1 Flow</text>
+<path d="M386 252 C432 252 448 252 460 252" fill="none" stroke="#93c5fd" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 10"/>
+<path d="M386 410 C432 410 448 410 460 410" fill="none" stroke="#93c5fd" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 10"/>
+<path d="M386 568 C432 568 448 568 460 568" fill="none" stroke="#93c5fd" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 10"/>
+<path d="M386 726 C432 726 448 726 460 726" fill="none" stroke="#93c5fd" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 10"/>
+
+<rect x="460" y="188" width="980" height="128" rx="26" fill="#eff6ff"/>
+<rect x="460" y="346" width="980" height="128" rx="26" fill="#ffffff" stroke="#cbd5e1"/>
+<rect x="460" y="504" width="980" height="128" rx="26" fill="#ffffff" stroke="#cbd5e1"/>
+<rect x="460" y="662" width="980" height="128" rx="26" fill="#ffffff" stroke="#cbd5e1"/>
+<circle cx="522" cy="252" r="26" fill="#2563eb"/><circle cx="522" cy="410" r="26" fill="#93c5fd"/><circle cx="522" cy="568" r="26" fill="#93c5fd"/><circle cx="522" cy="726" r="26" fill="#93c5fd"/>
+<text x="514" y="260" fill="#ffffff" font-size="22" font-family="Arial, sans-serif" font-weight="700">1</text>
+<text x="514" y="418" fill="#ffffff" font-size="22" font-family="Arial, sans-serif" font-weight="700">2</text>
+<text x="514" y="576" fill="#ffffff" font-size="22" font-family="Arial, sans-serif" font-weight="700">3</text>
+<text x="514" y="734" fill="#ffffff" font-size="22" font-family="Arial, sans-serif" font-weight="700">4</text>
+<text x="576" y="246" fill="#0f172a" font-size="30" font-family="Arial, sans-serif" font-weight="700">为什么先看 outline</text>
+<text x="576" y="286" fill="#475569" font-size="22" font-family="Arial, sans-serif">先定结构，再定页面表达</text>
+<text x="576" y="404" fill="#0f172a" font-size="30" font-family="Arial, sans-serif" font-weight="700">layout 如何选择</text>
+<text x="576" y="444" fill="#475569" font-size="22" font-family="Arial, sans-serif">按信息密度、关系结构和决策重点匹配版式</text>
+<text x="576" y="562" fill="#0f172a" font-size="30" font-family="Arial, sans-serif" font-weight="700">SVG 和图表如何配合</text>
+<text x="576" y="602" fill="#475569" font-size="22" font-family="Arial, sans-serif">结构图负责表达逻辑，图表负责承载数据证据</text>
+<text x="576" y="720" fill="#0f172a" font-size="30" font-family="Arial, sans-serif" font-weight="700">如何完成真实交付</text>
+<text x="576" y="760" fill="#475569" font-size="22" font-family="Arial, sans-serif">从 layout 到静态构建、文档资产与可交付产物</text>
 
 </svg>

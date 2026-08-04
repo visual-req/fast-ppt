@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="pageBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f7fb"/>
+      <stop offset="100%" stop-color="#eef3f9"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#1e3a5f" flood-opacity="0.10"/>
+    </filter>
+    <style>
+      .title { fill:#143d7a; font-size:46px; font-family:Arial,sans-serif; font-weight:700; }
+      .subtle { fill:#64748b; font-size:18px; font-family:Arial,sans-serif; }
+      .num { fill:#ffffff; font-size:12px; font-family:Arial,sans-serif; font-weight:700; }
+      .cardTitle { fill:#143d7a; font-size:18px; font-family:Arial,sans-serif; font-weight:700; }
+      .cardText { fill:#475569; font-size:13px; font-family:Arial,sans-serif; }
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="url(#pageBg)"/>
+  <text x="110" y="126" class="title">阶段交错布局</text>
+  <text x="110" y="164" class="subtle">适合多阶段内容左右交错排布，让阅读节奏更强，也避免普通横排过于拥挤。</text>
+
+  <rect x="110" y="446" width="1330" height="8" rx="4" fill="rgba(29,111,232,0.18)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="95" y="220" width="250" height="148" rx="22" fill="#ffffff"/>
+    <circle cx="220" cy="450" r="22" fill="#1d6fe8"/><text x="220" y="455" text-anchor="middle" class="num">01</text>
+    <rect x="495" y="540" width="250" height="148" rx="22" fill="#ffffff"/>
+    <circle cx="620" cy="450" r="22" fill="#1d6fe8"/><text x="620" y="455" text-anchor="middle" class="num">02</text>
+    <rect x="895" y="220" width="250" height="148" rx="22" fill="#ffffff"/>
+    <circle cx="1020" cy="450" r="22" fill="#1d6fe8"/><text x="1020" y="455" text-anchor="middle" class="num">03</text>
+    <rect x="1295" y="540" width="250" height="148" rx="22" fill="#ffffff"/>
+    <circle cx="1420" cy="450" r="22" fill="#1d6fe8"/><text x="1420" y="455" text-anchor="middle" class="num">04</text>
+  </g>
+
+  <rect x="218" y="368" width="4" height="60" rx="2" fill="rgba(29,111,232,0.4)"/>
+  <rect x="618" y="472" width="4" height="68" rx="2" fill="rgba(29,111,232,0.4)"/>
+  <rect x="1018" y="368" width="4" height="60" rx="2" fill="rgba(29,111,232,0.4)"/>
+  <rect x="1418" y="472" width="4" height="68" rx="2" fill="rgba(29,111,232,0.4)"/>
+
+  <text x="127" y="280" class="cardTitle">识别问题</text>
+  <text x="127" y="314" class="cardText">明确问题边界</text>
+  <text x="127" y="338" class="cardText">与核心对象。</text>
+
+  <text x="527" y="600" class="cardTitle">拆解方案</text>
+  <text x="527" y="634" class="cardText">分层定义动作</text>
+  <text x="527" y="658" class="cardText">与资源配置。</text>
+
+  <text x="927" y="280" class="cardTitle">试点验证</text>
+  <text x="927" y="314" class="cardText">在小范围先</text>
+  <text x="927" y="338" class="cardText">验证有效性。</text>
+
+  <text x="1327" y="600" class="cardTitle">规模复制</text>
+  <text x="1327" y="634" class="cardText">跨团队、跨场景</text>
+  <text x="1327" y="658" class="cardText">推广成熟打法。</text>
+</svg>

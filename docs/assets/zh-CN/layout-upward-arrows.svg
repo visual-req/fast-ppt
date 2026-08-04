@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="pageBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f7fb"/>
+      <stop offset="100%" stop-color="#eef3f9"/>
+    </linearGradient>
+    <linearGradient id="panelBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fbff"/>
+    </linearGradient>
+    <linearGradient id="arrowFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4da0ff"/>
+      <stop offset="100%" stop-color="#1d6fe8"/>
+    </linearGradient>
+    <filter id="panelShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#1e3a5f" flood-opacity="0.10"/>
+    </filter>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#1e3a5f" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .title { fill: #143d7a; font-size: 46px; font-family: Arial, sans-serif; font-weight: 700; }
+      .subtle { fill: #64748b; font-size: 18px; font-family: Arial, sans-serif; }
+      .arrowTitle { fill: #ffffff; font-size: 20px; font-family: Arial, sans-serif; font-weight: 700; }
+      .arrowText { fill: rgba(255,255,255,0.92); font-size: 14px; font-family: Arial, sans-serif; }
+      .footerText { fill: #5b6b82; font-size: 18px; font-family: Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#pageBg)"/>
+  <rect x="54" y="44" width="1492" height="812" rx="36" fill="url(#panelBg)" stroke="#d7e3f4" stroke-width="1.5" filter="url(#panelShadow)"/>
+
+  <text x="110" y="126" class="title">向上箭头式布局</text>
+  <text x="110" y="164" class="subtle">四个箭头自左向右逐级拔高，每个箭头内部承载阶段提升内容，适合展示成熟度、能力升级与阶段跃迁。</text>
+
+  <rect x="110" y="748" width="1330" height="18" rx="9" fill="rgba(29,111,232,0.18)"/>
+
+  <path d="M166 748 L166 540 L118 540 L284 498 L450 540 L402 540 L402 748 Z" fill="url(#arrowFill)" filter="url(#softShadow)"/>
+  <text x="284" y="618" text-anchor="middle" class="arrowTitle">基础规范</text>
+  <text x="284" y="648" text-anchor="middle" class="arrowText">统一口径、流程</text>
+  <text x="284" y="670" text-anchor="middle" class="arrowText">与职责边界。</text>
+
+  <path d="M456 748 L456 492 L408 492 L574 448 L740 492 L692 492 L692 748 Z" fill="url(#arrowFill)" filter="url(#softShadow)"/>
+  <text x="574" y="594" text-anchor="middle" class="arrowTitle">机制成型</text>
+  <text x="574" y="624" text-anchor="middle" class="arrowText">形成标准动作</text>
+  <text x="574" y="646" text-anchor="middle" class="arrowText">与协同机制。</text>
+
+  <path d="M746 748 L746 404 L698 404 L864 360 L1030 404 L982 404 L982 748 Z" fill="url(#arrowFill)" filter="url(#softShadow)"/>
+  <text x="864" y="528" text-anchor="middle" class="arrowTitle">复制推广</text>
+  <text x="864" y="558" text-anchor="middle" class="arrowText">把成熟做法复制</text>
+  <text x="864" y="580" text-anchor="middle" class="arrowText">到更多场景。</text>
+
+  <path d="M1036 748 L1036 316 L988 316 L1154 270 L1320 316 L1272 316 L1272 748 Z" fill="url(#arrowFill)" filter="url(#softShadow)"/>
+  <text x="1154" y="462" text-anchor="middle" class="arrowTitle">持续领先</text>
+  <text x="1154" y="492" text-anchor="middle" class="arrowText">建立优化闭环</text>
+  <text x="1154" y="514" text-anchor="middle" class="arrowText">与长期竞争力。</text>
+
+  <rect x="110" y="800" width="1330" height="28" rx="14" fill="#f3f7fc" stroke="#d7e3f4"/>
+  <text x="775" y="819" class="footerText" text-anchor="middle">适合“从低到高逐级提升”的战略页、成熟度页、能力提升页与阶段跃迁页。</text>
+</svg>

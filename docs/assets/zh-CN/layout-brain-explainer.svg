@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="pageBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f7fb"/>
+      <stop offset="100%" stop-color="#eef3f9"/>
+    </linearGradient>
+    <linearGradient id="panelBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fbff"/>
+    </linearGradient>
+    <linearGradient id="lineStroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#93c5fd"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="brainFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fbff"/>
+      <stop offset="100%" stop-color="#eaf2ff"/>
+    </linearGradient>
+    <filter id="panelShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#1e3a5f" flood-opacity="0.10"/>
+    </filter>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#1e3a5f" flood-opacity="0.10"/>
+    </filter>
+    <style>
+      .title { fill: #143d7a; font-size: 46px; font-family: Arial, sans-serif; font-weight: 700; }
+      .subtle { fill: #64748b; font-size: 18px; font-family: Arial, sans-serif; }
+      .brainTag { fill: #2563eb; font-size: 16px; font-family: Arial, sans-serif; font-weight: 700; letter-spacing: 2px; }
+      .brainTitle { fill: #143d7a; font-size: 32px; font-family: Arial, sans-serif; font-weight: 700; }
+      .brainText { fill: #64748b; font-size: 18px; font-family: Arial, sans-serif; }
+      .cardTag { fill: #2563eb; font-size: 12px; font-family: Arial, sans-serif; font-weight: 700; letter-spacing: 1.6px; }
+      .cardTitle { fill: #143d7a; font-size: 24px; font-family: Arial, sans-serif; font-weight: 700; }
+      .cardText { fill: #475569; font-size: 16px; font-family: Arial, sans-serif; }
+      .footerText { fill: #5b6b82; font-size: 18px; font-family: Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#pageBg)"/>
+  <rect x="54" y="44" width="1492" height="812" rx="36" fill="url(#panelBg)" stroke="#d7e3f4" stroke-width="1.5" filter="url(#panelShadow)"/>
+
+  <text x="110" y="126" class="title">大脑式布局</text>
+  <text x="110" y="164" class="subtle">中间以大脑作为认知中枢，周围挂载解释模块，适合表达洞察、决策、规则与反馈闭环。</text>
+
+  <rect x="110" y="194" width="6" height="26" rx="3" fill="#1d6fe8"/>
+  <text x="130" y="214" fill="#1d6fe8" font-size="20" font-family="Arial, sans-serif" font-weight="700">Preview Layout</text>
+
+  <path d="M800 452 Q800 398 800 336" fill="none" stroke="url(#lineStroke)" stroke-width="6" stroke-dasharray="10 10"/>
+  <path d="M896 480 Q1010 456 1088 432" fill="none" stroke="url(#lineStroke)" stroke-width="6" stroke-dasharray="10 10"/>
+  <path d="M892 540 Q1018 610 1088 688" fill="none" stroke="url(#lineStroke)" stroke-width="6" stroke-dasharray="10 10"/>
+  <path d="M708 540 Q582 610 512 688" fill="none" stroke="url(#lineStroke)" stroke-width="6" stroke-dasharray="10 10"/>
+  <path d="M704 470 Q590 442 512 408" fill="none" stroke="url(#lineStroke)" stroke-width="6" stroke-dasharray="10 10"/>
+
+  <circle cx="800" cy="336" r="18" fill="#ffffff" stroke="#2563eb" stroke-width="8"/>
+  <circle cx="1088" cy="432" r="18" fill="#ffffff" stroke="#2563eb" stroke-width="8"/>
+  <circle cx="1088" cy="688" r="18" fill="#ffffff" stroke="#2563eb" stroke-width="8"/>
+  <circle cx="512" cy="688" r="18" fill="#ffffff" stroke="#2563eb" stroke-width="8"/>
+  <circle cx="512" cy="408" r="18" fill="#ffffff" stroke="#2563eb" stroke-width="8"/>
+
+  <circle cx="800" cy="498" r="210" fill="rgba(147,197,253,0.18)"/>
+
+  <path d="M798 304 C748 254 668 260 626 314 C590 320 562 350 558 394 C532 418 526 468 548 504 C544 542 566 580 602 596 C620 634 660 654 700 648 C726 664 762 666 798 652"
+        fill="url(#brainFill)" stroke="#2563eb" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" filter="url(#softShadow)"/>
+  <path d="M802 304 C852 254 932 260 974 314 C1010 320 1038 350 1042 394 C1068 418 1074 468 1052 504 C1056 542 1034 580 998 596 C980 634 940 654 900 648 C874 664 838 666 802 652"
+        fill="url(#brainFill)" stroke="#2563eb" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" filter="url(#softShadow)"/>
+  <path d="M800 326 L800 626" fill="none" stroke="#93c5fd" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 10"/>
+  <path d="M712 346 C664 364 646 408 664 444 C642 474 648 518 678 542" fill="none" stroke="#60a5fa" stroke-width="5" stroke-linecap="round"/>
+  <path d="M774 360 C736 380 722 420 736 454 C720 486 726 522 752 548" fill="none" stroke="#60a5fa" stroke-width="5" stroke-linecap="round"/>
+  <path d="M888 346 C936 364 954 408 936 444 C958 474 952 518 922 542" fill="none" stroke="#60a5fa" stroke-width="5" stroke-linecap="round"/>
+  <path d="M826 360 C864 380 878 420 864 454 C880 486 874 522 848 548" fill="none" stroke="#60a5fa" stroke-width="5" stroke-linecap="round"/>
+  <path d="M696 578 C730 600 764 610 796 612" fill="none" stroke="#60a5fa" stroke-width="5" stroke-linecap="round"/>
+  <path d="M904 578 C870 600 836 610 804 612" fill="none" stroke="#60a5fa" stroke-width="5" stroke-linecap="round"/>
+
+  <rect x="648" y="610" width="304" height="98" rx="22" fill="rgba(255,255,255,0.94)" stroke="#bfdbfe" filter="url(#softShadow)"/>
+  <text x="800" y="642" class="brainTag" text-anchor="middle">BRAIN</text>
+  <text x="800" y="678" class="brainTitle" text-anchor="middle">智能中枢</text>
+  <text x="800" y="704" class="brainText" text-anchor="middle">统一认知、规则与反馈闭环</text>
+
+  <rect x="676" y="174" width="248" height="96" rx="22" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <rect x="676" y="174" width="7" height="96" rx="3.5" fill="#2563eb"/>
+  <text x="704" y="202" class="cardTag">TOPIC 01</text>
+  <text x="704" y="236" class="cardTitle">洞察输入</text>
+  <text x="704" y="264" class="cardText">把用户、业务与场景信号统一汇入</text>
+
+  <rect x="1112" y="360" width="248" height="96" rx="22" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <rect x="1112" y="360" width="7" height="96" rx="3.5" fill="#2563eb"/>
+  <text x="1140" y="388" class="cardTag">TOPIC 02</text>
+  <text x="1140" y="422" class="cardTitle">规则判断</text>
+  <text x="1140" y="450" class="cardText">基于标准口径完成识别与决策</text>
+
+  <rect x="1112" y="628" width="248" height="96" rx="22" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <rect x="1112" y="628" width="7" height="96" rx="3.5" fill="#2563eb"/>
+  <text x="1140" y="656" class="cardTag">TOPIC 03</text>
+  <text x="1140" y="690" class="cardTitle">执行驱动</text>
+  <text x="1140" y="718" class="cardText">把中枢判断转成下游动作和编排</text>
+
+  <rect x="240" y="628" width="248" height="96" rx="22" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <rect x="240" y="628" width="7" height="96" rx="3.5" fill="#2563eb"/>
+  <text x="268" y="656" class="cardTag">TOPIC 04</text>
+  <text x="268" y="690" class="cardTitle">反馈学习</text>
+  <text x="268" y="718" class="cardText">持续回收效果、异常与经验进行优化</text>
+
+  <rect x="240" y="344" width="248" height="96" rx="22" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <rect x="240" y="344" width="7" height="96" rx="3.5" fill="#2563eb"/>
+  <text x="268" y="372" class="cardTag">TOPIC 05</text>
+  <text x="268" y="406" class="cardTitle">知识沉淀</text>
+  <text x="268" y="434" class="cardText">把经验转化为模板、机制与知识资产</text>
+
+  <rect x="110" y="780" width="1330" height="42" rx="18" fill="#f3f7fc" stroke="#d7e3f4"/>
+  <text x="775" y="808" class="footerText" text-anchor="middle">适合“智能中枢 / 洞察引擎 / 认知大脑 + 周边解释模块”的方案页、方法页与能力架构页。</text>
+</svg>

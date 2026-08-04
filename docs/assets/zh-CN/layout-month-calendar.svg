@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="pageBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f7fb"/>
+      <stop offset="100%" stop-color="#eef3f9"/>
+    </linearGradient>
+    <linearGradient id="panelBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fbff"/>
+    </linearGradient>
+    <filter id="panelShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#1e3a5f" flood-opacity="0.10"/>
+    </filter>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#1e3a5f" flood-opacity="0.08"/>
+    </filter>
+    <style>
+      .title { fill: #143d7a; font-size: 46px; font-family: Arial, sans-serif; font-weight: 700; }
+      .subtle { fill: #64748b; font-size: 18px; font-family: Arial, sans-serif; }
+      .badge { fill: #1d6fe8; font-size: 18px; font-family: Arial, sans-serif; font-weight: 700; }
+      .monthLabel { fill: #143d7a; font-size: 34px; font-family: Arial, sans-serif; font-weight: 700; }
+      .headerNote { fill: #64748b; font-size: 14px; font-family: Arial, sans-serif; }
+      .week { fill: #1d6fe8; font-size: 14px; font-family: Arial, sans-serif; font-weight: 700; }
+      .day { fill: #143d7a; font-size: 18px; font-family: Arial, sans-serif; font-weight: 700; }
+      .eventBlue { fill: #1d4ed8; font-size: 11px; font-family: Arial, sans-serif; font-weight: 700; }
+      .eventGreen { fill: #15803d; font-size: 11px; font-family: Arial, sans-serif; font-weight: 700; }
+      .eventAmber { fill: #b45309; font-size: 11px; font-family: Arial, sans-serif; font-weight: 700; }
+      .eventRed { fill: #b91c1c; font-size: 11px; font-family: Arial, sans-serif; font-weight: 700; }
+      .mutedDay { fill: #8ba0bb; font-size: 18px; font-family: Arial, sans-serif; font-weight: 700; }
+      .legendText { fill: #64748b; font-size: 12px; font-family: Arial, sans-serif; font-weight: 700; }
+      .footerText { fill: #5b6b82; font-size: 18px; font-family: Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#pageBg)"/>
+  <rect x="54" y="44" width="1492" height="812" rx="36" fill="url(#panelBg)" stroke="#d7e3f4" stroke-width="1.5" filter="url(#panelShadow)"/>
+
+  <text x="110" y="126" class="title">月历布局</text>
+  <text x="110" y="164" class="subtle">按月份展示日期格与关键事项，适合月度项目排期、运营节奏表、里程碑计划与会议日历。</text>
+
+  <rect x="110" y="194" width="6" height="26" rx="3" fill="#1d6fe8"/>
+  <text x="130" y="214" class="badge">Preview Layout</text>
+
+  <rect x="120" y="248" width="1320" height="92" rx="28" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <rect x="154" y="274" width="126" height="28" rx="14" fill="rgba(29,111,232,0.08)"/>
+  <text x="217" y="293" text-anchor="middle" fill="#1d6fe8" font-size="13" font-family="Arial, sans-serif" font-weight="700">MONTHLY VIEW</text>
+  <text x="154" y="327" class="monthLabel">2026 / 08</text>
+  <text x="350" y="326" class="headerNote">展示月度会议、投产节点、评审安排与复盘节奏</text>
+
+  <circle cx="1110" cy="286" r="6" fill="rgba(29,111,232,0.16)"/>
+  <text x="1124" y="290" class="legendText">关键会议</text>
+  <circle cx="1220" cy="286" r="6" fill="rgba(245,158,11,0.16)"/>
+  <text x="1234" y="290" class="legendText">里程碑</text>
+  <circle cx="1110" cy="316" r="6" fill="rgba(22,163,74,0.16)"/>
+  <text x="1124" y="320" class="legendText">已完成</text>
+  <circle cx="1220" cy="316" r="6" fill="rgba(239,68,68,0.16)"/>
+  <text x="1234" y="320" class="legendText">风险提醒</text>
+
+  <rect x="148" y="360" width="176" height="36" rx="16" fill="rgba(29,111,232,0.08)"/><text x="236" y="383" text-anchor="middle" class="week">Mon</text>
+  <rect x="336" y="360" width="176" height="36" rx="16" fill="rgba(29,111,232,0.08)"/><text x="424" y="383" text-anchor="middle" class="week">Tue</text>
+  <rect x="524" y="360" width="176" height="36" rx="16" fill="rgba(29,111,232,0.08)"/><text x="612" y="383" text-anchor="middle" class="week">Wed</text>
+  <rect x="712" y="360" width="176" height="36" rx="16" fill="rgba(29,111,232,0.08)"/><text x="800" y="383" text-anchor="middle" class="week">Thu</text>
+  <rect x="900" y="360" width="176" height="36" rx="16" fill="rgba(29,111,232,0.08)"/><text x="988" y="383" text-anchor="middle" class="week">Fri</text>
+  <rect x="1088" y="360" width="176" height="36" rx="16" fill="rgba(29,111,232,0.08)"/><text x="1176" y="383" text-anchor="middle" class="week">Sat</text>
+  <rect x="1276" y="360" width="176" height="36" rx="16" fill="rgba(29,111,232,0.08)"/><text x="1364" y="383" text-anchor="middle" class="week">Sun</text>
+
+  <g>
+    <rect x="148" y="408" width="176" height="70" rx="20" fill="rgba(244,247,251,0.88)" stroke="#d7e3f4"/><text x="166" y="431" class="mutedDay">28</text>
+    <rect x="336" y="408" width="176" height="70" rx="20" fill="rgba(244,247,251,0.88)" stroke="#d7e3f4"/><text x="354" y="431" class="mutedDay">29</text>
+    <rect x="524" y="408" width="176" height="70" rx="20" fill="rgba(244,247,251,0.88)" stroke="#d7e3f4"/><text x="542" y="431" class="mutedDay">30</text>
+    <rect x="712" y="408" width="176" height="70" rx="20" fill="rgba(244,247,251,0.88)" stroke="#d7e3f4"/><text x="730" y="431" class="mutedDay">31</text>
+    <rect x="900" y="408" width="176" height="70" rx="20" fill="#ffffff" stroke="#d7e3f4"/><text x="918" y="431" class="day">1</text>
+    <rect x="1088" y="408" width="176" height="70" rx="20" fill="#ffffff" stroke="#d7e3f4"/><text x="1106" y="431" class="day">2</text>
+    <rect x="1276" y="408" width="176" height="70" rx="20" fill="#ffffff" stroke="#d7e3f4"/><text x="1294" y="431" class="day">3</text>
+    <rect x="1292" y="442" width="118" height="20" rx="10" fill="rgba(29,111,232,0.12)"/><text x="1302" y="456" class="eventBlue">经营周会</text>
+  </g>
+
+  <g>
+    <rect x="148" y="488" width="176" height="70" rx="20" fill="#ffffff" stroke="#d7e3f4"/><text x="166" y="511" class="day">4</text>
+    <rect x="336" y="488" width="176" height="70" rx="20" fill="#ffffff" stroke="#d7e3f4"/><text x="354" y="511" class="day">5</text>
+    <rect x="524" y="488" width="176" height="70" rx="20" fill="#ffffff" stroke="#d7e3f4"/><text x="542" y="511" class="day">6</text>
+    <rect x="712" y="488" width="176" height="70" rx="20" fill="#ffffff" stroke="#d7e3f4"/><text x="730" y="511" class="day">7</text>
+    <rect x="900" y="488" width="176" height="70" rx="20" fill="#ffffff" stroke="#d7e3f4"/><text x="918" y="511" class="day">8</text>
+    <rect x="1088" y="488" width="176" height="70" rx="20" fill="#ffffff" stroke="#d7e3f4"/><text x="1106" y="511" class="day">9</text>
+    <rect x="1276" y="488" width="176" height="70" rx="20" fill="#ffffff" stroke="#d7e3f4"/><text x="1294" y="511" class="day">10</text>
+    <rect x="1292" y="520" width="126" height="20" rx="10" fill="rgba(245,158,11,0.14)"/><text x="1302" y="534" class="eventAmber">里程碑评审</text>
+    <rect x="1292" y="542" width="110" height="20" rx="10" fill="rgba(22,163,74,0.12)"/><text x="1302" y="556" class="eventGreen">资料归档</text>
+  </g>
+
+  <g>
+    <rect x="148" y="568" width="176" height="70" rx="20" fill="#ffffff" stroke="#d7e3f4"/><text x="166" y="591" class="day">11</text>
+    <rect x="336" y="568" width="176" height="70" rx="20" fill="#ffffff" stroke="#1d6fe8" stroke-width="1.5"/><text x="354" y="591" class="day">12</text>
+    <rect x="352" y="602" width="118" height="20" rx="10" fill="rgba(29,111,232,0.12)"/><text x="362" y="616" class="eventBlue">客户沟通会</text>
+    <rect x="524" y="568" width="176" height="70" rx="20" fill="#ffffff" stroke="#d7e3f4"/><text x="542" y="591" class="day">13</text>
+    <rect x="712" y="568" width="176" height="70" rx="20" fill="#ffffff" stroke="#d7e3f4"/><text x="730" y="591" class="day">14</text>
+    <rect x="900" y="568" width="176" height="70" rx="20" fill="#ffffff" stroke="#d7e3f4"/><text x="918" y="591" class="day">15</text>
+    <rect x="1088" y="568" width="176" height="70" rx="20" fill="#ffffff" stroke="#d7e3f4"/><text x="1106" y="591" class="day">16</text>
+    <rect x="1276" y="568" width="176" height="70" rx="20" fill="#ffffff" stroke="#d7e3f4"/><text x="1294" y="591" class="day">17</text>
+  </g>
+
+  <g>
+    <rect x="148" y="648" width="176" height="70" rx="20" fill="#ffffff" stroke="#d7e3f4"/><text x="166" y="671" class="day">18</text>
+    <rect x="164" y="682" width="110" height="20" rx="10" fill="rgba(239,68,68,0.12)"/><text x="174" y="696" class="eventRed">投产窗口</text>
+    <rect x="336" y="648" width="176" height="70" rx="20" fill="#ffffff" stroke="#d7e3f4"/><text x="354" y="671" class="day">19</text>
+    <rect x="524" y="648" width="176" height="70" rx="20" fill="#ffffff" stroke="#d7e3f4"/><text x="542" y="671" class="day">20</text>
+    <rect x="712" y="648" width="176" height="70" rx="20" fill="#ffffff" stroke="#d7e3f4"/><text x="730" y="671" class="day">21</text>
+    <rect x="900" y="648" width="176" height="70" rx="20" fill="#ffffff" stroke="#d7e3f4"/><text x="918" y="671" class="day">22</text>
+    <rect x="1088" y="648" width="176" height="70" rx="20" fill="#ffffff" stroke="#d7e3f4"/><text x="1106" y="671" class="day">23</text>
+    <rect x="1276" y="648" width="176" height="70" rx="20" fill="#ffffff" stroke="#d7e3f4"/><text x="1294" y="671" class="day">24</text>
+    <rect x="1292" y="682" width="110" height="20" rx="10" fill="rgba(22,163,74,0.12)"/><text x="1302" y="696" class="eventGreen">复盘会议</text>
+  </g>
+
+  <g>
+    <rect x="148" y="728" width="176" height="70" rx="20" fill="#ffffff" stroke="#d7e3f4"/><text x="166" y="751" class="day">25</text>
+    <rect x="336" y="728" width="176" height="70" rx="20" fill="#ffffff" stroke="#d7e3f4"/><text x="354" y="751" class="day">26</text>
+    <rect x="524" y="728" width="176" height="70" rx="20" fill="#ffffff" stroke="#d7e3f4"/><text x="542" y="751" class="day">27</text>
+    <rect x="712" y="728" width="176" height="70" rx="20" fill="#ffffff" stroke="#d7e3f4"/><text x="730" y="751" class="day">28</text>
+    <rect x="900" y="728" width="176" height="70" rx="20" fill="#ffffff" stroke="#d7e3f4"/><text x="918" y="751" class="day">29</text>
+    <rect x="1088" y="728" width="176" height="70" rx="20" fill="#ffffff" stroke="#d7e3f4"/><text x="1106" y="751" class="day">30</text>
+    <rect x="1276" y="728" width="176" height="70" rx="20" fill="#ffffff" stroke="#d7e3f4"/><text x="1294" y="751" class="day">31</text>
+  </g>
+
+  <rect x="110" y="812" width="1330" height="28" rx="14" fill="#f3f7fc" stroke="#d7e3f4"/>
+  <text x="775" y="831" class="footerText" text-anchor="middle">适合“一个月内的节奏排布、事项同步、会议安排和关键日期提醒”的计划型页面。</text>
+</svg>

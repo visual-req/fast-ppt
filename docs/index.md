@@ -8,6 +8,19 @@ Select your language | 言語を選択 | 选择语言：
 
 ---
 
+## Start Here | はじめに見る文書 | 建议先看
+
+If you're new to this project, read in this order:
+
+1. [Getting Started](zh-CN/getting-started.md) / [EN](en-US/getting-started.md) / [JA](ja-JP/getting-started.md)
+2. [Workflow](zh-CN/workflow.md) / [EN](en-US/workflow.md) / [JA](ja-JP/workflow.md)
+3. [Structure](zh-CN/structure.md) / [EN](en-US/structure.md) / [JA](ja-JP/structure.md)
+4. [Layouts](zh-CN/layouts.md) / [EN](en-US/layouts.md) / [JA](ja-JP/layouts.md)
+
+These four docs explain how to start, how the two-phase flow works, where outputs live, and how layout selection maps into viewer rendering.
+
+---
+
 ## Quick Links | クイックリンク | 快速链接
 
 | Document | 中文 | English | 日本語 |

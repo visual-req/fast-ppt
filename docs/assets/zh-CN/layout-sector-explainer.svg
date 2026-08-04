@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="pageBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f7fb"/>
+      <stop offset="100%" stop-color="#edf3fa"/>
+    </linearGradient>
+    <linearGradient id="panelBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f9fbfe"/>
+    </linearGradient>
+    <linearGradient id="band1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a65d8"/>
+      <stop offset="100%" stop-color="#174fae"/>
+    </linearGradient>
+    <linearGradient id="band2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2275eb"/>
+      <stop offset="100%" stop-color="#165bc3"/>
+    </linearGradient>
+    <linearGradient id="band3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2284ff"/>
+      <stop offset="100%" stop-color="#1964d3"/>
+    </linearGradient>
+    <linearGradient id="band4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2d93ff"/>
+      <stop offset="100%" stop-color="#1b6fe4"/>
+    </linearGradient>
+    <linearGradient id="accentBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4da0ff"/>
+      <stop offset="100%" stop-color="#1d6fe8"/>
+    </linearGradient>
+    <filter id="panelShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#18345b" flood-opacity="0.10"/>
+    </filter>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#1e3a5f" flood-opacity="0.10"/>
+    </filter>
+    <filter id="ringShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#1e3a5f" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .title { fill: #143d7a; font-size: 46px; font-family: Arial, sans-serif; font-weight: 700; }
+      .subtle { fill: #64748b; font-size: 18px; font-family: Arial, sans-serif; }
+      .sectorTitle { fill: #ffffff; font-size: 15px; font-family: Arial, sans-serif; font-weight: 700; }
+      .sectorLabelBg { fill: rgba(20, 61, 122, 0.22); stroke: rgba(255, 255, 255, 0.18); stroke-width: 1; }
+      .cardTitle { fill: #143d7a; font-size: 26px; font-family: Arial, sans-serif; font-weight: 700; }
+      .cardText { fill: #475569; font-size: 18px; font-family: Arial, sans-serif; }
+      .badge { fill: #ffffff; font-size: 18px; font-family: Arial, sans-serif; font-weight: 700; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#pageBg)"/>
+  <rect x="54" y="44" width="1492" height="812" rx="36" fill="url(#panelBg)" stroke="#d7e3f4" stroke-width="1.5" filter="url(#panelShadow)"/>
+
+  <text x="110" y="126" class="title">半圆扇形解说图</text>
+  <text x="110" y="164" class="subtle">左侧用大半圆承接主议题，上方拆出 4 个扇形，右侧横向说明条逐一展开每个模块的价值与动作。</text>
+
+  <rect x="110" y="194" width="6" height="26" rx="3" fill="#1d6fe8"/>
+  <text x="130" y="214" fill="#1d6fe8" font-size="20" font-family="Arial, sans-serif" font-weight="700">Preview Layout</text>
+
+  <g transform="rotate(90 210 520)">
+    <circle cx="210" cy="520" r="344" fill="#eaf1fa" opacity="0.8"/>
+    <path d="M-90 520 A300 300 0 0 1 510 520 L372 520 A162 162 0 0 0 48 520 Z" fill="#dfe9f6" opacity="0.78" filter="url(#ringShadow)"/>
+    <path d="M-68 520 A278 278 0 0 1 488 520 L390 520 A180 180 0 0 0 30 520 Z" fill="#eef4fb" opacity="0.94"/>
+
+    <path d="M-90 520 A300 300 0 0 1 -12.9 319.3 L89.6 411.6 A162 162 0 0 0 48 520 Z" fill="url(#band1)"/>
+    <path d="M1.6 304.2 A300 300 0 0 1 199.5 220.2 L204.3 358.1 A162 162 0 0 0 97.5 403.5 Z" fill="url(#band2)"/>
+    <path d="M220.5 220.2 A300 300 0 0 1 418.4 304.2 L322.5 403.5 A162 162 0 0 0 215.7 358.1 Z" fill="url(#band3)"/>
+    <path d="M432.9 319.3 A300 300 0 0 1 510 520 L372 520 A162 162 0 0 0 330.4 411.6 Z" fill="url(#band4)"/>
+  </g>
+
+  <circle cx="210" cy="520" r="150" fill="#ffffff" filter="url(#softShadow)"/>
+  <circle cx="210" cy="520" r="118" fill="#f7fbff" stroke="#d7e3f4" stroke-width="2"/>
+  <text x="210" y="532" fill="#143d7a" font-size="34" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">核心议题</text>
+
+  <rect x="272" y="236" width="88" height="28" rx="14" class="sectorLabelBg"/>
+  <text x="316" y="255" class="sectorTitle" text-anchor="middle">用户洞察</text>
+
+  <rect x="348" y="366" width="88" height="28" rx="14" class="sectorLabelBg"/>
+  <text x="392" y="385" class="sectorTitle" text-anchor="middle">方案设计</text>
+
+  <rect x="370" y="504" width="88" height="28" rx="14" class="sectorLabelBg"/>
+  <text x="414" y="523" class="sectorTitle" text-anchor="middle">执行落地</text>
+
+  <rect x="334" y="640" width="88" height="28" rx="14" class="sectorLabelBg"/>
+  <text x="378" y="659" class="sectorTitle" text-anchor="middle">结果复盘</text>
+
+  <path d="M368 250 C458 252 554 264 680 278" stroke="#9fb6d7" stroke-width="3" fill="none" stroke-dasharray="8 8"/>
+  <path d="M444 380 C522 386 590 392 680 408" stroke="#9fb6d7" stroke-width="3" fill="none" stroke-dasharray="8 8"/>
+  <path d="M466 518 C542 522 600 532 680 548" stroke="#9fb6d7" stroke-width="3" fill="none" stroke-dasharray="8 8"/>
+  <path d="M430 654 C508 658 578 668 680 688" stroke="#9fb6d7" stroke-width="3" fill="none" stroke-dasharray="8 8"/>
+
+  <rect x="680" y="224" width="760" height="106" rx="24" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <rect x="680" y="224" width="14" height="106" rx="7" fill="url(#band2)"/>
+  <rect x="712" y="246" width="66" height="34" rx="17" fill="url(#band2)"/>
+  <text x="745" y="269" class="badge" text-anchor="middle">01</text>
+  <text x="804" y="268" class="cardTitle">用户洞察</text>
+  <text x="804" y="300" class="cardText">
+    <tspan x="804" dy="0">先把用户分层、场景差异和关键反馈看清，</tspan>
+    <tspan x="804" dy="24">避免所有动作都建立在“平均用户”的想象上。</tspan>
+  </text>
+
+  <rect x="680" y="364" width="760" height="106" rx="24" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <rect x="680" y="364" width="14" height="106" rx="7" fill="url(#band1)"/>
+  <rect x="712" y="386" width="66" height="34" rx="17" fill="url(#band1)"/>
+  <text x="745" y="409" class="badge" text-anchor="middle">02</text>
+  <text x="804" y="408" class="cardTitle">方案设计</text>
+  <text x="804" y="430" class="cardText">
+    <tspan x="804" dy="0">把问题拆成阶段动作、责任人和评价口径，</tspan>
+    <tspan x="804" dy="24">让“要做什么、先做什么、为什么这么做”全部落到纸面上。</tspan>
+  </text>
+
+  <rect x="680" y="504" width="760" height="106" rx="24" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <rect x="680" y="504" width="14" height="106" rx="7" fill="url(#band3)"/>
+  <rect x="712" y="526" width="66" height="34" rx="17" fill="url(#band3)"/>
+  <text x="745" y="549" class="badge" text-anchor="middle">03</text>
+  <text x="804" y="548" class="cardTitle">执行落地</text>
+  <text x="804" y="570" class="cardText">
+    <tspan x="804" dy="0">围绕时间表、资源配置和协作链路推进实施，</tspan>
+    <tspan x="804" dy="24">把抽象策略变成团队真正会执行的动作序列。</tspan>
+  </text>
+
+  <rect x="680" y="644" width="760" height="106" rx="24" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <rect x="680" y="644" width="14" height="106" rx="7" fill="url(#band4)"/>
+  <rect x="712" y="666" width="66" height="34" rx="17" fill="url(#band4)"/>
+  <text x="745" y="689" class="badge" text-anchor="middle">04</text>
+  <text x="804" y="688" class="cardTitle">结果复盘</text>
+  <text x="804" y="710" class="cardText">
+    <tspan x="804" dy="0">把结果、经验和问题回收进同一个闭环，</tspan>
+    <tspan x="804" dy="24">形成下一轮可复用的模板、规则和优化方向。</tspan>
+  </text>
+
+  <rect x="110" y="780" width="1330" height="42" rx="18" fill="#f3f7fc" stroke="#d7e3f4"/>
+  <text x="775" y="808" fill="#5b6b82" font-size="18" font-family="Arial, sans-serif" text-anchor="middle">适合“主议题拆成 4 个扇区 + 每个模块右侧详细展开”的说明页、能力图和工作亮点页。</text>
+</svg>

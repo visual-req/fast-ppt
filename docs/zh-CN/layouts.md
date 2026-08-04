@@ -132,6 +132,40 @@
 }
 ```
 
+### `staff_list`
+
+![staff_list](../assets/zh-CN/layout-staff-list.svg)
+
+适用场景：
+
+- 条目式目录页
+- 方法论清单
+- 能力拆解页
+- 想做得比普通 bullet 更有记忆点的条目页
+
+关键字段：
+
+- `title`
+- `items` 或 `bullets`
+- `subtitle`（可选）
+- `eyebrow`（可选）
+
+示例：
+
+```json
+{
+  "layout_type": "staff_list",
+  "title": "项目推进的四个关键条目",
+  "subtitle": "左侧装饰采用“金箍棒式轴条”，适合把多个要点排成规整清单。",
+  "items": [
+    { "tag": "章节 01", "title": "战略方向", "text": "先明确目标、边界和优先级，避免后续动作散掉。" },
+    { "tag": "章节 02", "title": "能力建设", "text": "把数据、流程、平台和组织等支撑能力逐条拆开表达。" },
+    { "tag": "章节 03", "title": "执行机制", "text": "条目内部建议采用“短标题 + 一句解释”的稳定结构。" },
+    { "tag": "章节 04", "title": "落地保障", "text": "最后收束到治理、节奏、责任人和复盘闭环。" }
+  ]
+}
+```
+
 ### `comparison_table`
 
 ![comparison_table](../assets/zh-CN/layout-comparison-table.svg)
@@ -238,6 +272,61 @@
 }
 ```
 
+### `swimlane_board`
+
+![swimlane_board](../assets/zh-CN/layout-swimlane-board.svg)
+
+适用场景：
+
+- 多责任域并行推进
+- 团队 / 模块 / 能力分层说明
+- 每条泳道内部再拆关键动作
+
+关键字段：
+
+- `title`
+- `lanes[].name`
+- `lanes[].note`
+- `lanes[].items`
+
+示例：
+
+```json
+{
+  "layout_type": "swimlane_board",
+  "title": "三层协同泳道",
+  "lanes": [
+    {
+      "name": "业务前台",
+      "note": "客户需求、场景反馈、优先级输入",
+      "items": [
+        { "tag": "INPUT", "title": "需求归并", "text": "统一入口、合并重复问题" },
+        { "tag": "ACTION", "title": "优先级判定", "text": "按影响面与紧急度排序" },
+        { "tag": "OUTPUT", "title": "进入方案池", "text": "形成可执行的问题列表" }
+      ]
+    },
+    {
+      "name": "中台策略",
+      "note": "规则设计、资源协调、方案落地",
+      "items": [
+        { "tag": "PLAN", "title": "策略建模", "text": "目标、规则、责任人拆解" },
+        { "tag": "SYNC", "title": "跨团队协同", "text": "资源分派、节奏管理、里程碑" },
+        { "tag": "RULE", "title": "执行标准", "text": "形成统一口径与检查点" }
+      ]
+    },
+    {
+      "name": "后台支撑",
+      "note": "数据回收、系统支撑、闭环优化",
+      "items": [
+        { "tag": "DATA", "title": "指标监测", "text": "持续收集效果与异常信号" },
+        { "tag": "SUPPORT", "title": "平台支撑", "text": "自动化、权限、数据底座" },
+        { "tag": "LOOP", "title": "结果复盘", "text": "把经验沉淀为下一轮输入" }
+      ]
+    }
+  ]
+}
+```
+
 ### `metro_loop`
 
 ![metro_loop](../assets/zh-CN/layout-metro-loop.svg)
@@ -279,6 +368,654 @@
     { "label": "灰度覆盖率", "value": "100%", "note": "全模型灰度发布" },
     { "label": "告警闭环率", "value": "98%", "note": "24h 内闭环" },
     { "label": "自动回滚时间", "value": "<5min", "note": "异常自动触发" }
+  ]
+}
+```
+
+### `double_loop`
+
+![double_loop](../assets/zh-CN/layout-double-loop.svg)
+
+适用场景：
+
+- 双循环治理
+- 策略与执行协同
+- 前后台联动
+- 规划、执行、复盘双引擎
+
+关键字段：
+
+- `title`
+- `left_title`
+- `right_title`
+- `left_nodes[]`
+- `right_nodes[]`
+
+示例：
+
+```json
+{
+  "layout_type": "double_loop",
+  "title": "策略与执行双循环",
+  "left_title": "策略循环",
+  "right_title": "执行循环",
+  "left_nodes": [
+    { "title": "洞察输入" },
+    { "title": "需求澄清" },
+    { "title": "方案建模" },
+    { "title": "机制校准" }
+  ],
+  "right_nodes": [
+    { "title": "执行推进" },
+    { "title": "数据回收" },
+    { "title": "效果验证" },
+    { "title": "持续优化" }
+  ]
+}
+```
+
+### `iceberg`
+
+![iceberg](../assets/zh-CN/layout-iceberg.svg)
+
+适用场景：
+
+- 冰山模型
+- 表层现象与深层根因拆解
+- 显性结果与隐性结构说明
+- 认知、组织、机制、能力的分层表达
+
+关键字段：
+
+- `title`
+- `tip.title`
+- `tip.text`
+- `base.title`
+- `base.text`
+- `base.bullets[]`
+
+示例：
+
+```json
+{
+  "layout_type": "iceberg",
+  "title": "AI 落地的冰山结构",
+  "tip": {
+    "tag": "VISIBLE",
+    "title": "上线效果",
+    "text": "用户看到的是模型上线、体验改善和短期结果。"
+  },
+  "base": {
+    "tag": "HIDDEN",
+    "title": "深层驱动",
+    "text": "真正决定长期效果的，是水面以下的组织能力和机制建设。",
+    "bullets": ["数据治理", "流程标准", "知识沉淀", "协同机制", "持续运营"]
+  }
+}
+```
+
+### `house`
+
+![house](../assets/zh-CN/layout-house.svg)
+
+适用场景：
+
+- 战略屋 / 能力屋 / 治理屋
+- 一个总目标，下挂 3-4 个能力支柱
+- 底部需要明确平台、治理、机制等基础底座
+
+关键字段：
+
+- `title`
+- `roof.title`
+- `roof.text`
+- `pillars[]`
+- `foundation.title`
+- `foundation.text`
+- `foundation.items[]`
+
+示例：
+
+```json
+{
+  "layout_type": "house",
+  "title": "AI 运营能力屋",
+  "roof": {
+    "title": "统一 AI 运营目标",
+    "text": "围绕价值实现、交付标准与衡量口径形成统一屋顶"
+  },
+  "pillars": [
+    {
+      "tag": "PILLAR 01",
+      "title": "业务场景",
+      "text": "锁定高价值场景，明确优先级、收益与试点范围"
+    },
+    {
+      "tag": "PILLAR 02",
+      "title": "核心能力",
+      "text": "沉淀模型、流程、规则和模板，形成可复制交付能力"
+    },
+    {
+      "tag": "PILLAR 03",
+      "title": "运营机制",
+      "text": "建立监控、复盘、优化的持续运营闭环"
+    }
+  ],
+  "foundation": {
+    "title": "基础底座",
+    "text": "用统一平台、治理和权限体系支撑上层能力稳定运行",
+    "items": ["数据平台", "治理口径", "权限合规"]
+  }
+}
+```
+
+### `radial_explainer`
+
+![radial_explainer](../assets/zh-CN/layout-radial-explainer.svg)
+
+适用场景：
+
+- 一个核心议题，向外解释 4-6 个关键模块
+- 方法论展开、能力拆解、方案总览
+- 中心概念固定，周围按主题逐条说明
+
+关键字段：
+
+- `title`
+- `center.title`
+- `center.text`
+- `items[]`
+
+示例：
+
+```json
+{
+  "layout_type": "radial_explainer",
+  "title": "智能运营框架总览",
+  "center": {
+    "title": "核心议题",
+    "text": "围绕一个总目标，向外拆分关键模块与动作"
+  },
+  "items": [
+    {
+      "tag": "TOPIC 01",
+      "title": "目标定义",
+      "text": "明确总目标、边界和评价口径"
+    },
+    {
+      "tag": "TOPIC 02",
+      "title": "执行路径",
+      "text": "把目标拆成关键动作与里程碑"
+    },
+    {
+      "tag": "TOPIC 03",
+      "title": "支撑能力",
+      "text": "平台、工具、机制共同支撑落地"
+    },
+    {
+      "tag": "TOPIC 04",
+      "title": "数据回收",
+      "text": "持续收集效果与异常信号闭环优化"
+    },
+    {
+      "tag": "TOPIC 05",
+      "title": "责任分工",
+      "text": "明确角色边界与协同关系"
+    }
+  ]
+}
+```
+
+### `brain_explainer`
+
+![brain_explainer](../assets/zh-CN/layout-brain-explainer.svg)
+
+适用场景：
+
+- 智能中枢 / 洞察引擎 / 认知大脑
+- 中间是统一判断核心，周围解释输入、规则、执行、反馈等模块
+- 一页展示“像大脑一样协同运作”的能力结构
+
+关键字段：
+
+- `title`
+- `brain.title`
+- `brain.text`
+- `items[]`
+
+示例：
+
+```json
+{
+  "layout_type": "brain_explainer",
+  "title": "智能运营大脑",
+  "brain": {
+    "title": "智能中枢",
+    "text": "统一认知、规则和反馈闭环，驱动周边模块协同运作"
+  },
+  "items": [
+    {
+      "tag": "TOPIC 01",
+      "title": "洞察输入",
+      "text": "把用户、业务与场景信号统一汇入"
+    },
+    {
+      "tag": "TOPIC 02",
+      "title": "规则判断",
+      "text": "基于标准口径完成识别与决策"
+    },
+    {
+      "tag": "TOPIC 03",
+      "title": "执行驱动",
+      "text": "把中枢判断转成下游动作和编排"
+    },
+    {
+      "tag": "TOPIC 04",
+      "title": "反馈学习",
+      "text": "持续回收效果、异常与经验进行优化"
+    },
+    {
+      "tag": "TOPIC 05",
+      "title": "知识沉淀",
+      "text": "把经验转化为模板、机制与知识资产"
+    }
+  ]
+}
+```
+
+### `profile_intro`
+
+![profile_intro](../assets/zh-CN/layout-profile-intro.svg)
+
+适用场景：
+
+- 个人介绍 / 团队核心成员介绍
+- 顾问、讲师、嘉宾、项目负责人简介页
+- 一半照片，一半用标签、摘要和分区卡片表达个人背景
+
+关键字段：
+
+- `title`
+- `photo.src`
+- `profile.name`
+- `profile.role`
+- `profile.summary`
+- `profile.tags[]`
+- `sections[]`
+
+示例：
+
+```json
+{
+  "layout_type": "profile_intro",
+  "title": "核心成员介绍",
+  "photo": {
+    "src": "work/assets/profile-zhangyuchen.png",
+    "caption": "项目主负责人"
+  },
+  "profile": {
+    "name": "张雨辰",
+    "role": "战略咨询顾问 / AI 产品负责人",
+    "summary": "专注于把业务洞察、数字化能力和组织协同落到可执行方案。",
+    "organization": "某咨询团队",
+    "location": "上海",
+    "tags": ["业务洞察", "方案设计", "组织协同"]
+  },
+  "sections": [
+    {
+      "label": "PART 01",
+      "title": "核心经历",
+      "text": "8 年咨询与产品经验，覆盖金融、企业服务与 AI 应用场景。"
+    },
+    {
+      "label": "PART 02",
+      "title": "擅长领域",
+      "items": ["战略拆解", "产品规划", "Prompt 设计", "知识工程"]
+    },
+    {
+      "label": "PART 03",
+      "title": "代表标签",
+      "text": "结果导向、结构清晰、表达稳定、推进节奏感强。"
+    },
+    {
+      "label": "PART 04",
+      "title": "合作方式",
+      "text": "擅长跨团队沟通，对齐目标、拆解任务并持续推进执行闭环。"
+    }
+  ]
+}
+```
+
+### `chip_explainer`
+
+![chip_explainer](../assets/zh-CN/layout-chip-explainer.svg)
+
+适用场景：
+
+- 平台能力页
+- 技术方案页
+- 用“芯片”隐喻中枢能力，再拆出四个解释模块
+
+关键字段：
+
+- `title`
+- `chip.title`
+- `chip.text`
+- `items[]`
+
+示例：
+
+```json
+{
+  "layout_type": "chip_explainer",
+  "title": "平台中枢能力",
+  "chip": {
+    "title": "智能芯片",
+    "text": "作为统一算力与规则中枢，向四个方向分发能力、接口与协同机制。"
+  },
+  "items": [
+    {
+      "tag": "PART 01",
+      "title": "算力核心",
+      "text": "定义统一的处理与计算能力底座"
+    },
+    {
+      "tag": "PART 02",
+      "title": "接口总线",
+      "text": "对外提供能力接口与标准接入方式"
+    },
+    {
+      "tag": "PART 03",
+      "title": "协同机制",
+      "text": "驱动上下游模块形成稳定协作关系"
+    },
+    {
+      "tag": "PART 04",
+      "title": "规则编排",
+      "text": "把策略口径写成可执行的规则单元"
+    }
+  ]
+}
+```
+
+### `petal_explainer`
+
+![petal_explainer](../assets/zh-CN/layout-petal-explainer.svg)
+
+适用场景：
+
+- 四个模块对称说明
+- 能力花瓣图
+- 核心主题 + 四个支撑点
+
+关键字段：
+
+- `title`
+- `core_title`
+- `items`
+
+示例：
+
+```json
+{
+  "layout_type": "petal_explainer",
+  "title": "花瓣式能力结构",
+  "core_title": "核心议题",
+  "items": [
+    { "title": "用户洞察", "text": "识别关键对象、需求与触点。" },
+    { "title": "方案设计", "text": "拆解动作、节奏与责任分工。" },
+    { "title": "执行落地", "text": "推进资源协同与任务闭环。" },
+    { "title": "结果复盘", "text": "沉淀经验并优化下一轮动作。" }
+  ]
+}
+```
+
+### `fan_explainer`
+
+![fan_explainer](../assets/zh-CN/layout-fan-explainer.svg)
+
+适用场景：
+
+- 核心主题向外展开四个解释模块
+- 比花瓣式更有方向感的说明页
+- 想表达“展开、铺开、分层解释”的结构页
+
+关键字段：
+
+- `title`
+- `core_title` 或 `core`
+- `items`
+
+示例：
+
+```json
+{
+  "layout_type": "fan_explainer",
+  "title": "折扇式结构说明",
+  "core_title": "核心主题",
+  "items": [
+    { "title": "用户洞察", "text": "先识别关键对象、需求与触点。" },
+    { "title": "方案设计", "text": "拆解动作、节奏与责任分工。" },
+    { "title": "执行落地", "text": "推进资源协同与任务闭环。" },
+    { "title": "结果复盘", "text": "沉淀经验并优化下一轮动作。" }
+  ]
+}
+```
+
+### `screen_explainer`
+
+![screen_explainer](../assets/zh-CN/layout-screen-explainer.svg)
+
+适用场景：
+
+- 中心界面讲解
+- 核心屏幕 + 周边说明
+- 产品能力解释页
+
+关键字段：
+
+- `title`
+- `screen`
+- `items`
+
+示例：
+
+```json
+{
+  "layout_type": "screen_explainer",
+  "title": "核心界面解释布局",
+  "screen": {
+    "tag": "SCREEN",
+    "title": "统一运营驾驶舱",
+    "text": "把关键指标、主流程和当前状态放在中间大屏幕中。"
+  },
+  "items": [
+    { "title": "任务入口", "text": "集中承载待办、提醒和优先动作。" },
+    { "title": "数据透视", "text": "以浮窗方式解释关键指标与异常。"},
+    { "title": "协同动作", "text": "说明跨角色协同和操作链路。" },
+    { "title": "闭环反馈", "text": "解释结果回收、复盘与优化。"}
+  ]
+}
+```
+
+### `stage_chevrons`
+
+![stage_chevrons](../assets/zh-CN/layout-stage-chevrons.svg)
+
+适用场景：
+
+- 横向阶段推进
+- 箭头式阶段分段
+- 从前到后的连续流程
+
+关键字段：
+
+- `title`
+- `stages`
+
+示例：
+
+```json
+{
+  "layout_type": "stage_chevrons",
+  "title": "横向阶段推进",
+  "stages": [
+    { "title": "准备", "text": "统一口径与目标。" },
+    { "title": "启动", "text": "明确动作与责任。" },
+    { "title": "扩展", "text": "复制打法并扩大范围。" },
+    { "title": "沉淀", "text": "形成机制与复盘闭环。" }
+  ]
+}
+```
+
+### `stage_staircase`
+
+![stage_staircase](../assets/zh-CN/layout-stage-staircase.svg)
+
+适用场景：
+
+- 台阶式阶段提升
+- 成熟度逐级上升
+- 从基础到高阶的过程展示
+
+关键字段：
+
+- `title`
+- `stages`
+
+示例：
+
+```json
+{
+  "layout_type": "stage_staircase",
+  "title": "台阶式阶段提升",
+  "stages": [
+    { "title": "基础规范", "text": "统一标准和底层规则。" },
+    { "title": "流程成型", "text": "建立阶段动作和协同机制。" },
+    { "title": "复制推广", "text": "把成熟方法推广到更多场景。" },
+    { "title": "持续优化", "text": "形成改进闭环和长期能力。" }
+  ]
+}
+```
+
+### `stage_zigzag`
+
+![stage_zigzag](../assets/zh-CN/layout-stage-zigzag.svg)
+
+适用场景：
+
+- 左右交错阶段链路
+- 节奏感较强的阶段页
+- 需要避免横向拥挤的多阶段说明
+
+关键字段：
+
+- `title`
+- `stages`
+
+示例：
+
+```json
+{
+  "layout_type": "stage_zigzag",
+  "title": "交错阶段链路",
+  "stages": [
+    { "title": "识别问题", "text": "明确问题边界与核心对象。" },
+    { "title": "拆解方案", "text": "分层定义动作与资源。" },
+    { "title": "试点验证", "text": "在小范围验证有效性。" },
+    { "title": "规模复制", "text": "跨团队、跨场景推广。" }
+  ]
+}
+```
+
+### `development_route`
+
+![development_route](../assets/zh-CN/layout-development-route.svg)
+
+适用场景：
+
+- 企业发展路线图
+- 平台成长路径
+- 战略推进路线
+- 能力演进路径
+
+关键字段：
+
+- `title`
+- `base_label`
+- `stages[]`
+- `destination`
+
+示例：
+
+```json
+{
+  "layout_type": "development_route",
+  "title": "企业发展路线图",
+  "base_label": "当前基础",
+  "stages": [
+    {
+      "phase": "阶段 1",
+      "title": "能力夯实",
+      "text": "统一基础流程、组织职责和数据口径。"
+    },
+    {
+      "phase": "阶段 2",
+      "title": "体系成型",
+      "text": "形成标准机制、关键流程和协同接口。"
+    },
+    {
+      "phase": "阶段 3",
+      "title": "规模复制",
+      "text": "把成功模式复制到更多业务单元和区域。"
+    },
+    {
+      "phase": "阶段 4",
+      "title": "生态协同",
+      "text": "打通内外部资源，构建更强的协作网络。"
+    }
+  ],
+  "destination": {
+    "title": "目标状态",
+    "text": "形成清晰的发展路径、阶段目标与组织支撑能力。"
+  }
+}
+```
+
+### `cycle_explainer`
+
+![cycle_explainer](../assets/zh-CN/layout-cycle-explainer.svg)
+
+适用场景：
+
+- 管理闭环
+- 运营闭环
+- 策略闭环
+- 持续优化循环
+
+关键字段：
+
+- `title`
+- `center`
+- `items`
+
+示例：
+
+```json
+{
+  "layout_type": "cycle_explainer",
+  "title": "经营闭环机制",
+  "center": {
+    "title": "核心闭环",
+    "text": "把关键动作组织成持续迭代、持续优化的循环机制。"
+  },
+  "items": [
+    { "tag": "01", "title": "洞察输入", "text": "持续收集问题、反馈与场景变化。" },
+    { "tag": "02", "title": "策略制定", "text": "把洞察整理成清晰动作与优先级。" },
+    { "tag": "03", "title": "执行推进", "text": "围绕目标推动资源与团队协同落地。" },
+    { "tag": "04", "title": "效果验证", "text": "观察过程数据、结果反馈和偏差情况。" },
+    { "tag": "05", "title": "复盘纠偏", "text": "总结问题，修正机制和下一轮方案。" },
+    { "tag": "06", "title": "能力沉淀", "text": "把经验沉淀为模板、标准和工具能力。" }
   ]
 }
 ```
@@ -358,6 +1095,43 @@
       "src": "work/assets/001-skill-template.svg",
       "caption": "Skill 模板示意"
     }
+  }
+}
+```
+
+### `symmetric_split`
+
+![symmetric_split](../assets/zh-CN/layout-symmetric-split.svg)
+
+适用场景：
+
+- 左右双侧对称说明
+- 两个对象并列展开
+- 两类能力 / 两条路径镜像展示
+
+关键字段：
+
+- `title`
+- `center_label`（可选）
+- `left`
+- `right`
+
+示例：
+
+```json
+{
+  "layout_type": "symmetric_split",
+  "title": "能力体系左右对称布局",
+  "center_label": "VS",
+  "left": {
+    "tag": "供给侧",
+    "title": "平台能力",
+    "bullets": ["统一底座", "服务编排", "指标看板"]
+  },
+  "right": {
+    "tag": "需求侧",
+    "title": "业务价值",
+    "bullets": ["场景落地", "流程提效", "结果复盘"]
   }
 }
 ```
@@ -925,6 +1699,35 @@ text 模式示例：
 }
 ```
 
+### `triple_metrics`
+
+![triple_metrics](../assets/zh-CN/layout-triple-metrics.svg)
+
+适用场景：
+
+- 三个核心数据展示
+- 三大指标并列对比
+- 三圆式数据概览
+
+关键字段：
+
+- `title`
+- `metrics`
+
+示例：
+
+```json
+{
+  "layout_type": "triple_metrics",
+  "title": "三大核心指标",
+  "metrics": [
+    { "label": "覆盖率", "value": 92, "unit": "%", "note": "核心场景已覆盖主要流程。" },
+    { "label": "自动化率", "value": 68, "unit": "%", "note": "高频任务已进入自动处理。" },
+    { "label": "响应时效", "value": 4.2, "unit": "h", "note": "关键事项平均响应时间。" }
+  ]
+}
+```
+
 ### `swot`
 
 ![swot](../assets/zh-CN/layout-swot.svg)
@@ -961,7 +1764,7 @@ text 模式示例：
 
 适用场景：
 
-- 层级价值表达
+- 每层一个梯形承载一个核心内容
 - 从基础到高阶的能力栈
 - 金字塔式结论归纳
 
@@ -969,6 +1772,9 @@ text 模式示例：
 
 - `title`
 - `levels` 或 `blocks`
+- `levels[].title`
+- `levels[].text?`
+- `levels[].bullets?`
 
 示例：
 
@@ -977,10 +1783,10 @@ text 模式示例：
   "layout_type": "pyramid",
   "title": "能力金字塔",
   "levels": [
-    { "title": "基础资源" },
-    { "title": "执行流程" },
-    { "title": "质量闭环" },
-    { "title": "稳定交付" }
+    { "title": "基础资源", "text": "数据、工具和知识资产共同构成底座。" },
+    { "title": "执行流程", "text": "把目标拆成阶段动作、责任人与交付物。" },
+    { "title": "质量闭环", "text": "通过检查、反馈和复盘提升稳定性。" },
+    { "title": "稳定交付", "text": "最终沉淀成可以持续复用的业务价值。" }
   ]
 }
 ```
@@ -1482,28 +2288,43 @@ text 模式示例：
 
 适用场景：
 
-- 漏斗转化分析
-- 线索到成交的阶段转化
-- 逐层收敛的流程效果说明
+- 用户转化漏斗
+- 运营分层沉淀
+- 从触达到留存的阶段收束页
 
 关键字段：
 
 - `title`
-- `data` 或 `series`
-- `unit`
+- `stages[].title`
+- `stages[].value`
+- `stages[].text`
+- `stages[].bullets`
 
 示例：
 
 ```json
 {
   "layout_type": "funnel_chart",
-  "title": "转化漏斗",
-  "unit": "%",
-  "data": [
-    { "label": "访问", "value": 100 },
-    { "label": "点击", "value": 42 },
-    { "label": "试用", "value": 18 },
-    { "label": "成交", "value": 7 }
+  "title": "项目复盘：成果与经验沉淀",
+  "stages": [
+    {
+      "title": "用户触达与吸引",
+      "value": "12.8 万",
+      "text": "聚焦曝光增长与首轮转化。",
+      "bullets": ["曝光显著提升", "新增用户数扩大"]
+    },
+    {
+      "title": "用户转化与留存",
+      "value": "3.4 万",
+      "text": "围绕转化率和留存率做优化。",
+      "bullets": ["转化率有效提高", "用户留存率稳定"]
+    },
+    {
+      "title": "用户深度运营与口碑传播",
+      "value": "8,600",
+      "text": "沉淀复购和口碑扩散。",
+      "bullets": ["复购率显著提升", "口碑传播效果增强"]
+    }
   ]
 }
 ```
@@ -1928,6 +2749,228 @@ text 模式示例：
     "headers": ["任务", "产品", "研发", "设计", "运营"],
     "rows": [["定义结构", "A", "R", "C", "I"], ["调整视觉", "C", "R", "A", "I"]]
   }
+}
+```
+
+### `target_map`
+
+适用场景：
+
+- 年度目标路径
+- 从当前基础到目标状态的推进图
+- 路线打靶图 / 目标拆解图
+
+关键字段：
+
+- `title`
+- `start_label`
+- `milestones`
+- `goal`
+
+示例：
+
+```json
+{
+  "layout_type": "target_map",
+  "title": "2026 年能力跃迁路径",
+  "start_label": "2026",
+  "milestones": [
+    {
+      "label": "M1",
+      "title": "技能精进",
+      "text": "补齐方法、知识与工具链底座。"
+    },
+    {
+      "label": "M2",
+      "title": "管理优化",
+      "bullets": ["流程收敛", "时间管理", "资源协同"]
+    },
+    {
+      "label": "M3",
+      "title": "团队协作",
+      "text": "建立反馈与复盘闭环。"
+    },
+    {
+      "label": "M4",
+      "title": "业务成果",
+      "bullets": ["产能提升", "绩效改善", "方案沉淀"]
+    }
+  ],
+  "goal": {
+    "title": "晋升路径",
+    "subtitle": "从执行者走向能稳定打胜仗的负责人",
+    "text": "把阶段能力沉淀为可复用的方法与项目成果。"
+  }
+}
+```
+
+### `sector_explainer`
+
+![sector_explainer](../assets/zh-CN/layout-sector-explainer.svg)
+
+适用场景：
+
+- 左侧扇区总览 + 右侧逐条展开
+- 模块说明页
+- 能力拆解 / 工作亮点 / 方法论分块解释
+
+关键字段：
+
+- `title`
+- `center_title`
+- `sectors[].title`
+- `sectors[].text`
+- `sectors[].bullets`
+
+示例：
+
+```json
+{
+  "layout_type": "sector_explainer",
+  "title": "方法论拆解",
+  "center_title": "核心议题",
+  "sectors": [
+    { "title": "用户洞察", "text": "先把用户分层、场景差异和关键反馈看清。" },
+    { "title": "方案设计", "text": "把问题拆成阶段动作、责任人和评价口径。" },
+    { "title": "执行落地", "text": "围绕时间表、资源配置和协作链路推进实施。" },
+    { "title": "结果复盘", "text": "把结果、经验和问题回收进同一个闭环。" }
+  ]
+}
+```
+
+### `upward_arrows`
+
+![upward_arrows](../assets/zh-CN/layout-upward-arrows.svg)
+
+适用场景：
+
+- 能力逐级提升
+- 四阶段成熟度提升
+- 从基础到拔高的路径说明
+
+关键字段：
+
+- `title`
+- `items`
+
+示例：
+
+```json
+{
+  "layout_type": "upward_arrows",
+  "title": "能力提升路径",
+  "items": [
+    { "title": "基础规范", "text": "统一口径、流程与职责边界。" },
+    { "title": "机制成型", "text": "形成标准动作与协同机制。" },
+    { "title": "复制推广", "text": "把成熟做法复制到更多场景。" },
+    { "title": "持续领先", "text": "建立优化闭环与长期竞争力。" }
+  ]
+}
+```
+
+### `kanban_board`
+
+适用场景：
+
+- 周会执行看板
+- 任务推进状态页
+- 项目管理 / 运营排期同步
+
+关键字段：
+
+- `title`
+- `columns[].title`
+- `columns[].cards[].owner`
+- `columns[].cards[].task`
+- `columns[].cards[].progress`
+- `columns[].cards[].due`
+
+示例：
+
+```json
+{
+  "layout_type": "kanban_board",
+  "title": "项目推进看板",
+  "columns": [
+    {
+      "title": "To Do",
+      "icon": "todo",
+      "cards": [
+        { "owner": "产品：陈莉", "task": "确认下周版本功能边界", "due": "07-30" }
+      ]
+    },
+    {
+      "title": "In Progress",
+      "icon": "doing",
+      "cards": [
+        { "owner": "研发：李雷", "task": "接入导出链路与预览校验", "progress": "75%" }
+      ]
+    },
+    {
+      "title": "Review",
+      "icon": "review",
+      "cards": [
+        { "owner": "设计：陈心茹", "task": "回看目录页与封面的一致性", "note": "补最终修订意见" }
+      ]
+    },
+    {
+      "title": "Done",
+      "icon": "done",
+      "cards": [
+        { "owner": "运营：赵志", "task": "完成项目复盘材料整理", "due": "07-28" }
+      ]
+    }
+  ]
+}
+```
+
+### `month_calendar`
+
+![month_calendar](../assets/zh-CN/layout-month-calendar.svg)
+
+适用场景：
+
+- 月度项目排期
+- 运营节奏表
+- 会议与里程碑日历
+
+关键字段：
+
+- `title`
+- `month`
+- `weekdays`
+- `days[].day`
+- `days[].events`
+- `legend`
+
+示例：
+
+```json
+{
+  "layout_type": "month_calendar",
+  "title": "8 月工作月历",
+  "month": "2026 / 08",
+  "subtitle": "展示月度会议、投产节点、评审安排与复盘节奏",
+  "weekdays": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+  "legend": [
+    { "label": "关键会议", "tone": "blue" },
+    { "label": "里程碑", "tone": "amber" },
+    { "label": "已完成", "tone": "green" },
+    { "label": "风险提醒", "tone": "red" }
+  ],
+  "days": [
+    { "day": 28, "muted": true },
+    { "day": 29, "muted": true },
+    { "day": 30, "muted": true },
+    { "day": 31, "muted": true },
+    { "day": 1 },
+    { "day": 2 },
+    { "day": 3, "events": [{ "label": "经营周会", "tone": "blue" }] },
+    { "day": 10, "events": [{ "label": "里程碑评审", "tone": "amber" }, { "label": "资料归档", "tone": "green" }] },
+    { "day": 12, "today": true, "events": [{ "label": "客户沟通会", "tone": "blue" }] },
+    { "day": 18, "events": [{ "label": "投产窗口", "tone": "red" }] },
+    { "day": 24, "events": [{ "label": "复盘会议", "tone": "green" }] }
+  ]
 }
 ```
 

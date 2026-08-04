@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="pageBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f7fb"/>
+      <stop offset="100%" stop-color="#eef3f9"/>
+    </linearGradient>
+    <linearGradient id="panelBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fbff"/>
+    </linearGradient>
+    <linearGradient id="roofFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="52%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="foundationFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#eff6ff"/>
+      <stop offset="100%" stop-color="#dbeafe"/>
+    </linearGradient>
+    <filter id="panelShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#1e3a5f" flood-opacity="0.10"/>
+    </filter>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#1e3a5f" flood-opacity="0.10"/>
+    </filter>
+    <style>
+      .title { fill: #143d7a; font-size: 46px; font-family: Arial, sans-serif; font-weight: 700; }
+      .subtle { fill: #64748b; font-size: 18px; font-family: Arial, sans-serif; }
+      .roofTag { fill: #ffffff; font-size: 16px; font-family: Arial, sans-serif; font-weight: 700; letter-spacing: 2px; }
+      .roofTitle { fill: #ffffff; font-size: 34px; font-family: Arial, sans-serif; font-weight: 700; }
+      .roofText { fill: rgba(255,255,255,0.88); font-size: 18px; font-family: Arial, sans-serif; }
+      .pillarTitle { fill: #143d7a; font-size: 28px; font-family: Arial, sans-serif; font-weight: 700; }
+      .pillarText { fill: #475569; font-size: 18px; font-family: Arial, sans-serif; }
+      .foundationTitle { fill: #143d7a; font-size: 30px; font-family: Arial, sans-serif; font-weight: 700; }
+      .foundationText { fill: #475569; font-size: 18px; font-family: Arial, sans-serif; }
+      .chipText { fill: #1d4ed8; font-size: 16px; font-family: Arial, sans-serif; font-weight: 700; }
+      .footerText { fill: #5b6b82; font-size: 18px; font-family: Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#pageBg)"/>
+  <rect x="54" y="44" width="1492" height="812" rx="36" fill="url(#panelBg)" stroke="#d7e3f4" stroke-width="1.5" filter="url(#panelShadow)"/>
+
+  <text x="110" y="126" class="title">房子型布局</text>
+  <text x="110" y="164" class="subtle">上层屋顶承接战略目标，中部支柱承载核心能力，底部基础底座表达平台、治理与保障。</text>
+
+  <rect x="110" y="194" width="6" height="26" rx="3" fill="#1d6fe8"/>
+  <text x="130" y="214" fill="#1d6fe8" font-size="20" font-family="Arial, sans-serif" font-weight="700">Preview Layout</text>
+
+  <polygon points="800,345 1272,422 328,422" fill="url(#roofFill)" stroke="#bfdbfe" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="800" y="396" class="roofTitle" text-anchor="middle">战略屋顶</text>
+
+  <rect x="252" y="422" width="1096" height="14" rx="7" fill="#ffffff" stroke="#bfdbfe"/>
+
+  <rect x="334" y="438" width="64" height="286" rx="24" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <rect x="342" y="464" width="48" height="16" rx="8" fill="#dbeafe"/>
+  <rect x="342" y="502" width="48" height="158" rx="18" fill="url(#foundationFill)" stroke="#bfdbfe"/>
+  <rect x="342" y="684" width="48" height="16" rx="8" fill="#dbeafe"/>
+
+  <rect x="1202" y="438" width="64" height="286" rx="24" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <rect x="1210" y="464" width="48" height="16" rx="8" fill="#dbeafe"/>
+  <rect x="1210" y="502" width="48" height="158" rx="18" fill="url(#foundationFill)" stroke="#bfdbfe"/>
+  <rect x="1210" y="684" width="48" height="16" rx="8" fill="#dbeafe"/>
+
+  <rect x="386" y="438" width="828" height="276" rx="30" fill="#f8fbff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <rect x="414" y="468" width="240" height="208" rx="24" fill="#ffffff" stroke="#d7e3f4"/>
+  <rect x="680" y="468" width="240" height="208" rx="24" fill="#ffffff" stroke="#d7e3f4"/>
+  <rect x="946" y="468" width="240" height="208" rx="24" fill="#ffffff" stroke="#d7e3f4"/>
+
+  <rect x="414" y="468" width="10" height="208" rx="5" fill="#2563eb"/>
+  <rect x="680" y="468" width="10" height="208" rx="5" fill="#3b82f6"/>
+  <rect x="946" y="468" width="10" height="208" rx="5" fill="#60a5fa"/>
+
+  <text x="450" y="514" fill="#1d4ed8" font-size="14" font-family="Arial, sans-serif" font-weight="700" letter-spacing="2">ZONE 01</text>
+  <text x="450" y="552" class="pillarTitle">业务场景</text>
+  <text x="450" y="606" class="pillarText">识别高价值场景</text>
+  <text x="450" y="638" class="pillarText">聚焦关键痛点与收益</text>
+
+  <text x="716" y="514" fill="#2563eb" font-size="14" font-family="Arial, sans-serif" font-weight="700" letter-spacing="2">ZONE 02</text>
+  <text x="716" y="552" class="pillarTitle">核心能力</text>
+  <text x="716" y="606" class="pillarText">流程、模型、规则沉淀</text>
+  <text x="716" y="638" class="pillarText">形成标准化交付能力</text>
+
+  <text x="982" y="514" fill="#3b82f6" font-size="14" font-family="Arial, sans-serif" font-weight="700" letter-spacing="2">ZONE 03</text>
+  <text x="982" y="552" class="pillarTitle">运营机制</text>
+  <text x="982" y="606" class="pillarText">持续监控、复盘与迭代</text>
+  <text x="982" y="638" class="pillarText">把经验沉淀为制度</text>
+
+  <rect x="304" y="736" width="992" height="86" fill="url(#foundationFill)" stroke="#bfdbfe" filter="url(#softShadow)"/>
+  <rect x="336" y="736" width="928" height="10" fill="#2563eb"/>
+  <text x="364" y="776" class="foundationTitle">基础底座</text>
+
+  <rect x="594" y="758" width="124" height="38" fill="rgba(255,255,255,0.82)" stroke="#bfdbfe"/>
+  <rect x="754" y="758" width="124" height="38" fill="rgba(255,255,255,0.82)" stroke="#bfdbfe"/>
+  <rect x="914" y="758" width="124" height="38" fill="rgba(255,255,255,0.82)" stroke="#bfdbfe"/>
+  <rect x="1074" y="758" width="124" height="38" fill="rgba(255,255,255,0.82)" stroke="#bfdbfe"/>
+
+  <text x="656" y="782" class="chipText" text-anchor="middle">数据平台</text>
+  <text x="816" y="782" class="chipText" text-anchor="middle">治理规则</text>
+  <text x="976" y="782" class="chipText" text-anchor="middle">权限合规</text>
+  <text x="1136" y="782" class="chipText" text-anchor="middle">工具链支撑</text>
+</svg>

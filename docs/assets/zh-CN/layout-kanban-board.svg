@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="pageBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f7fb"/>
+      <stop offset="100%" stop-color="#eef3f9"/>
+    </linearGradient>
+    <linearGradient id="panelBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fbff"/>
+    </linearGradient>
+    <linearGradient id="headerBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2c7ae5"/>
+      <stop offset="100%" stop-color="#143d7a"/>
+    </linearGradient>
+    <linearGradient id="accentLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4da0ff"/>
+      <stop offset="100%" stop-color="#1d6fe8"/>
+    </linearGradient>
+    <filter id="panelShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#1e3a5f" flood-opacity="0.10"/>
+    </filter>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#1e3a5f" flood-opacity="0.10"/>
+    </filter>
+    <style>
+      .title { fill: #143d7a; font-size: 46px; font-family: Arial, sans-serif; font-weight: 700; }
+      .subtle { fill: #64748b; font-size: 18px; font-family: Arial, sans-serif; }
+      .headerTitle { fill: #ffffff; font-size: 22px; font-family: Arial, sans-serif; font-weight: 700; }
+      .headerIcon { fill: #ffffff; font-size: 18px; font-family: Arial, sans-serif; font-weight: 700; }
+      .owner { fill: #64748b; font-size: 14px; font-family: Arial, sans-serif; font-weight: 700; }
+      .task { fill: #0f172a; font-size: 18px; font-family: Arial, sans-serif; font-weight: 700; }
+      .metaBlue { fill: #1d6fe8; font-size: 14px; font-family: Arial, sans-serif; font-weight: 700; }
+      .metaGray { fill: #64748b; font-size: 14px; font-family: Arial, sans-serif; }
+      .footerText { fill: #5b6b82; font-size: 18px; font-family: Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#pageBg)"/>
+  <rect x="54" y="44" width="1492" height="812" rx="36" fill="url(#panelBg)" stroke="#d7e3f4" stroke-width="1.5" filter="url(#panelShadow)"/>
+
+  <text x="110" y="126" class="title">看板布局</text>
+  <text x="110" y="164" class="subtle">按推进状态拆分任务列，每列内部承载负责人、任务、进度与截止信息，适合周会推进、项目管理与执行复盘。</text>
+
+  <rect x="110" y="194" width="6" height="26" rx="3" fill="#1d6fe8"/>
+  <text x="130" y="214" fill="#1d6fe8" font-size="20" font-family="Arial, sans-serif" font-weight="700">Preview Layout</text>
+
+  <rect x="110" y="262" width="320" height="486" rx="28" fill="#f7faff" stroke="#d7e3f4"/>
+  <rect x="126" y="278" width="288" height="74" rx="22" fill="url(#headerBg)" filter="url(#softShadow)"/>
+  <text x="154" y="323" class="headerTitle">To Do</text>
+  <circle cx="378" cy="315" r="17" fill="rgba(255,255,255,0.16)"/>
+  <text x="378" y="321" text-anchor="middle" class="headerIcon">○</text>
+  <rect x="126" y="372" width="288" height="148" rx="22" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <circle cx="152" cy="400" r="5" fill="#4da0ff"/>
+  <circle cx="152" cy="400" r="10" fill="none" stroke="rgba(77,160,255,0.22)" stroke-width="6"/>
+  <text x="168" y="405" class="owner">产品：陈莉</text>
+  <text x="152" y="444" class="task">确认下周版本功能边界</text>
+  <text x="152" y="478" class="metaGray">截止：07-30</text>
+  <text x="152" y="510" class="metaGray">同步需求范围与优先级说明</text>
+  <rect x="126" y="536" width="288" height="148" rx="22" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <circle cx="152" cy="564" r="5" fill="#4da0ff"/>
+  <circle cx="152" cy="564" r="10" fill="none" stroke="rgba(77,160,255,0.22)" stroke-width="6"/>
+  <text x="168" y="569" class="owner">运营：赵志</text>
+  <text x="152" y="608" class="task">梳理培训公告与通知节奏</text>
+  <text x="152" y="642" class="metaGray">截止：08-02</text>
+  <text x="152" y="674" class="metaGray">准备面向业务团队的沟通口径</text>
+
+  <rect x="446" y="262" width="320" height="486" rx="28" fill="#f7faff" stroke="#d7e3f4"/>
+  <rect x="462" y="278" width="288" height="74" rx="22" fill="url(#headerBg)" filter="url(#softShadow)"/>
+  <text x="490" y="323" class="headerTitle">In Progress</text>
+  <circle cx="714" cy="315" r="17" fill="rgba(255,255,255,0.16)"/>
+  <text x="714" y="321" text-anchor="middle" class="headerIcon">◐</text>
+  <rect x="462" y="372" width="288" height="148" rx="22" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <circle cx="488" cy="400" r="5" fill="#4da0ff"/>
+  <circle cx="488" cy="400" r="10" fill="none" stroke="rgba(77,160,255,0.22)" stroke-width="6"/>
+  <text x="504" y="405" class="owner">研发：李雷</text>
+  <text x="488" y="444" class="task">接入导出链路与预览校验</text>
+  <text x="488" y="478" class="metaBlue">进度：75%</text>
+  <text x="488" y="510" class="metaGray">联调 viewer 与静态构建输出</text>
+  <rect x="462" y="536" width="288" height="148" rx="22" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <circle cx="488" cy="564" r="5" fill="#4da0ff"/>
+  <circle cx="488" cy="564" r="10" fill="none" stroke="rgba(77,160,255,0.22)" stroke-width="6"/>
+  <text x="504" y="569" class="owner">数据：杨宁</text>
+  <text x="488" y="608" class="task">整理监控口径与异常预警项</text>
+  <text x="488" y="642" class="metaBlue">进度：60%</text>
+  <text x="488" y="674" class="metaGray">补齐关键指标和解释说明</text>
+
+  <rect x="782" y="262" width="320" height="486" rx="28" fill="#f7faff" stroke="#d7e3f4"/>
+  <rect x="798" y="278" width="288" height="74" rx="22" fill="url(#headerBg)" filter="url(#softShadow)"/>
+  <text x="826" y="323" class="headerTitle">Review</text>
+  <circle cx="1050" cy="315" r="17" fill="rgba(255,255,255,0.16)"/>
+  <text x="1050" y="321" text-anchor="middle" class="headerIcon">◇</text>
+  <rect x="798" y="372" width="288" height="148" rx="22" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <circle cx="824" cy="400" r="5" fill="#4da0ff"/>
+  <circle cx="824" cy="400" r="10" fill="none" stroke="rgba(77,160,255,0.22)" stroke-width="6"/>
+  <text x="840" y="405" class="owner">设计：陈心茹</text>
+  <text x="824" y="444" class="task">回看目录页与封面一致性</text>
+  <text x="824" y="478" class="metaGray">补最终修订意见</text>
+  <text x="824" y="510" class="metaGray">聚焦版式统一与品牌风格</text>
+  <rect x="798" y="536" width="288" height="148" rx="22" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <circle cx="824" cy="564" r="5" fill="#4da0ff"/>
+  <circle cx="824" cy="564" r="10" fill="none" stroke="rgba(77,160,255,0.22)" stroke-width="6"/>
+  <text x="840" y="569" class="owner">合规：王岚</text>
+  <text x="824" y="608" class="task">核对页面用语与审批口径</text>
+  <text x="824" y="642" class="metaGray">重点检查风险表述与备注</text>
+  <text x="824" y="674" class="metaGray">形成最终审阅结论</text>
+
+  <rect x="1118" y="262" width="320" height="486" rx="28" fill="#f7faff" stroke="#d7e3f4"/>
+  <rect x="1134" y="278" width="288" height="74" rx="22" fill="url(#headerBg)" filter="url(#softShadow)"/>
+  <text x="1162" y="323" class="headerTitle">Done</text>
+  <circle cx="1386" cy="315" r="17" fill="rgba(255,255,255,0.16)"/>
+  <text x="1386" y="321" text-anchor="middle" class="headerIcon">✓</text>
+  <rect x="1134" y="372" width="288" height="148" rx="22" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <circle cx="1160" cy="400" r="5" fill="#4da0ff"/>
+  <circle cx="1160" cy="400" r="10" fill="none" stroke="rgba(77,160,255,0.22)" stroke-width="6"/>
+  <text x="1176" y="405" class="owner">运营：赵志</text>
+  <text x="1160" y="444" class="task">完成项目复盘材料整理</text>
+  <text x="1160" y="478" class="metaGray">截止：07-28</text>
+  <text x="1160" y="510" class="metaGray">沉淀结论与经验复用清单</text>
+  <rect x="1134" y="536" width="288" height="148" rx="22" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <circle cx="1160" cy="564" r="5" fill="#4da0ff"/>
+  <circle cx="1160" cy="564" r="10" fill="none" stroke="rgba(77,160,255,0.22)" stroke-width="6"/>
+  <text x="1176" y="569" class="owner">PMO：周敏</text>
+  <text x="1160" y="608" class="task">归档阶段成果与责任人清单</text>
+  <text x="1160" y="642" class="metaGray">输出周会结论与下一步动作</text>
+  <text x="1160" y="674" class="metaGray">作为下轮任务输入</text>
+
+  <rect x="110" y="780" width="1330" height="42" rx="18" fill="#f3f7fc" stroke="#d7e3f4"/>
+  <rect x="126" y="793" width="120" height="16" rx="8" fill="url(#accentLine)"/>
+  <text x="810" y="808" class="footerText" text-anchor="middle">适合“任务状态分列展示 + 每列承载多张任务卡”的推进页、项目页与执行跟踪页。</text>
+</svg>

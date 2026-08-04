@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="pageBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f7fb"/>
+      <stop offset="100%" stop-color="#eef3f9"/>
+    </linearGradient>
+    <linearGradient id="panelBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fbff"/>
+    </linearGradient>
+    <linearGradient id="routeStroke" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8fbaf4"/>
+      <stop offset="100%" stop-color="#1d6fe8"/>
+    </linearGradient>
+    <linearGradient id="goalBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f4f97"/>
+      <stop offset="100%" stop-color="#123b7a"/>
+    </linearGradient>
+    <linearGradient id="mountainBack" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f3f7fe"/>
+      <stop offset="55%" stop-color="#dde8f7"/>
+      <stop offset="100%" stop-color="#c5d6ec"/>
+    </linearGradient>
+    <linearGradient id="mountainFront" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9e9fb"/>
+      <stop offset="52%" stop-color="#bcd4f3"/>
+      <stop offset="100%" stop-color="#9fbde3"/>
+    </linearGradient>
+    <linearGradient id="mountainRidge" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.55)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.06)"/>
+    </linearGradient>
+    <filter id="panelShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#1e3a5f" flood-opacity="0.10"/>
+    </filter>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#1e3a5f" flood-opacity="0.10"/>
+    </filter>
+    <style>
+      .title { fill: #143d7a; font-size: 46px; font-family: Arial, sans-serif; font-weight: 700; }
+      .subtle { fill: #64748b; font-size: 18px; font-family: Arial, sans-serif; }
+      .pill { fill: #1d4ed8; font-size: 11px; font-family: Arial, sans-serif; font-weight: 700; letter-spacing: 1.4px; }
+      .cardTitle { fill: #143d7a; font-size: 22px; font-family: Arial, sans-serif; font-weight: 700; }
+      .cardText { fill: #475569; font-size: 16px; font-family: Arial, sans-serif; }
+      .goalTitle { fill: #ffffff; font-size: 26px; font-family: Arial, sans-serif; font-weight: 700; }
+      .goalText { fill: rgba(255,255,255,0.84); font-size: 17px; font-family: Arial, sans-serif; }
+      .footerText { fill: #5b6b82; font-size: 18px; font-family: Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#pageBg)"/>
+  <rect x="54" y="44" width="1492" height="812" rx="36" fill="url(#panelBg)" stroke="#d7e3f4" stroke-width="1.5" filter="url(#panelShadow)"/>
+
+  <text x="110" y="126" class="title">发展路线布局</text>
+  <text x="110" y="164" class="subtle">沿左下到右上的上升路径，展示企业从现状基础逐步走向目标状态的发展路线与阶段重点。</text>
+
+  <rect x="110" y="194" width="6" height="26" rx="3" fill="#1d6fe8"/>
+  <text x="130" y="214" fill="#1d6fe8" font-size="20" font-family="Arial, sans-serif" font-weight="700">Preview Layout</text>
+
+  <path d="M96 778 C172 726 234 684 300 638 C360 594 420 534 474 466 C528 400 580 330 632 294 C684 258 736 274 786 324 C834 372 878 412 926 400 C974 388 1018 330 1062 280 C1110 228 1160 208 1210 238 C1260 268 1306 330 1354 364 C1394 392 1432 390 1470 360 L1470 778 Z" fill="url(#mountainBack)"/>
+  <path d="M146 778 C224 726 282 678 346 626 C412 572 470 518 528 460 C584 404 640 346 696 304 C756 258 816 230 874 230 C932 230 986 252 1036 288 C1088 326 1136 366 1188 396 C1246 430 1312 446 1394 428 L1394 778 Z" fill="rgba(255,255,255,0.14)"/>
+  <path d="M112 778 C188 740 254 706 322 662 C388 620 444 560 498 494 C552 430 604 352 654 316 C706 278 754 292 802 344 C846 392 888 430 934 420 C980 410 1022 358 1064 304 C1108 248 1154 224 1200 252 C1248 280 1290 338 1336 378 C1378 414 1422 430 1470 430 L1470 778 Z" fill="#d8e4f5" opacity="0.82"/>
+  <path d="M170 778 C244 730 306 682 372 626 C438 570 494 510 550 452 C608 394 664 338 722 292 C782 244 842 216 900 214 C956 212 1008 234 1058 270 C1110 308 1158 352 1208 392 C1262 436 1322 470 1394 470 L1394 778 Z" fill="rgba(196,214,238,0.68)"/>
+  <path d="M152 778 C230 742 296 704 366 656 C434 610 492 548 548 480 C604 414 656 328 706 286 C756 244 804 256 850 314 C892 366 932 408 976 398 C1020 388 1060 332 1100 272 C1144 212 1190 190 1236 224 C1280 258 1320 322 1362 372 C1402 420 1438 460 1470 494 L1470 778 Z" fill="url(#mountainFront)"/>
+  <path d="M248 778 C314 732 368 686 426 632 C486 576 540 518 594 458 C650 396 706 338 764 294 C824 248 882 222 938 224 C992 226 1040 248 1086 284 C1134 320 1180 364 1228 406 C1276 448 1326 486 1382 516 L1382 778 Z" fill="rgba(134,171,214,0.26)"/>
+  <path d="M212 732 C286 694 352 652 418 604 C482 556 540 494 596 422 C646 360 692 306 734 296 C772 286 806 320 842 370 C878 420 914 438 954 428 C996 418 1036 360 1078 300 C1120 240 1164 220 1206 250 C1250 282 1290 342 1334 394 C1368 434 1400 462 1430 484" fill="none" stroke="rgba(255,255,255,0.34)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M252 690 C320 654 380 614 440 564 C500 514 554 454 606 388 C654 328 700 286 742 280 C780 274 814 304 848 350 C882 396 918 414 956 406 C996 398 1034 346 1072 292 C1112 236 1154 216 1194 242 C1236 270 1274 324 1314 372" fill="none" stroke="rgba(207,225,248,0.26)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M1016 300 C1050 260 1086 226 1122 212 C1158 198 1192 210 1224 238 C1258 268 1290 316 1324 358" fill="none" stroke="rgba(220,233,250,0.22)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M214 742 C286 702 346 658 412 602 C478 546 536 488 592 426 C648 364 704 308 764 264" fill="none" stroke="rgba(230,239,252,0.18)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M820 222 C874 210 926 214 976 234 C1028 254 1074 286 1118 324 C1164 362 1206 404 1248 438" fill="none" stroke="rgba(230,239,252,0.16)" stroke-width="3" stroke-linecap="round"/>
+
+  <path d="M190 690 C246 656 302 620 354 580 C406 540 454 494 504 458 C556 420 604 388 650 346 C696 304 740 262 788 230 C838 198 888 180 938 182 C988 184 1032 204 1076 230 C1122 258 1164 286 1210 304 C1246 318 1278 324 1312 324" fill="none" stroke="url(#routeStroke)" stroke-width="16" stroke-linecap="round"/>
+  <path d="M190 690 C246 656 302 620 354 580 C406 540 454 494 504 458 C556 420 604 388 650 346 C696 304 740 262 788 230 C838 198 888 180 938 182 C988 184 1032 204 1076 230 C1122 258 1164 286 1210 304 C1246 318 1278 324 1312 324" fill="none" stroke="#bfdbfe" stroke-width="3" stroke-dasharray="10 12" stroke-linecap="round"/>
+
+  <rect x="112" y="644" width="156" height="88" rx="22" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <rect x="134" y="662" width="68" height="24" rx="12" fill="#edf4ff"/>
+  <text x="168" y="678" class="pill" text-anchor="middle">START</text>
+  <text x="134" y="712" class="cardTitle">当前基础</text>
+
+  <circle cx="296" cy="628" r="30" fill="#ffffff" stroke="#1d6fe8" stroke-width="8"/>
+  <circle cx="296" cy="628" r="16" fill="#edf4ff"/>
+  <rect x="110" y="706" width="252" height="92" rx="22" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <rect x="132" y="724" width="72" height="24" rx="12" fill="#edf4ff"/>
+  <text x="168" y="740" class="pill" text-anchor="middle">阶段 1</text>
+  <text x="132" y="772" class="cardTitle">能力夯实</text>
+  <text x="132" y="796" class="cardText">统一基础流程、组织职责和数据口径。</text>
+
+  <circle cx="510" cy="454" r="30" fill="#ffffff" stroke="#1d6fe8" stroke-width="8"/>
+  <circle cx="510" cy="454" r="16" fill="#edf4ff"/>
+  <rect x="356" y="270" width="250" height="96" rx="22" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <rect x="378" y="288" width="72" height="24" rx="12" fill="#edf4ff"/>
+  <text x="414" y="304" class="pill" text-anchor="middle">阶段 2</text>
+  <text x="378" y="336" class="cardTitle">体系成型</text>
+  <text x="378" y="360" class="cardText">形成标准机制、关键流程和协同接口。</text>
+
+  <circle cx="724" cy="324" r="30" fill="#ffffff" stroke="#1d6fe8" stroke-width="8"/>
+  <circle cx="724" cy="324" r="16" fill="#edf4ff"/>
+  <rect x="626" y="456" width="258" height="96" rx="22" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <rect x="648" y="474" width="72" height="24" rx="12" fill="#edf4ff"/>
+  <text x="684" y="490" class="pill" text-anchor="middle">阶段 3</text>
+  <text x="648" y="522" class="cardTitle">规模复制</text>
+  <text x="648" y="546" class="cardText">把成功模式复制到更多业务单元和区域。</text>
+
+  <circle cx="964" cy="202" r="30" fill="#ffffff" stroke="#1d6fe8" stroke-width="8"/>
+  <circle cx="964" cy="202" r="16" fill="#edf4ff"/>
+  <rect x="950" y="304" width="258" height="96" rx="22" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <rect x="972" y="322" width="72" height="24" rx="12" fill="#edf4ff"/>
+  <text x="1008" y="338" class="pill" text-anchor="middle">阶段 4</text>
+  <text x="972" y="370" class="cardTitle">生态协同</text>
+  <text x="972" y="394" class="cardText">打通内外部资源，构建更强的协作网络。</text>
+
+  <rect x="1138" y="104" width="262" height="188" rx="26" fill="url(#goalBg)" filter="url(#softShadow)"/>
+  <circle cx="1184" cy="152" r="28" fill="rgba(255,255,255,0.14)"/>
+  <path d="M1172 152 L1184 138 L1196 152 L1184 166 Z" fill="#ffffff"/>
+  <rect x="1172" y="192" width="114" height="26" rx="13" fill="rgba(255,255,255,0.14)"/>
+  <text x="1229" y="210" fill="#ffffff" font-size="11" font-family="Arial, sans-serif" font-weight="700" letter-spacing="1.4" text-anchor="middle">DESTINATION</text>
+  <text x="1172" y="244" class="goalTitle">目标状态</text>
+  <text x="1172" y="276" class="goalText">沿山而上形成清晰路径、</text>
+  <text x="1172" y="300" class="goalText">阶段目标与组织支撑能力。</text>
+
+  <rect x="110" y="798" width="1330" height="24" rx="12" fill="#f3f7fc" stroke="#d7e3f4"/>
+  <text x="775" y="815" class="footerText" text-anchor="middle">适合“企业发展路线图 / 平台成长路径 / 战略推进路径 / 能力演进路线”这类需要表达阶段爬升关系的页面。</text>
+</svg>

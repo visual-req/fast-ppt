@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="pageBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f7fb"/>
+      <stop offset="100%" stop-color="#eef3f9"/>
+    </linearGradient>
+    <linearGradient id="panelBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fbff"/>
+    </linearGradient>
+    <linearGradient id="cycleStroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f4f97"/>
+      <stop offset="100%" stop-color="#1d6fe8"/>
+    </linearGradient>
+    <marker id="cycleArrow" markerWidth="16" markerHeight="16" refX="8" refY="8" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M2 2 L14 8 L2 14 L5.6 8 Z" fill="#2a68d8"/>
+    </marker>
+    <filter id="panelShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#1e3a5f" flood-opacity="0.10"/>
+    </filter>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#1e3a5f" flood-opacity="0.10"/>
+    </filter>
+    <style>
+      .title { fill: #143d7a; font-size: 46px; font-family: Arial, sans-serif; font-weight: 700; }
+      .subtle { fill: #64748b; font-size: 18px; font-family: Arial, sans-serif; }
+      .pill { fill: #1d4ed8; font-size: 11px; font-family: Arial, sans-serif; font-weight: 700; letter-spacing: 1.5px; }
+      .centerTitle { fill: #143d7a; font-size: 30px; font-family: Arial, sans-serif; font-weight: 700; }
+      .centerText { fill: #475569; font-size: 16px; font-family: Arial, sans-serif; }
+      .cardTitle { fill: #143d7a; font-size: 20px; font-family: Arial, sans-serif; font-weight: 700; }
+      .cardText { fill: #475569; font-size: 15px; font-family: Arial, sans-serif; }
+      .footerText { fill: #5b6b82; font-size: 18px; font-family: Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#pageBg)"/>
+  <rect x="54" y="44" width="1492" height="812" rx="36" fill="url(#panelBg)" stroke="#d7e3f4" stroke-width="1.5" filter="url(#panelShadow)"/>
+
+  <text x="110" y="126" class="title">循环类布局</text>
+  <text x="110" y="164" class="subtle">中间强调核心闭环主题，环上放关键节点，外围用卡片解释每个环节的职责与价值。</text>
+
+  <rect x="110" y="194" width="6" height="26" rx="3" fill="#1d6fe8"/>
+  <text x="130" y="214" fill="#1d6fe8" font-size="20" font-family="Arial, sans-serif" font-weight="700">Preview Layout</text>
+
+  <circle cx="780" cy="462" r="198" fill="none" stroke="#dbeafe" stroke-width="34"/>
+  <circle cx="780" cy="462" r="198" fill="none" stroke="url(#cycleStroke)" stroke-width="14"/>
+  <path d="M780 264 A198 198 0 0 1 951.5 363" fill="none" stroke="#2a68d8" stroke-width="10" stroke-linecap="round" marker-end="url(#cycleArrow)"/>
+  <path d="M951.5 363 A198 198 0 0 1 951.5 561" fill="none" stroke="#2a68d8" stroke-width="10" stroke-linecap="round" marker-end="url(#cycleArrow)"/>
+  <path d="M951.5 561 A198 198 0 0 1 780 660" fill="none" stroke="#2a68d8" stroke-width="10" stroke-linecap="round" marker-end="url(#cycleArrow)"/>
+  <path d="M780 660 A198 198 0 0 1 608.5 561" fill="none" stroke="#2a68d8" stroke-width="10" stroke-linecap="round" marker-end="url(#cycleArrow)"/>
+  <path d="M608.5 561 A198 198 0 0 1 608.5 363" fill="none" stroke="#2a68d8" stroke-width="10" stroke-linecap="round" marker-end="url(#cycleArrow)"/>
+  <path d="M608.5 363 A198 198 0 0 1 780 264" fill="none" stroke="#2a68d8" stroke-width="10" stroke-linecap="round" marker-end="url(#cycleArrow)"/>
+  <path d="M862 282 A198 198 0 0 1 920 320" fill="none" stroke="#1d6fe8" stroke-width="8" stroke-linecap="round" marker-end="url(#cycleArrow)"/>
+  <path d="M972 414 A198 198 0 0 1 972 510" fill="none" stroke="#1d6fe8" stroke-width="8" stroke-linecap="round" marker-end="url(#cycleArrow)"/>
+  <path d="M920 602 A198 198 0 0 1 846 644" fill="none" stroke="#1d6fe8" stroke-width="8" stroke-linecap="round" marker-end="url(#cycleArrow)"/>
+  <path d="M698 644 A198 198 0 0 1 626 602" fill="none" stroke="#1d6fe8" stroke-width="8" stroke-linecap="round" marker-end="url(#cycleArrow)"/>
+  <path d="M588 510 A198 198 0 0 1 588 414" fill="none" stroke="#1d6fe8" stroke-width="8" stroke-linecap="round" marker-end="url(#cycleArrow)"/>
+  <path d="M642 320 A198 198 0 0 1 698 282" fill="none" stroke="#1d6fe8" stroke-width="8" stroke-linecap="round" marker-end="url(#cycleArrow)"/>
+
+  <path d="M780 462 L780 264" fill="none" stroke="#bfdbfe" stroke-width="3"/>
+  <path d="M780 462 L951.5 363" fill="none" stroke="#bfdbfe" stroke-width="3"/>
+  <path d="M780 462 L951.5 561" fill="none" stroke="#bfdbfe" stroke-width="3"/>
+  <path d="M780 462 L780 660" fill="none" stroke="#bfdbfe" stroke-width="3"/>
+  <path d="M780 462 L608.5 561" fill="none" stroke="#bfdbfe" stroke-width="3"/>
+  <path d="M780 462 L608.5 363" fill="none" stroke="#bfdbfe" stroke-width="3"/>
+
+  <rect x="650" y="382" width="260" height="160" rx="26" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <rect x="728" y="404" width="104" height="26" rx="13" fill="#edf4ff"/>
+  <text x="780" y="422" class="pill" text-anchor="middle">CYCLE</text>
+  <text x="780" y="466" class="centerTitle" text-anchor="middle">核心闭环</text>
+  <text x="780" y="500" class="centerText" text-anchor="middle">把关键动作组织成持续迭代、</text>
+  <text x="780" y="524" class="centerText" text-anchor="middle">持续优化的循环机制。</text>
+
+  <circle cx="780" cy="264" r="30" fill="#ffffff" stroke="#1d6fe8" stroke-width="8"/>
+  <text x="780" y="271" fill="#143d7a" font-size="14" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">01</text>
+
+  <circle cx="951.5" cy="363" r="30" fill="#ffffff" stroke="#1d6fe8" stroke-width="8"/>
+  <text x="951.5" y="370" fill="#143d7a" font-size="14" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">02</text>
+
+  <circle cx="951.5" cy="561" r="30" fill="#ffffff" stroke="#1d6fe8" stroke-width="8"/>
+  <text x="951.5" y="568" fill="#143d7a" font-size="14" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">03</text>
+
+  <circle cx="780" cy="660" r="30" fill="#ffffff" stroke="#1d6fe8" stroke-width="8"/>
+  <text x="780" y="667" fill="#143d7a" font-size="14" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">04</text>
+
+  <circle cx="608.5" cy="561" r="30" fill="#ffffff" stroke="#1d6fe8" stroke-width="8"/>
+  <text x="608.5" y="568" fill="#143d7a" font-size="14" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">05</text>
+
+  <circle cx="608.5" cy="363" r="30" fill="#ffffff" stroke="#1d6fe8" stroke-width="8"/>
+  <text x="608.5" y="370" fill="#143d7a" font-size="14" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">06</text>
+
+  <rect x="690" y="108" width="180" height="82" rx="20" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <text x="710" y="140" class="cardTitle">洞察输入</text>
+  <text x="710" y="166" class="cardText">持续收集问题、反馈与场景变化。</text>
+
+  <rect x="1040" y="250" width="232" height="82" rx="20" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <text x="1060" y="282" class="cardTitle">策略制定</text>
+  <text x="1060" y="308" class="cardText">把洞察整理成清晰动作与优先级。</text>
+
+  <rect x="1040" y="540" width="232" height="82" rx="20" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <text x="1060" y="572" class="cardTitle">执行推进</text>
+  <text x="1060" y="598" class="cardText">围绕目标推动资源与团队协同落地。</text>
+
+  <rect x="672" y="706" width="216" height="82" rx="20" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <text x="692" y="738" class="cardTitle">效果验证</text>
+  <text x="692" y="764" class="cardText">观察过程数据、结果反馈和偏差情况。</text>
+
+  <rect x="288" y="540" width="232" height="82" rx="20" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <text x="308" y="572" class="cardTitle">复盘纠偏</text>
+  <text x="308" y="598" class="cardText">总结问题，修正机制和下一轮方案。</text>
+
+  <rect x="288" y="250" width="232" height="82" rx="20" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <text x="308" y="282" class="cardTitle">能力沉淀</text>
+  <text x="308" y="308" class="cardText">把经验沉淀为模板、标准和工具能力。</text>
+
+  <rect x="110" y="780" width="1330" height="42" rx="18" fill="#f3f7fc" stroke="#d7e3f4"/>
+  <text x="775" y="808" class="footerText" text-anchor="middle">适合“管理闭环 / 运营闭环 / 策略闭环 / 持续优化闭环”这类需要表达循环迭代逻辑的页面。</text>
+</svg>

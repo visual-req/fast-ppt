@@ -4,25 +4,97 @@
       <stop offset="0%" stop-color="#f4f7fb"/>
       <stop offset="100%" stop-color="#eef3f9"/>
     </linearGradient>
+    <linearGradient id="headerBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#143d7a"/>
+      <stop offset="100%" stop-color="#0f274f"/>
+    </linearGradient>
     <filter id="panelShadow" x="-10%" y="-10%" width="120%" height="120%">
       <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#1e3a5f" flood-opacity="0.10"/>
     </filter>
+    <style>
+      .pageTitle { fill: #143d7a; font-size: 46px; font-family: Arial, sans-serif; font-weight: 700; }
+      .pageSubtle { fill: #64748b; font-size: 18px; font-family: Arial, sans-serif; }
+      .headerText { fill: #ffffff; font-size: 18px; font-family: Arial, sans-serif; font-weight: 700; }
+      .taskText { fill: #1e293b; font-size: 18px; font-family: Arial, sans-serif; font-weight: 700; }
+      .metaText { fill: #64748b; font-size: 13px; font-family: Arial, sans-serif; }
+      .axisText { fill: rgba(255, 255, 255, 0.88); font-size: 15px; font-family: Arial, sans-serif; font-weight: 600; }
+      .barText { fill: #ffffff; font-size: 14px; font-family: Arial, sans-serif; font-weight: 700; }
+    </style>
   </defs>
-<rect width="1600" height="900" fill="url(#pageBg)"/>
-<rect x="54" y="44" width="1492" height="812" rx="36" fill="#ffffff" stroke="#d7e3f4" stroke-width="1.5" filter="url(#panelShadow)"/>
-<text x="110" y="126" fill="#143d7a" font-size="46" font-family="Arial, sans-serif" font-weight="700">Gantt Chart</text>
 
-<rect x="120" y="220" width="1360" height="470" rx="28" fill="#ffffff" stroke="#cbd5e1"/>
-<line x1="360" y1="220" x2="360" y2="690" stroke="#cbd5e1" stroke-width="2"/>
-<line x1="620" y1="220" x2="620" y2="690" stroke="#e2e8f0" stroke-width="2"/>
-<line x1="840" y1="220" x2="840" y2="690" stroke="#e2e8f0" stroke-width="2"/>
-<line x1="1060" y1="220" x2="1060" y2="690" stroke="#e2e8f0" stroke-width="2"/>
-<line x1="1280" y1="220" x2="1280" y2="690" stroke="#e2e8f0" stroke-width="2"/>
-<line x1="120" y1="320" x2="1480" y2="320" stroke="#cbd5e1" stroke-width="2"/>
-<line x1="120" y1="430" x2="1480" y2="430" stroke="#e2e8f0" stroke-width="2"/>
-<line x1="120" y1="540" x2="1480" y2="540" stroke="#e2e8f0" stroke-width="2"/>
-<rect x="420" y="346" width="380" height="52" rx="14" fill="#2563eb"/>
-<rect x="680" y="456" width="320" height="52" rx="14" fill="#60a5fa"/>
-<rect x="960" y="566" width="240" height="52" rx="14" fill="#93c5fd"/>
+  <rect width="1600" height="900" fill="url(#pageBg)"/>
+  <rect x="54" y="44" width="1492" height="812" rx="36" fill="#ffffff" stroke="#d7e3f4" stroke-width="1.5" filter="url(#panelShadow)"/>
 
+  <text x="110" y="126" class="pageTitle">Gantt Chart</text>
+  <text x="110" y="164" class="pageSubtle">多任务排期、阶段推进与资源协同的时间视图示意。</text>
+
+  <rect x="120" y="220" width="1360" height="520" rx="28" fill="#ffffff" stroke="#cbd5e1"/>
+  <path d="M120 248 Q120 220 148 220 H1452 Q1480 220 1480 248 V316 H120 Z" fill="url(#headerBg)"/>
+
+  <rect x="120" y="316" width="1360" height="71" fill="#ffffff"/>
+  <rect x="120" y="387" width="1360" height="71" fill="#f8fbff"/>
+  <rect x="120" y="458" width="1360" height="71" fill="#ffffff"/>
+  <rect x="120" y="529" width="1360" height="71" fill="#f8fbff"/>
+  <rect x="120" y="600" width="1360" height="71" fill="#ffffff"/>
+  <rect x="120" y="671" width="1360" height="69" fill="#f8fbff"/>
+
+  <line x1="360" y1="220" x2="360" y2="740" stroke="#cbd5e1" stroke-width="2"/>
+  <line x1="540" y1="220" x2="540" y2="740" stroke="#e2e8f0" stroke-width="2"/>
+  <line x1="720" y1="220" x2="720" y2="740" stroke="#e2e8f0" stroke-width="2"/>
+  <line x1="900" y1="220" x2="900" y2="740" stroke="#e2e8f0" stroke-width="2"/>
+  <line x1="1080" y1="220" x2="1080" y2="740" stroke="#e2e8f0" stroke-width="2"/>
+  <line x1="1260" y1="220" x2="1260" y2="740" stroke="#e2e8f0" stroke-width="2"/>
+
+  <line x1="120" y1="316" x2="1480" y2="316" stroke="#cbd5e1" stroke-width="2"/>
+  <line x1="120" y1="387" x2="1480" y2="387" stroke="#e2e8f0" stroke-width="2"/>
+  <line x1="120" y1="458" x2="1480" y2="458" stroke="#e2e8f0" stroke-width="2"/>
+  <line x1="120" y1="529" x2="1480" y2="529" stroke="#e2e8f0" stroke-width="2"/>
+  <line x1="120" y1="600" x2="1480" y2="600" stroke="#e2e8f0" stroke-width="2"/>
+  <line x1="120" y1="671" x2="1480" y2="671" stroke="#e2e8f0" stroke-width="2"/>
+
+  <text x="150" y="273" class="headerText">工作流 / Workstream</text>
+  <text x="426" y="273" text-anchor="middle" class="axisText">W1</text>
+  <text x="630" y="273" text-anchor="middle" class="axisText">W2</text>
+  <text x="810" y="273" text-anchor="middle" class="axisText">W3</text>
+  <text x="990" y="273" text-anchor="middle" class="axisText">W4</text>
+  <text x="1170" y="273" text-anchor="middle" class="axisText">W5</text>
+  <text x="1350" y="273" text-anchor="middle" class="axisText">W6</text>
+
+  <text x="150" y="360" class="taskText">需求澄清</text>
+  <text x="150" y="380" class="metaText">目标确认 / 范围冻结</text>
+  <text x="150" y="431" class="taskText">方案设计</text>
+  <text x="150" y="451" class="metaText">结构设计 / 视觉稿</text>
+  <text x="150" y="502" class="taskText">开发实现</text>
+  <text x="150" y="522" class="metaText">组件落地 / 联调</text>
+  <text x="150" y="573" class="taskText">测试验证</text>
+  <text x="150" y="593" class="metaText">回归 / 修正</text>
+  <text x="150" y="644" class="taskText">试运行</text>
+  <text x="150" y="664" class="metaText">灰度 / 观察</text>
+  <text x="150" y="715" class="taskText">正式上线</text>
+  <text x="150" y="735" class="metaText">复盘 / 沉淀</text>
+
+  <rect x="410" y="333" width="300" height="38" rx="14" fill="#2563eb"/>
+  <text x="560" y="357" text-anchor="middle" class="barText">范围确认</text>
+
+  <rect x="590" y="404" width="360" height="38" rx="14" fill="#0ea5e9"/>
+  <text x="770" y="428" text-anchor="middle" class="barText">方案设计与评审</text>
+
+  <rect x="770" y="475" width="400" height="38" rx="14" fill="#14b8a6"/>
+  <text x="970" y="499" text-anchor="middle" class="barText">核心开发与联调</text>
+
+  <rect x="980" y="546" width="220" height="38" rx="14" fill="#8b5cf6"/>
+  <text x="1090" y="570" text-anchor="middle" class="barText">测试修正</text>
+
+  <rect x="1090" y="617" width="250" height="38" rx="14" fill="#f59e0b"/>
+  <text x="1215" y="641" text-anchor="middle" class="barText">灰度试运行</text>
+
+  <rect x="1270" y="688" width="150" height="38" rx="14" fill="#ef4444"/>
+  <text x="1345" y="712" text-anchor="middle" class="barText">正式上线</text>
+
+  <circle cx="710" cy="352" r="6" fill="#2563eb"/>
+  <circle cx="950" cy="423" r="6" fill="#0ea5e9"/>
+  <circle cx="1170" cy="494" r="6" fill="#14b8a6"/>
+  <circle cx="1200" cy="565" r="6" fill="#8b5cf6"/>
+  <circle cx="1340" cy="636" r="6" fill="#f59e0b"/>
+  <circle cx="1420" cy="707" r="6" fill="#ef4444"/>
 </svg>

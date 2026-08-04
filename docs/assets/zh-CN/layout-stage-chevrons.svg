@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="pageBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f7fb"/>
+      <stop offset="100%" stop-color="#eef3f9"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#1e3a5f" flood-opacity="0.10"/>
+    </filter>
+    <style>
+      .title { fill:#143d7a; font-size:46px; font-family:Arial,sans-serif; font-weight:700; }
+      .subtle { fill:#64748b; font-size:18px; font-family:Arial,sans-serif; }
+      .segTitle { fill:#143d7a; font-size:24px; font-family:Arial,sans-serif; font-weight:700; }
+      .segText { fill:#334155; font-size:15px; font-family:Arial,sans-serif; }
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="url(#pageBg)"/>
+  <text x="110" y="126" class="title">阶段箭头布局</text>
+  <text x="110" y="164" class="subtle">适合把阶段做成横向连续推进，每一段既是内容容器，也是方向指示。</text>
+
+  <path d="M80 220 L460 220 L510 285 L460 350 L80 350 L130 285 Z" fill="#eef6ff" filter="url(#shadow)"/>
+  <path d="M430 220 L810 220 L860 285 L810 350 L430 350 L480 285 Z" fill="#dbeafe" filter="url(#shadow)"/>
+  <path d="M780 220 L1160 220 L1210 285 L1160 350 L780 350 L830 285 Z" fill="#bfdbfe" filter="url(#shadow)"/>
+  <path d="M1130 220 L1510 220 L1560 285 L1510 350 L1130 350 L1180 285 Z" fill="#93c5fd" filter="url(#shadow)"/>
+
+  <text x="150" y="292" class="segTitle">准备</text>
+
+  <text x="500" y="292" class="segTitle">启动</text>
+
+  <text x="850" y="292" class="segTitle">扩展</text>
+
+  <text x="1200" y="292" class="segTitle">沉淀</text>
+
+  <rect x="80" y="394" width="380" height="366" rx="18" fill="#ffffff" stroke="#d7e3f4" filter="url(#shadow)"/>
+  <text x="120" y="442" class="segText">统一口径与目标，</text>
+  <text x="120" y="468" class="segText">明确推进边界。</text>
+
+  <rect x="430" y="394" width="380" height="366" rx="18" fill="#ffffff" stroke="#d7e3f4" filter="url(#shadow)"/>
+  <text x="470" y="442" class="segText">拉齐责任与动作，</text>
+  <text x="470" y="468" class="segText">建立协同机制。</text>
+
+  <rect x="780" y="394" width="380" height="366" rx="18" fill="#ffffff" stroke="#d7e3f4" filter="url(#shadow)"/>
+  <text x="820" y="442" class="segText">把试点打法复制到</text>
+  <text x="820" y="468" class="segText">更多应用场景。</text>
+
+  <rect x="1130" y="394" width="380" height="366" rx="18" fill="#ffffff" stroke="#d7e3f4" filter="url(#shadow)"/>
+  <text x="1170" y="442" class="segText">形成制度、模板与</text>
+  <text x="1170" y="468" class="segText">持续复盘闭环。</text>
+</svg>

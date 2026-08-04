@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="pageBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f7fb"/>
+      <stop offset="100%" stop-color="#eef3f9"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#1e3a5f" flood-opacity="0.10"/>
+    </filter>
+    <style>
+      .title { fill:#143d7a; font-size:46px; font-family:Arial,sans-serif; font-weight:700; }
+      .subtle { fill:#64748b; font-size:18px; font-family:Arial,sans-serif; }
+      .stepTitle { fill:#143d7a; font-size:20px; font-family:Arial,sans-serif; font-weight:700; }
+      .stepText { fill:#475569; font-size:14px; font-family:Arial,sans-serif; }
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="url(#pageBg)"/>
+  <text x="110" y="126" class="title">阶段台阶布局</text>
+  <text x="110" y="164" class="subtle">适合表达“逐级提升”，从左到右像走台阶一样不断抬高。</text>
+  <rect x="90" y="748" width="1350" height="18" rx="9" fill="rgba(29,111,232,0.18)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="120" y="510" width="280" height="238" rx="22" fill="#ffffff"/>
+    <rect x="120" y="494" width="280" height="16" rx="8" fill="#4da0ff"/>
+    <rect x="460" y="430" width="280" height="318" rx="22" fill="#ffffff"/>
+    <rect x="460" y="414" width="280" height="16" rx="8" fill="#4da0ff"/>
+    <rect x="800" y="340" width="280" height="408" rx="22" fill="#ffffff"/>
+    <rect x="800" y="324" width="280" height="16" rx="8" fill="#4da0ff"/>
+    <rect x="1140" y="250" width="280" height="498" rx="22" fill="#ffffff"/>
+    <rect x="1140" y="234" width="280" height="16" rx="8" fill="#4da0ff"/>
+  </g>
+
+  <text x="154" y="566" class="stepTitle">基础规范</text>
+  <text x="154" y="600" class="stepText">统一标准与</text>
+  <text x="154" y="624" class="stepText">底层规则。</text>
+
+  <text x="494" y="486" class="stepTitle">流程成型</text>
+  <text x="494" y="520" class="stepText">建立阶段动作</text>
+  <text x="494" y="544" class="stepText">和协同机制。</text>
+
+  <text x="834" y="396" class="stepTitle">复制推广</text>
+  <text x="834" y="430" class="stepText">把成熟方法</text>
+  <text x="834" y="454" class="stepText">推广到更多场景。</text>
+
+  <text x="1174" y="306" class="stepTitle">持续优化</text>
+  <text x="1174" y="340" class="stepText">形成改进闭环</text>
+  <text x="1174" y="364" class="stepText">和长期能力。</text>
+</svg>

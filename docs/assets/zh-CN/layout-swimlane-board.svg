@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="pageBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f7fb"/>
+      <stop offset="100%" stop-color="#eef3f9"/>
+    </linearGradient>
+    <linearGradient id="panelBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fbff"/>
+    </linearGradient>
+    <linearGradient id="headerBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#143d7a"/>
+      <stop offset="100%" stop-color="#0f274f"/>
+    </linearGradient>
+    <linearGradient id="rowHeaderBg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4da0ff"/>
+      <stop offset="100%" stop-color="#1d6fe8"/>
+    </linearGradient>
+    <filter id="panelShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#1e3a5f" flood-opacity="0.10"/>
+    </filter>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#1e3a5f" flood-opacity="0.10"/>
+    </filter>
+    <style>
+      .title { fill: #143d7a; font-size: 46px; font-family: Arial, sans-serif; font-weight: 700; }
+      .subtle { fill: #64748b; font-size: 18px; font-family: Arial, sans-serif; }
+      .topHeader { fill: #ffffff; font-size: 22px; font-family: Arial, sans-serif; font-weight: 700; }
+      .crossLabel { fill: rgba(255,255,255,0.88); font-size: 16px; font-family: Arial, sans-serif; font-weight: 700; }
+      .rowHeader { fill: #ffffff; font-size: 22px; font-family: Arial, sans-serif; font-weight: 700; }
+      .rowNote { fill: rgba(255,255,255,0.86); font-size: 14px; font-family: Arial, sans-serif; }
+      .cellTag { fill: #1d6fe8; font-size: 12px; font-family: Arial, sans-serif; font-weight: 700; letter-spacing: 0.08em; }
+      .cellTitle { fill: #143d7a; font-size: 18px; font-family: Arial, sans-serif; font-weight: 700; }
+      .cellText { fill: #475569; font-size: 13px; font-family: Arial, sans-serif; }
+      .footerText { fill: #5b6b82; font-size: 18px; font-family: Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#pageBg)"/>
+  <rect x="54" y="44" width="1492" height="812" rx="36" fill="url(#panelBg)" stroke="#d7e3f4" stroke-width="1.5" filter="url(#panelShadow)"/>
+
+  <text x="110" y="126" class="title">泳道矩阵布局</text>
+  <text x="110" y="164" class="subtle">顶部为角色，左侧为阶段，中间以矩阵网格展示各角色在不同阶段的关键动作，适合角色协同型流程页。</text>
+
+  <rect x="110" y="194" width="6" height="26" rx="3" fill="#1d6fe8"/>
+  <text x="130" y="214" fill="#1d6fe8" font-size="20" font-family="Arial, sans-serif" font-weight="700">Preview Layout</text>
+
+  <rect x="120" y="250" width="1320" height="500" rx="30" fill="#ffffff" stroke="#d7e3f4"/>
+
+  <path d="M120 278 Q120 250 148 250 H1412 Q1440 250 1440 278 V346 H120 Z" fill="url(#headerBg)"/>
+  <rect x="120" y="250" width="250" height="96" rx="30" fill="url(#headerBg)"/>
+  <path d="M120 250 H370 V346 H120 Z" fill="url(#headerBg)"/>
+  <line x1="120" y1="250" x2="370" y2="346" stroke="rgba(255,255,255,0.22)" stroke-width="2"/>
+  <text x="152" y="286" class="crossLabel">阶段</text>
+  <text x="286" y="328" class="crossLabel">角色</text>
+
+  <line x1="370" y1="250" x2="370" y2="750" stroke="#d7e3f4" stroke-width="2"/>
+  <line x1="637.5" y1="250" x2="637.5" y2="750" stroke="#e2e8f0" stroke-width="2"/>
+  <line x1="905" y1="250" x2="905" y2="750" stroke="#e2e8f0" stroke-width="2"/>
+  <line x1="1172.5" y1="250" x2="1172.5" y2="750" stroke="#e2e8f0" stroke-width="2"/>
+
+  <line x1="120" y1="346" x2="1440" y2="346" stroke="#d7e3f4" stroke-width="2"/>
+  <line x1="120" y1="447" x2="1440" y2="447" stroke="#e2e8f0" stroke-width="2"/>
+  <line x1="120" y1="548" x2="1440" y2="548" stroke="#e2e8f0" stroke-width="2"/>
+  <line x1="120" y1="649" x2="1440" y2="649" stroke="#e2e8f0" stroke-width="2"/>
+
+  <text x="504" y="306" text-anchor="middle" class="topHeader">用户</text>
+  <text x="771" y="306" text-anchor="middle" class="topHeader">业务团队</text>
+  <text x="1038" y="306" text-anchor="middle" class="topHeader">产品 / 中台</text>
+  <text x="1306" y="306" text-anchor="middle" class="topHeader">技术 / 运营</text>
+
+  <rect x="138" y="364" width="214" height="65" rx="20" fill="url(#rowHeaderBg)" filter="url(#softShadow)"/>
+  <text x="168" y="392" class="rowHeader">需求提出</text>
+  <text x="168" y="414" class="rowNote">收集问题与目标输入</text>
+
+  <rect x="138" y="465" width="214" height="65" rx="20" fill="url(#rowHeaderBg)" filter="url(#softShadow)"/>
+  <text x="168" y="493" class="rowHeader">方案设计</text>
+  <text x="168" y="515" class="rowNote">拆解动作与优先级</text>
+
+  <rect x="138" y="566" width="214" height="65" rx="20" fill="url(#rowHeaderBg)" filter="url(#softShadow)"/>
+  <text x="168" y="594" class="rowHeader">执行推进</text>
+  <text x="168" y="616" class="rowNote">协同交付与过程跟踪</text>
+
+  <rect x="138" y="667" width="214" height="65" rx="20" fill="url(#rowHeaderBg)" filter="url(#softShadow)"/>
+  <text x="168" y="695" class="rowHeader">复盘闭环</text>
+  <text x="168" y="717" class="rowNote">结果反馈与经验沉淀</text>
+
+  <rect x="390" y="364" width="227" height="65" rx="18" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <text x="412" y="388" class="cellTag">INPUT</text>
+  <text x="412" y="411" class="cellTitle">提交诉求</text>
+  <text x="412" y="430" class="cellText">反馈痛点与预期结果</text>
+
+  <rect x="657" y="364" width="227" height="65" rx="18" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <text x="679" y="388" class="cellTag">MERGE</text>
+  <text x="679" y="411" class="cellTitle">需求归并</text>
+  <text x="679" y="430" class="cellText">识别重复项与业务优先级</text>
+
+  <rect x="925" y="364" width="227" height="65" rx="18" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <text x="947" y="388" class="cellTag">POOL</text>
+  <text x="947" y="411" class="cellTitle">进入方案池</text>
+  <text x="947" y="430" class="cellText">形成待评估的问题列表</text>
+
+  <rect x="1192" y="364" width="227" height="65" rx="18" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <text x="1214" y="388" class="cellTag">CHECK</text>
+  <text x="1214" y="411" class="cellTitle">可行性评估</text>
+  <text x="1214" y="430" class="cellText">确认资源与系统约束</text>
+
+  <rect x="390" y="465" width="227" height="65" rx="18" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <text x="412" y="489" class="cellTag">CONFIRM</text>
+  <text x="412" y="512" class="cellTitle">场景确认</text>
+  <text x="412" y="531" class="cellText">核对目标对象与需求边界</text>
+
+  <rect x="657" y="465" width="227" height="65" rx="18" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <text x="679" y="489" class="cellTag">PRIORITY</text>
+  <text x="679" y="512" class="cellTitle">优先级判定</text>
+  <text x="679" y="531" class="cellText">按影响面与紧急度排序</text>
+
+  <rect x="925" y="465" width="227" height="65" rx="18" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <text x="947" y="489" class="cellTag">PLAN</text>
+  <text x="947" y="512" class="cellTitle">策略建模</text>
+  <text x="947" y="531" class="cellText">拆解动作、规则与责任人</text>
+
+  <rect x="1192" y="465" width="227" height="65" rx="18" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <text x="1214" y="489" class="cellTag">SYNC</text>
+  <text x="1214" y="512" class="cellTitle">资源对齐</text>
+  <text x="1214" y="531" class="cellText">排期、依赖与支撑条件确认</text>
+
+  <rect x="390" y="566" width="227" height="65" rx="18" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <text x="412" y="590" class="cellTag">JOIN</text>
+  <text x="412" y="613" class="cellTitle">配合执行</text>
+  <text x="412" y="632" class="cellText">参与验证并反馈过程问题</text>
+
+  <rect x="657" y="566" width="227" height="65" rx="18" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <text x="679" y="590" class="cellTag">FOLLOW</text>
+  <text x="679" y="613" class="cellTitle">节奏管理</text>
+  <text x="679" y="632" class="cellText">里程碑跟踪与风险协调</text>
+
+  <rect x="925" y="566" width="227" height="65" rx="18" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <text x="947" y="590" class="cellTag">RULE</text>
+  <text x="947" y="613" class="cellTitle">执行标准</text>
+  <text x="947" y="632" class="cellText">形成统一口径与检查点</text>
+
+  <rect x="1192" y="566" width="227" height="65" rx="18" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <text x="1214" y="590" class="cellTag">DELIVER</text>
+  <text x="1214" y="613" class="cellTitle">平台支撑</text>
+  <text x="1214" y="632" class="cellText">完成配置、开发与环境保障</text>
+
+  <rect x="390" y="667" width="227" height="65" rx="18" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <text x="412" y="691" class="cellTag">VOICE</text>
+  <text x="412" y="714" class="cellTitle">结果反馈</text>
+  <text x="412" y="733" class="cellText">输出使用体验与改进建议</text>
+
+  <rect x="657" y="667" width="227" height="65" rx="18" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <text x="679" y="691" class="cellTag">REVIEW</text>
+  <text x="679" y="714" class="cellTitle">业务复盘</text>
+  <text x="679" y="733" class="cellText">整理阶段结果与偏差原因</text>
+
+  <rect x="925" y="667" width="227" height="65" rx="18" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <text x="947" y="691" class="cellTag">LOOP</text>
+  <text x="947" y="714" class="cellTitle">策略迭代</text>
+  <text x="947" y="733" class="cellText">沉淀规则并形成下一轮输入</text>
+
+  <rect x="1192" y="667" width="227" height="65" rx="18" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <text x="1214" y="691" class="cellTag">DATA</text>
+  <text x="1214" y="714" class="cellTitle">数据回收</text>
+  <text x="1214" y="733" class="cellText">监测效果并记录异常信号</text>
+
+  <rect x="110" y="780" width="1330" height="42" rx="18" fill="#f3f7fc" stroke="#d7e3f4"/>
+  <text x="775" y="808" class="footerText" text-anchor="middle">适合“顶部是角色、左侧是阶段、中间矩阵表示责任动作”的协同流程页、治理页和运营页。</text>
+</svg>

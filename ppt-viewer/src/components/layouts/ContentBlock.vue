@@ -65,30 +65,80 @@ const chartType = computed(() => (chartSlide.value && typeof chartSlide.value.la
   <MindMap v-else-if="kind === 'chart' && chartSlide && chartType === 'mind_map'" :slide="chartSlide" :ctx="{ index: 0, total: 1 }" />
   <GenericLayout v-else-if="kind === 'chart'" :slide="chartSlide" :ctx="{ index: 0, total: 1 }" />
 
-  <div v-else-if="kind === 'blocks'" class="grid2">
+  <div v-else-if="kind === 'blocks'" class="grid2 cbBlocks">
     <Card v-for="(x, i) in block.blocks" :key="i" :title="x?.heading || x?.title || `块 ${Number(i) + 1}`">
       <Bullets :items="x?.bullets" />
     </Card>
   </div>
 
-  <Bullets v-else-if="kind === 'bullets'" :items="block.bullets" />
+  <div v-else-if="kind === 'bullets'" class="cbBulletShell">
+    <Bullets :items="block.bullets" />
+  </div>
 
   <Card v-else-if="kind === 'image' && imageBlock" :title="block.title">
-    <div style="display:grid;gap:10px">
+    <div class="cbImageWrap">
       <img
         :src="imageBlock.src"
         :alt="imageBlock.alt"
-        style="width:100%;max-height:360px;object-fit:contain;border-radius:16px;background:#f8fafc"
+        class="cbImage"
       />
-      <div v-if="imageBlock.caption" style="font-size:13px;color:#475569;white-space:pre-wrap">
+      <div v-if="imageBlock.caption" class="cbCaption">
         {{ imageBlock.caption }}
       </div>
     </div>
   </Card>
 
   <Card v-else-if="kind === 'text'" :title="block.title">
-    <div style="white-space: pre-wrap">{{ block.text }}</div>
+    <div class="cbText">{{ block.text }}</div>
   </Card>
 
   <GenericLayout v-else :slide="block" :ctx="{ index: 0, total: 1 }" />
 </template>
+
+<style scoped>
+.cbBlocks {
+  align-items: stretch;
+}
+
+.cbBulletShell {
+  height: 100%;
+  min-height: 0;
+  padding: 18px 18px 16px;
+  border-radius: 22px;
+  background:
+    radial-gradient(circle at top right, rgba(77, 160, 255, 0.14), transparent 34%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(248, 251, 255, 0.98) 100%);
+  border: 1px solid rgba(215, 227, 244, 0.96);
+  box-shadow: 0 18px 34px rgba(20, 61, 122, 0.08);
+}
+
+.cbImageWrap {
+  display: grid;
+  gap: 12px;
+}
+
+.cbImage {
+  width: 100%;
+  max-height: 360px;
+  object-fit: contain;
+  border-radius: 18px;
+  background:
+    linear-gradient(180deg, rgba(248, 250, 252, 0.98) 0%, rgba(241, 245, 249, 0.98) 100%);
+  border: 1px solid rgba(215, 227, 244, 0.8);
+  padding: 10px;
+}
+
+.cbCaption {
+  font-size: 13px;
+  color: #475569;
+  white-space: pre-wrap;
+  line-height: 1.55;
+}
+
+.cbText {
+  white-space: pre-wrap;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #334155;
+}
+</style>

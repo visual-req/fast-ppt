@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="pageBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f7fb"/>
+      <stop offset="100%" stop-color="#eef3f9"/>
+    </linearGradient>
+    <linearGradient id="panelBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fbff"/>
+    </linearGradient>
+    <linearGradient id="petalFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f1f6ff"/>
+    </linearGradient>
+    <linearGradient id="petalA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#eef5ff"/>
+    </linearGradient>
+    <linearGradient id="petalB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fdfefe"/>
+      <stop offset="100%" stop-color="#e9f2ff"/>
+    </linearGradient>
+    <linearGradient id="petalC" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#edf4ff"/>
+    </linearGradient>
+    <linearGradient id="petalD" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fbfdff"/>
+      <stop offset="100%" stop-color="#e8f1ff"/>
+    </linearGradient>
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(147,197,253,0.28)"/>
+      <stop offset="70%" stop-color="rgba(147,197,253,0.10)"/>
+      <stop offset="100%" stop-color="rgba(147,197,253,0)"/>
+    </radialGradient>
+    <filter id="panelShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#1e3a5f" flood-opacity="0.10"/>
+    </filter>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#1e3a5f" flood-opacity="0.10"/>
+    </filter>
+    <style>
+      .title { fill: #143d7a; font-size: 46px; font-family: Arial, sans-serif; font-weight: 700; }
+      .subtle { fill: #64748b; font-size: 18px; font-family: Arial, sans-serif; }
+      .petalTitle { fill: #143d7a; font-size: 22px; font-family: Arial, sans-serif; font-weight: 700; }
+      .petalText { fill: #475569; font-size: 14px; font-family: Arial, sans-serif; }
+      .coreTitle { fill: #143d7a; font-size: 28px; font-family: Arial, sans-serif; font-weight: 700; }
+      .coreSubtle { fill: #64748b; font-size: 16px; font-family: Arial, sans-serif; }
+      .footerText { fill: #5b6b82; font-size: 18px; font-family: Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#pageBg)"/>
+  <rect x="54" y="44" width="1492" height="812" rx="36" fill="url(#panelBg)" stroke="#d7e3f4" stroke-width="1.5" filter="url(#panelShadow)"/>
+
+  <text x="110" y="126" class="title">花瓣式布局</text>
+  <text x="110" y="164" class="subtle">四个花瓣对称排列，文字直接放在花瓣内部，中间花蕊仅承载核心标题，适合表达“一个中心 + 四个支撑点”。</text>
+
+  <ellipse cx="954" cy="300" rx="150" ry="104" fill="rgba(147,197,253,0.14)" transform="rotate(45 954 300)"/>
+  <ellipse cx="954" cy="600" rx="150" ry="104" fill="rgba(147,197,253,0.14)" transform="rotate(135 954 600)"/>
+  <ellipse cx="646" cy="600" rx="150" ry="104" fill="rgba(147,197,253,0.14)" transform="rotate(225 646 600)"/>
+  <ellipse cx="646" cy="300" rx="150" ry="104" fill="rgba(147,197,253,0.14)" transform="rotate(315 646 300)"/>
+
+  <g transform="translate(800 450) rotate(45)">
+    <path d="M0 0 C 90 -14 134 -118 0 -252 C -134 -118 -90 -14 0 0 Z" fill="url(#petalA)" stroke="#bfdafe" stroke-width="1.5" filter="url(#softShadow)"/>
+    <path d="M0 -18 C 58 -34 90 -110 0 -220 C -90 -110 -58 -34 0 -18 Z" fill="rgba(255,255,255,0.32)"/>
+  </g>
+  <g transform="translate(800 450) rotate(135)">
+    <path d="M0 0 C 90 -14 134 -118 0 -252 C -134 -118 -90 -14 0 0 Z" fill="url(#petalB)" stroke="#bfdafe" stroke-width="1.5" filter="url(#softShadow)"/>
+    <path d="M0 -18 C 58 -34 90 -110 0 -220 C -90 -110 -58 -34 0 -18 Z" fill="rgba(255,255,255,0.28)"/>
+  </g>
+  <g transform="translate(800 450) rotate(225)">
+    <path d="M0 0 C 90 -14 134 -118 0 -252 C -134 -118 -90 -14 0 0 Z" fill="url(#petalC)" stroke="#bfdafe" stroke-width="1.5" filter="url(#softShadow)"/>
+    <path d="M0 -18 C 58 -34 90 -110 0 -220 C -90 -110 -58 -34 0 -18 Z" fill="rgba(255,255,255,0.28)"/>
+  </g>
+  <g transform="translate(800 450) rotate(315)">
+    <path d="M0 0 C 90 -14 134 -118 0 -252 C -134 -118 -90 -14 0 0 Z" fill="url(#petalD)" stroke="#bfdafe" stroke-width="1.5" filter="url(#softShadow)"/>
+    <path d="M0 -18 C 58 -34 90 -110 0 -220 C -90 -110 -58 -34 0 -18 Z" fill="rgba(255,255,255,0.32)"/>
+  </g>
+
+  <text x="932" y="282" text-anchor="middle" class="petalTitle">用户洞察</text>
+  <text x="932" y="312" text-anchor="middle" class="petalText">识别关键对象、需求差异</text>
+  <text x="932" y="334" text-anchor="middle" class="petalText">与场景触点。</text>
+
+  <text x="932" y="566" text-anchor="middle" class="petalTitle">方案设计</text>
+  <text x="932" y="596" text-anchor="middle" class="petalText">拆解动作、节奏安排</text>
+  <text x="932" y="618" text-anchor="middle" class="petalText">与责任分工。</text>
+
+  <text x="668" y="566" text-anchor="middle" class="petalTitle">执行落地</text>
+  <text x="668" y="596" text-anchor="middle" class="petalText">推进资源协同、实施</text>
+  <text x="668" y="618" text-anchor="middle" class="petalText">与过程跟踪。</text>
+
+  <text x="668" y="282" text-anchor="middle" class="petalTitle">结果复盘</text>
+  <text x="668" y="312" text-anchor="middle" class="petalText">沉淀经验、识别偏差</text>
+  <text x="668" y="334" text-anchor="middle" class="petalText">并优化下一轮。</text>
+
+  <circle cx="800" cy="450" r="148" fill="url(#coreGlow)"/>
+  <circle cx="800" cy="450" r="122" fill="rgba(147,197,253,0.18)"/>
+  <circle cx="800" cy="450" r="92" fill="#ffffff" stroke="#bfdafe" filter="url(#softShadow)"/>
+  <text x="800" y="442" text-anchor="middle" class="coreTitle">核心议题</text>
+  <text x="800" y="476" text-anchor="middle" class="coreSubtle">Core Title</text>
+
+  <rect x="110" y="800" width="1330" height="28" rx="14" fill="#f3f7fc" stroke="#d7e3f4"/>
+  <text x="775" y="819" class="footerText" text-anchor="middle">适合“一个中心标题 + 四个对称支撑点”的策略页、能力页和方法论说明页。</text>
+</svg>

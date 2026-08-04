@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="pageBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f7fb"/>
+      <stop offset="100%" stop-color="#eef3f9"/>
+    </linearGradient>
+    <linearGradient id="panelBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fbff"/>
+    </linearGradient>
+    <linearGradient id="heroBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eaf2fb"/>
+      <stop offset="100%" stop-color="#d7e6f7"/>
+    </linearGradient>
+    <linearGradient id="summaryBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f4f97"/>
+      <stop offset="100%" stop-color="#123b7a"/>
+    </linearGradient>
+    <filter id="panelShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#18345b" flood-opacity="0.10"/>
+    </filter>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#1e3a5f" flood-opacity="0.10"/>
+    </filter>
+    <style>
+      .title { fill: #143d7a; font-size: 46px; font-family: Arial, sans-serif; font-weight: 700; }
+      .subtle { fill: #64748b; font-size: 18px; font-family: Arial, sans-serif; }
+      .name { fill: #ffffff; font-size: 34px; font-family: Arial, sans-serif; font-weight: 700; }
+      .role { fill: rgba(255,255,255,0.88); font-size: 20px; font-family: Arial, sans-serif; }
+      .summaryTitle { fill: #ffffff; font-size: 30px; font-family: Arial, sans-serif; font-weight: 700; }
+      .summaryText { fill: rgba(255,255,255,0.88); font-size: 18px; font-family: Arial, sans-serif; }
+      .cardTitle { fill: #143d7a; font-size: 22px; font-family: Arial, sans-serif; font-weight: 700; }
+      .cardText { fill: #475569; font-size: 16px; font-family: Arial, sans-serif; }
+      .pill { fill: #ffffff; font-size: 13px; font-family: Arial, sans-serif; font-weight: 700; }
+      .sectionLabel { fill: #1d4ed8; font-size: 11px; font-family: Arial, sans-serif; font-weight: 700; letter-spacing: 1.5px; }
+      .footerText { fill: #5b6b82; font-size: 18px; font-family: Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#pageBg)"/>
+  <rect x="54" y="44" width="1492" height="812" rx="36" fill="url(#panelBg)" stroke="#d7e3f4" stroke-width="1.5" filter="url(#panelShadow)"/>
+
+  <text x="110" y="126" class="title">个人介绍布局</text>
+  <text x="110" y="164" class="subtle">左侧突出人物照片，右侧用标签、摘要和分区卡片快速表达身份、背景与能力亮点。</text>
+
+  <rect x="110" y="194" width="6" height="26" rx="3" fill="#1d6fe8"/>
+  <text x="130" y="214" fill="#1d6fe8" font-size="20" font-family="Arial, sans-serif" font-weight="700">Preview Layout</text>
+
+  <rect x="110" y="244" width="470" height="480" rx="30" fill="url(#heroBg)" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <circle cx="316" cy="402" r="120" fill="rgba(255,255,255,0.5)"/>
+  <circle cx="316" cy="380" r="62" fill="rgba(255,255,255,0.82)"/>
+  <path d="M196 590 C212 504 262 458 316 458 C370 458 420 504 436 590" fill="rgba(255,255,255,0.82)"/>
+  <path d="M426 278 C478 312 520 360 554 430" fill="none" stroke="rgba(255,255,255,0.28)" stroke-width="18" stroke-linecap="round"/>
+  <path d="M446 326 C488 352 516 392 538 448" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="10" stroke-linecap="round"/>
+  <rect x="140" y="598" width="410" height="96" rx="24" fill="rgba(255,255,255,0.16)" stroke="rgba(255,255,255,0.18)"/>
+  <rect x="162" y="616" width="92" height="30" rx="15" fill="rgba(255,255,255,0.22)"/>
+  <text x="208" y="636" class="pill" text-anchor="middle">PROFILE</text>
+  <text x="162" y="672" class="name">张雨辰</text>
+  <text x="162" y="700" class="role">战略咨询顾问 / AI 产品负责人</text>
+
+  <rect x="606" y="244" width="834" height="170" rx="28" fill="url(#summaryBg)" filter="url(#softShadow)"/>
+  <text x="638" y="280" fill="rgba(255,255,255,0.72)" font-size="12" font-family="Arial, sans-serif" font-weight="700" letter-spacing="2">INTRODUCTION</text>
+  <text x="638" y="330" class="summaryTitle">张雨辰</text>
+  <text x="638" y="360" class="role">战略咨询顾问 / AI 产品负责人</text>
+  <text x="638" y="392" class="summaryText">专注于把业务洞察、数字化能力和组织协同落到可执行方案，</text>
+  <text x="638" y="418" class="summaryText">擅长从 0 到 1 搭建产品体系，并用结构化表达快速建立信任感。</text>
+
+  <rect x="638" y="442" width="112" height="30" rx="15" fill="rgba(255,255,255,0.16)"/>
+  <rect x="764" y="442" width="118" height="30" rx="15" fill="rgba(255,255,255,0.16)"/>
+  <text x="694" y="462" class="pill" text-anchor="middle">上海</text>
+  <text x="823" y="462" class="pill" text-anchor="middle">咨询 / AI</text>
+
+  <rect x="638" y="490" width="98" height="30" rx="15" fill="rgba(255,255,255,0.14)"/>
+  <rect x="748" y="490" width="118" height="30" rx="15" fill="rgba(255,255,255,0.14)"/>
+  <rect x="878" y="490" width="132" height="30" rx="15" fill="rgba(255,255,255,0.14)"/>
+  <text x="687" y="510" class="pill" text-anchor="middle">业务洞察</text>
+  <text x="807" y="510" class="pill" text-anchor="middle">方案设计</text>
+  <text x="944" y="510" class="pill" text-anchor="middle">组织协同</text>
+
+  <rect x="606" y="438" width="834" height="286" rx="30" fill="none"/>
+
+  <rect x="606" y="440" width="400" height="128" rx="24" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <rect x="630" y="458" width="84" height="24" rx="12" fill="#edf4ff"/>
+  <text x="672" y="474" class="sectionLabel" text-anchor="middle">PART 01</text>
+  <text x="630" y="512" class="cardTitle">核心经历</text>
+  <text x="630" y="542" class="cardText">8 年咨询与产品经验，覆盖金融、企业服务与 AI 应用场景。</text>
+
+  <rect x="1040" y="440" width="400" height="128" rx="24" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <rect x="1064" y="458" width="84" height="24" rx="12" fill="#edf4ff"/>
+  <text x="1106" y="474" class="sectionLabel" text-anchor="middle">PART 02</text>
+  <text x="1064" y="512" class="cardTitle">擅长领域</text>
+  <text x="1064" y="542" class="cardText">战略拆解、产品规划、Prompt 设计、知识工程落地。</text>
+
+  <rect x="606" y="590" width="400" height="128" rx="24" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <rect x="630" y="608" width="84" height="24" rx="12" fill="#edf4ff"/>
+  <text x="672" y="624" class="sectionLabel" text-anchor="middle">PART 03</text>
+  <text x="630" y="662" class="cardTitle">代表标签</text>
+  <text x="630" y="690" class="cardText">结果导向、结构清晰、表达稳定、推进节奏感强。</text>
+
+  <rect x="1040" y="590" width="400" height="128" rx="24" fill="#ffffff" stroke="#d7e3f4" filter="url(#softShadow)"/>
+  <rect x="1064" y="608" width="84" height="24" rx="12" fill="#edf4ff"/>
+  <text x="1106" y="624" class="sectionLabel" text-anchor="middle">PART 04</text>
+  <text x="1064" y="662" class="cardTitle">合作方式</text>
+  <text x="1064" y="690" class="cardText">擅长跨团队沟通，对齐目标、拆解任务并持续推进执行闭环。</text>
+
+</svg>

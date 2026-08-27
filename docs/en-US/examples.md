@@ -1,18 +1,19 @@
 # Example Projects
 
-The project ships with three complete PPT example projects covering three of the four PPT types — use them as learning references and starting points.
+The project currently provides four officially previewable PPT example projects that can be used as learning references and starting points.
 
 ## Overview
 
 | Project | Type | Pages | Topic |
 |---------|------|-------|-------|
+| 001_drone_defense | Proposal | 36 | Low-altitude security defense proposal for drone intrusion scenarios |
 | 001_skill_and_harness | Courseware | 59 | Skill & Harness Engineering Training |
 | 002_manufacturing_digital | Proposal | 44 | Manufacturing Digital Transformation & AI |
 | 003_visual_spec | Demo | 34 | Visual-Spec Product Showcase |
 
 ## Where the Example Projects Are
 
-These example projects are split into two parts:
+These four example projects are mainly split into two parts:
 
 - input materials under `work/input/`
 - generated outputs under `work/ppt/`
@@ -21,6 +22,7 @@ Locations:
 
 | Example | Input materials | Generated outputs |
 |---------|-----------------|------------------|
+| `001_无人机黑飞防御技术方案` | input directory not included yet | `work/ppt/001_无人机黑飞防御技术方案/` |
 | `001_skill和harness` | `work/input/001_skill和harness/` | `work/ppt/001_skill和harness/` |
 | `002_制造业数字化转型` | `work/input/002_制造业数字化转型/` | `work/ppt/002_制造业数字化转型/` |
 | `003_visual_spec` | `work/input/003_visual_spec/` | `work/ppt/003_visual_spec/` |
@@ -48,6 +50,7 @@ Recommended form: use the full directory name:
 http://localhost:9030/?project=001_skill和harness
 http://localhost:9030/?project=002_制造业数字化转型
 http://localhost:9030/?project=003_visual_spec
+http://localhost:9030/?project=001_无人机黑飞防御技术方案
 ```
 
 You may also use only the numeric prefix:
@@ -59,6 +62,39 @@ http://localhost:9030/?project=003
 ```
 
 But the full directory name is safer. This repository may contain multiple projects with the same numeric prefix, such as several `001_*` directories, so the full name avoids opening the wrong project.
+
+---
+
+## 001_drone_defense (Proposal, 36 pages)
+
+**Topic**: An integrated low-altitude security defense proposal for airports, protected facilities, and large-event security teams, covering threat analysis, detection, identification, countermeasures, command, and rollout.
+
+**Directory**:
+- `work/ppt/001_无人机黑飞防御技术方案/outline.json`
+- `work/ppt/001_无人机黑飞防御技术方案/deck.json`
+- `work/ppt/001_无人机黑飞防御技术方案/slides/001_cover.json` … `036_thank_you.json`
+- `work/assets/001/` (includes referenced SVG assets such as `016-multi-sensor-fusion.svg`)
+
+**Chapter Structure**:
+1. Opening: proposal objective & decision path
+2. Drone intrusion threats and defense requirements
+3. Overall defense architecture
+4. Detection and identification subsystem
+5. Countermeasure subsystem
+6. Command and control platform
+7. Implementation roadmap
+8. Cost and benefit analysis
+9. Risks and safeguards
+10. Closing recommendations
+
+**Layouts Used**: cover / agenda / section_divider / title_bullets / kpi_cards / problem_statement / architecture_layered / comparison_table / phases / four_grid / three_column / svg_full / two_column / steps / nine_grid / swimlane_process / roadmap / plan_table / milestones / cost_benefit / risk_register / summary / thank_you
+
+**Notes**:
+- This example is available as a complete generated project and can be previewed directly
+- Its original `work/input/` source directory is not included in the repository yet
+
+**Preview URL**:
+- `http://localhost:9030/?project=001_无人机黑飞防御技术方案`
 
 ---
 
@@ -149,4 +185,4 @@ But the full directory name is safer. This repository may contain multiple proje
 
 The system supports Chinese (zh-CN), Japanese (ja-JP), and English (en-US). When generating a PPT, the `deck.json` `language` field auto-adapts to the user's input language. All titles, bullets, and SVG text are unified to the selected language.
 
-The three example projects are in Chinese. For other language versions, the AI will generate content in the corresponding language during the `/fppt:outline` phase.
+These four example projects are currently in Chinese. For other language versions, the AI will generate content in the corresponding language during the `/fppt:outline` phase.

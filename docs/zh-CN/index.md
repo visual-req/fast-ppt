@@ -12,6 +12,7 @@
 
 - [安装说明](installation.md)
 - [操作手册](manual.md)
+- [质量保障](quality.md)
 - [调整指南](adjustment.md)
 - [美化指南](beautify.md)
 - [PPT 类型说明](ppt-types.md)

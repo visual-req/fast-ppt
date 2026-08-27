@@ -19,6 +19,8 @@
 ```text
 fast_ppt/
   README.md
+  README.en-US.md
+  README.ja-JP.md
   LICENSE
   docs/
   skills/
@@ -43,6 +45,9 @@ fast_ppt/
 
 - 安装
 - 快速开始
+- PPT 类型说明
+- 调整指南
+- 美化指南
 - 工作流
 - 目录结构
 - layout 类型库
@@ -50,6 +55,8 @@ fast_ppt/
 - 故障排查
 
 这里是给人读的，不是给 viewer 读的。
+
+其中 `docs/zh-CN/layouts.md` 是布局类型库入口页，详细 layout 示例已经拆到 `docs/zh-CN/layouts/*.md` 分类页面中。
 
 ### `skills/`
 

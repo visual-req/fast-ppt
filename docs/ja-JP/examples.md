@@ -10,6 +10,56 @@
 | 002_manufacturing_digital | 提案型 | 44 | 製造業 DX と AI 導入 |
 | 003_visual_spec | デモ型 | 34 | Visual-Spec 製品デモンストレーション |
 
+## 事例プロジェクトの場所
+
+これら 3 つの事例は 2 つの場所に分かれています。
+
+- 入力資料：`work/input/`
+- 生成結果：`work/ppt/`
+
+対応関係は以下です。
+
+| 事例 | 入力資料の場所 | 生成結果の場所 |
+|------|----------------|----------------|
+| `001_skill和harness` | `work/input/001_skill和harness/` | `work/ppt/001_skill和harness/` |
+| `002_制造业数字化转型` | `work/input/002_制造业数字化转型/` | `work/ppt/002_制造业数字化转型/` |
+| `003_visual_spec` | `work/input/003_visual_spec/` | `work/ppt/003_visual_spec/` |
+
+事例の構成を直接確認したい場合は、主に以下を見ます。
+
+- `work/ppt/事例プロジェクト/outline.json`
+- `work/ppt/事例プロジェクト/deck.json`
+- `work/ppt/事例プロジェクト/slides/*.json`
+- `work/assets/番号/`
+
+## 事例プレビューの開き方
+
+まずローカルサーバーを起動します。
+
+```bash
+node server.mjs
+```
+
+その後、ブラウザで対象事例を開きます。
+
+推奨はディレクトリ名をフルで指定する方法です。
+
+```text
+http://localhost:9030/?project=001_skill和harness
+http://localhost:9030/?project=002_制造业数字化转型
+http://localhost:9030/?project=003_visual_spec
+```
+
+番号だけでも指定できます。
+
+```text
+http://localhost:9030/?project=001
+http://localhost:9030/?project=002
+http://localhost:9030/?project=003
+```
+
+ただし、フルディレクトリ名の方が安全です。このリポジトリ内に同じ番号プレフィックスを持つ別プロジェクトがある場合、フル名の方が誤って別のプロジェクトを開きにくくなります。
+
 ---
 
 ## 001_skill_and_harness（教材型、59 ページ）
@@ -31,6 +81,9 @@
 5. 補足資料と演習
 
 **使用レイアウト**：cover / agenda / section_divider / mind_map / logic_tree / svg_full / impact_effort / before_after / dependency_graph / two_column / comparison_table / pyramid / four_grid / steps / architecture_layered / icicle_tree / swimlane_process / thank_you
+
+**プレビュー URL**：
+- `http://localhost:9030/?project=001_skill和harness`
 
 ---
 
@@ -56,6 +109,9 @@
 
 **使用レイアウト**：cover / agenda / section_divider / phases / architecture_layered / radar_chart / case_study / steps / title_bullets / nine_grid / org_roles / plan_table / summary / thank_you / svg_full
 
+**プレビュー URL**：
+- `http://localhost:9030/?project=002_制造业数字化转型`
+
 ---
 
 ## 003_visual_spec（デモ型、34 ページ）
@@ -79,18 +135,8 @@
 
 **使用レイアウト**：cover / section_divider / nine_grid / four_grid / svg_full / two_column / before_after / journey_map / summary / thank_you
 
----
-
-## プレビュー方法
-
-サーバー起動後にプロジェクトへアクセス：
-
-```bash
-node server.mjs
-# http://localhost:9030/?project=1   → 001_skill_and_harness
-# http://localhost:9030/?project=2   → 002_manufacturing_digital
-# http://localhost:9030/?project=3   → 003_visual_spec
-```
+**プレビュー URL**：
+- `http://localhost:9030/?project=003_visual_spec`
 
 ## 再利用方法
 

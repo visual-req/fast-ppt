@@ -1,76 +1,207 @@
 # Manual
 
-## Starting the Frontend
+This manual focuses on only two things:
 
-### 1. Install Dependencies
+- how to operate the web PPT viewer
+- how to export a PPTX file
 
-From project root:
+For installation, dependencies, and local startup, see [Installation](installation.md) or [Getting Started](getting-started.md).
 
-```bash
-npm install
-npm --prefix ppt-viewer install
-```
+## Prerequisites
 
-### 2. Start Preview Server
+Before using the manual, make sure:
 
-From project root:
+- the local preview service is already running
+- the browser is open at `http://localhost:9030/`
+- the current project already has `deck.json + slides/*.json`
 
-```bash
-node server.mjs
-```
+If a project only has `outline.json`, you may still preview structure, but PPTX export will fail.
 
-Default:
+## Open the Web PPT
 
-```text
-http://localhost:9030/
-```
-
-### 3. Open Browser
-
-Go to:
+Default URL:
 
 ```text
 http://localhost:9030/
 ```
 
-If you don't see the latest results, force-refresh:
+To open a specific project, use the `project` query parameter:
 
-- macOS: `Cmd + Shift + R`
-- Windows: `Ctrl + Shift + R`
+```text
+http://localhost:9030/?project=001
+http://localhost:9030/?project=001_project-name
+```
 
-## Frontend Operations
+Notes:
 
-### Navigation
+- `project=001` auto-matches `work/ppt/001_*`
+- `project=001_project-name` opens that directory directly
+- the status area on the right shows the current project name
 
-- Use keyboard left/right arrows to flip pages
-- Use UI controls to navigate
-- Click "Home" to jump to page 1
-- Enter a page number and press Enter to jump directly
+## Toolbar Operations
 
-### Outline View
+The top toolbar is the main daily entry point. A practical flow is:
 
-- Click the "Outline" button at the top
-- Navigate the tree in the drawer
-- Click a section to jump to its page
+### 1. Reload
 
-### Export PPTX
+- Click `Reload` to re-read the current `deck.json + slides/*.json`
+- Use it after editing JSON, SVG, or style-related files
+- If the browser still shows stale content, do a hard refresh
 
-- Click "Export PPTX" in the top toolbar
-- Generates and downloads `deck.pptx` from current `deck.json + slides/*.json`
+### 2. Page Navigation
 
-### Reviewing Pages
+- `Home`: jump to page 1
+- `Prev / Next`: move page by page
+- page number input + `Go`: jump directly
 
-Key things to check:
+Keyboard shortcuts:
 
-- Are titles correct?
-- Does the layout match the page intent?
-- Are SVGs rendering properly?
-- Is any content overflowing the screen?
-- Are there too many table-like or bullet-like pages?
+- `ArrowLeft` / `PageUp`: previous page
+- `ArrowRight` / `PageDown` / `Space`: next page
+- `Home`: first page
+- `End`: last page
 
-## Frontend Files
+### 3. Outline Navigation
 
-- `server.mjs`: local preview server & `/api/deck`
-- `ppt-viewer/src/App.vue`: page shell & outline drawer
+- Click `Outline` to open the chapter drawer
+- Chapters are inferred from `section_divider`
+- Clicking a chapter or slide jumps directly there
+- Press `Esc` or click the mask to close the drawer
+
+Useful for:
+
+- checking chapter order
+- jumping to a problem page quickly
+- verifying whether section pages are recognized correctly
+
+### 4. Theme Switching
+
+The toolbar dropdown switches the current viewer theme.
+
+Built-in presets:
+
+- `consulting`
+- `demo`
+- `executive`
+- `training`
+- `aurora`
+- `graphite`
+
+Notes:
+
+- the selected theme affects both preview and export
+- the chosen theme is synced to the `style` query parameter
+- if `deck.deck.style` exists but you choose another theme in the UI, the UI selection wins
+
+Example:
+
+```text
+http://localhost:9030/?project=001&style=executive
+```
+
+## What to Check in the Viewer
+
+Do not only judge whether a page "looks nice". Also check:
+
+- titles, page order, and chapter structure
+- whether `layout_type` matches the page intent
+- whether SVGs, images, and icons actually render
+- whether any content overflows the screen
+- whether pages still feel too table-heavy or bullet-heavy
+- whether colors and emphasis still work after theme switching
+
+If something looks wrong, check:
+
+- `ppt-viewer/src/layoutRegistry.ts`
+- `ppt-viewer/src/components/layouts/*.vue`
+- the current project's `deck.json`
+- the current slide's `slides/*.json`
+
+## Export PPTX
+
+### How Export Works
+
+- Click `Export PPTX` in the top toolbar
+- the system exports using the current project and current style
+
+The backend endpoint is:
+
+```text
+/api/export/pptx
+```
+
+If the current URL contains project and style parameters, export uses them automatically, for example:
+
+```text
+http://localhost:9030/?project=001&style=executive
+```
+
+This exports project `001` with the `executive` style.
+
+### Exported File Name
+
+- without a style override: `deck.pptx`
+- with a style override: `deck-styleName.pptx`
+
+Examples:
+
+- `deck.pptx`
+- `deck-executive.pptx`
+
+### What to Verify Before Export
+
+Before exporting, confirm at least:
+
+- you are on the correct project
+- the selected style is the intended one
+- chapter order and slide order are correct
+- images, SVGs, and charts render properly in the viewer
+- there is no overflow or clipped content
+
+### What to Check When Export Fails
+
+Common causes:
+
+- the current project does not have `deck.json`
+- `slides/*.json` is missing or invalid
+- an image or SVG path does not exist
+- the viewer supports a layout but the export pipeline does not yet
+
+Check these files first:
+
+- `lib/pptxExport.mjs`
+- `ppt-viewer/src/lib/*`
+- `work/ppt/current-project/deck.json`
+- `work/ppt/current-project/slides/*.json`
+
+## Common Operation Paths
+
+### Path 1: Review a Single Problem Page
+
+1. Open the target project
+2. Jump to the page by page number or outline
+3. Check title, layout, SVG, and overflow
+4. Click `Reload` after changes
+5. Export PPTX only after the page looks correct
+
+### Path 2: Compare Multiple Styles
+
+1. Open the same project
+2. Switch styles in the dropdown
+3. Review cover, section pages, chart pages, and summary pages
+4. Export PPTX after choosing the final style
+
+### Path 3: Validate Chapter Structure
+
+1. Open `Outline`
+2. Verify that all section pages are recognized
+3. Click chapters one by one and confirm the jump target
+4. If structure is wrong, inspect `section_divider` first
+
+## Related Files
+
+- `server.mjs`: local preview server and PPTX export endpoint
+- `ppt-viewer/src/App.vue`: toolbar, navigation, outline, theme switch, export button
 - `ppt-viewer/src/layoutRegistry.ts`: `layout_type` to component mapping
 - `ppt-viewer/src/components/layouts/`: page layout components
+- `lib/pptxExport.mjs`: main PPTX export logic

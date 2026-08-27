@@ -4,8 +4,8 @@
 <text x="96" y="108" fill="#0f172a" font-size="38" font-family="Arial, sans-serif" font-weight="700">Outline to Detail Workflow</text>
 <text x="96" y="148" fill="#64748b" font-size="22" font-family="Arial, sans-serif">先确认结构，再生成详细页，最后交给前端验证</text>
 
-<g transform="translate(96 250)">
-<rect width="280" height="380" rx="28" fill="#eff6ff" stroke="#bfdbfe"/>
+<g transform="translate(96 220)">
+<rect width="280" height="440" rx="28" fill="#eff6ff" stroke="#bfdbfe"/>
 <rect x="24" y="24" width="78" height="34" rx="17" fill="#2563eb"/>
 <text x="63" y="46" text-anchor="middle" fill="#ffffff" font-size="16" font-family="Arial, sans-serif" font-weight="700">输入</text>
 <text x="32" y="112" fill="#0f172a" font-size="30" font-family="Arial, sans-serif" font-weight="700">项目材料</text>
@@ -40,8 +40,8 @@
 <text x="52" y="388" fill="#334155" font-size="18" font-family="Arial, sans-serif">未通过先回改详细页</text>
 </g>
 
-<g transform="translate(1206 250)">
-<rect width="250" height="380" rx="28" fill="#dcfce7" stroke="#86efac"/>
+<g transform="translate(1206 220)">
+<rect width="250" height="440" rx="28" fill="#dcfce7" stroke="#86efac"/>
 <rect x="24" y="24" width="78" height="34" rx="17" fill="#16a34a"/>
 <text x="63" y="46" text-anchor="middle" fill="#ffffff" font-size="16" font-family="Arial, sans-serif" font-weight="700">交付</text>
 <text x="32" y="112" fill="#0f172a" font-size="30" font-family="Arial, sans-serif" font-weight="700">前端预览</text>

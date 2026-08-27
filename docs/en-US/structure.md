@@ -19,6 +19,8 @@ Understanding the directory structure helps you know where to fix a problem inst
 ```text
 fast_ppt/
   README.md
+  README.en-US.md
+  README.ja-JP.md
   LICENSE
   docs/
   skills/

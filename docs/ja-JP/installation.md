@@ -2,22 +2,44 @@
 
 ## 環境要件
 
-- Node.js 18 以上
+- Skills CLI を使える AI ツール
+- Node.js 18 以上（`npx skills` またはローカル開発用）
 - npm
-- Trae IDE（Skill は `skills/SKILL.md` により自動登録され、手動操作不要）
 - macOS / Linux / Windows すべて対応
 
-## Trae Skill 登録
+## Skill のインストール
 
-本プロジェクトの Skill は `skills/SKILL.md` で定義されています。Trae IDE が自動的に検出・読み込みします。手動登録は不要です。
+推奨方法は Skills CLI でのインストールです：
+
+```bash
+npx skills add visual-req/fast-ppt@proposal-generator -g -y
+```
+
+または AI ツールに次のように伝えてください：
+
+```text
+fast-ppt の proposal-generator skill をインストールして
+```
+
+インストール後に使えるコマンド：
+
+- `/fppt:outline`
+- `/fppt:detail`
+- `/fppt:viewer`
+
+補足：
+- `proposal-generator` はこのリポジトリ内の Skill 名です
+- `visual-req/fast-ppt` は配布元のリポジトリです
+- `-g` はグローバルインストール
+- `-y` は確認を省略します
 
 Skill ファイル構造：
 - `skills/SKILL.md` — Skill エントリポイント（name, description, commands）
 - `skills/prompts/ppt/` — 各タイプの PPT 生成プロンプト
 
-## 依存関係のインストール
+## ローカル開発
 
-プロジェクトには 2 つの依存ツリーがあります：
+このリポジトリを fork したりローカルでコード変更したりする場合だけ、以下の 2 つの依存ツリーを入れてください：
 
 ```bash
 # 1. ルート依存（pptxgenjs など）
@@ -30,7 +52,7 @@ npm --prefix ppt-viewer install
 ルートの `npm install` が pptxgenjs バージョンでエラーになる場合は以下を実行：
 `npm install pptxgenjs@latest`
 
-## フロントエンドのビルド
+## ローカルでフロントエンドをビルド
 
 ```bash
 npm --prefix ppt-viewer run build
@@ -38,7 +60,7 @@ npm --prefix ppt-viewer run build
 
 出力先は `ppt-viewer/dist/` で、`server.mjs` が静的ファイルとして配信します。
 
-## プレビューサーバーの起動
+## ローカルでプレビューサーバーを起動
 
 デフォルトポート `9030`：
 
@@ -50,7 +72,7 @@ node server.mjs
 
 特定プロジェクトの表示：`http://localhost:9030/?project=3`（例：003_visual_spec）
 
-## 推奨セットアップ手順
+## 推奨ローカル開発手順
 
 ```bash
 npm install                          # ルート依存

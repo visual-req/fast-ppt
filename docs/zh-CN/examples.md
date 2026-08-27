@@ -10,6 +10,56 @@
 | 002_制造业数字化转型 | 方案类 | 44 页 | 制造业数字化转型与 AI 导入 |
 | 003_visual_spec | 演示类 | 34 页 | Visual-Spec 需求规格化产品演示 |
 
+## 示例工程位置
+
+这三个示例工程分成两部分：
+
+- 输入材料目录：`work/input/`
+- 生成结果目录：`work/ppt/`
+
+对应位置如下：
+
+| 示例 | 输入材料位置 | 生成结果位置 |
+|------|--------------|--------------|
+| `001_skill和harness` | `work/input/001_skill和harness/` | `work/ppt/001_skill和harness/` |
+| `002_制造业数字化转型` | `work/input/002_制造业数字化转型/` | `work/ppt/002_制造业数字化转型/` |
+| `003_visual_spec` | `work/input/003_visual_spec/` | `work/ppt/003_visual_spec/` |
+
+如果你想直接研究示例页面结构，重点看：
+
+- `work/ppt/示例项目/outline.json`
+- `work/ppt/示例项目/deck.json`
+- `work/ppt/示例项目/slides/*.json`
+- `work/assets/编号/`
+
+## 如何打开示例预览
+
+先启动本地服务：
+
+```bash
+node server.mjs
+```
+
+然后在浏览器访问对应示例。
+
+推荐写法是使用完整目录名：
+
+```text
+http://localhost:9030/?project=001_skill和harness
+http://localhost:9030/?project=002_制造业数字化转型
+http://localhost:9030/?project=003_visual_spec
+```
+
+也可以只写编号：
+
+```text
+http://localhost:9030/?project=001
+http://localhost:9030/?project=002
+http://localhost:9030/?project=003
+```
+
+但更推荐使用完整目录名。因为当前仓库里可能同时存在多个相同编号前缀的项目，例如多个 `001_*` 目录；这时完整目录名更准确，不会打开错项目。
+
 ---
 
 ## 001_skill和harness（课件类，59 页）
@@ -31,6 +81,9 @@
 5. 补充材料与课堂练习
 
 **布局覆盖**：cover / agenda / section_divider / mind_map / logic_tree / svg_full / impact_effort / before_after / dependency_graph / two_column / comparison_table / pyramid / four_grid / steps / architecture_layered / icicle_tree / swimlane_process / thank_you
+
+**预览地址**：
+- `http://localhost:9030/?project=001_skill和harness`
 
 ---
 
@@ -55,6 +108,9 @@
 7. 路线图与行动项
 
 **布局覆盖**：cover / agenda / section_divider / phases / architecture_layered / radar_chart / case_study / steps / title_bullets / nine_grid / org_roles / plan_table / summary / thank_you / svg_full
+
+**预览地址**：
+- `http://localhost:9030/?project=002_制造业数字化转型`
 
 ---
 
@@ -85,18 +141,8 @@
 - PNG 格式支持（IP 注册流程图、场景验证图）
 - deck.json 与 outline.json 严格同步、文件 001~034 连续编号
 
----
-
-## 如何预览
-
-启动服务后访问对应项目：
-
-```bash
-node server.mjs
-# http://localhost:9030/?project=1   → 001_skill和harness
-# http://localhost:9030/?project=2   → 002_制造业数字化转型
-# http://localhost:9030/?project=3   → 003_visual_spec
-```
+**预览地址**：
+- `http://localhost:9030/?project=003_visual_spec`
 
 ## 如何复用
 

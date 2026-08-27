@@ -10,6 +10,56 @@ The project ships with three complete PPT example projects covering three of the
 | 002_manufacturing_digital | Proposal | 44 | Manufacturing Digital Transformation & AI |
 | 003_visual_spec | Demo | 34 | Visual-Spec Product Showcase |
 
+## Where the Example Projects Are
+
+These example projects are split into two parts:
+
+- input materials under `work/input/`
+- generated outputs under `work/ppt/`
+
+Locations:
+
+| Example | Input materials | Generated outputs |
+|---------|-----------------|------------------|
+| `001_skill和harness` | `work/input/001_skill和harness/` | `work/ppt/001_skill和harness/` |
+| `002_制造业数字化转型` | `work/input/002_制造业数字化转型/` | `work/ppt/002_制造业数字化转型/` |
+| `003_visual_spec` | `work/input/003_visual_spec/` | `work/ppt/003_visual_spec/` |
+
+If you want to inspect the example structure directly, focus on:
+
+- `work/ppt/example-project/outline.json`
+- `work/ppt/example-project/deck.json`
+- `work/ppt/example-project/slides/*.json`
+- `work/assets/project-number/`
+
+## How to Open Example Previews
+
+Start the local server first:
+
+```bash
+node server.mjs
+```
+
+Then open the example you want in the browser.
+
+Recommended form: use the full directory name:
+
+```text
+http://localhost:9030/?project=001_skill和harness
+http://localhost:9030/?project=002_制造业数字化转型
+http://localhost:9030/?project=003_visual_spec
+```
+
+You may also use only the numeric prefix:
+
+```text
+http://localhost:9030/?project=001
+http://localhost:9030/?project=002
+http://localhost:9030/?project=003
+```
+
+But the full directory name is safer. This repository may contain multiple projects with the same numeric prefix, such as several `001_*` directories, so the full name avoids opening the wrong project.
+
 ---
 
 ## 001_skill_and_harness (Courseware, 59 pages)
@@ -31,6 +81,9 @@ The project ships with three complete PPT example projects covering three of the
 5. Supplementary materials & exercises
 
 **Layouts Used**: cover / agenda / section_divider / mind_map / logic_tree / svg_full / impact_effort / before_after / dependency_graph / two_column / comparison_table / pyramid / four_grid / steps / architecture_layered / icicle_tree / swimlane_process / thank_you
+
+**Preview URL**:
+- `http://localhost:9030/?project=001_skill和harness`
 
 ---
 
@@ -56,6 +109,9 @@ The project ships with three complete PPT example projects covering three of the
 
 **Layouts Used**: cover / agenda / section_divider / phases / architecture_layered / radar_chart / case_study / steps / title_bullets / nine_grid / org_roles / plan_table / summary / thank_you / svg_full
 
+**Preview URL**:
+- `http://localhost:9030/?project=002_制造业数字化转型`
+
 ---
 
 ## 003_visual_spec (Demo, 34 pages)
@@ -79,18 +135,8 @@ The project ships with three complete PPT example projects covering three of the
 
 **Layouts Used**: cover / section_divider / nine_grid / four_grid / svg_full / two_column / before_after / journey_map / summary / thank_you
 
----
-
-## How to Preview
-
-Start the server and access projects:
-
-```bash
-node server.mjs
-# http://localhost:9030/?project=1   → 001_skill_and_harness
-# http://localhost:9030/?project=2   → 002_manufacturing_digital
-# http://localhost:9030/?project=3   → 003_visual_spec
-```
+**Preview URL**:
+- `http://localhost:9030/?project=003_visual_spec`
 
 ## How to Reuse
 

@@ -31,6 +31,7 @@ const isOutlineOpen = ref(false);
 const isExporting = ref(false);
 const currentProject = ref("");
 const selectedStyle = ref("");
+const exportMode = ref<"shots" | "native">("shots");
 
 const stylePresetKeys = listStylePresetKeys();
 
@@ -232,6 +233,7 @@ async function exportPptx() {
     const params = new URLSearchParams();
     if (currentProject.value) params.set("project", currentProject.value);
     if (effectiveStyle.value) params.set("style", effectiveStyle.value);
+    params.set("mode", exportMode.value);
     const query = params.toString() ? `?${params.toString()}` : "";
     const res = await fetch(`/api/export/pptx${query}`, { cache: "no-store" });
     if (!res.ok) throw new Error(`Failed to export pptx: ${res.status} ${res.statusText}`);
@@ -239,7 +241,7 @@ async function exportPptx() {
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = "deck.pptx";
+    a.download = exportMode.value === "shots" ? "deck-shots.pptx" : "deck.pptx";
     document.body.appendChild(a);
     a.click();
     a.remove();
@@ -302,6 +304,10 @@ onUnmounted(() => {
           <option v-for="styleKey in stylePresetKeys" :key="styleKey" :value="styleKey">
             {{ styleKey }} / {{ getStylePreset(styleKey).name }}
           </option>
+        </select>
+        <select class="select" v-model="exportMode" :disabled="isExporting">
+          <option value="shots">导出：高清截图版</option>
+          <option value="native">导出：原生可编辑版</option>
         </select>
         <button class="button" type="button" :disabled="total <= 0 || isExporting" @click="exportPptx">
           {{ isExporting ? "导出中..." : "导出 PPTX" }}

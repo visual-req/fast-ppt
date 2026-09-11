@@ -1,10 +1,23 @@
 <script setup lang="ts">
+import { computed } from "vue";
 import ContentBlock from "./ContentBlock.vue";
-defineProps<{ slide: any }>();
+
+const props = defineProps<{ slide: any }>();
+
+function weight(value: unknown): number {
+  const n = Number(value);
+  return Number.isFinite(n) && n > 0 ? n : 1;
+}
+
+const shellStyle = computed(() => {
+  const top = weight(props.slide?.top_weight);
+  const bottom = weight(props.slide?.bottom_weight);
+  return { gridTemplateRows: `minmax(0, ${top}fr) auto minmax(0, ${bottom}fr)` };
+});
 </script>
 
 <template>
-  <div class="topBottomShell">
+  <div class="topBottomShell" :style="shellStyle">
     <div class="topBottomPane topBottomPaneTop">
       <div class="topBottomLabel">01</div>
       <ContentBlock :block="slide?.top" />

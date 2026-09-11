@@ -52,15 +52,16 @@ const getIconSvg = getLayoutIconSvg;
 <style scoped>
 .stepsLayout {
   height: 100%;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr);
 }
 
 .stepsTrack {
   position: relative;
   height: 100%;
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  display: flex;
+  align-items: stretch;
   gap: 12px;
-  align-items: end;
 }
 
 .stepsRibbon {
@@ -88,11 +89,11 @@ const getIconSvg = getLayoutIconSvg;
 
 .stepsTier {
   position: relative;
-  display: grid;
-  align-content: start;
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
   gap: 10px;
-  min-height: calc(280px + var(--step-index) * -24px + 48px);
-  padding-top: calc(var(--step-index) * 24px);
 }
 
 .stepsTierLabel {
@@ -139,6 +140,7 @@ const getIconSvg = getLayoutIconSvg;
 }
 
 .stepsTierBody {
+  flex: 1 1 auto;
   min-height: 0;
   display: grid;
   align-content: start;
@@ -205,7 +207,7 @@ const getIconSvg = getLayoutIconSvg;
 }
 @media (max-width: 960px) {
   .stepsTrack {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
 
   .stepsRibbon,
@@ -215,8 +217,8 @@ const getIconSvg = getLayoutIconSvg;
   }
 
   .stepsTier {
-    min-height: auto;
-    padding-top: 0;
+    flex: 0 0 auto;
+    width: 100%;
   }
 }
 </style>

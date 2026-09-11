@@ -19,11 +19,32 @@ const kind = computed(() => {
   if (b.image || b.image_path || b.image_url) return "image";
   if (b.table) return "table";
   if (b.chart) return "chart";
+  if (Array.isArray(b.flow)) return "flow";
   if (Array.isArray(b.blocks)) return "blocks";
   if (Array.isArray(b.bullets)) return "bullets";
   if (typeof b.text === "string") return "text";
   return "generic";
 });
+
+const flowSteps = computed(() => {
+  const raw = props.block?.flow;
+  return Array.isArray(raw) ? raw.slice(0, 6) : [];
+});
+
+const FLOW_PALETTE = ["#1d6fe8", "#0ea5e9", "#10b981", "#8b5cf6", "#ef4444", "#f59e0b"];
+
+function flowAccent(index: number): string {
+  const step = flowSteps.value[index];
+  const own = typeof step?.accent === "string" && step.accent.trim() ? step.accent.trim() : "";
+  return own || FLOW_PALETTE[index % FLOW_PALETTE.length];
+}
+
+function flowText(step: any): string {
+  if (typeof step?.text === "string") return step.text;
+  if (typeof step?.note === "string") return step.note;
+  if (typeof step?.subtitle === "string") return step.subtitle;
+  return "";
+}
 
 const imageBlock = computed(() => {
   const b = props.block;
@@ -65,6 +86,22 @@ const chartType = computed(() => (chartSlide.value && typeof chartSlide.value.la
   <MindMap v-else-if="kind === 'chart' && chartSlide && chartType === 'mind_map'" :slide="chartSlide" :ctx="{ index: 0, total: 1 }" />
   <GenericLayout v-else-if="kind === 'chart'" :slide="chartSlide" :ctx="{ index: 0, total: 1 }" />
 
+  <div v-else-if="kind === 'flow'" class="cbFlowTrack">
+    <template v-for="(s, i) in flowSteps" :key="i">
+      <div class="cbFlowStep" :style="{ '--flow-accent': flowAccent(i) }">
+        <div class="cbFlowTag">{{ String(Number(i) + 1).padStart(2, "0") }}</div>
+        <div class="cbFlowCard">
+          <div class="cbFlowTitle">{{ s?.title || `步骤 ${Number(i) + 1}` }}</div>
+          <div v-if="flowText(s)" class="cbFlowText">{{ flowText(s) }}</div>
+        </div>
+      </div>
+      <div v-if="i < flowSteps.length - 1" class="cbFlowArrow" aria-hidden="true">
+        <div class="cbFlowArrowStem"></div>
+        <div class="cbFlowArrowHead"></div>
+      </div>
+    </template>
+  </div>
+
   <div v-else-if="kind === 'blocks'" class="grid2 cbBlocks">
     <Card v-for="(x, i) in block.blocks" :key="i" :title="x?.heading || x?.title || `块 ${Number(i) + 1}`">
       <Bullets :items="x?.bullets" />
@@ -96,6 +133,94 @@ const chartType = computed(() => (chartSlide.value && typeof chartSlide.value.la
 </template>
 
 <style scoped>
+.cbFlowTrack {
+  height: 100%;
+  min-height: 0;
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.cbFlowStep {
+  flex: 1 1 0;
+  min-width: 0;
+  display: grid;
+  align-content: start;
+}
+
+.cbFlowTag {
+  width: 38px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--flow-accent) 92%, white 8%);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  box-shadow: 0 10px 20px rgba(20, 61, 122, 0.12);
+}
+
+.cbFlowCard {
+  margin-top: 8px;
+  height: 100%;
+  padding: 12px 14px;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+  border: 1px solid rgba(215, 227, 244, 0.96);
+  box-shadow: 0 14px 28px rgba(20, 61, 122, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.cbFlowCard::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 100%;
+  height: 5px;
+  background: color-mix(in srgb, var(--flow-accent) 92%, white 8%);
+}
+
+.cbFlowTitle {
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.35;
+  color: #143d7a;
+  word-break: break-all;
+}
+
+.cbFlowText {
+  margin-top: 6px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #475569;
+}
+
+.cbFlowArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+
+.cbFlowArrowStem {
+  width: 22px;
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(143, 186, 244, 0.38) 0%, rgba(77, 160, 255, 0.78) 100%);
+}
+
+.cbFlowArrowHead {
+  width: 0;
+  height: 0;
+  margin-left: 5px;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 10px solid #4da0ff;
+}
+
 .cbBlocks {
   align-items: stretch;
 }

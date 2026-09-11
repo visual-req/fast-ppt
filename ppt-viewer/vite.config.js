@@ -1,8 +1,39 @@
 import { defineConfig } from "vite";
+import { spawn } from "node:child_process";
 import fs from "node:fs/promises";
 import path from "node:path";
+import { pathToFileURL } from "node:url";
 import vue from "@vitejs/plugin-vue";
-import { exportDeckToPptx } from "../lib/pptxExport.mjs";
+
+// 截图版导出需要在独立 Node 子进程里执行：headless Chrome 在 vite dev server 进程内
+// 会因 GPU 进程问题崩溃（SIGTRAP / "GPU process isn't usable"），在纯 Node 子进程中则正常。
+// 子进程直接复用 scripts/export-pptx.mjs，保证 CLI 与 HTTP 两条链路只有一份渲染实现。
+function runShotExport(repoRoot, { projectDir, style, viewerBaseUrl }) {
+  const script = path.resolve(repoRoot, "scripts", "export-pptx.mjs");
+  const args = [script, "--project", path.basename(projectDir), "--mode", "shots", "--viewer", viewerBaseUrl];
+  if (style) args.push("--style", style);
+
+  return new Promise((resolve, reject) => {
+    const child = spawn(process.execPath, args, { cwd: repoRoot, stdio: ["ignore", "pipe", "pipe"] });
+    let log = "";
+    const collect = (chunk) => {
+      const text = chunk.toString();
+      log += text;
+      process.stdout.write(text);
+    };
+    child.stdout?.on("data", collect);
+    child.stderr?.on("data", collect);
+    child.on("error", reject);
+    child.on("close", (code) => {
+      if (code !== 0) {
+        reject(new Error(`截图导出子进程退出码 ${code}：\n${log}`));
+        return;
+      }
+      const suffix = ["shots", style].filter(Boolean).join(".");
+      resolve(path.join(projectDir, "exports", `deck.${suffix}.pptx`));
+    });
+  });
+}
 
 export default defineConfig({
   plugins: [
@@ -14,6 +45,16 @@ export default defineConfig({
 
         const workDir = path.resolve(repoRoot, "work");
         const workPptDir = path.resolve(workDir, "ppt");
+
+        // dev server 的 module runner 在重启后会被关闭，配置里任何 import() 都会被
+        // Vite 改写为 runner 请求，从而抛 "Vite module runner has been closed."。
+        // 用 Function 构造出的原生 import 绕开 Vite 的模块转换，直接由 Node 加载导出模块。
+        const nativeImport = new Function("specifier", "return import(specifier)");
+
+        async function loadExporter() {
+          const url = pathToFileURL(path.resolve(repoRoot, "lib/pptxExport.mjs")).href;
+          return await nativeImport(url);
+        }
 
         async function fileExists(p) {
           try {
@@ -64,7 +105,7 @@ export default defineConfig({
           try {
             const entries = await fs.readdir(workPptDir, { withFileTypes: true });
             const candidates = entries
-              .filter((e) => e.isDirectory() && /^\d{3}_.+/.test(e.name))
+              .filter((e) => (e.isDirectory() || e.isSymbolicLink()) && /^\d{3}_.+/.test(e.name))
               .map((e) => e.name);
 
             const available = [];
@@ -128,10 +169,22 @@ export default defineConfig({
             const reqUrl = new URL(req.url ?? "/", "http://localhost");
             const projectDir = await resolveProjectDir(reqUrl.searchParams);
             const style = normalizeProjectName(reqUrl.searchParams.get("style"));
-            const out = await exportDeckToPptx(projectDir, style ? { style } : undefined);
+            const mode = normalizeProjectName(reqUrl.searchParams.get("mode")) === "shots" ? "shots" : "native";
+            let out;
+            if (mode === "shots") {
+              const outFile = await runShotExport(repoRoot, {
+                projectDir,
+                style,
+                viewerBaseUrl: `http://${req.headers.host ?? "127.0.0.1:5173"}/`
+              });
+              out = await fs.readFile(outFile);
+            } else {
+              const { exportDeckToPptx } = await loadExporter();
+              out = await exportDeckToPptx(projectDir, style ? { style } : undefined);
+            }
             res.statusCode = 200;
             res.setHeader("content-type", "application/vnd.openxmlformats-officedocument.presentationml.presentation");
-            res.setHeader("content-disposition", `attachment; filename="${style ? `${path.basename(projectDir)}-${style}` : path.basename(projectDir)}.pptx"`);
+            res.setHeader("content-disposition", `attachment; filename="${mode === "shots" ? "deck-shots" : "deck"}${style ? `-${style}` : ""}.pptx"`);
             res.end(out);
           } catch (e) {
             res.statusCode = 500;

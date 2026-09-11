@@ -3,6 +3,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { exportDeckToPptx as exportDeckToPptxShared } from "./lib/pptxExport.mjs";
+import { exportDeckToPptxShots } from "./lib/pptxShotExport.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -31,6 +32,10 @@ function send(res, statusCode, contentType, body) {
   res.setHeader("content-type", contentType);
   res.setHeader("cache-control", "no-store");
   res.end(body);
+}
+
+function logShotProgress({ index, total }) {
+  process.stdout.write(`[export] 截图渲染 ${index}/${total}\n`);
 }
 
 function safeJoin(baseDir, requestPath) {
@@ -63,7 +68,8 @@ async function findProjectDirByToken(token) {
   if (!normalized) return "";
 
   const entries = await fs.readdir(workPptDir, { withFileTypes: true });
-  const dirNames = entries.filter((e) => e.isDirectory()).map((e) => e.name);
+  // work/ppt 下的项目目录可能是软链接，Dirent.isDirectory() 对软链返回 false，需要一并纳入。
+  const dirNames = entries.filter((e) => e.isDirectory() || e.isSymbolicLink()).map((e) => e.name);
 
   if (dirNames.includes(normalized)) return path.resolve(workPptDir, normalized);
 
@@ -95,7 +101,7 @@ async function resolveProjectDir(searchParams) {
   try {
     const entries = await fs.readdir(workPptDir, { withFileTypes: true });
     const candidates = entries
-      .filter((e) => e.isDirectory() && /^\d{3}_.+/.test(e.name))
+      .filter((e) => (e.isDirectory() || e.isSymbolicLink()) && /^\d{3}_.+/.test(e.name))
       .map((e) => e.name);
 
     const available = [];
@@ -222,10 +228,18 @@ const server = http.createServer(async (req, res) => {
       try {
         const projectDir = await resolveProjectDir(url.searchParams);
         const style = normalizeProjectName(url.searchParams.get("style"));
-        const buf = await exportDeckToPptxShared(projectDir, style ? { style } : undefined);
+        const mode = normalizeProjectName(url.searchParams.get("mode")) === "shots" ? "shots" : "native";
+        const buf =
+          mode === "shots"
+            ? await exportDeckToPptxShots(projectDir, {
+                style,
+                viewerBaseUrl: `http://127.0.0.1:${port}/`,
+                onProgress: logShotProgress
+              })
+            : await exportDeckToPptxShared(projectDir, style ? { style } : undefined);
         res.statusCode = 200;
         res.setHeader("content-type", "application/vnd.openxmlformats-officedocument.presentationml.presentation");
-        res.setHeader("content-disposition", `attachment; filename="${style ? `deck-${style}` : "deck"}.pptx"`);
+        res.setHeader("content-disposition", `attachment; filename="${mode === "shots" ? "deck-shots" : "deck"}${style ? `-${style}` : ""}.pptx"`);
         res.setHeader("cache-control", "no-store");
         res.end(buf);
       } catch (e) {

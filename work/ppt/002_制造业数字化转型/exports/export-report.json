@@ -1,0 +1,11 @@
+{
+  "project": "002_制造业数字化转型",
+  "title": "",
+  "style": "executive",
+  "output": "work/ppt/002_制造业数字化转型/exports/deck.executive.pptx",
+  "bytes": 3979009,
+  "sha256": "9b08299f5070a97ba9a1b8d8d22e93c1221bb91b58078b1581b5c96924cfe4a4",
+  "expected_slides": 44,
+  "actual_slide_xml": 44,
+  "ok": true
+}

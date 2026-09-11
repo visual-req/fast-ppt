@@ -1,0 +1,11 @@
+{
+  "project": "003_visual_spec",
+  "title": "",
+  "style": "demo",
+  "output": "work/ppt/003_visual_spec/exports/deck.pptx",
+  "bytes": 957168,
+  "sha256": "7d97fff68f4a8d93c782bb694cb4573c5f4a56a45b39490c478d29d5ea71985b",
+  "expected_slides": 35,
+  "actual_slide_xml": 35,
+  "ok": true
+}

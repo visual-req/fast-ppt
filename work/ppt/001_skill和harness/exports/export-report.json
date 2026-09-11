@@ -1,0 +1,11 @@
+{
+  "project": "001_skill和harness",
+  "title": "从 Skill 到 Harness 工程",
+  "style": "consulting",
+  "output": "work/ppt/001_skill和harness/exports/deck.pptx",
+  "bytes": 1250369,
+  "sha256": "8324ce101b47bb57908d82fc3e082a87c0bb969012809d610ac709f3e2447419",
+  "expected_slides": 59,
+  "actual_slide_xml": 59,
+  "ok": true
+}

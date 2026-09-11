@@ -1,19 +1,18 @@
 # 案例工程
 
-项目当前提供四个正式可预览的 PPT 案例工程，可作为学习参考和二次开发起点。
+项目自带三个完整 PPT 案例工程，覆盖全部四种 PPT 类型中的三种，可作为学习参考和二次开发起点。
 
 ## 案例总览
 
 | 项目 | 类型 | 页数 | 主题 |
 |------|------|------|------|
-| 001_无人机黑飞防御技术方案 | 方案类 | 36 页 | 面向安防/机场/大型活动场景的低空安全防御方案 |
 | 001_skill和harness | 课件类 | 59 页 | Skill 与 Harness 工程培训课程 |
 | 002_制造业数字化转型 | 方案类 | 44 页 | 制造业数字化转型与 AI 导入 |
 | 003_visual_spec | 演示类 | 34 页 | Visual-Spec 需求规格化产品演示 |
 
 ## 示例工程位置
 
-这四个示例工程主要分成两部分：
+这三个示例工程分成两部分：
 
 - 输入材料目录：`work/input/`
 - 生成结果目录：`work/ppt/`
@@ -22,7 +21,6 @@
 
 | 示例 | 输入材料位置 | 生成结果位置 |
 |------|--------------|--------------|
-| `001_无人机黑飞防御技术方案` | 当前未附带输入目录 | `work/ppt/001_无人机黑飞防御技术方案/` |
 | `001_skill和harness` | `work/input/001_skill和harness/` | `work/ppt/001_skill和harness/` |
 | `002_制造业数字化转型` | `work/input/002_制造业数字化转型/` | `work/ppt/002_制造业数字化转型/` |
 | `003_visual_spec` | `work/input/003_visual_spec/` | `work/ppt/003_visual_spec/` |
@@ -50,7 +48,6 @@ node server.mjs
 http://localhost:9030/?project=001_skill和harness
 http://localhost:9030/?project=002_制造业数字化转型
 http://localhost:9030/?project=003_visual_spec
-http://localhost:9030/?project=001_无人机黑飞防御技术方案
 ```
 
 也可以只写编号：
@@ -62,39 +59,6 @@ http://localhost:9030/?project=003
 ```
 
 但更推荐使用完整目录名。因为当前仓库里可能同时存在多个相同编号前缀的项目，例如多个 `001_*` 目录；这时完整目录名更准确，不会打开错项目。
-
----
-
-## 001_无人机黑飞防御技术方案（方案类，36 页）
-
-**主题**：面向安防/机场/大型活动安保决策方的低空安全防御整体建设方案，覆盖黑飞威胁、防御体系、探测识别、处置反制、平台管控与实施路径。
-
-**目录**：
-- `work/ppt/001_无人机黑飞防御技术方案/outline.json`
-- `work/ppt/001_无人机黑飞防御技术方案/deck.json`
-- `work/ppt/001_无人机黑飞防御技术方案/slides/001_cover.json` … `036_thank_you.json`
-- `work/assets/001/`（包含该方案引用的 SVG 资产，如 `016-multi-sensor-fusion.svg`）
-
-**章节结构**：
-1. 开场：方案目标与决策路径
-2. 黑飞威胁与防御需求
-3. 总体防御方案
-4. 探测识别分系统
-5. 处置反制分系统
-6. 指挥管控平台
-7. 实施路径
-8. 成本收益分析
-9. 风险与保障
-10. 收口与行动建议
-
-**布局覆盖**：cover / agenda / section_divider / title_bullets / kpi_cards / problem_statement / architecture_layered / comparison_table / phases / four_grid / three_column / svg_full / two_column / steps / nine_grid / swimlane_process / roadmap / plan_table / milestones / cost_benefit / risk_register / summary / thank_you
-
-**说明**：
-- 当前仓库中该案例提供的是完整输出工程，可直接预览与研究结构
-- 对应 `work/input/` 原始材料目录暂未一并放入仓库
-
-**预览地址**：
-- `http://localhost:9030/?project=001_无人机黑飞防御技术方案`
 
 ---
 
@@ -191,4 +155,4 @@ http://localhost:9030/?project=003
 
 系统支持中（zh-CN）、日（ja-JP）、英（en-US）三种语言。生成 PPT 时，`deck.json` 的 `language` 字段会自动适配用户输入语言，所有标题、要点、SVG 文案均统一到选定语言。
 
-当前这四个案例工程均为中文版本，如需其他语言版本，在 `/fppt:outline` 阶段 AI 会自动根据用户输入语言生成对应语言的内容。
+三个案例工程均为中文版本，如需其他语言版本，在 `/fppt:outline` 阶段 AI 会自动根据用户输入语言生成对应语言的内容。

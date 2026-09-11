@@ -1,19 +1,18 @@
 # 事例プロジェクト
 
-本プロジェクトでは、現在 4 つの正式にプレビュー可能な PPT 事例を提供しています。学習リファレンスや二次開発の出発点として利用できます。
+本プロジェクトには 3 つの完全な PPT 事例が同梱されており、4 つの PPT タイプのうち 3 つをカバーしています。学習リファレンスや二次開発の出発点としてご利用ください。
 
 ## 概要
 
 | プロジェクト | タイプ | ページ数 | テーマ |
 |--------------|--------|----------|--------|
-| 001_drone_defense | 提案型 | 36 | 低空安全・ドローン侵入対策の防御提案 |
 | 001_skill_and_harness | 教材型 | 59 | Skill & Harness エンジニアリング研修 |
 | 002_manufacturing_digital | 提案型 | 44 | 製造業 DX と AI 導入 |
 | 003_visual_spec | デモ型 | 34 | Visual-Spec 製品デモンストレーション |
 
 ## 事例プロジェクトの場所
 
-これら 4 つの事例は主に 2 つの場所に分かれています。
+これら 3 つの事例は 2 つの場所に分かれています。
 
 - 入力資料：`work/input/`
 - 生成結果：`work/ppt/`
@@ -22,7 +21,6 @@
 
 | 事例 | 入力資料の場所 | 生成結果の場所 |
 |------|----------------|----------------|
-| `001_无人机黑飞防御技术方案` | 入力ディレクトリは未同梱 | `work/ppt/001_无人机黑飞防御技术方案/` |
 | `001_skill和harness` | `work/input/001_skill和harness/` | `work/ppt/001_skill和harness/` |
 | `002_制造业数字化转型` | `work/input/002_制造业数字化转型/` | `work/ppt/002_制造业数字化转型/` |
 | `003_visual_spec` | `work/input/003_visual_spec/` | `work/ppt/003_visual_spec/` |
@@ -50,7 +48,6 @@ node server.mjs
 http://localhost:9030/?project=001_skill和harness
 http://localhost:9030/?project=002_制造业数字化转型
 http://localhost:9030/?project=003_visual_spec
-http://localhost:9030/?project=001_无人机黑飞防御技术方案
 ```
 
 番号だけでも指定できます。
@@ -62,39 +59,6 @@ http://localhost:9030/?project=003
 ```
 
 ただし、フルディレクトリ名の方が安全です。このリポジトリ内に同じ番号プレフィックスを持つ別プロジェクトがある場合、フル名の方が誤って別のプロジェクトを開きにくくなります。
-
----
-
-## 001_drone_defense（提案型、36 ページ）
-
-**テーマ**：空港、重要施設、大型イベント警備向けの低空安全防御提案。脅威分析、防御体系、探知識別、対処反制、指揮管制、導入計画までをカバーします。
-
-**ディレクトリ**：
-- `work/ppt/001_无人机黑飞防御技术方案/outline.json`
-- `work/ppt/001_无人机黑飞防御技术方案/deck.json`
-- `work/ppt/001_无人机黑飞防御技术方案/slides/001_cover.json` … `036_thank_you.json`
-- `work/assets/001/`（`016-multi-sensor-fusion.svg` など、この案件で参照する SVG 資産を含む）
-
-**章構成**：
-1. オープニング：提案目的と意思決定パス
-2. ドローン侵入脅威と防御要件
-3. 全体防御アーキテクチャ
-4. 探知・識別サブシステム
-5. 対処・反制サブシステム
-6. 指揮管制プラットフォーム
-7. 実施ロードマップ
-8. 費用対効果分析
-9. リスクと保障
-10. クロージング提案
-
-**使用レイアウト**：cover / agenda / section_divider / title_bullets / kpi_cards / problem_statement / architecture_layered / comparison_table / phases / four_grid / three_column / svg_full / two_column / steps / nine_grid / swimlane_process / roadmap / plan_table / milestones / cost_benefit / risk_register / summary / thank_you
-
-**補足**：
-- この事例は完成済み出力プロジェクトとして提供されており、直接プレビュー可能です
-- 元の `work/input/` ディレクトリは、現時点ではリポジトリに同梱されていません
-
-**プレビュー URL**：
-- `http://localhost:9030/?project=001_无人机黑飞防御技术方案`
 
 ---
 
@@ -185,4 +149,4 @@ http://localhost:9030/?project=003
 
 システムは中国語（zh-CN）、日本語（ja-JP）、英語（en-US）の 3 言語に対応しています。PPT 生成時、`deck.json` の `language` フィールドがユーザーの入力言語に自動適応され、すべてのタイトル・箇条書き・SVG テキストが選択言語に統一されます。
 
-現在の 4 つの事例プロジェクトはいずれも中国語版です。他言語版が必要な場合は、`/fppt:outline` フェーズで AI が入力言語に応じたコンテンツを自動生成します。
+3 つの事例プロジェクトは中国語版です。他言語版が必要な場合、`/fppt:outline` フェーズで AI が入力言語に応じたコンテンツを自動生成します。
